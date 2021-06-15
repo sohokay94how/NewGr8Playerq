@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="c1ThemeController1.ApplicationTheme" xml:space="preserve">
+    <value>Office2013White</value>
+  </metadata>
+  <metadata name="c1SuperTooltip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>343, 17</value>
+  </metadata>
+  <data name="c1FlexGrid1.StyleInfo" xml:space="preserve">
+    <value>Normal{Font:微软雅黑, 8.25pt;BackColor:White;ForeColor:68, 68, 68;BackgroundImageLayout:LeftTop;}	Alternate{BackColor:244, 244, 244;ForeColor:68, 68, 68;BackgroundImageLayout:LeftTop;}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;BackgroundImageLayout:LeftTop;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;BackgroundImageLayout:LeftTop;}	Focus{BackColor:White;ForeColor:68, 68, 68;BackgroundImageLayout:LeftTop;}	Editor{BackColor:White;ForeColor:68, 68, 68;BackgroundImageLayout:LeftTop;}	Search{BackColor:Highlight;ForeColor:HighlightText;BackgroundImageLayout:LeftTop;}	Frozen{BackColor:Beige;ForeColor:68, 68, 68;BackgroundImageLayout:LeftTop;}	NewRow{BackColor:White;ForeColor:GrayText;BackgroundImageLayout:LeftTop;}	EmptyArea{BackColor:AppWorkspace;ForeColor:68, 68, 68;Border:Flat,1,ControlDarkDark,Both;BackgroundImageLayout:LeftTop;}	SelectedColumnHeader{BackColor:White;ForeColor:68, 68, 68;BackgroundImageLayout:LeftTop;}	SelectedRowHeader{BackColor:White;ForeColor:68, 68, 68;BackgroundImageLayout:LeftTop;}	GrandTotal{BackColor:Black;ForeColor:White;BackgroundImageLayout:LeftTop;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;BackgroundImageLayout:LeftTop;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;BackgroundImageLayout:LeftTop;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;BackgroundImageLayout:LeftTop;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;BackgroundImageLayout:LeftTop;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;BackgroundImageLayout:LeftTop;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;BackgroundImageLayout:LeftTop;}	FilterEditor{BackColor:White;ForeColor:68, 68, 68;BackgroundImageLayout:LeftTop;}	FirstCustomStyle{}	</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ribbonApplicationMenu1.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAbSSURBVFhH5ZfpU5NXFMZtO/0L+gf0m9OZfulMp63T6VRs
+        Rxzt2KGtjHYUa7WixSBYcYEWUKSKSEjYwiKILCLuyGYhLoM7KKBAgLhUlhQIJGFJQlZ8es5988aVKtoP
+        nenLHG4gGZ7fc865515mzfovPHnlZ5FXrkXuYS1yyrTQlNVDU1qPrNI6ZBb/gXSKtKJaqAtroTpQA2VB
+        DVIKqpGSX41/hZ8Bnvc8fAj4gz7Ar6emKOgFBwPklZ97fYjcpwCEqPhiUUlsShanF15fMICux4qo3fmv
+        B8Gplx8hyl/C/SNhWZRXj5eCVgbghyG+37jr1SH8AL6U+x0TgJeDHZOoJD4lwk0/ywAGC3Clw4jPgxWv
+        BpFDGWC3IrjGIsXy6nPMrincLO6hleJxgPZeOyqv9uLjr9dOC1FYXgPVHvWz78sAwjmLy67ZsS/lkrAU
+        LhJ30SoDtNy14EKbCRVXDCit12P2p0HPiKRqilEWFg7dulCoI7c++X724Xp/Z3OX++vsc+3xOXa5SZzC
+        6QsGiEzIwffhO54b8hZNzS5BUX4+9Ml7cSNkBU7Nm4eUmAQJgr6/oTmkFdvL32gi1ZxmdusLv7BXADhc
+        Xkw6p2Cf9OD4uRHsKBiEw+kVMUnvMRT//bjkTMTv3YHmpiZ06tpx8oeVOB4YiN+iYn0AwbPe0hyq94tz
+        yuV0y6mWHTtckjCH3eHFmM2D+P39mBN+G19tuSN+J4IglobFYntcIn6IX4N3V76H5KJUdOl0aKqrgWL9
+        pkcluPnhrLc1h+oepV1ONzuXXZOw0yfM7ibp53GrByEJ9xAY3Y654bfQb5yEjcRtk15YxuxIVmvQUrEK
+        +u46rEpX4J2Q2cguzcTm7VJm/A8IgEcubzOp1tRobmqyx+tNgiwqxMmdadyNpTtvISi+C3PCWnCx1QIr
+        CXOYSTw/Nx03TywFbGWA5Sju67VYkrgCwWt/enYHCICSOmmL+ertpNXJ6fbV2kG1ZmFOr2XChYXbWqGq
+        sCMgsg25Ff0k7IHV7oFp1I792SroqpYD1hLASGEqRUvZSkRERj5/ezJABgHIdR+d8AgxOeVcd1n8r2EH
+        gqK7kXfGg9X7JrE2qQsjoy5M2N20srgSnTXLgLFCYOiAiKbi5dioWDf9gBIAxWeEezOldt3ePnwR0Uq1
+        lEDY9QS5Gx51YlXiXRRpHQhLd2L+pk7cM9gwTo04YrEjN3MfOV8CjOYBBg28hlxc2h8MxYbQf56OMoDB
+        6MR6Ei8/a8ehCw4s2HxbNBV3tIGcfxvTjWMXHQjPcuODH9tJ3Eq7wI1hiw05GUnoqgoCRrKAvjRM9WXh
+        fFYQFGHTT8UnmjC9uJb+kAufhN5ERMEItpaMoeqGS0CYyPnCqHYcuexEVJEFH4U2oO5aH8asbhjNVmjS
+        d6OzajHVOw14kAx3jxrazO8QG7vt5c4FzkDawVpRxza9GYFbOvFzjlGAnG5yIjj+Lk41evDLQTMWRN/G
+        3sIWjE64MWQicXUiOisXAgNK4P7vcN1TojZ1MVL2xGHR8g0zA+Cu58Zr6TJhboQO67PHoMi1CojIfDtC
+        lMOYH1YFi9UlxDNVCdBVzqd6JwH6ODjvJOF00iIo98Tj8vVWfLMm6uUB1JQBecLxeuuOGQEKHSIyHCLC
+        1DZ8EFKNnsEJGNl5WiJ0FQFA7y6gOwaOrkQc37UAKb/H4dL1Fuj0vVi2Ie4lAWgUq+iuJ2a7b8Ry519t
+        G0Lgpg5EpI3js7DrONvYBzPNgAxVClqPfgdvL9W8Iwq29niUxX6JlN1xuHitGR36PgyM2PxnwQvvjIT5
+        puoAAfAhwocLrTxOx6nDm3RGfBZ6ApUN98UAunLtJk4krQbu1cPWWohxXQoKtwdgX2IsLl5tIfFe/EXi
+        Rmpc+TB6IQB/IJVuutLAkQFostEc4P3PINzxXPekbevhuEFDZrARnp4zKIqej6x0JYk3o53EDUarEDda
+        ZgjA12wh7jvNeAixuACg3TFKAEfKj6H54Bba5w14eLcS9ZooZKlVQvyBwSyEh0h4yOIQ64wyoKQ7PmeA
+        AWwOj5iCkrhHHLn3ewaQ/esqariT6NOqkJEQhZKyY9RwrWjrkpwPmSXhIbMTgxQzAuB/MkQDcv0Jgk81
+        Kf1SCQoKi3E+byuqs2OgUirRcPkGmm93Q//nAAZNdsk1AbDwoFgdMweQbzPmue/j6QiY9yW2b4vGGW0D
+        Gps70HmnH/1DY6LWcuolYR+A6RUAxMHj5PRLu0DOADcg9wDvAvO4i+4CLoyMucThNEwnIUMI95QFAUHi
+        AzMGyK/CnuxyKGLTsEyxc9pL5nSXzxddSl9qK/5vP/Q3mXWtmqKIFusAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="ribbonApplicationMenu1.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAG3SURBVDhPtZIvbxtBEMWv/QT+Bo1UGtmnohYlRbEKcguj
+        gvpgWBZaIV1odlt2zCuVmHlJFbMsDMvAwoVhWVBQ9jqz57NOcWzWkVZ3++f39s3sFMUgfIjYHwS/IThP
+        WK4f7fD83r8PhEPhVgG1NsdFDgmkv4BlgfBAUNdHRPYEGPQhQekA2/oMq9qgnNYY2n/TTyTXYbhNwrnA
+        K0J24Xwek4uZ2Qmw1Nt+4n5RVsiHfQc7hvu1lBIcC3hd53F/OyuLn3d/PjTrZy0iyztyAsvNak58W+gM
+        8ZrA9JtfhMFoNWjeiRSNT9GuEm7a5JvloxG4XhD0YgtvHUWGgzf5SWmhM2w/lihOr1xSJqK2CbrlL8NK
+        e8SntLPewRp8FeKDhlmYDH//NFHF5+mP9+NLR2L5XBPKmnPkhuojRra9qjNMgW23CqPRCLOvkzLXri/i
+        +LIJJ1ML03LROGeJGLkzndqDq6pyw1fIz3h2sx7N5msvRTwGW2sxnn6jV1u6Wd67DHP+zjmEDedMXLCt
+        bdu63AcvG2knJpuiLo0iAhLedjmfVZWVPYEPCgxtaa2hrpS0LKov77qC/Y/4B6AJCAnL9YaDAAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="ClipboardGroup.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAGASURBVDhPtZOhdgIxFET3E/gEPmFlZSQyEhmJjKyMREaujERGIiNXRiIjkZF103lJtyyUtqKn
+        OWdOEMyd9yYwDP9xUnQQxeBgjR5/zIgnbyksCt6gXkNTuXjYg4I/Wsp93FbdAcVYawSoWgPCZNttDzrn
+        2cFZDWdG1ETweSsT4QtAzCJ/NMgzgVfPdIcyG8RJw+wVgtsi+wF2/wgIvpnBVO8ME0VaJuhioiXA2w4w
+        O3U/QVgAsndherbIYXPTxM80LlIv4wNgcr20wvvC/bPmQBv4wJWmCOepIztxAebVw1j/BCDJF5Y005xY
+        mABo/jxv3LBWlGuFPjho426Q4CWZmlU3nzcoYWjJckJMXaeEXAigOc0ZSpsOkfeVvRdzPQ0dwLGxSs6X
+        ipQL9N42s9ppKMVC5UdSZ4rJMnohIE98Lu4sY68nkF5iyr0fSo1bApyY+xOtJYXJzktymkszx3PXGqDk
+        /eW9jVbQamxkaVt2XtKe3W2C7460LV/4TX/+M78DMOT2iEMhrj0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="PasteButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAGASURBVDhPtZOhdgIxFET3E/gEPmFlZSQyEhmJjKyMREaujERGIiNXRiIjkZF103lJtyyUtqKn
+        OWdOEMyd9yYwDP9xUnQQxeBgjR5/zIgnbyksCt6gXkNTuXjYg4I/Wsp93FbdAcVYawSoWgPCZNttDzrn
+        2cFZDWdG1ETweSsT4QtAzCJ/NMgzgVfPdIcyG8RJw+wVgtsi+wF2/wgIvpnBVO8ME0VaJuhioiXA2w4w
+        O3U/QVgAsndherbIYXPTxM80LlIv4wNgcr20wvvC/bPmQBv4wJWmCOepIztxAebVw1j/BCDJF5Y005xY
+        mABo/jxv3LBWlGuFPjho426Q4CWZmlU3nzcoYWjJckJMXaeEXAigOc0ZSpsOkfeVvRdzPQ0dwLGxSs6X
+        ipQL9N42s9ppKMVC5UdSZ4rJMnohIE98Lu4sY68nkF5iyr0fSo1bApyY+xOtJYXJzktymkszx3PXGqDk
+        /eW9jVbQamxkaVt2XtKe3W2C7460LV/4TX/+M78DMOT2iEMhrj0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="PasteAsTextButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAGASURBVDhPtZOhdgIxFET3E/gEPmFlZSQyEhmJjKyMREaujERGIiNXRiIjkZF103lJtyyUtqKn
+        OWdOEMyd9yYwDP9xUnQQxeBgjR5/zIgnbyksCt6gXkNTuXjYg4I/Wsp93FbdAcVYawSoWgPCZNttDzrn
+        2cFZDWdG1ETweSsT4QtAzCJ/NMgzgVfPdIcyG8RJw+wVgtsi+wF2/wgIvpnBVO8ME0VaJuhioiXA2w4w
+        O3U/QVgAsndherbIYXPTxM80LlIv4wNgcr20wvvC/bPmQBv4wJWmCOepIztxAebVw1j/BCDJF5Y005xY
+        mABo/jxv3LBWlGuFPjho426Q4CWZmlU3nzcoYWjJckJMXaeEXAigOc0ZSpsOkfeVvRdzPQ0dwLGxSs6X
+        ipQL9N42s9ppKMVC5UdSZ4rJMnohIE98Lu4sY68nkF5iyr0fSo1bApyY+xOtJYXJzktymkszx3PXGqDk
+        /eW9jVbQamxkaVt2XtKe3W2C7460LV/4TX/+M78DMOT2iEMhrj0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="PasteSplitButton.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAABK1JREFUWEe9V2lP
+        G1cU5S/2a6VKbYMUSHEhBUQbRFZKKGlpmwXFFcQEx4nB2DgWmxIKxqx2QtiSshjbmKhN1X4I4H28nNz7
+        ZsaYxTMGRRk43Ddj47Pc+2agrOwMx71uK+702GB2DsM2NIYzfMTZf8VocWDSuwz1ON9wHcZuy8cR4fUM
+        YsJ6Q0Zvs6huK9XeH2lNoNpwvU1w2+8ZcK36M6yE3qPhahvcthaByb6bMmyMVnioMmYnhvRFMuHKtBXp
+        sFnGthnjk04RtYrm34xCAJPb71ZhfWcPdU03wdfV94xPOCEFTUgxAg/gc9Vj1napBAHkmkkTi3VILtUT
+        6lDdcDUf90mLd/vAS/9/mF37G56VMO5bBlBuqEVk7vwhzJUqQAqRgKVaQZ4kIbVNLYL33/dJGHscMA+M
+        wtw/ih7bMDofu3Db1Iu2DlMed0w2nKu6eFxAXwkJuKnHUqiHiGspBRnG20348kINvqg04Cv64EKcM9A5
+        uRXXaM3v43XzlfJjAmZ7SxHQ1yIEJF5dJHwnEKd1fIHwshqxF98SqhD1fYOo9wKi85WIzB+O+mj06vlM
+        7w/6M8DTK4UeIrFQQ6Q1VJmc1iq5z3CEvOKY06ICrN+XIIC2ixTsFoSFYOdxIo/5Ct1XIDp3CgFPGkoT
+        kAqYlKiJsIA4JmJXovdy9ETOODLtxc6nLPX6Ajz9rWLfstNCcM9j1HOXewVPJ5bhHF+G489F2MdewfZs
+        IV/7Rl/AOuKDZWgej1wz6Hk6kxfoeVSSgJ+QDHQVOCXHPho2Io/QwLncB7fgo/eEHF+gH7k8cnjonEZ7
+        lx2BsWp4zHX6CUzZ25DcYgGVCmRinvYoxc3uTzpyxCq+BDnXHLIE08AULC43rvzajcGuRn0BHjsl4O88
+        6C+RMrHc6wqKfinPv729jdB2GMFQOF95HQyGkc2SAILJMYnX/n9w1+xC1eXf9QXICZAAMd0qDvb5wPji
+        8QDINXHJrrO0ppMMI5PDA/sk/t9N4c3WOzife/G54Zq2iClHGxL+P4pONg+eeqhut8gxu+bK8AfCgpxF
+        dPa7xQxcutWJr+tahQBNEVOOW5oCeOrVKVN7fsi14jxNAtKZrICUJqiV1poCplnAZvEE+p+zAP7OCaeb
+        wR1sbMl1MyCv1/1hpJlUQYpqSsqI85SkK+BnEmAs2gLe87zd1Gk/6De7ZdeEdE4mYwFEyKRJEpBUqk4C
+        2gL4RqOSs9M1/w7+UuumvH5D115vvMUq1dUNwloYq+s7SKYySKT0Ehj4RTOBJ8PeginPimHjPrNLGexU
+        JoonMzISGcQKoJ2As3QBp00gFich8bTOEJaSAG8xxbk83Tm5vyJixbVwnhbOo1SjRBxRoJnAjLMd8Y37
+        RYeQW8D7m4fttAlEYiSCoCvAP9uhLUB1r24z7ju7Fz1n1wRyy66jcUl2HpOwLwRI2gImng1ixNSIkY7y
+        EyEnIN9gTpvAPouI6gjQ+39JCFD2u7rXefrV3svTrvRcccykTL5HdS/y0QTIdzpxk8kPH0VPLchHTwIE
+        uSBOYZfqLlXdB5JWCo/pLx1+uFym53tlY3v+4aI+ZEqtRTnoLlv2KaDX6k/6+gfysDtmFLbAywAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
+  <data name="PasteSplitButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAGASURBVDhPtZOhdgIxFET3E/gEPmFlZSQyEhmJjKyMREaujERGIiNXRiIjkZF103lJtyyUtqKn
+        OWdOEMyd9yYwDP9xUnQQxeBgjR5/zIgnbyksCt6gXkNTuXjYg4I/Wsp93FbdAcVYawSoWgPCZNttDzrn
+        2cFZDWdG1ETweSsT4QtAzCJ/NMgzgVfPdIcyG8RJw+wVgtsi+wF2/wgIvpnBVO8ME0VaJuhioiXA2w4w
+        O3U/QVgAsndherbIYXPTxM80LlIv4wNgcr20wvvC/bPmQBv4wJWmCOepIztxAebVw1j/BCDJF5Y005xY
+        mABo/jxv3LBWlGuFPjho426Q4CWZmlU3nzcoYWjJckJMXaeEXAigOc0ZSpsOkfeVvRdzPQ0dwLGxSs6X
+        ipQL9N42s9ppKMVC5UdSZ4rJMnohIE98Lu4sY68nkF5iyr0fSo1bApyY+xOtJYXJzktymkszx3PXGqDk
+        /eW9jVbQamxkaVt2XtKe3W2C7460LV/4TX/+M78DMOT2iEMhrj0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="PasteSplitButton.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;粘贴 (Ctrl+V)&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  粘贴剪切板中的内容。
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="CutButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAEfSURBVDhPrVMrjgQhEJ0j9BE4AnIkciSyJXIkciSyZcmRyJEcAbmSIyBXllxX+4qZTlb1J1mS
+        lw6V96kC+nL571VKpfwqffUVEdt757RQOZRFuVh6ZklLNirgH0kwlRBTOGSgJHoWgVFG+tS/mSGWaZqG
+        4aGFRCbK0lpL9auJD/GcQX7VomMANSYS7wMfSl5JSHcq1NY13d38sQP8mwIxq9jf1eTEAYaFLVB86uIf
+        rQD6ZSC7e/WbowwxMUPMbs5sPXUXq4oFYnEh06aBX3oBQC4CsWLtwKAWtLZnIEi3INuPwfQZwbqZonVx
+        x+A9t3VB09Ig+0dt2AuKYozdvk6I32S0aq5+/A+j9WtgA8A0bo4wyDN1FdjbDvnUy9og/wK2xssZ1YG/
+        NwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="CutButton.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;剪切 (Ctrl+X)&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  剪切所选内容并把它放置在剪切板上。
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="CopyButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAE1SURBVDhPrVOhbsUwEHuf0k/oJxQWFg4WDgYOBg4GFgYWBhYGFgYWBg4GjnnnnN7ra6WtkzZL
+        JlXO9p3V2+2vCDFDmZRLgg8JbgrDr7Q5fIYPEaP1aPuxvRSh6xlujohrwmjctQgjE3EDJDlSLnA+IKxF
+        VlL6Rb4F5ehyd0jFuA98AqUA+UMGReAMOxe0r5HcRbzEJfwKOHGyIcP4DC/OZ5hJhduXQKoI9yVKdS/V
+        nWv4RY/rgjJtNf59GM3goQKyL4fvznQ3k9Q4H9vhG4rHJOJyrKOApKVr2rI8EK4ZVoQI7m2mXN0Hmyqr
+        QP+UQPpmXQcat9fLw9KA7rUVOXzTO13hO4zvKvDs/Eggd7sUGN5ivQ3j7oxgazx8010k6Iz0rXXVg1VK
+        7EoZbjr78wqX/8B/PfgCbJja4NCUQQEAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="CopyButton.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;复制 (Ctrl+C)&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  将选中部分复制到剪切板中。
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="FormatPainterButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAFRSURBVDhPvZIhcwIxFIT7E/gJ/QknkZHISGQkMhIZiXwSGYl8Ehl5MvLkk8hI3HbvKFBKGeh0
+        pjezk5mbfLv7kry9/fcn2+JESpNNQVpn/6t8goGCiCGulEp4aJBz9qqKs2SrUTZKuCKECjcXOBfajwaa
+        kxtBM0Pt67TSEKx/Azvnb0commZUpWDDKb0dGspoMhhSSjRIU/IFrn3uqFKLWNkntKYAyiQznZLHBmkj
+        0J3Ce4/gQ75Ut54bhgwcT9CNjsoRhKedkLcZkWuMEWx+PTzrJVsVVr0mgyDYpBn/DwljsxDC5wgBbuFH
+        zb60kMgRTiZs0g75AluNqPvABgF+eYHv758paUyygUbGs2DyGS47B5UO3nW8+/j48eg25iyR4D3s5u+j
+        QXz68mggKYap9jn5ZfjsTpMcVx6ydnxxLyZ/r5bWIYalb37R6dPaf9nwAebNZY/89p8yAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="FormatPainterButton.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;格式刷 (Ctrl+Shift+C)&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  复制一处格式并将其应用到其他地方。&lt;br&gt;
+要在多个地方应用格式，请双击格式刷。
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;hr noshade size=1 style='margin:2' color=#808080&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;img src='res://Help.png'&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;详细信息请按 F1 。&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="FontGroup.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAADuSURBVDhPxZGxDcMgEEU9AiNQpqR0eWVKSkpKl4xAmZIRGIERPAIjZAQ2IP+IHclRQmy5iKUn
+        Wfa9f18wDJ1Hu0Rg7s10/7nbXBFQfcz6cAhEwTJDNpbDATSlCJGpSgfmWAveCoQyIS8B990taIoWcmZB
+        mUgIWVvQrhCWyUS1DiOgtBZX//tGIEvIvDFD4PpMwXuVo2NktwUCEjbOkpwCpMgTZNUCqAWkrwHLoRVI
+        4n1Ikg9Lg89XSiZIVE3YVMi4zRA2WznaZ4PWwhawXQJZcFVsAfZ1gNwEkuBv8qKVANgEloCqRT3DcEZm
+        9/8BD4PlEYVjparLAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="FontBoldButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAABcSURBVDhPY2AYZoCD4T8DdvwB6NMEIBbA72MOBgMUA0CqORgcwGIMYAwyhABAdgFMKcKAB4S0
+        g2xEeINiF6AatoBwGEBspKILSA4DWIjDXEFyGFCcDgjH0XBUAQBVeDmBtEr69AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="FontBoldButton.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Bold (Ctrl+B)&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Make the selected text bold.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="FontItalicButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAABGSURBVDhPY2AY9uA/0IfomARPczAowA2AsEkEHAwBYAMgNFkA5nwyNCNsTyBDN1gLVWwvIN12
+        1JA3INUAbPEOEhsFeEIAAJL+GNvUVWyxAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="FontItalicButton.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Italic (Ctrl+I)&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Italicize the selected text.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="FontUnderlineButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAABnSURBVDhPY2AYduA/0EfIGORBbGLYPW5g4WAA0wBkO4BUQWmwITAxQsEGsxFZHTYxnOaMeAOA
+        IX0AFOIKCgrgWIDSoBi4QCj0IfIcDAoCAgILkOMfzAeKE2cAharQUx02PoVWUFs7AF2QN3Msfoz7AAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="FontUnderlineButton.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Underline (Ctrl+U)&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Underline the selected text.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="FontStrikeoutButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAADmSURBVDhP5VG7DYUwDMwIKSldUrqkdEnp8pUZgREYgREYgREYISNkBDbIuwOehF6DRPWkF+nk
+        fHyXsx3Czy1VjYAD0yNzIIq2mqXV8lQgisgSm1gfCZAUY5ykkQ2ItyLubljFetu890VaAX8XqMACjIB8
+        hLBXOgQy9wHkTBEgQaTgQb8EViRSkMQBkWeSGdcAolhnCmR/eUWSXUvYiQdh2H8+nDnL252dF7x8BDpg
+        7ZZSwgdStNMRceYUzl/ogHsmzFcH2lkJsL6BlDH/jISKM/uwngKcBG0PlyayDywJPFtvp/QHCW/FI3F3
+        /OJNfgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="FontStrikeoutButton.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Strikeout&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Strikeout the selected text.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="FontColorPicker.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAADuSURBVDhPxZGxDcMgEEU9AiNQpqR0eWVKSkpKl4xAmZIRGIERPAIjZAQ2IP+IHclRQmy5iKUn
+        Wfa9f18wDJ1Hu0Rg7s10/7nbXBFQfcz6cAhEwTJDNpbDATSlCJGpSgfmWAveCoQyIS8B990taIoWcmZB
+        mUgIWVvQrhCWyUS1DiOgtBZX//tGIEvIvDFD4PpMwXuVo2NktwUCEjbOkpwCpMgTZNUCqAWkrwHLoRVI
+        4n1Ikg9Lg89XSiZIVE3YVMi4zRA2WznaZ4PWwhawXQJZcFVsAfZ1gNwEkuBv8qKVANgEloCqRT3DcEZm
+        9/8BD4PlEYVjparLAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="FontColorPicker.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Font Color&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Change the text color.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;hr noshade size=1 style='margin:2' color=darker&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;img src='res://Help.png'&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Press F1 for more help.&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="BackColorPicker.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABh0RVh0U29mdHdh
+        cmUAUGFpbnQuTkVUIHYyLjcwnFTlcQAAARZJREFUOE/FkqFSxDAQhvMIeYRKHJHIOE5G4q4Sx1rURSLj
+        OBmJI29A5MnIk5HISNT9dHvkerTXmTIn2Jmdtmm+f//dRJRCGGfTyMmamIu/CGxeP7TdRlgXQC8B6+d3
+        I/ybAVfk5HcWrN/naxV+2vjiQ4LzCbq1EPlzaKFar88qznucj+CIKUMbQksOatVChDA4GAtUN2lve7iU
+        0gmUvgWGb+/XWpwP7JIDYxTKVzzB7OQE82DZplIS6u44hxgHRwynnZ+HWeDSKeRMnRAh7AJSSr3tSeV6
+        rGMBHpjfUtdwQOyq6wf63fPshfj5UWEWKNnCewsp5XFgS8LZFpz0aGBWGuqmWQ4vKTDZczgIXJPiGpjZ
+        /xf4BlivKlefdZ7GAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BackColorPicker.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Text Highlight Color&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Make text look like it was marked with a highlighter pen.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="ParagraphGroup.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAqSURBVDhPY2AYLOA/0CHkYOq7n1hXDJzN6C4cOJcMnM3DOQyoH6rEmggAcz9HuXkkmAwAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="DecreaseIndentButton1.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACVSURBVDhPY2DAD/4TkKeuNMg2ZAwyHV0MG59KrgjoeCAAxBMCCg4cQDKSsAsSGj4oJEz4sCCh
+        48P/gIYL/x0yNiiQZADQVqBGIK4Aak7Y8N8hYsJ/g4AJxIc+0MkKQFsnOCQsAGsE0gZEuAAz4BwyFgg4
+        RCyYYAD0B1kGUCMuBjgdYEl1yCmRGj4kzwzi0wN55jMwAABkzG4nGkaW4AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="DecreaseIndentButton1.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Decrease Indent&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Decreases the indent level of the paragraph.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="IncreaseIndentButton1.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACWSURBVDhPY2DAD/4TkKeuNMg2ZAwyHV0MG58KrghoePDBoeLBA4eGBw5oxhHngoSODw5AQ/4D
+        DfnvUHBggkPGBgWoQYQNCOh48B+MQQYkbPhvEDHhv0HABNJC36Fgg4FDxAKwRiB+ADQkgIALUH0KtPkC
+        UNMBIDYgMgyoEPJYjBjAdIAjwJBTIm38TIyppKUHYkxEVwMAYxtuj7kibVkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="IncreaseIndentButton1.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Increase Indent&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Increases the indent level of the paragraph.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="ParagraphAlignLeftButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAwSURBVDhPY2AYLOA/0CHkYOq5n1jbqWcjuknEugBdHfVcRKwLqGfjaBjQLixJNxkAYl5HuZrR
+        XM4AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="ParagraphAlignLeftButton.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Align Text Left&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Align text to the left.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="ParagraphAlignCenterButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAqSURBVDhPY2AYLOA/0CHkYOq7n1hXDJzN6C4cOJcMnM3DOQyoH6rEmggAcz9HuXkkmAwAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="ParagraphAlignCenterButton.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Align Text Center&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Center text.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="ParagraphAlignRightButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAzSURBVDhPY2AYLOA/0CHkYNq5n1jXUM8FxNqIro56LkA3iVgXUc8FxNo4nMOAeqFJqkkAhCBH
+        ueOQlOEAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="ParagraphAlignRightButton.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Align Text Right&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Align text to the right.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="btnSpelling.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        fwPHoVp1bp+mJQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnSpelling.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAGiSURBVDhPnZIhV8MwEMerwG2xGFo5TBqJWusYiDVuwzSV
+        uFbiOgeulbhG4loHjn6DxaKab9B8g3DXFR48xmNw7927Xu5+/7vk1XnpOrLddl6apnr72rHgIgiXi6UB
+        V0KIJooiL7gM+Px8ruiMKkqpnh5PPeezRdcRj+NYYXRdlzlHjsS6WIsSROTp7LSBlI/MBmL2RYCvEwsH
+        xJsxjAzcTCYTlWWZ9c98BMvx/IMr6j6Lc63wIAHX4JigozpOdKYnU/yWY459DmxYzpepWubK+FFVOowN
+        U4ciGB/FzCiGQt5YR3FNCLHhTWPpulHuRYG1wy190A2/VZauqta9KtjhJHTmUmu+GeGfJud1/22lKN+S
+        FODkXu/W3je5qC2pnvpEPhubS6NE1RNcD2HITfYAcNwYuHO4d+286r3y0diN3HlaaA0wg9hiHiaN9VfV
+        +0N/1xB3XQjrGWxM4J4IZaW2ODm8aS0VTfvrg/miJnNoZFxanrUWXxthtobpohqudJAFok7YohzWRhjy
+        zUHg5yaAShShq1r+GX4H/FX9t7/sv5PeAPuN050YmrXMAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonButton2.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAQ6SURBVFhH7ZXrT9tVHMb3H/gH7IXxtW9MNp23zXiNMWYm
+        msVsXiZu5dZyKS2TywrDOTKHuuAAiZubhg5d5jsTNZNxKVDatdCWbdALvV/pvbgJDMrj9/xKb0oZ5Wey
+        vbDJ5117ns95zvec7tjxsHxelSjwQF1eftACr9SNZBrovdiPnu/k6Drfh697f8BX3ZfQce4CTp/9Fp91
+        9KDtdBda2jvRfPIsGtq+RH1rB6SyM/wafEmcL5BIJBCPxzlisRii0SgikSjC4QhC4TCCwSAC80H4AwEY
+        zRbUNpzkKZDTQPd5OeKJOLe4z++Hx+uF2+OGy+WCw+GEze7AnM0G85wVJgrX6Q0QSVv5CbyY00An1c52
+        7vP5KNxH4R643G44nBTucMBK4RYWbrFg1mTClF6PcvFxvgLDmQW+OHcR8VgcXhJIhztZOO3carNnw81m
+        zMwaodXpIKhq5ClQmxVop2Gbs9qhVGsxrtJibOIGRpVqjIyrMDw6gSGFEoMj4xgYHsPAkAK//HYN7wnE
+        /AReyDmCT890w2p34oZWB5VmChPqSShVmpTIeEpkhEQGmYhiDNeHFSipqOcpUDOUWUBGV8zhcsMwfRN6
+        g4E740mdHprJKai1kySloXbU1I4KY0oVtTOBgyXVPAWqsgLsTrNrxSabDRc73xLhMXxYJuGqZmEHDovw
+        zgeVePtQOd46KMD+dwX8BPZVD/JbgO87vjfnCPiuta3f7805gq0uMNBXgu2w4frPi4o/AhaOhR851jj6
+        UyQuYy0u50gyYn0cK74mtAuf2Pion6vangALRuQE1sJEiNGKZKgFyXkZVhmB41gJNFN4M2IW6SYCwo0F
+        KjuNBYeTNZAWSKaDg61YDbZQsIyCKdzPYAJNiJrrCgs8K7r+r6DXJErcX4Aqp92nBIh5Ck/vnAVz4Y24
+        521ExLSJwNPCfAEW3nbZB3GvmZPIJT1EqQb6U8G067za0+HeJi78nqeBBMSFG3hGOJBpYOfrcpy6EuUE
+        Tl3xc3z+cwA9v0bAxPIEaOBY+GpQlhLInDkFU+3p8GUmYKwtLLCnIivAAh57U87t/vEDV7HzjZ/w6P6r
+        2HX4d+w58keewIKrC5FbZYhMl6YwCBBm6I8ipDuC0NTHCK5jG32/sMBT/xBgEiz8kX2XNh3CO55vEDcK
+        iUrEZyoRm6lA7FY5oiQVvUlMr8uRlHPio8ICT5Znd5b7UNxPYDFwAXesYvzJsNQQ1VgwM6qQMImQmGUI
+        kSA5r+Zo8QKbvYpsCFdC32PZdQxLznosOqVYdEiwaJfgL4ZNgru2Oty1EnO1mDcI/3uBZJS9cM3csK0Q
+        y94GLLs/4VhiYutySw4pQrdrCgvsLssfwq38H3AN0KTHTFJ6ZCTcPY8axdy0h2cZNQjPEBQcul3NUfAp
+        3l16rei/YybAFiyWDTe3q7T4BrbS0v/feegb+BtqPHiNP5aGzwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="ribbonButton1.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="ribbonButton3.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="ribbonButton4.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAMYSURBVFhH5ZfdS1NxGMctMOiqiyC6COqqf2AXQRBEEFGa
+        b23u1b25HY+b23Rzc2u+LJUVjInL3IvKUrLSNZ1T8X1ubjvubGuOIkLryi6CdRtUF+HTObsIJ9Mrf0V0
+        4HDgnMPv+Tzf5znP73tKSv7R40Q4HD4fWFiyzswvtgcXluxPx18oMQwrRZ5PIpu9FIrEpH0DrpS52/rD
+        2NULJksvtFFXnanLL8Dxc0ghkpmszTP67FNTizHX2Kx3q40dDPp0uIYAb9YDX4LbkALEyfSHZlNHroYn
+        wvYH8gWCWL/TA3wpBkgBNpNpaDF2FA0yMTUDXLEMLUB8MwnqVlPRIP7gHAUgRwsQI0hQ6YxFgyyuhoAn
+        QVwCIpE6VIGV9QgI6hvQKkCmMqDRFy8BrQDyHki+3jq0BIHgPDqA7Z2PYHpgBboEuFpbIHMyswUWqw2Q
+        Arx99z4PsBbeAAmmKAAgkilobbfAS58fWHwxmh7IZN/kAegsBZLCT22DSIBC2wYj3lGo4QjQANC1pwEm
+        Xk0BT1RfECQcIwBT68DpHoJqNv9/BIgTIFdp/54Ckfgm8GWNeYAqlCW43/2waA/8MQAzBTA5FYC6A+N2
+        PRqHO0weOIdGoKqWh6YJ6RFs7qEU8E+DuEFZEOQ3gGcYKlgcNAAEmcp/ht6xcRDKFSBT6xi08SDJDGMt
+        EoXrt8rASQHcLK9EAxCltmFDZw/Y+hwTUqwph2u0u5QnXHJ7x6BB0wqPbH15gLIqJhqAjXgCtKZOMBgM
+        F+RKlQVXafYqmJx8zWkYx6ALBlweqGRx0QBEosQePW6P8nvPqb2AyRchAoglvtHj9igAX2AWOAfG9LEZ
+        1OXQ+pZM2fLzsAVDIeJiYG4B2EIpGgXml1cVbKFsjwK4XAyC8orYY/cwlN+r/XxsWRf4fp/vTP/Ak+1a
+        YX2Oun92/7MYSTLGJ6fTlCHdqagRDCIBoBe12+2nsSadnl0nzXLFeNugx3uVsuImh3NkRyRv3L3L5M9S
+        r51CBkAvTP+AUjufmV0n+1LNFX29Xc36fuXajXTJyVIR8uAoMvsFelQEUhoeC3EAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="DecreaseIndentButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACVSURBVDhPY2DAD/4TkKeuNMg2ZAwyHV0MG59KrgjoeCAAxBMCCg4cQDKSsAsSGj4oJEz4sCCh
+        48P/gIYL/x0yNiiQZADQVqBGIK4Aak7Y8N8hYsJ/g4AJxIc+0MkKQFsnOCQsAGsE0gZEuAAz4BwyFgg4
+        RCyYYAD0B1kGUCMuBjgdYEl1yCmRGj4kzwzi0wN55jMwAABkzG4nGkaW4AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="DecreaseIndentButton.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Decrease Indent&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Decreases the indent level of the paragraph.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="IncreaseIndentButton.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAACWSURBVDhPY2DAD/4TkKeuNMg2ZAwyHV0MG58KrghoePDBoeLBA4eGBw5oxhHngoSODw5AQ/4D
+        DfnvUHBggkPGBgWoQYQNCOh48B+MQQYkbPhvEDHhv0HABNJC36Fgg4FDxAKwRiB+ADQkgIALUH0KtPkC
+        UNMBIDYgMgyoEPJYjBjAdIAjwJBTIm38TIyppKUHYkxEVwMAYxtuj7kibVkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="IncreaseIndentButton.ToolTip" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Increase Indent&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Increases the indent level of the paragraph.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <metadata name="c1CommandHolder1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>179, 17</value>
+  </metadata>
+</root>

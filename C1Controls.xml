@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<controls>
+  <control name="主题" icon="" status="new">
+    <sample name="表格" icon="1" status="new" form="ControlExplorer.Themes.Themes1" short="ComponentOne 主题, 允许您在表格上应用主题" description="创建优美的主题应用，该应用使得每个控件的样式都是如您所愿的统一样式，使整个应用的风格保持统一。"/>
+    <sample name="功能区" icon="1" status="new" form="ControlExplorer.Themes.Themes3" short="ComponentOne 主题, 允许您在功能区UI控件及其子组和标签上应用主题" description="创建优美的主题应用，该应用使得每个控件的样式都是如您所愿的统一样式，使整个应用的风格保持统一。"/>
+    <sample name="输入编辑器" icon="1" status="new" form="ControlExplorer.Themes.Themes2" short="ComponentOne主题, 允许您在输入编辑控件上应用主题" description="创建优美的主题应用，该应用使得每个控件的样式都是如您所愿的统一样式，使整个应用的风格保持统一。"/>
+  </control>
+  <control name="瓷片控件" icon="TileControl.png">
+    <sample name="文件管理器" icon="1" status="new" form="ControlExplorer.Tiles.FileExplorer" short="Windows 8 界面风格的文件管理器" description="为您的桌面应用程序创建和使用MordernUI风格的文件资源管理器。在我的电脑显示驱动器，归类为固定和移动式。 轻松区分驱动器,文件夹和文件, 因为它们用不同的瓷片控件模板所描绘."/>
+    <sample name="Flickr流" icon="1" status="new" form="ControlExplorer.Tiles.Flickr" short="本演示以实时信息展示瓷片" description="从Flickr的数据流中的图像来查看和更新​​瓷片。通过看起来像一个城域应用的桌面应用程序更新和标记的图像. 从未像现在这样的设计WinForms应用程序!!!"/>
+    <sample name="移动幻灯片" icon="1" status="new" form="ControlExplorer.Tiles.MovingSlides" short="动画瓷片" description="用生动的数据和图片使瓷片鲜活. 使用鼠标或触摸动作拖放瓷片到另一个位置。"/>
+    <sample name="应用面板" icon="1" status="new" form="ControlExplorer.Tiles.AppsPanel" short="Windows 8风格界面,有所有应用的列表." description="在你的WinForms应用程序重建整个窗口模式界面启动屏幕. 体验一种全新的导航方式。"/>   
+  </control>
+  <control name="条形码" icon="barcode.png">
+    <sample name="概览" icon="1" form="ControlExplorer.Barcode.Overview" short="本演示展示了产品支持的条形码编码" description="C1BarCode允许您在网格，报告，文件中添加条码图像。此示例显示了所有支持的条形码编码类型。"/>
+    <sample name="打印" icon="1" form="ControlExplorer.Barcode.PrintBarCodes" short="用C1BarCodes打印文件" description="我们使用Image的属性PrintDocuments把C1BarCodes转变为图像。其主要优点是可以把C1BarCode作为任何普通装配中的应用部署。不过，条码字体必须先安装到自定义的字体目录中。"/>
+    <sample name="二维QR码" icon="2" form="ControlExplorer.Barcode.QRCodeSample" short="展示支持快速变换的二维条码图形" description="ComponentOne的WinForms条码具有与新C1QRCode控件的快速反应的功能。 QR格式是当今最流行的二维码格式之一，几乎所有的智能手机都免费提供给读者使用。使用C1QRCode控件时，只需设置你要编码的Text属性的值，条码图像则会根据文本的长度进行缩小和放大。" />
+  </control>
+  <control name="图表" icon="chart.png">
+    <sample name="图表集" icon="1" form="ControlExplorer.Chart.Gallery" short="演示大量常用的表格类型" description="该控件拥有80多个2D和3D 图表。C1Chart不仅支持数据标签，工具提示，趋势线，警告区域，旋转，滚动等基本功能，还具有先进的鼠标跟踪功能，使得交互更加多样化。 C1Chart具有大量的用户化设计，包括梯度，光亮效果，阴影， alpha-幻灯片等。所有的设计和相关数据特征都被高度地用户化。本演示展示了几种最常见的图表类型。"/>
+    <sample name="交互集" icon="1" form="ControlExplorer.Chart.Interaction" short="这个演示展示了嵌入式的交互工具" description="C1Chart利用嵌入式的工具来实现和终端用户的交互行为。终端用户可以通过鼠标以及辅助按键来转换，缩小，放大或旋转图标。这个模板通过ComponentOne Excel for .NET从微软的表格文件下载数据。"/>
+    <sample name="饼形图" icon="1" form="ControlExplorer.Chart.PieCharts" short="饼形图把饼分块，用小块来代表各个数据项" description="饼形图通过把饼分成小块来代表各个数据项，饼块的数量即为数据项的数量。第n个饼块代表着这个系列中的第n个数据项。通过点击数据项，可使它从饼形图中突出显示。"/>
+    <sample name="金融图" icon="1" form="ControlExplorer.Chart.Financial" short="演示Hi-Lo图，Hi-Lo的开闭图和蜡烛图" description="Hi-Lo的图表结合两个独立的值，提供每个数据项最高的和最低的数据。这些图表主要使用在财务应用程序中，可以清晰地显示某一股票价格的高低。除了显示高低价值的股票外，Hi-Lo开闭图表还提供了打开和关闭数据系列中的每个点的功能。蜡烛图是Hi-Lo的开闭图表的特殊情况。蜡烛柱条之间的开始和结束值代表股价从开始到结束的变化。"/>
+    <sample name="甘特图" icon="1" form="ControlExplorer.Chart.Gantt" short="演示简单的甘特图表" description="C1Chart可以被看作是一个记录各项任务时间的甘特图，在完成项目的同时可以勾勒出关键活动。其中，活动/任务在图表的左侧显示，时间表在图表的顶部或底部显示。每个项目的任务期限用一个长条表示，长条的开头指出了活动/任务的开始时间，长条的末尾指出了活动/任务的完成时间。"/>
+    <sample name="3D图" icon="1" form="ControlExplorer.Chart.SurfaceCharts" short="演示具有真正3D外观的条状图，分散和等高线图" description="3D图设计的是真正的三维图表，就像WinForms图表中包含的C1Chart3D控件。这个演示分成散射图、条形图和表面图三部，其中三维表面图在阴影或网状的表面用Z轴的3D视图显示数据。这些图表具有有效的旋转和角度控制功能， 同时也具有高度互动性，您可以按住鼠标左键、移动鼠标来旋转图表。您还可以使用以下键盘修饰符：Shift键转换，Ctrl键延伸，Alt键放大。"/>
+    <sample name="趋势线" icon="1" form="ControlExplorer.Chart.TrendLines" short="演示内置的回归和非回归趋势线" description="C1Chart支持各种形式的散点图，条形图和折线图的趋势线。回归与非回归趋势线可以在设计时设置或在TrendLinesCollection的代码中获取。 C1Chart还支持自动统计报告平均数，中位数，标准差，方差和数据的置信区间。本演示展示了趋势线，图表标签，以及自定义拖动互动功能。"/>
+    <sample name="警报区" icon="1" form="ControlExplorer.Chart.AlarmZones" short="演示警报区突出区域点" description="报警区域是一系列条带或者图形，它放置在绘制好的数据后面，在图表背景的前面。一般来讲，报警区域和网格线的使用方式很相似，但是报警区域的修改功能使它们更有用并且更有视觉吸引力。你可以设置只基于Y值的警报，或使用形状（矩形，椭圆，自定义多边形）在两个方向上突出两个方向的区域。"/>
+    <sample name="柱状图" icon="1" form="ControlExplorer.Chart.Histogram" short="演示分散数据和直方图的组合图表" description="本演示展示了分散的数据和直方图的组合图表。直方图显示了从分散的数据点到标记的数据点的距离分布。用一个正常的曲线来标志直方图的高斯分布。本演示还展示了自动数据标签和双Y轴特性。"/>
+    <sample name="图表编辑器" icon="1" form="ControlExplorer.Chart.ChartEditor" short="演示运行时间图表的设置和用户化" description="用户可以使用图表编辑器用来创建和修改图表。设计时对话框和向导有助于在设计时快速地修改图表，修改的图表可以在运行时显示。用户还可以更改图表类型，数据绑定，视觉效果等等。"/>
+  </control>
+  <control name="DockingTab" icon="dockingtab.png">
+    <sample name="概览" icon="1" form="ControlExplorer.DockingTab.Overview" short="此演示展示C1DockingTab的所有常见属性" description="C1DockingTab控件实现了常见的标签控制界面，它包含了能加强视觉效果和用户化控制的功能。除了外观属性，C1DockingTab还拥有几个关闭标签页的行为属性，方便实现重新排列标签和自动隐藏功能。"/>
+    <sample name="Docking" icon="1" form="ControlExplorer.DockingTab.NewDocking" short="用Float和dock标签来创建不同的工作区" description="C1DockingTabs可以浮动和停靠在任何应用程序的边缘。它有四种不同的对接方式，其中包括Visual Studio2010风格的选择。把鼠标定位在标签或标题栏，单击并拖动，可以使一个C1DockingTab浮动起来。把标签拖动到边缘附近时，对接矩形会出现在信号停靠的地方。此外，C1DockingTab标签可以最小化，以支持滑动和自动隐藏功能。"/>
+    <sample name="隐藏标签" icon="1" form="ControlExplorer.DockingTab.HideTabs" short="本演示展示了通过隐藏C1DockingTab标签创建向导界面" description="隐藏C1DockingTab标签的功能有助于轻松创建多页。" />
+  </control>
+  <control name="动态帮助" icon="dynamichelp.png">
+    <sample name="概览" icon="1" form="ControlExplorer.DynamicHelp.DynamicHelp" short="本演示展示C1DynamicHelp的基本特征" description="C1DynamicHelp通过提供直接或间接的帮助，提高了应用程序的可用性。一个单独的帮助系统不需要被打开搜查，软件开发人员就可以在设计时映射控件主题，或帮助作者用一个简单界面的创作模式，一个特殊的运行模式来做自己的映射。支持帮助的格式包括HTML的帮助NetHelp等。你也可以增加HelpProvider接口进行动态帮助工作。"/>
+    <sample name="冰淇淋模拟器" icon="1" form="ControlExplorer.DynamicHelp.IceCreamSimulator" short="一个在现实世界中使用C1DynamicHelp的演示" description="使用下面的冰淇淋模拟器创建一个冰淇淋。你会看到DynamicHelp如何在你工作的应用中提供有用的信息。这个演示中的帮助内容是使用ComponentOne的DOC帮助来调用简单的Word文件来创建的。"/>
+  </control>
+  <control name="编辑器" icon="editor.png">
+    <sample name="概览" icon="1" form="ControlExplorer.Editor.Editor" short="本演示展示C1Editor及其提供的toolstrips" description="C1Editor是一个文本编辑器控件，可用于在设计和源代码模式编辑XHTML。可以方便地使用内置工具栏，或提供自己的自定义UI来插入表格，超链接，格式化文本。XHTML编辑器不仅支持CSS和自定义标签，它还拥有完整的印刷，剪贴板功能，而且支持查找和替换。编辑器还包括一些优秀的的代码清理，可以自动删除空标记，接近闭合的标签以及改善凌乱的XML。"/>
+    <sample name="语法高亮" icon="1" form="ControlExplorer.Editor.SyntaxHighlight" short="本演示展示了如何实现语法高亮" description="此示例演示如何使用C1Editor实现一个语法高亮编辑器。样品保持跟踪文档所做的任何更改，并施加一个正则表达式/样式定义列表，以突出该文件。内容的颜色和Visual Studio C＃文件（蓝色的保留字，绿色的注释，红色的字符串等等）中的是相同的。该机制是基于正则表达式的，所以可以很容易地定制，以适用于其他的语法规则。"/>
+    <sample name="RTF Editor" icon="1" form="ControlExplorer.Editor.RTFEditor" short="本演示展示了C1Editor如何以RTF格式来加载和保存文本。"/>
+  </control>
+  <control name="Excel" icon="excel.png">
+    <sample name="创建工作表" icon="1" form="ControlExplorer.Excel.MultipleWorksheets" short="本演示展示了从C＃代码创建Excel文件的过程" description="通过ComponentOne Excel中的.NET，您可以直接从您的应用程序代码创建Microsoft Excel文件，完美实现用Excel对象模型来展示你的代码。您还可以从那些不直接支持网格，日程或图表等文件导出数据来创建Excel文件。此示例创建了一个使用C1XLBook控件产生信息的工作簿，其中的每类产品被放置在一个单独的工作表中。"/>
+    <sample name="载入文件" icon="1" form="ControlExplorer.Chart.Interaction" short="本演示展示如何将Excel文件加载成C1Chart控制" description="拥有了Excel for .NET，您不需要安装微软的Excel，就可以方便的阅读应用程序中的Excel文件！在这个演示中，我们使用C1XLBook组件来加载和提取C1Chart控件中的数据。" />
+  </control>
+  <control name="电子表格" icon="flexgrid.png">
+    <sample name="单元格类型" icon="1" form="ControlExplorer.FlexGrid.ColumnCellTypes" short="这个演示展示了一般的数据类型和他们想要的编辑器" description="Winforms的FlexGrid支持很多类型的编辑。任何派生自基本Control类的控件可以被用作一个表格编辑器。双击一个单元格可以编辑其中的内容。"/>
+    <sample name="过滤器" icon="1" form="ControlExplorer.FlexGrid.CustomFiltering" short="内建自定义编辑器" description="FlexGrid提供三个内建的过滤器，它们可以方便有效地过滤大多数数据.值过滤器将现存的值列表展现在列中并且用户可以选择特殊的值以显示。条件过滤器显示被一个符号和一个参数定义的两个条件（例如：“大于”和“2”），并且允许用户使用AND和OR合并多个操作符 。某些情况下，你可能想去实现自定义过滤器通过创建一个filter类和一个允许用户在运行时配置过滤器的editor类。这个演示展示了默认的文本和数字的过滤，还有自定义颜色、日期和过滤的范围。"/>
+    <sample name="合并, 滚动, 冻结" icon="1" form="ControlExplorer.FlexGrid.DataBound" short="合并, 冻结, 拖拽, 滚动, 排序和工具提示特性" description="FlexGrid 提供合并，冻结，拖拽，滚动，排序和工具提示的功能，这些功能可以通过设置一些属性被开启。  FlexGrid可以合并整列和整行，这里有几种不同的合并规则，它可以呈现自由式和限制式。添加滚动提示和延迟滚动通过设置滚动选项属性。  Flexgrid可以用ShowCellLabels属性部分地显示工具提示中隐藏的单元值 "/>
+    <sample name="小计" icon="1" form="ControlExplorer.FlexGrid.Subtotals" short="这个演示显示怎样去计算C1FlexGrid中一个分组中的总值。" description="用小计方法来自动计算单独列的总计。当终端用户拖拽了一个列头到了一个不同的位置,表格立即重新组织数据和重新计算小计。 "/>
+    <sample name="数据树" icon="1" form="ControlExplorer.FlexGrid.DateTrees" short="这个演示展示了自定义分层的数据绑定。" description="当C1FlexGrid被绑定到了一个分层的数据源，每个主要记录可以被扩展/压缩来显示/隐藏子表格中的细节，子表格转而可能包含更多的细节。 结果是一个“数据树”和被Microsoft Access呈现出的表格类型相似。 这个可以通过从C1FlexGrid派生一个控件(C1FlexDataTree)来实现。 当绑定后，控件可以检测次要的数据源和产生额外的自身实例来显示子表格。 "/>
+    <sample name="树列表视图" icon="1" form="ControlExplorer.FlexGrid.TreeView" short="可看到怎样将C1FlexGrid的TreeListView。" description="FlexGrid可以和tree view有一样的行为。 它有tree view应有的特性加上那些扩展的数据表格。用户可以拖拽项目，执行排序，插入新的项目，编辑文本内联，甚至打印。使用SetCellImage或SetCellCheck方法轻松地添加图片或复选框项目。"/>
+    <sample name="非数据绑定" icon="1" form="ControlExplorer.FlexGrid.Unbound" short="这个演示显示FlexGrid的电子表格" description="FlexGrid是专为在绑定和非绑定模式下的最佳性能所设计的。当你使用非绑定的FlexGrid，就有超过列行为的完全控制。在本演示中，我们创建了一个形式，在用户输入所得及付款时，我们可有线计算其余列的新价值。"/>
+    <sample name="性能" icon="1" form="ControlExplorer.FlexGrid.Performance" short="可看到下载大量数据集的最优化技术" description="FlexGrid有处理成千上万的记录的能力，它包括一些得到最优性能的小技巧。  例如，在数据绑定之前将Redraw属性设置为false 以避免表格在下载时段被修改。将AutoResize属性设为false以关掉自动调节行列大小的功能，对于大数据集这个功能是很耗能的。在演示中点击“产生项目”来填充一列表的项目并且填入FlexGrid。"/>
+    <sample name="导入和导出" icon="1" form="ControlExplorer.FlexGrid.Excel" short="直接从Microsoft Excel保存下载数据。" description="用SaveExcel和 LoadExcel方法直接从Excel下载和保存数据。 FlexGrid支持很多不同的导出选项 , 如是否包括格式化，固定的单元格，合并范围，映射值等等。当随意地显示预演和进程对话框时，你也可以通过PrintGrid方法直接打印FlexGrid。 对于打印的更多控制，FlexGrid有一个自定义可打印类， 它可用于在一个文件中连接多个表格或添加环境内容。"/>
+    <sample name="自定义风格" icon="1" form="ControlExplorer.FlexGrid.Themes" short="这个演示展现可视化风格和自定义风格。" description="FlexGrid拥有7个内建的可视化风格和一个丰富的单元格风格模型，这个模型可让你定制任何可想象的风格。 "/>
+    <sample name="自定义绘图单元 " icon="1" form="ControlExplorer.FlexGrid.OwnerDraw" short="这个演示展现怎样用OwnerDraw定制任何单元格外观。" description="OwnerDrawCell事件允许你定制每个单元格被展示的方法。你可以修改单元格的一些元素或完全覆盖画面。在一些例子中，OwnerDraw被用来显示在单元格上的α混合进程条，来实现与Windows Media Player相似的用户界面。"/>
+    <sample name="自定义单元合并" icon="1" form="ControlExplorer.FlexGrid.CustomCellMerging" short="这个演示展示单元格合并" description=" C1FlexGrid控件提供几个内建用来处理一般的显示情景的单元格合并模式：自由，点击灰色区域程序崩溃，节点，行/列的控制，只固定，大纲。如果没有内建的模式满足你的需要， 你可以从C1FlexGrid继承并且实现一个自定义版本。这个例子使用自定义的合并逻辑来呈现一个跨列和行合并的方案的电视时间表。"/>
+  </control>
+  <control name="甘特图" icon="gauge.png">
+    <sample name="Overview" icon="2" status="new" form="ControlExplorer.GanttView.GanttViewDemo" short="显示新增的甘特图的例子" description="C1GanttView 控件提供了类似微软项目管理的用户体验。它提供了一个图形化的时间表，帮助您规划、协调和跟踪特定项目中的任务。帮助您有效并高效地给项目添加约束，依赖，资源，样式。"/>
+  </control>
+  <control name="仪表" icon="gauge.png">
+    <sample name="放射状仪表" icon="1" form="ControlExplorer.Gauges.RadialGauges" short="显示一些放射状仪表模板的例子" description="这个示例使用WinForms风格的仪表来展示您的数据。它可以创建圆形、半圆形、螺旋状、长方形的放射状仪表。您可以将其应用到到数字计数器、状态指示器、量程表、多指针仪表、体重秤、标签分类等诸多方面。"/>
+    <sample name="线性仪表" icon="1" form="ControlExplorer.Gauges.LinearGauges" short="显示一些线性仪表模板的例子" description="线性仪表可以用来创建标尺、进度条、温度计等物品，它用指针和量程来表示数据。"/>
+    <sample name="高级类型仪表" icon="1" form="ControlExplorer.Gauges.Advanced" short="显示一些高级仪表模板的例子" description="创建高级的仪表，比如旋转角度超过了360度或者围绕一个固定的指针旋转的仪表。"/>
+    <sample name="数据和仪表盘" icon="1" form="ControlExplorer.Gauges.WeatherDashboard" short="这个演示展示了数据和仪表的结合" description="C1Gauge支持数据绑定、多指针、限制数据范围等多种功能。多个仪表可以组合在一个容器中，来创建一个仪表盘。"/>
+    <sample name="互动功能" icon="1" form="ControlExplorer.Gauges.Interaction" short="这个示例展示了常见的互动功能" description="用户现在可以与C1RadialGauge和C1LinearGauges进行交互。用户可以像旋转一个旋钮一样拖动指针，这是WinForms的独特输入风格。仪表指针还可以捕捉到特定的时间间隔。您可以根据自己国家的样式来创建一些整个仪表控件都能使用的自定义按钮。" />
+  </control>
+  <control name="输入" icon="input.png" status="new">
+    <sample name="数据绑定" icon="1" form="ControlExplorer.Input.Overview" short="这个演示展示了一些C1Input控件的视觉样式" description="ComponentOne的输入控件是由九个控件组成的一个系列。它们支持视觉样式、数据绑定、自动格式化等等功能。这些控件包括C1PictureBox、C1DateEdit、C1NumericEdit、C1DBNavigator、C1DropDownControl、C1Button、C1CheckBox、C1TextBox和C1Label。它们能够展示动态数据，管理数据集导航栏，显示或者修改日期等。"/>
+    <sample name="SplitButton" icon="1" status="new" form="ControlExplorer.Input.SplitButton" short="这个演示展示了一种加在C1Input, C1SplitButton新的按钮控件 " description="C1Input 有一个附加功能——the C1SplitButton 控件.在表格上作为一个独立的多选按钮使用它。现在没有必要去使用另一个综合控件, 只需要在一个按钮中实施拆分."/>
+    <sample name="格式类型" icon="1" form="ControlExplorer.Input.FormatTypes" short="这个演示展示了内置的格式验证" description="基于WinForms平台的输入控件包含超过30个内置的格式类型，包括货币、百分比、科学计数、十六进制、YES/NO、一般日期等等。您只需要轻松的设置一个属性，就可以得到指定的格式。" />
+    <sample name="自定义下拉菜单" icon="1" form="ControlExplorer.Input.CustomDropDowns" short="这个演示显示自定义下拉框" description="您可以用C1DropDown控件很容易的创建一个自定义的下拉菜单，就像你在Visual Studio中创建一个表格一样简单。这个示例展示了几个用C1DropDown控件创建的几个自定义下拉菜单。"/>
+  </control>
+  <control name="输入面板" icon="inputpanel.png">
+    <sample name="概览" icon="1" form="ControlExplorer.InputPanel.Overview" short="看到C1InputPanel的所有的本地控制" description="输入面板是一个容器控件，可以帮助开发人员在更短的时间内创建和维护强大的数据输入应用。 开发人员可以从十九个本地控件数据输入或任何第三方.NET控件的任意组合中选择。 通过在设计时添加新的项目组合框选择控制型来添加一个新的控件。输入面板提供自动绑定，布局和造型。 易于安装和维护成本低增加了生产率"/>
+    <sample name="数据绑定" icon="1" form="ControlExplorer.InputPanel.DataBinding" short="本演示展示了绑定的输入形式导航" description="输入面板可以绑定到任何很少或根本没有代码的.NET数据源, 允许你在几秒钟内创建完全航行的数据库浏览器. 简单地连接输入面板到数据源, 选择的记录集，并为您自动创建每个字段的完全约束的输入控件"/>
+    <sample name="确认和工具提示" icon="1" form="ControlExplorer.InputPanel.Validation" short="C1InputPanel如何支持提供错误和验证" description="C1InputPanel支持错误提供验证。 当最终用户输入无效的输入，自动提供可定制的视觉警报和一个输入控件周围出现的红色框。 您还可以添加工具提示，如自定义警报。例如，您可以让您的最终用户只输入字母字符，当有任何其它的字符输入时，显示一个错误指标。输入面板所使用的工具提示继承自C1SuperTooltip，使他们能够显示HTML内容和图片。"/>
+    <sample name="主/详输入" icon="1" form="ControlExplorer.InputPanel.MasterDetail" short="创建主要和细节的输入面板" description="使用C1InputPanel以创建连接到相关数据表的主/详细数据输入形式。"/>
+    <sample name="格式自动化" icon="1" form="ControlExplorer.InputPanel.QueryBuilder" short="展示如何管理编程输入形式" description="使用C1InputPanel的好处之一是，您可以创建和管理动态表单，而不必担心布局和定位。仅添加到项目集和C1InputPanel自动将其放置在面板底部 。使用Insert和RemoveAt方法来进一步管理的输入控件。 本演示展示了可以添加和删除条件的查询生成器."/>
+  </control>
+  <control name="列表" icon="list.png">
+    <sample name="概览" icon="1" form="ControlExplorer.List.ComboDetail" short ="看C1List和C1Combo控件概述" description="有了WinForms的列表你可得到多列下拉列表，C1Combo，一个全功能的ListBox控件，C1List。这两个组建运行在非绑定或数据绑定模式下。C1Combo支持增量搜索助手和自动完成寻找下拉的文字部分，作为用户类型值。在本演示中，我们已经在C1Combo和C1List之间创建了一个主从关系"/>
+    <sample name="更多特性" icon="1" form="ControlExplorer.List.MoreFeatures" short="看C1List和 C1Combo控件概述" description="你可以在datagrids中找到很多丰富的功能，如互动分裂包装，列排序，交替行，复选框，图像，值翻译，固定栏目，滚动提示，拖动和拖放，多行数据显示。  用列表你甚至可以显示列选项的单选按钮。 而像FlexGrid或TrueDBGrid的DataGrid仍是更适合编辑数据,C1List和C1Combo有丰富的数据显示和选择控制功能.用C1List设置SelectionMode属性确定用户如何选择项目;如演示中的复选框所示。注意C1Combo提供除复选框选择模式外C1List的所有功能。"/>
+  </control>
+  <control name="菜单和工具栏" icon="menusandtoolbars.png" status="new">
+    <sample name="概览" icon="1" form="ControlExplorer.MenusToolbars.Overview" short="本演示展示了C1主菜单、C1上下文菜单和C1工具栏" description="菜单和工具栏是包含C1MainMenu、C1ContextMenu、C1ToolBar控件的一个系列。菜单和工具栏控件可以共享命令，这意味着您可以拥有一个更干净的界面，而且，管理只需要更少的代码。控件的其他功能还包括Office视觉样式、嵌入任意控件、运行时定制工具栏等。"/>
+    <sample name="C1导航栏控件" icon="1" form="ControlExplorer.MenusToolbars.C1NavBar" short="本演示展示了C1导航栏" description="C1NavBar是一个专业的具有OutLook风格的导航控件。它对不同类别的信息进行组织，来帮助用户快速的浏览信息。C1NavBar是可折叠的，右下角还包括一个选项菜单。"/>
+    <sample name="C1主题栏控件" icon="1" form="ControlExplorer.MenusToolbars.C1TopicBar" short="本演示展示了C1主题栏" description="C1TopicBar包含和Windows资源管理器风格非常类似的页面。在每一个小页面里包含一个标题栏和一个可折叠/扩展的图像和内容组成的链接。"/>
+    <sample name="C1OutBar控件" icon="1" form="ControlExplorer.MenusToolbars.C1OutBar" short="本演示展示了C1OutBar" description="C1OutBar是一个进行相关项目分组的典型控件。它可以像一个手风琴一样一下扩展开，在默认情况下，C1OutBar会在每一组中添加C1Toolbar以方便您向自己的应用程序中快速的添加命令，但是您可以在每个组的面板中嵌入任何一个.NET控件。" />
+    <sample name="C1Radial Menu" icon="1" form="ControlExplorer.MenusToolbars.C1RadialMenu" short="This demo shows C1RadialMenu" description="C1RadialMenu是一个基于OneNote的菜单控件.我们已经合并灵感与该控件的主题功能并给出了一个全新的方式在应用程序中轻松浏览。它可以被使用在崩溃状态. 它可以给你的应用增强体验感觉和触摸导航." />
+  </control>
+  <control name="PDF" icon="pdf.png">
+    <sample name="书签" icon="1" form="ControlExplorer.PDF.Bookmarks" short="参阅如何用C#的书签创建Adobe PDF文档" description="该示例展示如何用ComponentOne的PDF for .NET从您的应用程序创建Adobe PDF文档。从您的.NET应用程序创建PDF文件的好处是，您可以从本质上创建数据绑定的PDF文件。此示例创建一个NorthWind产品信息的PDF文件。每类产品被放置在一个单独的页面，并添加到书签大纲结构。该演示需要用Adobe Reader来查看PDF格式。"/>
+    <sample name="目录" icon="1" form="ControlExplorer.PDF.TableOfContents" short="参阅如何创建表的内容" description="该示例展示如何创建表的内容文件。当创建时把它维持的一个书签列表添加到文件。当文件完成时，这个样例用当地的主题链接创建内容页面。最终，使用Pages集合文件的表被移动到文件的开始。这个演示需要用Adobe Reader来查看PDF格式。"/>
+    <sample name="Acroforms" icon="1" form="ControlExplorer.PDF.PdfAcroform" short="参阅如何创建Acrobat表单" description="ComponentOne的PDF支持创建Acrobat表单，文件包含了由用户填写的字段，使用激活addField方法来创建字段。支持若干类型的字段，包括文本框，复选框，组合框，单选按钮，按钮，列表框和签名。该演示需要Adobe Reader来查看PDF。"/>
+    <sample name="丰富的图形" icon="1" form="ControlExplorer.PDF.GdiModel" short="参阅如何使用GDI模式在PDF文件内呈现图形" description="ComponentOne的PDF格式使用命令创建文件，和.NET图形类类似，相同的对象（字体，颜色，矩形，点等）提供的是类似的命令。主要区别在于，C1Pdf总是使用点为单位，而.NET的图形类默认使用像素，并允许你切换到其他坐标系统参与变换。该演示需要Adobe Reader来查看PDF格式。"/>
+  </control>
+  <control name="报表" icon="reports.png">
+    <sample name="常见报表" icon="1" form="ControlExplorer.Reports.LoadReports" short="本演示使用Northwind数据库展示了常见的报表定义" description="基于WinForms平台的报表由一个报表生成控件、C1Report、一个无代码的报表设计程序以及一些先进的打印预览控件组成。在2010年，我们产生了一个用来导入导出SQL服务报表（RDL）的独立控件 —— C1RdlReport控件。这个示例展示了许多常见的报表任务，它们完全可以用报表设计程序来进行设计。您创建的报表将被保存成xml格式，它可以被C1Report载入。"/>
+    <sample name="子报表" icon="1" form="ControlExplorer.Reports.SubReports" short="本演示展示了子报表功能" description="子报表是一个插入在其他报表中的报表。当您想把几个报表合并成一个报表的时候，子报表就很有用处。例如，您可能有集成了几个子报表的主报表，您可以使用主报表显示详细的信息使用子报表显示汇总数据。报表嵌套的深度没有上限。主报表也可以检索和显示计算值，而从子报表中获得详细信息。" />
+    <sample name="地图式报表" icon="2" form="ControlExplorer.Reports.Maps" short="本演示展示了自定义地图报表领域" description="您可以用地图报表来把一个视觉映射添加到您的报表中。C1Maps报表被C1 WPF地图支持，它给您一种新的绑定报表数据的可视化方式。展示每个国家或者州县的销售总量，查看哪个地区收入最高，画线连接不同的城市，使KML和KMZ文件直接映射到一个位图图像等等。您可以从下拉菜单中选择一个报表..." />
+    <sample name="标签" icon="1" form="ControlExplorer.Reports.Labels" short="本演示展示了如何用C1报表来生成标签" description="标签布局选项可以以艾利式标签的风格来打印您的数据。它可以生成送货地址、条码价格标签等等。来自几十个不同的预设标签尺寸的选择或指定任何标签纸大小，打印完美。C1Report不依赖于条形码字体，而是像 C1BarCode一样生成条形码域。" />
+    <sample name="Acroforms" icon="1" form="ControlExplorer.Reports.Acroform" short="本演示展示了把C1PrintDocument作为一个Acrobat表单使用" description="C1PrintDocument可用于创建包含表格，超链接，输入控件，图像及更丰富内容的文件。基于WinForms的报表包括了C1PrintDocument控件。您可以通过内联或者渲染的方法直接将它本身的块添加到C1PrintDocument中，然后打印或者导出为PDF、word、excel等多种模式。本演示在文档中设有互动对象（Acroforms）"/>
+  </control>
+  <control name="Ribbon" icon="ribbon.png">
+    <sample name="Ribbon用户界面" icon="1" form="ControlExplorer.Ribbon.WordPad" short="一个使用C1Ribbon的完整写字板演示" description="通过引入Microsoft Office 的2007版本风格，基于WinForms平台的Ribbon完美实现了Ribbon用户界面。C1Ribbon控件用一套在父窗体顶部的选项卡取代了传统的菜单和工具栏。C1Ribbon支持应用程序菜单，快速访问工具栏，对话框，上下文选项卡，图表等。可选择的内置视觉样式，融入了最新的Office2010和Windows 7的设计。C1Ribbon接口可以进行可视化定制，或者完全在代码中构造。Ribbon也包括可以创建主题状态栏的C1StatusBar控件，创建的主题状态栏可以支持嵌入式控件。"/>
+    <sample name="Ribbon浏览谷歌地图" icon="1" form="ControlExplorer.Ribbon.GoogleMaps" short="这个演示使用C1Ribbon浏览谷歌地图" description="这个示例使用C1Ribbon和C1StatusBar控件，实现了windows窗体应用程序和网页间的双向通信。谷歌地图（需要Internet连接）提供了一个接口。"/>
+  </control>
+  <control name="日程表" icon="scheduler.png">
+    <sample name="概览" icon="1" form="ControlExplorer.Schedule.Overview" short="展示C1Schedule和C1Calendar控件" description="基于WinForms的ComponentOne日程表包括兩個可视化组件：C1Schedule和C1Calendar。C1Schedule以OutLook风格显示每天、每周、每月、每个工作周、或者是时间线的预约。它还包括一个内置的数据层来自动管理一次性或者定期预约的提醒，以及相关的收藏集，例如联系人、类别、标签和资源。C1Calendar和C1Schedule是相关联的，可以提供导航和日期安排功能。这两个控件包括许多最新的视觉样式。运行时，用户可以打印日程表，同时，用户也可以通过上下文菜单或者工具条上的按钮来查看打印预览。"/>
+    <sample name="分组" icon="2" form="ControlExplorer.Schedule.Grouping" short="演示了如何做资源调度和时间线视图" description="通过联系人、类别和资源，群组预约建立了一个多标签，多用户的布局。每个预约可以被分配到一个或多个类别，联系人和资源。所有的日程表的视图类型都支持分组方式。" />
+    <sample name="定制数据" icon="1" form="ControlExplorer.Schedule.CustomDialog" short="该演示使用一个自定义对话框编辑预约" description="不是每一个日程表数据模型看起来都是一样的。这个示例展示了如何定制一个独特的预约对话模型。在C1Schedule控件中双击，就可以显示定制预约的表格。"/>
+    <sample name="拖放" icon="1" form="ControlExplorer.Schedule.DragDrop" short="该演示展示了如何用C1Schedule处理拖放" description="用户可以在运行时在两个C1Schedule控件中执行拖放功能。用户也可以把一个预约拖到C1Calendar上来确定日期。您也可以定制拖放操作在C1Schedule和另一个可以拖放的控件之间。在这个示例中，用户可以从一个单元格中拖动一个单元放到C1Schedule中。"/>
+  </control>
+  <control name="尺寸" icon="sizer.png">
+    <sample name="概览" icon="1" form="ControlExplorer.Sizer.SizerForm" short="本演示展示C1Sizer的活动" description="C1Sizer是一个有强大的表格布局管理的容器控件，它的布局管理扩展了.NET Framework (Dock和Anchor属性)提供的基本布局能力。当面板被重构大小时， C1Sizer给你提供方便管理每个所包容控件的功能, 因此消除了为每个控件设置docking和anchoring属性的麻烦。你也可以在任何控件间添加分割。 这个演示中我们用按钮代表任意的控件。"/>
+    <sample name="外观特性" icon="1" form="ControlExplorer.Sizer.SizerNewFeatures" short="本演示与总览除了风格特性外基本一样" description="C1Sizer有三个WPF-like风格: 渐进背景，边界风格，圆滑拐角。对于渐进背景您可以创建一个自定义的，两种颜色之间的混合4点或或选择一个预设的交融.您的应用程序，无需添加图像资源就可以添加一些样式。"/>
+    <sample name="C1SizerLight控件" icon="1" form="ControlExplorer.Sizer.SizerLight" short="本演示展示使用C1SizerLight组件" description="用C1SizerLight，你可以创建分辨率独立的应用程序，而无需编写任何代码或设计时配置程序，就你的形式，C1SizerLight保持表格的大小和位置的轨道。当表单重构大小，C1SizerLight调整所有包含控件的比例，这样的形式保留其外观在任何调整决策。"/>
+  </control>
+  <control name="拼写检查" icon="spellchecker.png">
+    <sample name="概览" icon="1" form="ControlExplorer.Ribbon.WordPad" short="本演示展示一个完整的拼写检查在写字板中的实现" description="对于任何从文本框、富文本框、Web浏览器控件派生的控件，基于WinForms平台的ComponentOne拼写检查可以对其对话框实现拼写检查。它还支持编程接口，这样可以把拼写检查功能添加其他控件，如网格。这个例子使用C1SpellChecker和C1Ribbon实现了一个基本的富文本框编辑。"/>
+    <sample name="拼写检查控件" icon="1" form="ControlExplorer.SpellChecker.SpellGrid" short="此演示使用C1拼写检查来检查数据网格中的数据" description="C1SpellChecker可以实现对各种控件的检查，包括文本框、富文本框和web浏览器。本演示展示了我们可以为ISpellCheckable实现一个包装类，来为一个网格提供拼写检查。"/>
+  </control>
+  <control name="分割器" icon="splitcontainer.png">
+    <sample name="概览" icon="2" form="ControlExplorer.SplitContainer.SplitContainerDemo" short="展示新型C1SplitContainer的活动!" description="WinForms的ComponentOne SplitContainer与标准的SplitContainer控件相似。它展示了包含可变大小的可停靠面板得容器，但不像标准的控件 C1SplitContainer支持多于两个面板。 你可以水平和竖直地安排面板,展示头文本甚至可以打开每个面板的可折叠按钮。"/>
+  </control>
+  <control name="超级工具提示" icon="supertooltip.png">
+    <sample name="概览" icon="1" form="ControlExplorer.SuperTooltip.Overview" short="这个演示展示了C1SuperTooltip的基本特性" description="用C1SuperTooltip你可得到传统的工具提示控件和更加丰富的特性，包括丰富的HTML翻译内容,支持背景图片，背景变化程度等等。 在C1SuperTooltip中用工具提示内容来显示图像是一个简单的任务。 "/>
+    <sample name="错误提示" icon="1" form="ControlExplorer.SuperTooltip.SuperErrorProvider" short="这个演示展现C1SuperErrorProvider基本的特性" description="SuperTooltip包括C1SuperErrorProvider通过基于HTML的工具提示来提供输入错误。用C1SuperErrorProvider你可以显示丰富的错误信息给最终用户。 " />
+    <sample name="Html特性" icon="1" form="ControlExplorer.SuperTooltip.HtmlFeatures" short="这个演示展示了 HTML对C1SuperLabel和C1SuperTooltip的支持" description="WinForms的SuperTooltip包括用来呈现HTML内容的C1SuperLabel部件。C1SuperTooltip 和C1SuperLabel使在标签和工具提示中显示HTML格式内容更容易。你可以再位图中画HTML内容，增加了应用的可能性。(对于全部的HTML编辑和导出可以看PDF和编辑器)。"/>
+  </control>
+  <control name="True DB表格" icon="truedbgrid.png">
+    <sample name="子表格" icon="1" form="ControlExplorer.TrueDBGrid.ChildGrids" short="这个演示用C1TrueDBGrid来创建分级展示。" description="通过简单地设置ChildGridsh属性来连接两个TrueDBGrid控件,你可以创建一个显现在主表内的完全的可编辑下拉子表格。通过左击任意的扩展图标，孩子表显现在一个下拉框中。"/>
+    <sample name="过滤条" icon="1" form="ControlExplorer.TrueDBGrid.FilterBar" short="这个演示展现了基本的过滤条特性。" description="给True设置FilterBar属性来在表格顶部添加过滤行。默认地过滤编辑器是一个文本框，但你可以选择地演示组合框中不同的列的值。给True中的列设置FilterMultiSelect属性你可以通过多值来过滤。你也可以通过指定水印文本来在空过滤器中演示。"/>
+    <sample name="条件过滤" icon="1" form="ControlExplorer.TrueDBGrid.ConditionalFiltering" short="看怎样条件化过滤工作" description="用条件化过滤一个过滤器下拉按钮，当用户徘徊在任何列时按钮出现在列头。 内建的过滤器包括值过滤器（复选框）和条件过滤器例如大于或包含。这种过滤器在C1FlexGrid过滤器后被设计，它可以被任何有简单属性的列打开。"/>
+    <sample name="分组" icon="1" form="ControlExplorer.TrueDBGrid.GroupBy" short="展示分组数据视图" description="在C1TrueDBGrid的分组视图中,用户可以拖拽列到表格上的分组区域来排列数据。一个列被拖拽到分组区域后，每个独立的值被渲染到表中一个可扩展的行。 C1TrueDBGrid也支持内部分组，例如字母表顺序和时间跨度。拽产品列头到一个分组区域，注意它是被按字母表顺序分组的。 "/>
+    <sample name="多线行" icon="1" form="ControlExplorer.TrueDBGrid.MultipleLines" short="展示多行数据视图" description="一般的当一个数据表格不足够宽来显示记录中所有的列，一个水平的滚动条自动地出现了。仅仅通过设置DataView属性，C1TrueDBGrid可以通过多行显示每行中的数据以便不需要一个水平的滚动条。LinesPerRow属性决定一总行中有多少分行。 "/>
+    <sample name="交互分割" icon="1" form="ControlExplorer.TrueDBGrid.Splits" short="展示交互分割特性" description="你可以在运行时或在代码中创建水平和竖直的分割。用AllowHorizontalSplit和AllowVerticalSplit属性来控制是否终端用户可以交互地创建分割。托一个滑动器在左下角向右去创建同步的竖直分割。将滑动器托到在右上角的向下来创建独立的水平分割。"/>
+    <sample name="TrueDB下拉" icon="1" form="ControlExplorer.TrueDBGrid.TDBDropDown" short="这个演示用C1TrueDBDropDown展示边界, 多列组合框" description="C1TrueDBGrid支持组合框，值项目甚至伴随它自己的数据绑定C1TrueDBDropDown控件。这个例子将C1TrueDBDropDown控件示范在员工和自定义两列上。用C1TrueDBDropDown你可以得到多列的，可绑定的，可排序的下拉，它容易连接到你的表格上。在TrueDB中用ValueTranslate属性C1TrueDBDropDown可以自动映射值域到(像 EmployeeID)到一个更多的可读表示 (像Employee Name)"/>
+    <sample name="导出" icon="1" form="ControlExplorer.TrueDBGrid.Exporting" short="这个演示展现了C1TrueDBGrid完整的导出特性" description="C1TrueDBGrid包括内建的支持打印，打印预览和导出多种流行的文件格式。"/>
+  </control>
+  <control name="Win7 Pack" icon="taskbarbutton.png">
+    <sample name="概览" icon="2" form="ControlExplorer.Win7Pack.Win7PackMainForm" short="这个演示展示了C1Win7Pack的功能" description="基于WinForms平台的Windows 7控件包可以帮助您整合您的应用程序。C1TaskbarButton和C1TaskDialog控件使您能够管理进度条指示器，缩略图和Windows 7任务栏上的跳转列表，以及创建自定义的消息框。这些控件只能在Windows 7上工作，不能支持比较早的系统(C1TaskDialog也可以在Vista上运行)。"/>
+  </control>
+</controls>
