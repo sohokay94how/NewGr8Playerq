@@ -4,6 +4,8 @@
 
 官网：http://www.gcpowertools.com.cn/products/componentone_studio_winform.htm
 
+下载：http://www.gcpowertools.com.cn/products/download.aspx?pid=3
+
 社区：http://gcdn.gcpowertools.com.cn/
 
 博客：http://blog.gcpowertools.com.cn/category/ComponentOne.aspx
