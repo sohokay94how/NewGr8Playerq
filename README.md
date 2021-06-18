@@ -7,3 +7,6 @@
 社区：http://gcdn.gcpowertools.com.cn/
 
 博客：http://blog.gcpowertools.com.cn/category/ComponentOne.aspx
+
+
+![葡萄城控件微信服务号](http://weixin.gcpowertools.com.cn/images/public_Signature.png "葡萄城控件微信服务号")
