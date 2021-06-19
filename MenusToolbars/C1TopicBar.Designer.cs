@@ -46,9 +46,7 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.c1TopicBar1 = new C1.Win.C1Command.C1TopicBar();
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1TopicBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList1
@@ -70,84 +68,79 @@
             // 
             // c1TopicBar1
             // 
-            this.c1TopicBar1.AutoScrollMinSize = new System.Drawing.Size(0, 357);
+            this.c1TopicBar1.AutoScrollMinSize = new System.Drawing.Size(0, 375);
             this.c1TopicBar1.Dock = System.Windows.Forms.DockStyle.Left;
             this.c1TopicBar1.ImageList = this.imageList1;
             this.c1TopicBar1.Location = new System.Drawing.Point(0, 0);
             this.c1TopicBar1.Name = "c1TopicBar1";
-            this.c1TopicBar1.Padding = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.c1TopicBar1.Padding = new System.Windows.Forms.Padding(20, 18, 20, 18);
             c1TopicPage1.ImageIndex = 0;
             c1TopicPage1.ImageList = this.imageList1;
             c1TopicLink1.ImageIndex = 1;
-            c1TopicLink1.Text = "查看系统信息";
+            c1TopicLink1.Text = "View System Information";
             c1TopicLink2.ImageIndex = 2;
-            c1TopicLink2.Text = "添加或删除程序";
+            c1TopicLink2.Text = "Add or remove programs";
             c1TopicLink3.ImageIndex = 3;
-            c1TopicLink3.Text = "更改设置";
+            c1TopicLink3.Text = "Change a setting";
             c1TopicPage1.Links.Add(c1TopicLink1);
             c1TopicPage1.Links.Add(c1TopicLink2);
             c1TopicPage1.Links.Add(c1TopicLink3);
-            c1TopicPage1.Text = "系统任务";
+            c1TopicPage1.Text = "System Tasks";
             c1TopicPage2.ImageIndex = 4;
             c1TopicPage2.ImageList = this.imageList1;
             c1TopicLink4.ImageIndex = 5;
-            c1TopicLink4.Text = "网上邻居";
+            c1TopicLink4.Text = "My Network Places";
             c1TopicLink5.ImageIndex = 6;
-            c1TopicLink5.Text = "我的文档";
+            c1TopicLink5.Text = "My Documents";
             c1TopicLink6.ImageIndex = 7;
-            c1TopicLink6.Text = "控制面板";
+            c1TopicLink6.Text = "Control Panel";
             c1TopicPage2.Links.Add(c1TopicLink4);
             c1TopicPage2.Links.Add(c1TopicLink5);
             c1TopicPage2.Links.Add(c1TopicLink6);
-            c1TopicPage2.Text = "其他地方";
+            c1TopicPage2.Text = "Other Places";
             c1TopicPage3.ImageList = this.imageList1;
             c1TopicLink7.ImageIndex = 8;
-            c1TopicLink7.Text = "重命名此文件";
+            c1TopicLink7.Text = "Rename this file";
             c1TopicLink8.ImageIndex = 9;
-            c1TopicLink8.Text = "复制此文件";
+            c1TopicLink8.Text = "Copy this file";
             c1TopicLink9.ImageIndex = 10;
-            c1TopicLink9.Text = "发送电子邮件";
+            c1TopicLink9.Text = "E-mail this file";
             c1TopicLink10.ImageIndex = 11;
-            c1TopicLink10.Text = "删除此文件";
+            c1TopicLink10.Text = "Delete this file";
             c1TopicPage3.Links.Add(c1TopicLink7);
             c1TopicPage3.Links.Add(c1TopicLink8);
             c1TopicPage3.Links.Add(c1TopicLink9);
             c1TopicPage3.Links.Add(c1TopicLink10);
             c1TopicPage3.SpecialStyle = true;
-            c1TopicPage3.Text = "文件和文件夹任务";
+            c1TopicPage3.Text = "File and Folder Tasks";
             this.c1TopicBar1.Pages.Add(c1TopicPage1);
             this.c1TopicBar1.Pages.Add(c1TopicPage2);
             this.c1TopicBar1.Pages.Add(c1TopicPage3);
-            this.c1TopicBar1.Size = new System.Drawing.Size(211, 446);
-            this.c1ThemeController1.SetTheme(this.c1TopicBar1, "(default)");
+            this.c1TopicBar1.Size = new System.Drawing.Size(281, 549);
             this.c1TopicBar1.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1TopicBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this.c1TopicBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.WindowsXP;
             // 
             // splitter1
             // 
-            this.splitter1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(253)))), ((int)(((byte)(254)))));
-            this.splitter1.Location = new System.Drawing.Point(211, 0);
+            this.splitter1.Location = new System.Drawing.Point(281, 0);
+            this.splitter1.Margin = new System.Windows.Forms.Padding(4);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 446);
+            this.splitter1.Size = new System.Drawing.Size(4, 549);
             this.splitter1.TabIndex = 1;
             this.splitter1.TabStop = false;
-            this.c1ThemeController1.SetTheme(this.splitter1, "(default)");
             // 
             // C1TopicBar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(591, 446);
+            this.ClientSize = new System.Drawing.Size(789, 549);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.c1TopicBar1);
-            this.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(82)))), ((int)(((byte)(160)))));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "C1TopicBar";
-            this.Text = "C1主题栏";
-            this.c1ThemeController1.SetTheme(this, "(default)");
+            this.Text = "C1TopicBar";
             this.Load += new System.EventHandler(this.C1TopicBar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1TopicBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -157,6 +150,5 @@
         private C1.Win.C1Command.C1TopicBar c1TopicBar1;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Splitter splitter1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
     }
 }

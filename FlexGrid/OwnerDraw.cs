@@ -82,7 +82,7 @@ namespace ControlExplorer.FlexGrid
             {
                 ArrayList al = new ArrayList(_songs.Keys);
                 foreach (DataRow dr in al)
-                    dr["Status"] = "复制中...";
+                    dr["Status"] = "Copying...";
             }
         }
 
@@ -111,7 +111,7 @@ namespace ControlExplorer.FlexGrid
                 if (pct >= 100)
                 {
                     _songs.Remove(dr);
-                    dr["Status"] = "复制完成";
+                    dr["Status"] = "Copied";
                     return;
                 }
 
@@ -132,7 +132,7 @@ namespace ControlExplorer.FlexGrid
                 e.Graphics.DrawImage(_bmp, rc);
 
                 // draw text
-                e.Text = string.Format("复制了 ({0}% )", pct);
+                e.Text = string.Format("Copying ({0}% done)", pct);
                 e.DrawCell(DrawCellFlags.Content);
                 e.Handled = true;
             }

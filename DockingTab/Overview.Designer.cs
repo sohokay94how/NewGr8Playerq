@@ -68,81 +68,82 @@
             this.c1DockingTab1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1DockingTab1.HotTrack = true;
             this.c1DockingTab1.ImageList = this.imageList1;
-            this.c1DockingTab1.Location = new System.Drawing.Point(0, 25);
+            this.c1DockingTab1.Location = new System.Drawing.Point(0, 27);
             this.c1DockingTab1.Margin = new System.Windows.Forms.Padding(4);
             this.c1DockingTab1.Name = "c1DockingTab1";
             this.c1DockingTab1.ShowCaption = true;
             this.c1DockingTab1.ShowTabList = true;
-            this.c1DockingTab1.Size = new System.Drawing.Size(748, 575);
+            this.c1DockingTab1.Size = new System.Drawing.Size(855, 538);
             this.c1DockingTab1.TabIndex = 0;
             this.c1DockingTab1.TabLook = C1.Win.C1Command.ButtonLookFlags.Text;
             this.c1DockingTab1.TabsSpacing = 5;
+            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1DockingTabPage1
             // 
             this.c1DockingTabPage1.CaptionVisible = true;
             this.c1DockingTabPage1.ImageIndex = 0;
-            this.c1DockingTabPage1.Location = new System.Drawing.Point(1, 27);
+            this.c1DockingTabPage1.Location = new System.Drawing.Point(1, 26);
             this.c1DockingTabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.c1DockingTabPage1.Name = "c1DockingTabPage1";
-            this.c1DockingTabPage1.Size = new System.Drawing.Size(746, 547);
+            this.c1DockingTabPage1.Size = new System.Drawing.Size(853, 511);
             this.c1DockingTabPage1.TabIndex = 0;
-            this.c1DockingTabPage1.Text = "第1页";
+            this.c1DockingTabPage1.Text = "Page1";
             // 
             // c1DockingTabPage2
             // 
             this.c1DockingTabPage2.CaptionVisible = true;
             this.c1DockingTabPage2.ImageIndex = 1;
-            this.c1DockingTabPage2.Location = new System.Drawing.Point(1, 27);
+            this.c1DockingTabPage2.Location = new System.Drawing.Point(1, 26);
             this.c1DockingTabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.c1DockingTabPage2.Name = "c1DockingTabPage2";
-            this.c1DockingTabPage2.Size = new System.Drawing.Size(746, 547);
+            this.c1DockingTabPage2.Size = new System.Drawing.Size(853, 511);
             this.c1DockingTabPage2.TabIndex = 1;
-            this.c1DockingTabPage2.Text = "第2页";
+            this.c1DockingTabPage2.Text = "Page2";
             // 
             // c1DockingTabPage3
             // 
             this.c1DockingTabPage3.CaptionVisible = true;
             this.c1DockingTabPage3.ImageIndex = 2;
-            this.c1DockingTabPage3.Location = new System.Drawing.Point(1, 27);
+            this.c1DockingTabPage3.Location = new System.Drawing.Point(1, 26);
             this.c1DockingTabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.c1DockingTabPage3.Name = "c1DockingTabPage3";
-            this.c1DockingTabPage3.Size = new System.Drawing.Size(746, 547);
+            this.c1DockingTabPage3.Size = new System.Drawing.Size(853, 511);
             this.c1DockingTabPage3.TabIndex = 2;
-            this.c1DockingTabPage3.Text = "第3页";
+            this.c1DockingTabPage3.Text = "Page3";
             // 
             // c1DockingTabPage4
             // 
             this.c1DockingTabPage4.CaptionVisible = true;
             this.c1DockingTabPage4.ImageIndex = 0;
-            this.c1DockingTabPage4.Location = new System.Drawing.Point(1, 27);
+            this.c1DockingTabPage4.Location = new System.Drawing.Point(1, 26);
             this.c1DockingTabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.c1DockingTabPage4.Name = "c1DockingTabPage4";
-            this.c1DockingTabPage4.Size = new System.Drawing.Size(746, 547);
+            this.c1DockingTabPage4.Size = new System.Drawing.Size(853, 511);
             this.c1DockingTabPage4.TabIndex = 3;
-            this.c1DockingTabPage4.Text = "第4页";
+            this.c1DockingTabPage4.Text = "Page4";
             // 
             // c1DockingTabPage5
             // 
             this.c1DockingTabPage5.CaptionVisible = true;
             this.c1DockingTabPage5.ImageIndex = 1;
-            this.c1DockingTabPage5.Location = new System.Drawing.Point(1, 27);
+            this.c1DockingTabPage5.Location = new System.Drawing.Point(1, 26);
             this.c1DockingTabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.c1DockingTabPage5.Name = "c1DockingTabPage5";
-            this.c1DockingTabPage5.Size = new System.Drawing.Size(746, 547);
+            this.c1DockingTabPage5.Size = new System.Drawing.Size(853, 511);
             this.c1DockingTabPage5.TabIndex = 4;
-            this.c1DockingTabPage5.Text = "第5页";
+            this.c1DockingTabPage5.Text = "Page5";
             // 
             // c1DockingTabPage6
             // 
             this.c1DockingTabPage6.CaptionVisible = true;
             this.c1DockingTabPage6.ImageIndex = 2;
-            this.c1DockingTabPage6.Location = new System.Drawing.Point(1, 27);
+            this.c1DockingTabPage6.Location = new System.Drawing.Point(1, 26);
             this.c1DockingTabPage6.Margin = new System.Windows.Forms.Padding(4);
             this.c1DockingTabPage6.Name = "c1DockingTabPage6";
-            this.c1DockingTabPage6.Size = new System.Drawing.Size(746, 547);
+            this.c1DockingTabPage6.Size = new System.Drawing.Size(853, 511);
             this.c1DockingTabPage6.TabIndex = 5;
-            this.c1DockingTabPage6.Text = "第6页";
+            this.c1DockingTabPage6.Text = "Page6";
             // 
             // toolStrip1
             // 
@@ -150,7 +151,7 @@
             this.btnAddTab});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(748, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(855, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -160,20 +161,20 @@
             this.btnAddTab.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTab.Image")));
             this.btnAddTab.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAddTab.Name = "btnAddTab";
-            this.btnAddTab.Size = new System.Drawing.Size(72, 22);
-            this.btnAddTab.Text = "添加选项卡";
+            this.btnAddTab.Size = new System.Drawing.Size(70, 24);
+            this.btnAddTab.Text = "Add Tab";
             this.btnAddTab.Click += new System.EventHandler(this.btnAddTab_Click);
             // 
             // Overview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(748, 600);
+            this.ClientSize = new System.Drawing.Size(855, 565);
             this.Controls.Add(this.c1DockingTab1);
             this.Controls.Add(this.toolStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "Overview";
-            this.Text = "C1Docking选项卡";
+            this.Text = "C1DockingTab";
             this.Load += new System.EventHandler(this.Overview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab1)).EndInit();
             this.c1DockingTab1.ResumeLayout(false);

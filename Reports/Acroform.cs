@@ -59,7 +59,7 @@ namespace ControlExplorer.Reports
 
             doc.PageLayout.PageHeader = ph;
 
-            doc.PageLayout.PageFooter = new RenderText(doc, "页 [PageNo] 共[PageCount]页", AlignHorzEnum.Right);
+            doc.PageLayout.PageFooter = new RenderText(doc, "Page [PageNo] of [PageCount]", AlignHorzEnum.Right);
 
             //  create styles
             _captionStyle = doc.Style.Children.Add();
@@ -82,121 +82,121 @@ namespace ControlExplorer.Reports
             _textFieldStyle.Font = new Font("Tahoma", 12, FontStyle.Bold);
 
             //  Personal information
-            doc.Body.Children.Add(new RenderText(doc, "个人信息", _captionStyle, _captionStyle));
+            doc.Body.Children.Add(new RenderText(doc, "Personal information", _captionStyle, _captionStyle));
             //  create RenderTable containing the form's fields
             RenderTable rt = new RenderTable(doc);
             rt.CellStyle.Padding.All = "0.5mm";
-            rt.Cells[0, 0].RenderObject = CreateFieldCaption(doc, "名字:", true, false);
+            rt.Cells[0, 0].RenderObject = CreateFieldCaption(doc, "First name:", true, false);
             rt.Cells[1, 0].RenderObject = CreateTextField(doc, "FirstName", Color.Black, false);
 
-            rt.Cells[0, 1].RenderObject = CreateFieldCaption(doc, "姓氏:", true, false);
+            rt.Cells[0, 1].RenderObject = CreateFieldCaption(doc, "Last name:", true, false);
             rt.Cells[1, 1].RenderObject = CreateTextField(doc, "LastName", Color.Black, false);
 
-            rt.Cells[2, 0].RenderObject = CreateFieldCaption(doc, "邮件地址:", true, false);
+            rt.Cells[2, 0].RenderObject = CreateFieldCaption(doc, "Email Address:", true, false);
             rt.Cells[3, 0].RenderObject = CreateTextField(doc, "EmailAddress", Color.Blue, false);
 
-            rt.Cells[2, 1].RenderObject = CreateFieldCaption(doc, "确认邮件地址:", true, false);
+            rt.Cells[2, 1].RenderObject = CreateFieldCaption(doc, "Retype Email Address:", true, false);
             rt.Cells[3, 1].RenderObject = CreateTextField(doc, "RetypeEmailAddress", Color.Blue, false);
 
-            rt.Cells[4, 0].RenderObject = CreateFieldCaption(doc, "密码:", true, true);
+            rt.Cells[4, 0].RenderObject = CreateFieldCaption(doc, "Password:", true, true);
             rt.Cells[5, 0].RenderObject = CreateTextField(doc, "Password", Color.Black, true);
 
-            rt.Cells[4, 1].RenderObject = CreateFieldCaption(doc, "确认密码:", true, false);
+            rt.Cells[4, 1].RenderObject = CreateFieldCaption(doc, "Retype Password:", true, false);
             rt.Cells[5, 1].RenderObject = CreateTextField(doc, "RetypePassword", Color.Black, true);
 
-            rt.Cells[6, 0].RenderObject = CreateFieldCaption(doc, "城市:", false, false);
+            rt.Cells[6, 0].RenderObject = CreateFieldCaption(doc, "City:", false, false);
             rt.Cells[7, 0].RenderObject = CreateTextField(doc, "City", Color.Black, false);
 
-            rt.Cells[6, 1].RenderObject = CreateFieldCaption(doc, "州:", false, false);
+            rt.Cells[6, 1].RenderObject = CreateFieldCaption(doc, "State:", false, false);
             rt.Cells[7, 1].RenderObject = CreateTextField(doc, "State", Color.Black, false);
 
             //  add the "Select" button
             RenderArea ra = new RenderArea(doc);
-            RenderInputButton rb = new RenderInputButton(doc, "选择...");
+            RenderInputButton rb = new RenderInputButton(doc, "Select...");
             rb.Name = "Select";
             rb.X = "parent.Width - width";
             ra.Children.Add(rb);
             rt.Cells[8, 1].RenderObject = ra;
 
             //  Work status field
-            rt.Cells[9, 0].RenderObject = CreateFieldCaption(doc, "工作状态:", true, false);
+            rt.Cells[9, 0].RenderObject = CreateFieldCaption(doc, "Work status:", true, false);
             rt.Cells[9, 0].SpanCols = 2;
 
-            rt.Cells[10, 0].RenderObject = new RenderInputRadioButton(doc, "StatusCitizen", "我是一个公民");
+            rt.Cells[10, 0].RenderObject = new RenderInputRadioButton(doc, "StatusCitizen", "I am a citizen");
             ((RenderInputRadioButton)rt.Cells[10, 0].RenderObject).Checked = true;
-            rt.Cells[10, 1].RenderObject = new RenderInputRadioButton(doc, "StatusAny", "我获批准为任何雇主工作");
-            rt.Cells[11, 0].RenderObject = new RenderInputRadioButton(doc, "StatusCurrent", "我获批准为当前雇主工作");
-            rt.Cells[11, 1].RenderObject = new RenderInputRadioButton(doc, "StatusSeeking", "我正寻求批准");
+            rt.Cells[10, 1].RenderObject = new RenderInputRadioButton(doc, "StatusAny", "I am authorized to work for any employer");
+            rt.Cells[11, 0].RenderObject = new RenderInputRadioButton(doc, "StatusCurrent", "I am authorized to work for my current employer");
+            rt.Cells[11, 1].RenderObject = new RenderInputRadioButton(doc, "StatusSeeking", "I am seeking authorization");
             rt.Style.Spacing.Bottom = "5mm";
             doc.Body.Children.Add(rt);
 
             // 
-            doc.Body.Children.Add(new RenderText(doc, "兴趣", _captionStyle, _captionStyle));
+            doc.Body.Children.Add(new RenderText(doc, "Interests", _captionStyle, _captionStyle));
 
             rt = new RenderTable(doc);
-            rt.Cells[0, 0].RenderObject = new RenderInputCheckBox(doc, "会计");
-            rt.Cells[0, 1].RenderObject = new RenderInputCheckBox(doc, "一般业务");
-            rt.Cells[0, 2].RenderObject = new RenderInputCheckBox(doc, "制药");
-            rt.Cells[1, 0].RenderObject = new RenderInputCheckBox(doc, "行政及文书");
-            rt.Cells[1, 1].RenderObject = new RenderInputCheckBox(doc, "一般劳工");
-            rt.Cells[1, 2].RenderObject = new RenderInputCheckBox(doc, "专业服务");
-            rt.Cells[2, 0].RenderObject = new RenderInputCheckBox(doc, "汽车");
-            rt.Cells[2, 1].RenderObject = new RenderInputCheckBox(doc, "政府");
-            rt.Cells[2, 2].RenderObject = new RenderInputCheckBox(doc, "QA - 质量保证");
-            rt.Cells[2, 0].RenderObject = new RenderInputCheckBox(doc, "生物技术");
-            rt.Cells[2, 1].RenderObject = new RenderInputCheckBox(doc, "信息技术");
-            rt.Cells[2, 2].RenderObject = new RenderInputCheckBox(doc, "仓库");
+            rt.Cells[0, 0].RenderObject = new RenderInputCheckBox(doc, "Accounting");
+            rt.Cells[0, 1].RenderObject = new RenderInputCheckBox(doc, "General Business");
+            rt.Cells[0, 2].RenderObject = new RenderInputCheckBox(doc, "Pharmaceutical");
+            rt.Cells[1, 0].RenderObject = new RenderInputCheckBox(doc, "Admin & Clerical");
+            rt.Cells[1, 1].RenderObject = new RenderInputCheckBox(doc, "General Labor");
+            rt.Cells[1, 2].RenderObject = new RenderInputCheckBox(doc, "Professional Services");
+            rt.Cells[2, 0].RenderObject = new RenderInputCheckBox(doc, "Automotive");
+            rt.Cells[2, 1].RenderObject = new RenderInputCheckBox(doc, "Government");
+            rt.Cells[2, 2].RenderObject = new RenderInputCheckBox(doc, "QA - Quality Control");
+            rt.Cells[2, 0].RenderObject = new RenderInputCheckBox(doc, "Biotech");
+            rt.Cells[2, 1].RenderObject = new RenderInputCheckBox(doc, "Information Technology");
+            rt.Cells[2, 2].RenderObject = new RenderInputCheckBox(doc, "Warehouse");
             rt.BreakAfter = BreakEnum.Page;
             doc.Body.Children.Add(rt);
 
 
-            doc.Body.Children.Add(new RenderText(doc, "希望职位", _captionStyle, _captionStyle));
-            doc.Body.Children.Add(new RenderText(doc, "通过尽可能多的完成以下问题来描述你所需要的职位。请指明你所期望的工资。"));
+            doc.Body.Children.Add(new RenderText(doc, "Desired Position", _captionStyle, _captionStyle));
+            doc.Body.Children.Add(new RenderText(doc, "Describe your desired position by completing as many of the following questions as possible.\n\nPlease indicate the wage you are seeking."));
 
             rt = new RenderTable(doc);
-            rt.Cells[0, 0].RenderObject = new RenderInputCheckBox(doc, "全职");
-            rt.Cells[0, 1].RenderObject = new RenderInputCheckBox(doc, "兼职");
-            rt.Cells[0, 2].RenderObject = new RenderInputCheckBox(doc, "实习生");
-            rt.Cells[1, 0].RenderObject = new RenderInputCheckBox(doc, "季节工");
-            rt.Cells[1, 1].RenderObject = new RenderInputCheckBox(doc, "临时工");
+            rt.Cells[0, 0].RenderObject = new RenderInputCheckBox(doc, "Full-time");
+            rt.Cells[0, 1].RenderObject = new RenderInputCheckBox(doc, "Part-time");
+            rt.Cells[0, 2].RenderObject = new RenderInputCheckBox(doc, "Intern");
+            rt.Cells[1, 0].RenderObject = new RenderInputCheckBox(doc, "Seasonal");
+            rt.Cells[1, 1].RenderObject = new RenderInputCheckBox(doc, "Temporary");
             rt.Style.Spacing.Bottom = "5mm";
             doc.Body.Children.Add(rt);
 
-            doc.Body.Children.Add(new RenderText(doc, "你上下班愿意走多远？"));
+            doc.Body.Children.Add(new RenderText(doc, "How many miles are you willing to commute to work?"));
             RenderInputComboBox rc = new RenderInputComboBox(
                 doc,
-                "-- 选择距离 --",
-                "1 英里",
-                "5 英里",
-                "10 英里",
-                "25 英里",
-                "50 英里",
-                "100 英里");
+                "-- Select Distance --",
+                "1 mile",
+                "5 miles",
+                "10 miles",
+                "25 miles",
+                "50 miles",
+                "100 miles");
             rc.Text = rc.Items[0].Text;
             rc.Style.Parents = _textFieldStyle;
             rc.Style.Spacing.Bottom = "5mm";
             doc.Body.Children.Add(rc);
 
-            doc.Body.Children.Add(new RenderText(doc, "你希望工作的多长时间用在出差上？"));
+            doc.Body.Children.Add(new RenderText(doc, "How often are you willing to travel for work?"));
             rc = new RenderInputComboBox(
                 doc,
-                "不太想出差",
-                "25%的时间",
-                "50%的时间",
-                "更多");
+                "Negligible",
+                "Up to 25%",
+                "Up to 50%",
+                "Road Warrior");
             rc.DropDownStyle = ComboBoxStyle.DropDownList;
             rc.Text = rc.Items[0].Text;
             doc.Body.Children.Add(rc);
 
             //  Save button
-            rb = new RenderInputButton(doc, "保存...");
+            rb = new RenderInputButton(doc, "Save...");
             rb.AcceptButton = true;
             rb.InputActions.Add(
                 UserActionEnum.Click,
                 new ActionHandlerFileSave());
             doc.Body.Children.Add(rb);
 
-            rb = new RenderInputButton(doc, "另存为PDF...");
+            rb = new RenderInputButton(doc, "Save as PDF...");
             rb.InputActions.Add(
                 UserActionEnum.Click,
                 new ActionHandlerFileSave(null, ExportProviders.PdfExportProvider));
@@ -241,7 +241,7 @@ namespace ControlExplorer.Reports
 
             if (password)
             {
-                pt = new ParagraphText("(至少5个字符)");
+                pt = new ParagraphText("(Must be at least 5 characters)");
                 pt.Style.Parents = _passwordInfoStyle;
                 result.Content.Add(pt);
             }
@@ -277,7 +277,7 @@ namespace ControlExplorer.Reports
             doc.Style.Font = new Font("Comic Sans MS", 12);
             doc.StartDoc();
             doc.RenderBlockRichText(@"{\fonttbl{\f0\froman\fprq2\fcharset2 Webdings;}{\f1\fscript\fprq2\fcharset0 Comic Sans MS;}{\f2\fswiss\fcharset0 Arial;}}{\*\generator Msftedit 5.41.21.2507;}\viewkind4\uc1\pard\f0\fs96 [\f1\fs28  \fs72 Brain Quiz\f2\fs20\par}");
-            doc.RenderBlockText("说明：尽你能力回答一下问题，点击“查看答案”来查看分数。");
+            doc.RenderBlockText("Instructions: Answer the following questions to the best of your ability.  Click the 'Check Answers' button to see your score.");
 
             // Read in quiz questions from text file
             try
@@ -307,7 +307,7 @@ namespace ControlExplorer.Reports
             }
             catch
             {
-                MessageBox.Show("抱歉， 不能够读入测试文件 :(");
+                MessageBox.Show("Sorry, unable to read quiz file :(");
             }
 
             doc.EndDoc();
@@ -321,7 +321,7 @@ namespace ControlExplorer.Reports
         {
             if (c1PrintPreviewControl1.Document != doc)
             {
-                MessageBox.Show("你应该首先查看测验.");
+                MessageBox.Show("You should view the quiz first.");
                 return;
             }
             string guesses = "";
@@ -351,7 +351,7 @@ namespace ControlExplorer.Reports
                 if (answers.Length >= guesses.Length && guesses[i] == answers[i])
                     num_correct += 1;
             }
-            MessageBox.Show("你答对了10个题中的 " + num_correct.ToString() + " 个!");
+            MessageBox.Show("You got " + num_correct.ToString() + " out of 10 correct!");
         }
 
         private void Acroform_Load(object sender, EventArgs e)

@@ -19,7 +19,6 @@ namespace ControlExplorer.MenusToolbars
         {
             //add demo properties
             AddProperty("Animation", c1TopicBar1);
-            AddProperty("VisualStyle", c1TopicBar1);
         }
     }
 }

@@ -311,7 +311,7 @@
             this.linkLabel2.Size = new System.Drawing.Size(176, 13);
             this.linkLabel2.TabIndex = 3;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "如何添加食谱到数据库";
+            this.linkLabel2.Text = "How to add recipes to the database";
             // 
             // linkLabel1
             // 
@@ -328,7 +328,7 @@
             this.linkLabel1.Size = new System.Drawing.Size(179, 13);
             this.linkLabel1.TabIndex = 2;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "如何启动冰淇淋模拟器";
+            this.linkLabel1.Text = "How to start the Ice Cream Simulator";
             // 
             // label13
             // 
@@ -339,7 +339,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(119, 16);
             this.label13.TabIndex = 1;
-            this.label13.Text = "常见的任务:";
+            this.label13.Text = "Common Tasks:";
             // 
             // label17
             // 
@@ -352,7 +352,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(52, 20);
             this.label17.TabIndex = 1;
-            this.label17.Text = "主页";
+            this.label17.Text = "Home";
             // 
             // tabNew
             // 
@@ -363,7 +363,7 @@
             this.tabNew.Name = "tabNew";
             this.tabNew.Size = new System.Drawing.Size(429, 384);
             this.tabNew.TabIndex = 1;
-            this.tabNew.Text = "新建";
+            this.tabNew.Text = "New";
             // 
             // c1Sizer1
             // 
@@ -388,7 +388,7 @@
             this.rbNew_Flavor.Name = "rbNew_Flavor";
             this.rbNew_Flavor.Size = new System.Drawing.Size(105, 17);
             this.rbNew_Flavor.TabIndex = 3;
-            this.rbNew_Flavor.Text = "冰淇淋口味";
+            this.rbNew_Flavor.Text = "Ice Cream Flavor";
             this.rbNew_Flavor.UseVisualStyleBackColor = true;
             // 
             // btnNew_Next
@@ -398,7 +398,7 @@
             this.btnNew_Next.Name = "btnNew_Next";
             this.btnNew_Next.Size = new System.Drawing.Size(97, 23);
             this.btnNew_Next.TabIndex = 2;
-            this.btnNew_Next.Text = "下一步";
+            this.btnNew_Next.Text = "Next";
             this.btnNew_Next.UseVisualStyleBackColor = true;
             this.btnNew_Next.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2007Blue;
             this.btnNew_Next.Click += new System.EventHandler(this.c1ButtonNewNext_Click);
@@ -411,7 +411,7 @@
             this.rbNew_Style.Name = "rbNew_Style";
             this.rbNew_Style.Size = new System.Drawing.Size(99, 17);
             this.rbNew_Style.TabIndex = 1;
-            this.rbNew_Style.Text = "冰淇淋风格";
+            this.rbNew_Style.Text = "Ice Cream Style";
             this.rbNew_Style.UseVisualStyleBackColor = true;
             // 
             // rbNew_IceCream
@@ -424,7 +424,7 @@
             this.rbNew_IceCream.Size = new System.Drawing.Size(115, 17);
             this.rbNew_IceCream.TabIndex = 0;
             this.rbNew_IceCream.TabStop = true;
-            this.rbNew_IceCream.Text = "冰淇淋创作";
+            this.rbNew_IceCream.Text = "Ice Cream Creation";
             this.rbNew_IceCream.UseVisualStyleBackColor = true;
             // 
             // label21
@@ -438,7 +438,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(40, 20);
             this.label21.TabIndex = 2;
-            this.label21.Text = "新建";
+            this.label21.Text = "New";
             // 
             // tabDesign
             // 
@@ -449,7 +449,7 @@
             this.tabDesign.Name = "tabDesign";
             this.tabDesign.Size = new System.Drawing.Size(429, 384);
             this.tabDesign.TabIndex = 2;
-            this.tabDesign.Text = "新创作";
+            this.tabDesign.Text = "New Creation";
             // 
             // c1Sizer2
             // 
@@ -479,7 +479,7 @@
             this.btnDesign_Back.Name = "btnDesign_Back";
             this.btnDesign_Back.Size = new System.Drawing.Size(133, 22);
             this.btnDesign_Back.TabIndex = 14;
-            this.btnDesign_Back.Text = "返回";
+            this.btnDesign_Back.Text = "Back";
             this.btnDesign_Back.UseVisualStyleBackColor = true;
             this.btnDesign_Back.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2007Silver;
             this.btnDesign_Back.Click += new System.EventHandler(this.btnDesign_Back_Click);
@@ -491,7 +491,7 @@
             this.btDesign_Ok.Name = "btDesign_Ok";
             this.btDesign_Ok.Size = new System.Drawing.Size(134, 22);
             this.btDesign_Ok.TabIndex = 13;
-            this.btDesign_Ok.Text = "确定";
+            this.btDesign_Ok.Text = "OK";
             this.btDesign_Ok.UseVisualStyleBackColor = true;
             this.btDesign_Ok.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2007Blue;
             this.btDesign_Ok.Click += new System.EventHandler(this.btDesign_Ok_Click);
@@ -519,7 +519,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 13);
             this.label4.TabIndex = 11;
-            this.label4.Text = "口味";
+            this.label4.Text = "Flavor";
             // 
             // trackBar1
             // 
@@ -542,29 +542,29 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 9;
-            this.label3.Text = "冰淇淋勺子";
+            this.label3.Text = "Scoops";
             // 
             // chkListToppings
             // 
             this.chkListToppings.FormattingEnabled = true;
             this.c1DynamicHelp1.SetHelpTopic(this.chkListToppings, null);
             this.chkListToppings.Items.AddRange(new object[] {
-            "杏仁",
-            "香蕉",
-            "蓝洒",
-            "焦糖酱",
-            "腰果",
-            "樱桃",
-            "巧克力棒",
-            "巧克力洒",
-            "饼干",
-            "水果糖",
-            "橡皮糖",
-            "热软糖",
-            "花生",
-            "开心果",
-            "草莓",
-            "奶油"});
+            "Almonds",
+            "Bananas",
+            "Blue sprinkles",
+            "Caramel sauce",
+            "Cashews",
+            "Cherries",
+            "Chocolate chips",
+            "Chocolate sprinkles",
+            "Cookie bits",
+            "Fruit candies",
+            "Gummy worms",
+            "Hot fudge",
+            "Peanuts",
+            "Pistachios",
+            "Strawberries",
+            "Whipped Cream"});
             this.chkListToppings.Location = new System.Drawing.Point(121, 106);
             this.chkListToppings.Name = "chkListToppings";
             this.chkListToppings.Size = new System.Drawing.Size(304, 154);
@@ -578,7 +578,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "拌料";
+            this.label2.Text = "Toppings";
             // 
             // cbDesign_Style
             // 
@@ -603,7 +603,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "风格";
+            this.label1.Text = "Style";
             // 
             // label20
             // 
@@ -616,7 +616,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(104, 20);
             this.label20.TabIndex = 2;
-            this.label20.Text = "新创作";
+            this.label20.Text = "New Creation";
             // 
             // tabAddRecipe
             // 
@@ -627,7 +627,7 @@
             this.tabAddRecipe.Name = "tabAddRecipe";
             this.tabAddRecipe.Size = new System.Drawing.Size(429, 384);
             this.tabAddRecipe.TabIndex = 3;
-            this.tabAddRecipe.Text = "添加配方表";
+            this.tabAddRecipe.Text = "Add Recipe Form";
             // 
             // c1Sizer3
             // 
@@ -661,7 +661,7 @@
             this.btnRecipe_Cancel.Name = "btnRecipe_Cancel";
             this.btnRecipe_Cancel.Size = new System.Drawing.Size(100, 22);
             this.btnRecipe_Cancel.TabIndex = 13;
-            this.btnRecipe_Cancel.Text = "取消";
+            this.btnRecipe_Cancel.Text = "Cancel";
             this.btnRecipe_Cancel.UseVisualStyleBackColor = true;
             this.btnRecipe_Cancel.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2007Silver;
             this.btnRecipe_Cancel.Click += new System.EventHandler(this.btnRecipe_Cancel_Click);
@@ -673,7 +673,7 @@
             this.btnRecipe_Add.Name = "btnRecipe_Add";
             this.btnRecipe_Add.Size = new System.Drawing.Size(184, 22);
             this.btnRecipe_Add.TabIndex = 12;
-            this.btnRecipe_Add.Text = "添加到数据库";
+            this.btnRecipe_Add.Text = "Add to Database";
             this.btnRecipe_Add.UseVisualStyleBackColor = true;
             this.btnRecipe_Add.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2007Blue;
             this.btnRecipe_Add.Click += new System.EventHandler(this.btnRecipe_Add_Click);
@@ -700,7 +700,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 0;
-            this.label5.Text = "名称";
+            this.label5.Text = "Name";
             // 
             // label10
             // 
@@ -710,7 +710,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(64, 13);
             this.label10.TabIndex = 5;
-            this.label10.Text = "数据已添加";
+            this.label10.Text = "Date Added";
             // 
             // txtRecipe_DateAdded
             // 
@@ -742,7 +742,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(30, 13);
             this.label6.TabIndex = 1;
-            this.label6.Text = "风格";
+            this.label6.Text = "Style";
             // 
             // label9
             // 
@@ -752,7 +752,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(95, 13);
             this.label9.TabIndex = 4;
-            this.label9.Text = "勺子数";
+            this.label9.Text = "Number of Scoops";
             // 
             // txtRecipe_Scoops
             // 
@@ -784,7 +784,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 13);
             this.label7.TabIndex = 2;
-            this.label7.Text = "口味";
+            this.label7.Text = "Flavor";
             // 
             // label8
             // 
@@ -794,7 +794,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 13);
             this.label8.TabIndex = 3;
-            this.label8.Text = "拌料";
+            this.label8.Text = "Toppings";
             // 
             // txtRecipe_Toppings
             // 
@@ -815,7 +815,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(133, 20);
             this.label19.TabIndex = 2;
-            this.label19.Text = "增加配方表";
+            this.label19.Text = "Add Recipe Form";
             // 
             // tabName
             // 
@@ -826,7 +826,7 @@
             this.tabName.Name = "tabName";
             this.tabName.Size = new System.Drawing.Size(429, 384);
             this.tabName.TabIndex = 4;
-            this.tabName.Text = "为你的创作命名";
+            this.tabName.Text = "Name Your Creation";
             // 
             // c1Sizer4
             // 
@@ -851,7 +851,7 @@
             this.btnName_Back.Name = "btnName_Back";
             this.btnName_Back.Size = new System.Drawing.Size(102, 22);
             this.btnName_Back.TabIndex = 4;
-            this.btnName_Back.Text = "返回";
+            this.btnName_Back.Text = "Back";
             this.btnName_Back.UseVisualStyleBackColor = true;
             this.btnName_Back.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2007Silver;
             this.btnName_Back.Click += new System.EventHandler(this.btnName_Back_Click);
@@ -863,7 +863,7 @@
             this.btnName_Done.Name = "btnName_Done";
             this.btnName_Done.Size = new System.Drawing.Size(260, 22);
             this.btnName_Done.TabIndex = 3;
-            this.btnName_Done.Text = "完成-查看我的创作！";
+            this.btnName_Done.Text = "Done - Let me see my creation!";
             this.btnName_Done.UseVisualStyleBackColor = true;
             this.btnName_Done.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2007Blue;
             this.btnName_Done.Click += new System.EventHandler(this.btnName_Done_Click);
@@ -890,7 +890,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(157, 13);
             this.label11.TabIndex = 0;
-            this.label11.Text = "给你的创作想个好名字:";
+            this.label11.Text = "Give your new creation a name:";
             // 
             // chkName_Add
             // 
@@ -906,7 +906,7 @@
             this.chkName_Add.Name = "chkName_Add";
             this.chkName_Add.Size = new System.Drawing.Size(106, 17);
             this.chkName_Add.TabIndex = 2;
-            this.chkName_Add.Text = "添加到数据库";
+            this.chkName_Add.Text = "Add to Database";
             this.chkName_Add.UseVisualStyleBackColor = true;
             // 
             // label16
@@ -920,7 +920,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(153, 20);
             this.label16.TabIndex = 1;
-            this.label16.Text = "为你的创作命名";
+            this.label16.Text = "Name Your Creation";
             // 
             // tabNewStyle
             // 
@@ -1084,7 +1084,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandMenuFile, null);
             this.c1CommandMenuFile.HideNonRecentLinks = false;
             this.c1CommandMenuFile.Name = "c1CommandMenuFile";
-            this.c1CommandMenuFile.Text = "文件";
+            this.c1CommandMenuFile.Text = "&File";
             this.c1CommandMenuFile.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink2
@@ -1097,7 +1097,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandNew, null);
             this.c1CommandNew.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandNew.Image")));
             this.c1CommandNew.Name = "c1CommandNew";
-            this.c1CommandNew.Text = "新建";
+            this.c1CommandNew.Text = "&New";
             this.c1CommandNew.UserData = "";
             // 
             // c1CommandLink8
@@ -1105,14 +1105,14 @@
             this.c1CommandLink8.Command = this.c1CommandRecipeDatabase;
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandLink8, null);
             this.c1CommandLink8.SortOrder = 1;
-            this.c1CommandLink8.Text = "配方数据库";
+            this.c1CommandLink8.Text = "&Recipe Database";
             // 
             // c1CommandRecipeDatabase
             // 
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandRecipeDatabase, null);
             this.c1CommandRecipeDatabase.Image = global::ControlExplorer.Properties.Resources.Database;
             this.c1CommandRecipeDatabase.Name = "c1CommandRecipeDatabase";
-            this.c1CommandRecipeDatabase.Text = "配方数据库";
+            this.c1CommandRecipeDatabase.Text = "Recipe Database";
             this.c1CommandRecipeDatabase.UserData = "";
             // 
             // c1CommandLink23
@@ -1120,14 +1120,14 @@
             this.c1CommandLink23.Command = this.c1CommandReset;
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandLink23, null);
             this.c1CommandLink23.SortOrder = 2;
-            this.c1CommandLink23.Text = "重置";
+            this.c1CommandLink23.Text = "Rese&t";
             // 
             // c1CommandReset
             // 
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandReset, null);
             this.c1CommandReset.Image = global::ControlExplorer.Properties.Resources.Repeat;
             this.c1CommandReset.Name = "c1CommandReset";
-            this.c1CommandReset.Text = "重置";
+            this.c1CommandReset.Text = "Reset";
             this.c1CommandReset.UserData = "";
             // 
             // c1CommandLink24
@@ -1142,7 +1142,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandHome, null);
             this.c1CommandHome.Image = global::ControlExplorer.Properties.Resources.Home;
             this.c1CommandHome.Name = "c1CommandHome";
-            this.c1CommandHome.Text = "主页";
+            this.c1CommandHome.Text = "&Home page";
             this.c1CommandHome.UserData = "";
             // 
             // c1CommandLink22
@@ -1155,13 +1155,13 @@
             // 
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandExit, null);
             this.c1CommandExit.Name = "c1CommandExit";
-            this.c1CommandExit.Text = "退出";
+            this.c1CommandExit.Text = "E&xit";
             // 
             // c1CommandDatabase
             // 
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandDatabase, null);
             this.c1CommandDatabase.Name = "c1CommandDatabase";
-            this.c1CommandDatabase.Text = "修改数据库";
+            this.c1CommandDatabase.Text = "Modify Database";
             // 
             // c1CommandMenuHelp
             // 
@@ -1174,14 +1174,14 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandMenuHelp, null);
             this.c1CommandMenuHelp.HideNonRecentLinks = false;
             this.c1CommandMenuHelp.Name = "c1CommandMenuHelp";
-            this.c1CommandMenuHelp.Text = "帮助";
+            this.c1CommandMenuHelp.Text = "&Help";
             this.c1CommandMenuHelp.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink6
             // 
             this.c1CommandLink6.Command = this.c1CommandShowHelp;
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandLink6, null);
-            this.c1CommandLink6.Text = "显示动态帮助";
+            this.c1CommandLink6.Text = "Show DynamicHelp";
             // 
             // c1CommandShowHelp
             // 
@@ -1189,7 +1189,7 @@
             this.c1CommandShowHelp.Checked = true;
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandShowHelp, null);
             this.c1CommandShowHelp.Name = "c1CommandShowHelp";
-            this.c1CommandShowHelp.Text = "显示帮助";
+            this.c1CommandShowHelp.Text = "Show Help";
             this.c1CommandShowHelp.UserData = "";
             // 
             // c1CommandLink12
@@ -1204,7 +1204,7 @@
             this.c1CommandShowHelpToolbar.Checked = true;
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandShowHelpToolbar, null);
             this.c1CommandShowHelpToolbar.Name = "c1CommandShowHelpToolbar";
-            this.c1CommandShowHelpToolbar.Text = "显示帮助工具栏";
+            this.c1CommandShowHelpToolbar.Text = "Show Help Toolbar";
             this.c1CommandShowHelpToolbar.UserData = "";
             // 
             // c1CommandLink19
@@ -1219,7 +1219,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandHelpContents, null);
             this.c1CommandHelpContents.Image = global::ControlExplorer.Properties.Resources.Contents;
             this.c1CommandHelpContents.Name = "c1CommandHelpContents";
-            this.c1CommandHelpContents.Text = "内容";
+            this.c1CommandHelpContents.Text = "Contents";
             this.c1CommandHelpContents.UserData = "";
             // 
             // c1CommandLink20
@@ -1233,7 +1233,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandHelpIndex, null);
             this.c1CommandHelpIndex.Image = global::ControlExplorer.Properties.Resources.Index;
             this.c1CommandHelpIndex.Name = "c1CommandHelpIndex";
-            this.c1CommandHelpIndex.Text = "索引";
+            this.c1CommandHelpIndex.Text = "Index";
             this.c1CommandHelpIndex.UserData = "";
             // 
             // c1CommandLink21
@@ -1247,7 +1247,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandHelpSearch, null);
             this.c1CommandHelpSearch.Image = global::ControlExplorer.Properties.Resources.Zoom;
             this.c1CommandHelpSearch.Name = "c1CommandHelpSearch";
-            this.c1CommandHelpSearch.Text = "搜索";
+            this.c1CommandHelpSearch.Text = "Search";
             this.c1CommandHelpSearch.UserData = "";
             // 
             // c1CommandMenuEdit
@@ -1257,7 +1257,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandMenuEdit, null);
             this.c1CommandMenuEdit.HideNonRecentLinks = false;
             this.c1CommandMenuEdit.Name = "c1CommandMenuEdit";
-            this.c1CommandMenuEdit.Text = "编辑";
+            this.c1CommandMenuEdit.Text = "&Edit";
             this.c1CommandMenuEdit.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink4
@@ -1278,7 +1278,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandMenuDatabase, mapItem10);
             this.c1CommandMenuDatabase.HideNonRecentLinks = false;
             this.c1CommandMenuDatabase.Name = "c1CommandMenuDatabase";
-            this.c1CommandMenuDatabase.Text = "修改数据库";
+            this.c1CommandMenuDatabase.Text = "Modify Database";
             this.c1CommandMenuDatabase.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink7
@@ -1291,7 +1291,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandAddRecipe, null);
             this.c1CommandAddRecipe.Image = global::ControlExplorer.Properties.Resources.NewComment;
             this.c1CommandAddRecipe.Name = "c1CommandAddRecipe";
-            this.c1CommandAddRecipe.Text = "增加配方";
+            this.c1CommandAddRecipe.Text = "Add Recipe";
             this.c1CommandAddRecipe.UserData = "";
             // 
             // c1CommandCreate
@@ -1299,7 +1299,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandCreate, null);
             this.c1CommandCreate.Image = global::ControlExplorer.Properties.Resources.NewComment;
             this.c1CommandCreate.Name = "c1CommandCreate";
-            this.c1CommandCreate.Text = "创建";
+            this.c1CommandCreate.Text = "Create";
             this.c1CommandCreate.UserData = "";
             // 
             // c1CommandEdit
@@ -1307,7 +1307,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandEdit, null);
             this.c1CommandEdit.Image = global::ControlExplorer.Properties.Resources.EditComment;
             this.c1CommandEdit.Name = "c1CommandEdit";
-            this.c1CommandEdit.Text = "编辑";
+            this.c1CommandEdit.Text = "Edit";
             this.c1CommandEdit.UserData = "";
             // 
             // c1CommandDelete
@@ -1315,7 +1315,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandDelete, null);
             this.c1CommandDelete.Image = global::ControlExplorer.Properties.Resources.DeleteComment;
             this.c1CommandDelete.Name = "c1CommandDelete";
-            this.c1CommandDelete.Text = "删除";
+            this.c1CommandDelete.Text = "Delete";
             this.c1CommandDelete.UserData = "";
             // 
             // c1CommandHelpBack
@@ -1324,7 +1324,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandHelpBack, null);
             this.c1CommandHelpBack.Image = global::ControlExplorer.Properties.Resources.HistoryBack;
             this.c1CommandHelpBack.Name = "c1CommandHelpBack";
-            this.c1CommandHelpBack.Text = "返回";
+            this.c1CommandHelpBack.Text = "Back";
             this.c1CommandHelpBack.UserData = "";
             // 
             // c1CommandHelpForward
@@ -1333,7 +1333,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandHelpForward, null);
             this.c1CommandHelpForward.Image = global::ControlExplorer.Properties.Resources.HistoryForward;
             this.c1CommandHelpForward.Name = "c1CommandHelpForward";
-            this.c1CommandHelpForward.Text = "向前";
+            this.c1CommandHelpForward.Text = "Forward";
             this.c1CommandHelpForward.UserData = "";
             // 
             // c1CommandHelpPin
@@ -1342,7 +1342,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandHelpPin, null);
             this.c1CommandHelpPin.Image = global::ControlExplorer.Properties.Resources.Unpinned;
             this.c1CommandHelpPin.Name = "c1CommandHelpPin";
-            this.c1CommandHelpPin.Text = "针主题";
+            this.c1CommandHelpPin.Text = "Pin Topic";
             this.c1CommandHelpPin.UserData = "";
             // 
             // c1CommandCloseHelp
@@ -1350,7 +1350,7 @@
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandCloseHelp, null);
             this.c1CommandCloseHelp.Image = global::ControlExplorer.Properties.Resources.Close2;
             this.c1CommandCloseHelp.Name = "c1CommandCloseHelp";
-            this.c1CommandCloseHelp.Text = "关闭帮助";
+            this.c1CommandCloseHelp.Text = "Close Help";
             // 
             // c1CommandLink9
             // 
@@ -1486,8 +1486,8 @@
             this.c1CommandLink18.Delimiter = true;
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandLink18, null);
             this.c1CommandLink18.SortOrder = 5;
-            this.c1CommandLink18.Text = "修复主题";
-            this.c1CommandLink18.ToolTipText = "针主题";
+            this.c1CommandLink18.Text = "Fix Topic";
+            this.c1CommandLink18.ToolTipText = "Pin Topic";
             // 
             // c1CommandLink25
             // 

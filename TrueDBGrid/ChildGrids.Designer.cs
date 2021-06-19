@@ -53,7 +53,6 @@
             // 
             this.c1TrueDBGrid1.AllowAddNew = true;
             this.c1TrueDBGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.c1TrueDBGrid1.CaptionHeight = 17;
             this.c1TrueDBGrid1.ChildGrid = this.c1TrueDBGrid2;
             this.c1TrueDBGrid1.DataSource = this.customersBindingSource;
             this.c1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.GroupBy;
@@ -61,89 +60,81 @@
             this.c1TrueDBGrid1.FilterBar = true;
             this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
             this.c1TrueDBGrid1.Location = new System.Drawing.Point(0, 0);
-            this.c1TrueDBGrid1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.PreviewInfo.Caption = "PrintPreview窗口";
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
             this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
+            this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             this.c1TrueDBGrid1.RecordSelectorWidth = 20;
             this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.LightGray;
             this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
             this.c1TrueDBGrid1.RowHeight = 20;
             this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.LightGray;
             this.c1TrueDBGrid1.ScrollTips = true;
-            this.c1TrueDBGrid1.Size = new System.Drawing.Size(691, 583);
+            this.c1TrueDBGrid1.Size = new System.Drawing.Size(592, 446);
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // c1TrueDBGrid2
             // 
             this.c1TrueDBGrid2.AllowAddNew = true;
-            this.c1TrueDBGrid2.CaptionHeight = 17;
             this.c1TrueDBGrid2.ChildGrid = this.c1TrueDBGrid3;
             this.c1TrueDBGrid2.DataSource = this.customersOrdersBindingSource;
             this.c1TrueDBGrid2.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid2.Images"))));
-            this.c1TrueDBGrid2.Location = new System.Drawing.Point(14, 120);
-            this.c1TrueDBGrid2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1TrueDBGrid2.Location = new System.Drawing.Point(12, 92);
             this.c1TrueDBGrid2.Name = "c1TrueDBGrid2";
-            this.c1TrueDBGrid2.PreviewInfo.Caption = "PrintPreview窗口";
             this.c1TrueDBGrid2.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid2.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid2.PreviewInfo.ZoomFactor = 75D;
             this.c1TrueDBGrid2.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid2.PrintInfo.PageSettings")));
+            this.c1TrueDBGrid2.PropBag = resources.GetString("c1TrueDBGrid2.PropBag");
             this.c1TrueDBGrid2.RecordSelectorWidth = 20;
             this.c1TrueDBGrid2.RowDivider.Color = System.Drawing.Color.LightGray;
             this.c1TrueDBGrid2.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
             this.c1TrueDBGrid2.RowHeight = 20;
             this.c1TrueDBGrid2.RowSubDividerColor = System.Drawing.Color.LightGray;
-            this.c1TrueDBGrid2.Size = new System.Drawing.Size(690, 185);
+            this.c1TrueDBGrid2.Size = new System.Drawing.Size(592, 142);
             this.c1TrueDBGrid2.TabIndex = 1;
             this.c1TrueDBGrid2.TabStop = false;
             this.c1TrueDBGrid2.Text = "c1TrueDBGrid2";
-            this.c1TrueDBGrid2.PropBag = resources.GetString("c1TrueDBGrid2.PropBag");
             // 
             // c1TrueDBGrid3
             // 
             this.c1TrueDBGrid3.AllowAddNew = true;
-            this.c1TrueDBGrid3.CaptionHeight = 17;
             this.c1TrueDBGrid3.DataSource = this.ordersOrderDetailsBindingSource;
             this.c1TrueDBGrid3.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid3.Images"))));
-            this.c1TrueDBGrid3.Location = new System.Drawing.Point(65, 220);
-            this.c1TrueDBGrid3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1TrueDBGrid3.Location = new System.Drawing.Point(56, 168);
             this.c1TrueDBGrid3.Name = "c1TrueDBGrid3";
-            this.c1TrueDBGrid3.PreviewInfo.Caption = "PrintPreview窗口";
             this.c1TrueDBGrid3.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid3.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid3.PreviewInfo.ZoomFactor = 75D;
             this.c1TrueDBGrid3.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid3.PrintInfo.PageSettings")));
+            this.c1TrueDBGrid3.PropBag = resources.GetString("c1TrueDBGrid3.PropBag");
             this.c1TrueDBGrid3.RecordSelectorWidth = 20;
             this.c1TrueDBGrid3.RowDivider.Color = System.Drawing.Color.LightGray;
             this.c1TrueDBGrid3.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
             this.c1TrueDBGrid3.RowHeight = 20;
             this.c1TrueDBGrid3.RowSubDividerColor = System.Drawing.Color.LightGray;
-            this.c1TrueDBGrid3.Size = new System.Drawing.Size(611, 120);
+            this.c1TrueDBGrid3.Size = new System.Drawing.Size(524, 92);
             this.c1TrueDBGrid3.TabIndex = 2;
             this.c1TrueDBGrid3.TabStop = false;
             this.c1TrueDBGrid3.Text = "c1TrueDBGrid3";
-            this.c1TrueDBGrid3.PropBag = resources.GetString("c1TrueDBGrid3.PropBag");
             // 
-            // ordersOrderDetailsBindingSource
+            // customersBindingSource
             // 
-            this.ordersOrderDetailsBindingSource.DataMember = "OrdersOrder Details";
-            this.ordersOrderDetailsBindingSource.DataSource = this.customersOrdersBindingSource;
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = this.c1DemoDataSet;
             // 
             // customersOrdersBindingSource
             // 
             this.customersOrdersBindingSource.DataMember = "CustomersOrders";
             this.customersOrdersBindingSource.DataSource = this.customersBindingSource;
             // 
-            // customersBindingSource
+            // ordersOrderDetailsBindingSource
             // 
-            this.customersBindingSource.DataMember = "Customers";
-            this.customersBindingSource.DataSource = this.c1DemoDataSet;
+            this.ordersOrderDetailsBindingSource.DataMember = "OrdersOrder Details";
+            this.ordersOrderDetailsBindingSource.DataSource = this.customersOrdersBindingSource;
             // 
             // c1DemoDataSet
             // 
@@ -164,13 +155,13 @@
             // 
             // ChildGrids
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 583);
+            this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.c1TrueDBGrid3);
             this.Controls.Add(this.c1TrueDBGrid2);
             this.Controls.Add(this.c1TrueDBGrid1);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ChildGrids";
             this.Text = "ChildGrids";
             this.Load += new System.EventHandler(this.ChildGrids_Load);

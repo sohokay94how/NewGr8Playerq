@@ -82,7 +82,7 @@
             this.cbViewLegend.Name = "cbViewLegend";
             this.cbViewLegend.Size = new System.Drawing.Size(144, 24);
             this.cbViewLegend.TabIndex = 19;
-            this.cbViewLegend.Text = "查看图例";
+            this.cbViewLegend.Text = "View Legend";
             this.cbViewLegend.UseVisualStyleBackColor = true;
             this.cbViewLegend.CheckedChanged += new System.EventHandler(this.cbViewLegend_CheckedChanged);
             // 
@@ -94,7 +94,7 @@
             this.cbViewFormula.Name = "cbViewFormula";
             this.cbViewFormula.Size = new System.Drawing.Size(144, 24);
             this.cbViewFormula.TabIndex = 18;
-            this.cbViewFormula.Text = "查看公式";
+            this.cbViewFormula.Text = "View Formula";
             this.cbViewFormula.UseVisualStyleBackColor = true;
             this.cbViewFormula.CheckedChanged += new System.EventHandler(this.cbViewFormula_CheckedChanged);
             // 
@@ -106,7 +106,7 @@
             this.cbViewStatistics.Name = "cbViewStatistics";
             this.cbViewStatistics.Size = new System.Drawing.Size(144, 24);
             this.cbViewStatistics.TabIndex = 17;
-            this.cbViewStatistics.Text = "查看数据";
+            this.cbViewStatistics.Text = "View Statistics";
             this.cbViewStatistics.UseVisualStyleBackColor = true;
             this.cbViewStatistics.CheckedChanged += new System.EventHandler(this.cbViewStatistics_CheckedChanged);
             // 
@@ -126,7 +126,7 @@
             this.cbUseYIntercept.Name = "cbUseYIntercept";
             this.cbUseYIntercept.Size = new System.Drawing.Size(96, 24);
             this.cbUseYIntercept.TabIndex = 15;
-            this.cbUseYIntercept.Text = "使用拦截";
+            this.cbUseYIntercept.Text = "UseYIntercept";
             this.cbUseYIntercept.CheckedChanged += new System.EventHandler(this.cbUseYIntercept_CheckedChanged);
             // 
             // cbTLCursor
@@ -137,7 +137,7 @@
             this.cbTLCursor.Name = "cbTLCursor";
             this.cbTLCursor.Size = new System.Drawing.Size(144, 24);
             this.cbTLCursor.TabIndex = 14;
-            this.cbTLCursor.Text = "趋势线光标";
+            this.cbTLCursor.Text = "Trend line cursor";
             // 
             // lblNumber
             // 
@@ -145,7 +145,7 @@
             this.lblNumber.Name = "lblNumber";
             this.lblNumber.Size = new System.Drawing.Size(96, 20);
             this.lblNumber.TabIndex = 13;
-            this.lblNumber.Text = "条件的数目:";
+            this.lblNumber.Text = "Number of terms:";
             this.lblNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // udOrder
@@ -178,7 +178,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 10;
-            this.label2.Text = "趋势线:";
+            this.label2.Text = "Trend Line:";
             // 
             // cbTrendType
             // 
@@ -197,7 +197,7 @@
             this.lblErrorData.Name = "lblErrorData";
             this.lblErrorData.Size = new System.Drawing.Size(144, 32);
             this.lblErrorData.TabIndex = 8;
-            this.lblErrorData.Text = "该数据不适合选定的趋势类型。";
+            this.lblErrorData.Text = "This data does not fit to the selected trend type.";
             this.lblErrorData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -207,7 +207,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 7;
-            this.label1.Text = "数据:";
+            this.label1.Text = "Data:";
             // 
             // cbDataType
             // 
@@ -241,7 +241,7 @@
             this.cbAllowDragging.Name = "cbAllowDragging";
             this.cbAllowDragging.Size = new System.Drawing.Size(81, 17);
             this.cbAllowDragging.TabIndex = 20;
-            this.cbAllowDragging.Text = "拖动点";
+            this.cbAllowDragging.Text = "Drag Points";
             this.cbAllowDragging.UseVisualStyleBackColor = true;
             // 
             // TrendLines
@@ -252,7 +252,7 @@
             this.Controls.Add(this.c1Chart1);
             this.Controls.Add(this.panel1);
             this.Name = "TrendLines";
-            this.Text = "趋势线";
+            this.Text = "TrendLines";
             this.Load += new System.EventHandler(this.TrendLines_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

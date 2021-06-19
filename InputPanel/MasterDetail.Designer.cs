@@ -112,7 +112,7 @@
             // hdrCategories
             // 
             this.hdrCategories.Name = "hdrCategories";
-            this.hdrCategories.Text = "种类";
+            this.hdrCategories.Text = "&Categories";
             // 
             // navCategories
             // 
@@ -150,7 +150,7 @@
             // lblCategoryID
             // 
             this.lblCategoryID.Name = "lblCategoryID";
-            this.lblCategoryID.Text = "分类标识（&I）:";
+            this.lblCategoryID.Text = "Category &ID:";
             this.lblCategoryID.Width = 91;
             // 
             // numCategoryID
@@ -173,7 +173,7 @@
             // lblCategoryName
             // 
             this.lblCategoryName.Name = "lblCategoryName";
-            this.lblCategoryName.Text = "分类名称（&N）:";
+            this.lblCategoryName.Text = "Category &Name:";
             this.lblCategoryName.Width = 91;
             // 
             // txtCategoryName
@@ -185,7 +185,7 @@
             // lblDescription
             // 
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Text = "描述（&D）:";
+            this.lblDescription.Text = "&Description:";
             this.lblDescription.Width = 91;
             // 
             // txtDescription
@@ -202,7 +202,7 @@
             // 
             this.lblPicture.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
             this.lblPicture.Name = "lblPicture";
-            this.lblPicture.Text = "图片:";
+            this.lblPicture.Text = "Picture:";
             this.lblPicture.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far;
             this.lblPicture.Width = 91;
             // 
@@ -253,7 +253,7 @@
             // hdrIBindingList
             // 
             this.hdrIBindingList.Name = "hdrIBindingList";
-            this.hdrIBindingList.Text = "产品";
+            this.hdrIBindingList.Text = "&Products";
             // 
             // navIBindingList
             // 
@@ -293,7 +293,7 @@
             // lblProductID
             // 
             this.lblProductID.Name = "lblProductID";
-            this.lblProductID.Text = "产品标识（&r）:";
+            this.lblProductID.Text = "P&roduct ID:";
             this.lblProductID.Width = 99;
             // 
             // numProductID
@@ -316,7 +316,7 @@
             // lblProductName
             // 
             this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Text = "产品名称（&o）:";
+            this.lblProductName.Text = "Pr&oduct Name:";
             this.lblProductName.Width = 99;
             // 
             // txtProductName
@@ -328,7 +328,7 @@
             // lblSupplierID
             // 
             this.lblSupplierID.Name = "lblSupplierID";
-            this.lblSupplierID.Text = "供应商标识（&S）:";
+            this.lblSupplierID.Text = "&Supplier ID:";
             this.lblSupplierID.Width = 99;
             // 
             // numSupplierID
@@ -350,7 +350,7 @@
             // lblCategoryID1
             // 
             this.lblCategoryID1.Name = "lblCategoryID1";
-            this.lblCategoryID1.Text = "类型标识（&a）:";
+            this.lblCategoryID1.Text = "C&ategory ID:";
             this.lblCategoryID1.Width = 99;
             // 
             // numCategoryID1
@@ -372,7 +372,7 @@
             // lblQuantityPerUnit
             // 
             this.lblQuantityPerUnit.Name = "lblQuantityPerUnit";
-            this.lblQuantityPerUnit.Text = "单位质量（&Q）:";
+            this.lblQuantityPerUnit.Text = "&Quantity Per Unit:";
             this.lblQuantityPerUnit.Width = 99;
             // 
             // txtQuantityPerUnit
@@ -385,7 +385,7 @@
             // lblUnitPrice
             // 
             this.lblUnitPrice.Name = "lblUnitPrice";
-            this.lblUnitPrice.Text = "单价（&U）:";
+            this.lblUnitPrice.Text = "&Unit Price:";
             this.lblUnitPrice.Width = 99;
             // 
             // numUnitPrice
@@ -397,7 +397,7 @@
             // lblUnitsInStock
             // 
             this.lblUnitsInStock.Name = "lblUnitsInStock";
-            this.lblUnitsInStock.Text = "库存（&t）:";
+            this.lblUnitsInStock.Text = "Uni&ts In Stock:";
             this.lblUnitsInStock.Width = 99;
             // 
             // numUnitsInStock
@@ -419,7 +419,7 @@
             // lblUnitsOnOrder
             // 
             this.lblUnitsOnOrder.Name = "lblUnitsOnOrder";
-            this.lblUnitsOnOrder.Text = "订单数量（&e）:";
+            this.lblUnitsOnOrder.Text = "Units On Ord&er:";
             this.lblUnitsOnOrder.Width = 99;
             // 
             // numUnitsOnOrder
@@ -441,7 +441,7 @@
             // lblReorderLevel
             // 
             this.lblReorderLevel.Name = "lblReorderLevel";
-            this.lblReorderLevel.Text = "记录等级（&L）:";
+            this.lblReorderLevel.Text = "Reorder &Level:";
             this.lblReorderLevel.Width = 99;
             // 
             // numReorderLevel
@@ -464,7 +464,7 @@
             // 
             this.chkDiscontinued.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.categoriesProductsBindingSource, "Discontinued", true));
             this.chkDiscontinued.Name = "chkDiscontinued";
-            this.chkDiscontinued.Text = "停止使用";
+            this.chkDiscontinued.Text = "Discontinued";
             // 
             // splitter1
             // 
@@ -493,7 +493,7 @@
             this.Controls.Add(this.c1InputPanel2);
             this.Controls.Add(this.c1InputPanel1);
             this.Name = "MasterDetail";
-            this.Text = "主/详";
+            this.Text = "MasterDetail";
             this.Load += new System.EventHandler(this.MasterDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();

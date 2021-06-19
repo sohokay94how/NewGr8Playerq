@@ -51,11 +51,9 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.c1SuperLabel2 = new C1.Win.C1SuperTooltip.C1SuperLabel();
             this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
@@ -66,11 +64,10 @@
             this.c1SuperLabel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.c1SuperLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1SuperLabel1.Location = new System.Drawing.Point(0, 0);
-            this.c1SuperLabel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1SuperLabel1.Name = "c1SuperLabel1";
-            this.c1SuperLabel1.Size = new System.Drawing.Size(155, 31);
+            this.c1SuperLabel1.Size = new System.Drawing.Size(133, 24);
             this.c1SuperLabel1.TabIndex = 3;
-            this.c1SuperLabel1.Text = "Html特性";
+            this.c1SuperLabel1.Text = "Html Features";
             this.c1SuperLabel1.UseMnemonic = true;
             // 
             // radioButton1
@@ -79,13 +76,12 @@
             this.radioButton1.Checked = true;
             this.radioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(14, 47);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton1.Location = new System.Drawing.Point(12, 36);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(49, 19);
+            this.radioButton1.Size = new System.Drawing.Size(80, 19);
             this.radioButton1.TabIndex = 4;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "排列";
+            this.radioButton1.Text = "Alignment";
             this.c1SuperTooltip1.SetToolTip(this.radioButton1, resources.GetString("radioButton1.ToolTip"));
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -95,12 +91,11 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(14, 112);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton2.Location = new System.Drawing.Point(12, 86);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(49, 19);
+            this.radioButton2.Size = new System.Drawing.Size(68, 19);
             this.radioButton2.TabIndex = 5;
-            this.radioButton2.Text = "边界";
+            this.radioButton2.Text = "Borders";
             this.c1SuperTooltip1.SetToolTip(this.radioButton2, resources.GetString("radioButton2.ToolTip"));
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -110,12 +105,11 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(14, 145);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton3.Location = new System.Drawing.Point(12, 111);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(49, 19);
+            this.radioButton3.Size = new System.Drawing.Size(55, 19);
             this.radioButton3.TabIndex = 6;
-            this.radioButton3.Text = "字体";
+            this.radioButton3.Text = "Fonts";
             this.c1SuperTooltip1.SetToolTip(this.radioButton3, resources.GetString("radioButton3.ToolTip"));
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -125,12 +119,11 @@
             this.radioButton4.AutoSize = true;
             this.radioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(14, 243);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton4.Location = new System.Drawing.Point(12, 186);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(49, 19);
+            this.radioButton4.Size = new System.Drawing.Size(50, 19);
             this.radioButton4.TabIndex = 7;
-            this.radioButton4.Text = "列表";
+            this.radioButton4.Text = "Lists";
             this.c1SuperTooltip1.SetToolTip(this.radioButton4, resources.GetString("radioButton4.ToolTip"));
             this.radioButton4.UseVisualStyleBackColor = true;
             this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -140,12 +133,11 @@
             this.radioButton5.AutoSize = true;
             this.radioButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(14, 276);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton5.Location = new System.Drawing.Point(12, 211);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(84, 19);
+            this.radioButton5.Size = new System.Drawing.Size(90, 19);
             this.radioButton5.TabIndex = 8;
-            this.radioButton5.Text = "嵌套的Divs";
+            this.radioButton5.Text = "Nested Divs";
             this.c1SuperTooltip1.SetToolTip(this.radioButton5, resources.GetString("radioButton5.ToolTip"));
             this.radioButton5.UseVisualStyleBackColor = true;
             this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -155,12 +147,11 @@
             this.radioButton6.AutoSize = true;
             this.radioButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(14, 309);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton6.Location = new System.Drawing.Point(12, 236);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(73, 19);
+            this.radioButton6.Size = new System.Drawing.Size(96, 19);
             this.radioButton6.TabIndex = 9;
-            this.radioButton6.Text = "预设格式";
+            this.radioButton6.Text = "Preformatted";
             this.c1SuperTooltip1.SetToolTip(this.radioButton6, resources.GetString("radioButton6.ToolTip"));
             this.radioButton6.UseVisualStyleBackColor = true;
             this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -170,12 +161,11 @@
             this.radioButton7.AutoSize = true;
             this.radioButton7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(14, 374);
-            this.radioButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton7.Location = new System.Drawing.Point(12, 286);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(49, 19);
+            this.radioButton7.Size = new System.Drawing.Size(76, 19);
             this.radioButton7.TabIndex = 10;
-            this.radioButton7.Text = "脚注";
+            this.radioButton7.Text = "Subscript";
             this.c1SuperTooltip1.SetToolTip(this.radioButton7, resources.GetString("radioButton7.ToolTip"));
             this.radioButton7.UseVisualStyleBackColor = true;
             this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -185,12 +175,11 @@
             this.radioButton8.AutoSize = true;
             this.radioButton8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(14, 407);
-            this.radioButton8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton8.Location = new System.Drawing.Point(12, 311);
             this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(37, 19);
+            this.radioButton8.Size = new System.Drawing.Size(62, 19);
             this.radioButton8.TabIndex = 11;
-            this.radioButton8.Text = "表";
+            this.radioButton8.Text = "Tables";
             this.c1SuperTooltip1.SetToolTip(this.radioButton8, resources.GetString("radioButton8.ToolTip"));
             this.radioButton8.UseVisualStyleBackColor = true;
             this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -200,12 +189,11 @@
             this.radioButton9.AutoSize = true;
             this.radioButton9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(14, 439);
-            this.radioButton9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton9.Location = new System.Drawing.Point(12, 336);
             this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(73, 19);
+            this.radioButton9.Size = new System.Drawing.Size(86, 19);
             this.radioButton9.TabIndex = 12;
-            this.radioButton9.Text = "文本颜色";
+            this.radioButton9.Text = "Text Colors";
             this.c1SuperTooltip1.SetToolTip(this.radioButton9, resources.GetString("radioButton9.ToolTip"));
             this.radioButton9.UseVisualStyleBackColor = true;
             this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -215,12 +203,11 @@
             this.radioButton10.AutoSize = true;
             this.radioButton10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton10.Location = new System.Drawing.Point(14, 211);
-            this.radioButton10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton10.Location = new System.Drawing.Point(12, 161);
             this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(49, 19);
+            this.radioButton10.Size = new System.Drawing.Size(66, 19);
             this.radioButton10.TabIndex = 13;
-            this.radioButton10.Text = "图像";
+            this.radioButton10.Text = "Images";
             this.c1SuperTooltip1.SetToolTip(this.radioButton10, resources.GetString("radioButton10.ToolTip"));
             this.radioButton10.UseVisualStyleBackColor = true;
             this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -229,7 +216,6 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -254,9 +240,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Panel2.Controls.Add(this.checkBox1);
             this.splitContainer1.Panel2.Controls.Add(this.c1SuperLabel2);
-            this.splitContainer1.Size = new System.Drawing.Size(691, 583);
-            this.splitContainer1.SplitterDistance = 155;
-            this.splitContainer1.SplitterWidth = 5;
+            this.splitContainer1.Size = new System.Drawing.Size(592, 446);
+            this.splitContainer1.SplitterDistance = 133;
             this.splitContainer1.TabIndex = 15;
             // 
             // radioButton13
@@ -264,12 +249,11 @@
             this.radioButton13.AutoSize = true;
             this.radioButton13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton13.Location = new System.Drawing.Point(14, 178);
-            this.radioButton13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton13.Location = new System.Drawing.Point(12, 136);
             this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(61, 19);
+            this.radioButton13.Size = new System.Drawing.Size(82, 19);
             this.radioButton13.TabIndex = 16;
-            this.radioButton13.Text = "超链接";
+            this.radioButton13.Text = "Hyperlinks";
             this.c1SuperTooltip1.SetToolTip(this.radioButton13, resources.GetString("radioButton13.ToolTip"));
             this.radioButton13.UseVisualStyleBackColor = true;
             this.radioButton13.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -279,12 +263,11 @@
             this.radioButton12.AutoSize = true;
             this.radioButton12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton12.Location = new System.Drawing.Point(14, 80);
-            this.radioButton12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton12.Location = new System.Drawing.Point(12, 61);
             this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(61, 19);
+            this.radioButton12.Size = new System.Drawing.Size(55, 19);
             this.radioButton12.TabIndex = 15;
-            this.radioButton12.Text = "基本的";
+            this.radioButton12.Text = "Basic";
             this.c1SuperTooltip1.SetToolTip(this.radioButton12, resources.GetString("radioButton12.ToolTip"));
             this.radioButton12.UseVisualStyleBackColor = true;
             this.radioButton12.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -294,12 +277,11 @@
             this.radioButton11.AutoSize = true;
             this.radioButton11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton11.Location = new System.Drawing.Point(14, 341);
-            this.radioButton11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton11.Location = new System.Drawing.Point(12, 261);
             this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(84, 19);
+            this.radioButton11.Size = new System.Drawing.Size(86, 19);
             this.radioButton11.TabIndex = 14;
-            this.radioButton11.Text = "风格 (CSS)";
+            this.radioButton11.Text = "Style (CSS)";
             this.c1SuperTooltip1.SetToolTip(this.radioButton11, resources.GetString("radioButton11.ToolTip"));
             this.radioButton11.UseVisualStyleBackColor = true;
             this.radioButton11.CheckedChanged += new System.EventHandler(this.radioButton_CheckedChanged);
@@ -307,8 +289,7 @@
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.Location = new System.Drawing.Point(0, 31);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.splitContainer2.Location = new System.Drawing.Point(0, 24);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -320,9 +301,8 @@
             // 
             this.splitContainer2.Panel2.Controls.Add(this.richTextBox1);
             this.splitContainer2.Panel2Collapsed = true;
-            this.splitContainer2.Size = new System.Drawing.Size(531, 552);
+            this.splitContainer2.Size = new System.Drawing.Size(455, 422);
             this.splitContainer2.SplitterDistance = 208;
-            this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 7;
             // 
             // c1SuperLabel3
@@ -333,9 +313,8 @@
             this.c1SuperLabel3.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Dashboard.gif", ((System.Drawing.Image)(resources.GetObject("c1SuperLabel3.Images")))));
             this.c1SuperLabel3.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Help_2.gif", ((System.Drawing.Image)(resources.GetObject("c1SuperLabel3.Images1")))));
             this.c1SuperLabel3.Location = new System.Drawing.Point(0, 0);
-            this.c1SuperLabel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1SuperLabel3.Name = "c1SuperLabel3";
-            this.c1SuperLabel3.Size = new System.Drawing.Size(531, 552);
+            this.c1SuperLabel3.Size = new System.Drawing.Size(455, 422);
             this.c1SuperLabel3.TabIndex = 5;
             this.c1SuperLabel3.Text = "c1SuperLabel3";
             this.c1SuperLabel3.UseMnemonic = true;
@@ -345,10 +324,9 @@
             // 
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(175, 60);
+            this.richTextBox1.Size = new System.Drawing.Size(150, 46);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -356,12 +334,11 @@
             // 
             this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(435, 5);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.checkBox1.Location = new System.Drawing.Point(366, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(82, 21);
+            this.checkBox1.Size = new System.Drawing.Size(77, 17);
             this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "展示 Html";
+            this.checkBox1.Text = "Show Html";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -370,9 +347,8 @@
             this.c1SuperLabel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.c1SuperLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1SuperLabel2.Location = new System.Drawing.Point(0, 0);
-            this.c1SuperLabel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1SuperLabel2.Name = "c1SuperLabel2";
-            this.c1SuperLabel2.Size = new System.Drawing.Size(531, 31);
+            this.c1SuperLabel2.Size = new System.Drawing.Size(455, 24);
             this.c1SuperLabel2.TabIndex = 4;
             this.c1SuperLabel2.Text = "C1SuperLabel";
             this.c1SuperLabel2.UseMnemonic = true;
@@ -388,23 +364,20 @@
             // 
             // HtmlFeatures
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 583);
+            this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "HtmlFeatures";
-            this.Text = "Html特性";
+            this.Text = "HtmlFeatures";
             this.Load += new System.EventHandler(this.HtmlFeatures_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -19,17 +19,6 @@ namespace ControlExplorer
             InitializeComponent();
         }
 
-        public bool ShowTitle
-        {
-            set { this.c1DockingTab_Description.Visible = value; }
-        }
-
-        //public bool ShowProperties
-        //{
-        //    set { this.c1DockingTab_Properties.Visible = value; }
-        //}
-
-
         public C1DemoForm Run(string typeName, string title, string description)
         {
             //C1DemoForm d = null;
@@ -41,35 +30,18 @@ namespace ControlExplorer
                 demoForm = t.Assembly.CreateInstance(t.FullName) as C1DemoForm;
                 //c1Expander1.HeaderText = title;
                 c1DockingTabPage_Demo.Text = title;
-                demoForm.DisplayIn(items);
-                AddProperties(demoForm);
-                if (!string.IsNullOrEmpty(demoForm.Description))
-                {
-                    AddDescription(demoForm);
-                    c1DockingTabPage_Description.Visible = true;
-                    c1CommandDock1.Visible = true;
-                }
-                else if (!string.IsNullOrEmpty(description))
-                {
-                    lblDescription.Text = description;
-                    c1DockingTabPage_Description.Visible = true;
-                    c1CommandDock1.Visible = true;
-                }
-                else
-                {
-                    c1DockingTabPage_Description.Visible = false;
-                    c1CommandDock1.Visible = false;
-                }
                 if (!string.IsNullOrEmpty(typeName))
                 {
                     c1DockingTabPage_Code.TabVisible = LoadCodeViewer();
                     c1DockingTab_Demo.ShowTabs = c1DockingTabPage_Code.TabVisible;
                 }
+                demoForm.DisplayIn(items);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            AddProperties(demoForm);
             return demoForm;
         }
 
@@ -104,32 +76,20 @@ namespace ControlExplorer
             if (d.Properties.Count > 0)
             {
                 PropertyList pl = new PropertyList(d.Properties);
+                pl.Width = 212;
                 panelProperties.Controls.Add(pl);
-                //int heightCount = d.Properties.Count > 4 ? 4 : d.Properties.Count;
-                //panelProperties.Height = pl.CalculateHeight(pl);
-                //btnProperties.Enabled = true;
                 c1DockingTab_Properties.Visible = true;
             }
             else
             {
+                c1DockingTab_Properties.SlideHidePage();
                 c1DockingTab_Properties.Visible = false;
             }
-        }
-
-        private void AddDescription(C1DemoForm d)
-        {
-            lblDescription.Text = d.Description;
-        }
-
-        public void UpdateDescription(string desc)
-        {
-            lblDescription.Text = desc;
         }
 
         private void c1DockingTab1_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadCodeViewer();
         }
-
     }
 }

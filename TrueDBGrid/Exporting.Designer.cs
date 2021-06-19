@@ -99,7 +99,7 @@
             // 
             this.c1CommandExportRTF.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandExportRTF.Image")));
             this.c1CommandExportRTF.Name = "c1CommandExportRTF";
-            this.c1CommandExportRTF.Text = "丰富的文本";
+            this.c1CommandExportRTF.Text = "Rich Text";
             // 
             // c1CommandExportExcel
             // 
@@ -111,19 +111,19 @@
             // 
             this.c1CommandPrintPreview.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandPrintPreview.Image")));
             this.c1CommandPrintPreview.Name = "c1CommandPrintPreview";
-            this.c1CommandPrintPreview.Text = "打印预览";
+            this.c1CommandPrintPreview.Text = "Print Preview";
             // 
             // c1CommandExport
             // 
             this.c1CommandExport.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandExport.Image")));
             this.c1CommandExport.Name = "c1CommandExport";
-            this.c1CommandExport.Text = "导出选项";
+            this.c1CommandExport.Text = "Export Options";
             // 
             // c1CommandExportCSV
             // 
             this.c1CommandExportCSV.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandExportCSV.Image")));
             this.c1CommandExportCSV.Name = "c1CommandExportCSV";
-            this.c1CommandExportCSV.Text = "限定的文本";
+            this.c1CommandExportCSV.Text = "Delimited Text";
             // 
             // c1CommandLink5
             // 
@@ -136,7 +136,7 @@
             this.c1CommandLink6.Command = this.c1CommandExport;
             this.c1CommandLink6.Delimiter = true;
             this.c1CommandLink6.SortOrder = 1;
-            this.c1CommandLink6.Text = "导出到...";
+            this.c1CommandLink6.Text = "Export To...";
             // 
             // c1CommandLink1
             // 
@@ -157,7 +157,7 @@
             this.c1CommandLink3.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
             this.c1CommandLink3.Command = this.c1CommandExportRTF;
             this.c1CommandLink3.SortOrder = 4;
-            this.c1CommandLink3.Text = "丰富的文本";
+            this.c1CommandLink3.Text = "Rich Text";
             // 
             // c1CommandLink4
             // 
@@ -197,7 +197,7 @@
             this.Controls.Add(this.c1TrueDBGrid1);
             this.Controls.Add(this.c1ToolBar1);
             this.Name = "Exporting";
-            this.Text = "导出";
+            this.Text = "Exporting";
             this.Load += new System.EventHandler(this.Exporting_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).EndInit();

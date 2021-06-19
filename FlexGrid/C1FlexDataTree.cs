@@ -304,11 +304,11 @@ namespace ControlExplorer.FlexGrid
 				// add node row (unbound) to display child
 				Rows.InsertNode(hit.Row + 1, -1);
 
-				// make child grid visible, move it into position
-				childGrid.Visible = true;
-				childGrid.UpdatePosition();
-				childGrid.Focus();
-			}
+                // move child grid into position, make it visible
+                childGrid.UpdatePosition();
+                childGrid.Visible = true;
+                childGrid.Focus();
+            }
 			else // hide and delete child grid
 			{
 				// get child grid

@@ -48,7 +48,7 @@
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(592, 25);
             this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "工具提示1";
+            this.toolStrip1.Text = "toolStrip1";
             // 
             // btnExcel
             // 
@@ -56,8 +56,8 @@
             this.btnExcel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.Size = new System.Drawing.Size(103, 22);
-            this.btnExcel.Text = "导出到Excel";
-            this.btnExcel.ToolTipText = "把表格保存到Excel中";
+            this.btnExcel.Text = "Export to Excel";
+            this.btnExcel.ToolTipText = "Save this grid to Excel.";
             this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
             // 
             // btnImport
@@ -66,8 +66,8 @@
             this.btnImport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(121, 22);
-            this.btnImport.Text = "从Excel导入";
-            this.btnImport.ToolTipText = "从你的机器上加载一个Excel文件。";
+            this.btnImport.Text = "Import from Excel";
+            this.btnImport.ToolTipText = "Load an Excel file from your machine.";
             this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
             // btnPrint
@@ -76,8 +76,8 @@
             this.btnPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(96, 22);
-            this.btnPrint.Text = "打印预览";
-            this.btnPrint.ToolTipText = "打开打印预览.";
+            this.btnPrint.Text = "Print Preview";
+            this.btnPrint.ToolTipText = "Open a print preview.";
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // c1FlexGrid1
@@ -102,7 +102,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Excel";
-            this.Text = "打印";
+            this.Text = "Printing";
             this.Load += new System.EventHandler(this.Printing_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

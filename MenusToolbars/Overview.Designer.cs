@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.c1TextBox2 = new C1.Win.C1Input.C1TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.c1CommandDock4 = new C1.Win.C1Command.C1CommandDock();
+            this.c1CommandDock3 = new C1.Win.C1Command.C1CommandDock();
+            this.c1CommandDock2 = new C1.Win.C1Command.C1CommandDock();
+            this.c1CommandDock1 = new C1.Win.C1Command.C1CommandDock();
+            this.c1ToolBar_Tools = new C1.Win.C1Command.C1ToolBar();
             this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
             this.c1CommandMenu_File = new C1.Win.C1Command.C1CommandMenu();
             this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
@@ -149,10 +155,6 @@
             this.c1CommandLink92 = new C1.Win.C1Command.C1CommandLink();
             this.c1CommandLink93 = new C1.Win.C1Command.C1CommandLink();
             this.c1CommandLink94 = new C1.Win.C1Command.C1CommandLink();
-            this.label1 = new System.Windows.Forms.Label();
-            this.c1CommandDock4 = new C1.Win.C1Command.C1CommandDock();
-            this.c1CommandDock1 = new C1.Win.C1Command.C1CommandDock();
-            this.c1ToolBar_Tools = new C1.Win.C1Command.C1ToolBar();
             this.c1CommandLink81 = new C1.Win.C1Command.C1CommandLink();
             this.c1CommandLink82 = new C1.Win.C1Command.C1CommandLink();
             this.c1CommandLink83 = new C1.Win.C1Command.C1CommandLink();
@@ -192,29 +194,90 @@
             this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
             this.c1CommandLink7 = new C1.Win.C1Command.C1CommandLink();
             this.c1CommandLink9 = new C1.Win.C1Command.C1CommandLink();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1TextBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1TextBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock1)).BeginInit();
             this.c1CommandDock1.SuspendLayout();
             this.c1ToolBar_Tools.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1TextBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // c1TextBox2
             // 
             this.c1TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.c1TextBox2.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1TextBox2.Location = new System.Drawing.Point(87, 6);
             this.c1TextBox2.Name = "c1TextBox2";
-            this.c1TextBox2.Size = new System.Drawing.Size(100, 21);
+            this.c1TextBox2.Size = new System.Drawing.Size(100, 18);
             this.c1TextBox2.TabIndex = 9;
             this.c1TextBox2.Tag = null;
             this.c1TextBox2.TextDetached = true;
-            this.c1ThemeController1.SetTheme(this.c1TextBox2, "(default)");
-            this.c1TextBox2.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.c1CommandHolder1.SetC1ContextMenu(this.label1, this.c1ContextMenu1);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Location = new System.Drawing.Point(10, 81);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(5);
+            this.label1.Size = new System.Drawing.Size(572, 355);
+            this.label1.TabIndex = 19;
+            this.label1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label1_MouseUp);
+            // 
+            // c1CommandDock4
+            // 
+            this.c1CommandDock4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.c1CommandDock4.Id = 10;
+            this.c1CommandDock4.Location = new System.Drawing.Point(10, 436);
+            this.c1CommandDock4.Name = "c1CommandDock4";
+            this.c1CommandDock4.Size = new System.Drawing.Size(572, 10);
+            // 
+            // c1CommandDock3
+            // 
+            this.c1CommandDock3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.c1CommandDock3.Id = 6;
+            this.c1CommandDock3.Location = new System.Drawing.Point(582, 81);
+            this.c1CommandDock3.Name = "c1CommandDock3";
+            this.c1CommandDock3.Size = new System.Drawing.Size(10, 365);
+            // 
+            // c1CommandDock2
+            // 
+            this.c1CommandDock2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.c1CommandDock2.Id = 3;
+            this.c1CommandDock2.Location = new System.Drawing.Point(0, 81);
+            this.c1CommandDock2.Name = "c1CommandDock2";
+            this.c1CommandDock2.Size = new System.Drawing.Size(10, 365);
+            // 
+            // c1CommandDock1
+            // 
+            this.c1CommandDock1.Controls.Add(this.c1ToolBar_Tools);
+            this.c1CommandDock1.Controls.Add(this.c1ToolBar_Format);
+            this.c1CommandDock1.Controls.Add(this.c1ToolBar_Edit);
+            this.c1CommandDock1.Controls.Add(this.c1ToolBar_File);
+            this.c1CommandDock1.Id = 1;
+            this.c1CommandDock1.Location = new System.Drawing.Point(0, 27);
+            this.c1CommandDock1.Name = "c1CommandDock1";
+            this.c1CommandDock1.Size = new System.Drawing.Size(592, 54);
+            // 
+            // c1ToolBar_Tools
+            // 
+            this.c1ToolBar_Tools.AccessibleName = "Tool Bar";
+            this.c1ToolBar_Tools.CommandHolder = this.c1CommandHolder1;
+            this.c1ToolBar_Tools.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandLink81,
+            this.c1CommandLink82,
+            this.c1CommandLink83,
+            this.c1CommandLink84});
+            this.c1ToolBar_Tools.Controls.Add(this.c1TextBox1);
+            this.c1ToolBar_Tools.Location = new System.Drawing.Point(290, 0);
+            this.c1ToolBar_Tools.Name = "c1ToolBar_Tools";
+            this.c1ToolBar_Tools.Size = new System.Drawing.Size(234, 24);
+            this.c1ToolBar_Tools.Text = "Tools";
+            this.c1ToolBar_Tools.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandHolder1
             // 
@@ -289,14 +352,10 @@
             this.c1CommandLink14,
             this.c1CommandLink30,
             this.c1CommandLink15});
-            this.c1CommandMenu_File.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1CommandMenu_File.HideNonRecentLinks = false;
             this.c1CommandMenu_File.Name = "c1CommandMenu_File";
-            this.c1CommandMenu_File.ShortcutText = "";
-            this.c1CommandMenu_File.Text = "文件";
-            this.c1ThemeController1.SetTheme(this.c1CommandMenu_File, "(default)");
-            this.c1CommandMenu_File.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1CommandMenu_File.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenu_File.Text = "&File";
+            this.c1CommandMenu_File.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
             // 
             // c1CommandLink2
             // 
@@ -311,16 +370,12 @@
             this.c1CommandLink21,
             this.c1CommandLink22,
             this.c1CommandLink23});
-            this.c1Command_New.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1Command_New.HideNonRecentLinks = false;
             this.c1Command_New.Image = global::ControlExplorer.Properties.Resources.New;
             this.c1Command_New.Name = "c1Command_New";
-            this.c1Command_New.ShortcutText = "";
             this.c1Command_New.ShowToolTips = true;
-            this.c1Command_New.Text = "新建";
-            this.c1ThemeController1.SetTheme(this.c1Command_New, "(default)");
-            this.c1Command_New.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1Command_New.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1Command_New.Text = "Ne&w";
+            this.c1Command_New.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
             // 
             // c1CommandLink11
             // 
@@ -332,8 +387,7 @@
             this.c1Command_NewMail.Image = global::ControlExplorer.Properties.Resources.NewEmail;
             this.c1Command_NewMail.Name = "c1Command_NewMail";
             this.c1Command_NewMail.Shortcut = System.Windows.Forms.Shortcut.CtrlN;
-            this.c1Command_NewMail.ShortcutText = "";
-            this.c1Command_NewMail.Text = "邮件信息";
+            this.c1Command_NewMail.Text = "&Mail Message";
             // 
             // c1CommandLink20
             // 
@@ -347,8 +401,7 @@
             this.c1CommandNewAppointment.Image = global::ControlExplorer.Properties.Resources.CalendarSchedule;
             this.c1CommandNewAppointment.Name = "c1CommandNewAppointment";
             this.c1CommandNewAppointment.Shortcut = System.Windows.Forms.Shortcut.CtrlShiftA;
-            this.c1CommandNewAppointment.ShortcutText = "";
-            this.c1CommandNewAppointment.Text = "约会";
+            this.c1CommandNewAppointment.Text = "&Appointment";
             // 
             // c1CommandLink21
             // 
@@ -361,8 +414,7 @@
             this.c1Command_NewNote.Image = global::ControlExplorer.Properties.Resources.NewNote;
             this.c1Command_NewNote.Name = "c1Command_NewNote";
             this.c1Command_NewNote.Shortcut = System.Windows.Forms.Shortcut.CtrlShiftN;
-            this.c1Command_NewNote.ShortcutText = "";
-            this.c1Command_NewNote.Text = "记录";
+            this.c1Command_NewNote.Text = "&Note";
             // 
             // c1CommandLink22
             // 
@@ -375,8 +427,7 @@
             this.c1Command_NewTask.Image = global::ControlExplorer.Properties.Resources.NewTask;
             this.c1Command_NewTask.Name = "c1Command_NewTask";
             this.c1Command_NewTask.Shortcut = System.Windows.Forms.Shortcut.CtrlShiftK;
-            this.c1Command_NewTask.ShortcutText = "";
-            this.c1Command_NewTask.Text = "任务";
+            this.c1Command_NewTask.Text = "Tas&k";
             // 
             // c1CommandLink23
             // 
@@ -389,8 +440,7 @@
             this.c1Command_NewContact.Image = global::ControlExplorer.Properties.Resources.NewContact;
             this.c1Command_NewContact.Name = "c1Command_NewContact";
             this.c1Command_NewContact.Shortcut = System.Windows.Forms.Shortcut.CtrlShiftC;
-            this.c1Command_NewContact.ShortcutText = "";
-            this.c1Command_NewContact.Text = "联系人";
+            this.c1Command_NewContact.Text = "&Contact";
             // 
             // c1CommandLink12
             // 
@@ -403,16 +453,12 @@
             this.c1Command_Open.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
             this.c1CommandLink13,
             this.c1CommandLink29});
-            this.c1Command_Open.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1Command_Open.HideNonRecentLinks = false;
             this.c1Command_Open.Image = global::ControlExplorer.Properties.Resources.FolderOpen;
             this.c1Command_Open.Name = "c1Command_Open";
-            this.c1Command_Open.ShortcutText = "";
             this.c1Command_Open.ShowToolTips = true;
-            this.c1Command_Open.Text = "打开";
-            this.c1ThemeController1.SetTheme(this.c1Command_Open, "(default)");
-            this.c1Command_Open.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1Command_Open.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1Command_Open.Text = "&Open";
+            this.c1Command_Open.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
             // 
             // c1CommandLink13
             // 
@@ -424,8 +470,7 @@
             this.c1Command_OpenFile.Image = global::ControlExplorer.Properties.Resources.Open;
             this.c1Command_OpenFile.Name = "c1Command_OpenFile";
             this.c1Command_OpenFile.Shortcut = System.Windows.Forms.Shortcut.CtrlO;
-            this.c1Command_OpenFile.ShortcutText = "";
-            this.c1Command_OpenFile.Text = "文件...";
+            this.c1Command_OpenFile.Text = "&File...";
             // 
             // c1CommandLink29
             // 
@@ -438,8 +483,7 @@
             this.c1Command_OpenDatabase.Image = global::ControlExplorer.Properties.Resources.Database;
             this.c1Command_OpenDatabase.Name = "c1Command_OpenDatabase";
             this.c1Command_OpenDatabase.Shortcut = System.Windows.Forms.Shortcut.CtrlShiftD;
-            this.c1Command_OpenDatabase.ShortcutText = "";
-            this.c1Command_OpenDatabase.Text = "数据库...";
+            this.c1Command_OpenDatabase.Text = "&Database...";
             // 
             // c1CommandLink14
             // 
@@ -452,8 +496,7 @@
             this.c1Command_Save.Image = global::ControlExplorer.Properties.Resources.Save;
             this.c1Command_Save.Name = "c1Command_Save";
             this.c1Command_Save.Shortcut = System.Windows.Forms.Shortcut.CtrlS;
-            this.c1Command_Save.ShortcutText = "";
-            this.c1Command_Save.Text = "保存";
+            this.c1Command_Save.Text = "&Save";
             // 
             // c1CommandLink30
             // 
@@ -466,8 +509,7 @@
             this.c1Command_SaveAll.Image = global::ControlExplorer.Properties.Resources.SaveAll;
             this.c1Command_SaveAll.Name = "c1Command_SaveAll";
             this.c1Command_SaveAll.Shortcut = System.Windows.Forms.Shortcut.CtrlShiftS;
-            this.c1Command_SaveAll.ShortcutText = "";
-            this.c1Command_SaveAll.Text = "保存所有";
+            this.c1Command_SaveAll.Text = "Save &All";
             // 
             // c1CommandLink15
             // 
@@ -480,8 +522,7 @@
             this.c1Command_Print.Image = global::ControlExplorer.Properties.Resources.Print;
             this.c1Command_Print.Name = "c1Command_Print";
             this.c1Command_Print.Shortcut = System.Windows.Forms.Shortcut.CtrlP;
-            this.c1Command_Print.ShortcutText = "";
-            this.c1Command_Print.Text = "打印";
+            this.c1Command_Print.Text = "&Print";
             // 
             // c1CommandMenu_Edit
             // 
@@ -492,19 +533,14 @@
             this.c1CommandLink18,
             this.c1CommandLink19,
             this.c1CommandLink63});
-            this.c1CommandMenu_Edit.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1CommandMenu_Edit.HideNonRecentLinks = false;
             this.c1CommandMenu_Edit.Name = "c1CommandMenu_Edit";
-            this.c1CommandMenu_Edit.ShortcutText = "";
-            this.c1CommandMenu_Edit.Text = "编辑";
-            this.c1ThemeController1.SetTheme(this.c1CommandMenu_Edit, "(default)");
-            this.c1CommandMenu_Edit.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1CommandMenu_Edit.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenu_Edit.Text = "&Edit";
+            this.c1CommandMenu_Edit.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
             // 
             // c1CommandLink4
             // 
             this.c1CommandLink4.Command = this.c1Command_Undo;
-            this.c1CommandLink4.Text = "撤销";
             // 
             // c1Command_Undo
             // 
@@ -512,14 +548,12 @@
             this.c1Command_Undo.Image = global::ControlExplorer.Properties.Resources.Undo;
             this.c1Command_Undo.Name = "c1Command_Undo";
             this.c1Command_Undo.Shortcut = System.Windows.Forms.Shortcut.CtrlZ;
-            this.c1Command_Undo.ShortcutText = "";
             this.c1Command_Undo.Text = "&Undo";
             // 
             // c1CommandLink16
             // 
             this.c1CommandLink16.Command = this.c1Command_Redo;
             this.c1CommandLink16.SortOrder = 1;
-            this.c1CommandLink16.Text = "恢复";
             // 
             // c1Command_Redo
             // 
@@ -528,7 +562,6 @@
             this.c1Command_Redo.Image = global::ControlExplorer.Properties.Resources.Redo;
             this.c1Command_Redo.Name = "c1Command_Redo";
             this.c1Command_Redo.Shortcut = System.Windows.Forms.Shortcut.CtrlY;
-            this.c1Command_Redo.ShortcutText = "";
             this.c1Command_Redo.Text = "&Redo";
             // 
             // c1CommandLink17
@@ -536,7 +569,7 @@
             this.c1CommandLink17.Command = this.c1Command_Cut;
             this.c1CommandLink17.Delimiter = true;
             this.c1CommandLink17.SortOrder = 2;
-            this.c1CommandLink17.Text = "剪切";
+            this.c1CommandLink17.Text = "Cu&t";
             // 
             // c1Command_Cut
             // 
@@ -544,14 +577,12 @@
             this.c1Command_Cut.Image = global::ControlExplorer.Properties.Resources.Cut;
             this.c1Command_Cut.Name = "c1Command_Cut";
             this.c1Command_Cut.Shortcut = System.Windows.Forms.Shortcut.CtrlX;
-            this.c1Command_Cut.ShortcutText = "";
             this.c1Command_Cut.Text = "&Cut";
             // 
             // c1CommandLink18
             // 
             this.c1CommandLink18.Command = this.c1Command_Copy;
             this.c1CommandLink18.SortOrder = 3;
-            this.c1CommandLink18.Text = "复制";
             // 
             // c1Command_Copy
             // 
@@ -559,14 +590,12 @@
             this.c1Command_Copy.Image = global::ControlExplorer.Properties.Resources.Copy;
             this.c1Command_Copy.Name = "c1Command_Copy";
             this.c1Command_Copy.Shortcut = System.Windows.Forms.Shortcut.CtrlC;
-            this.c1Command_Copy.ShortcutText = "";
             this.c1Command_Copy.Text = "&Copy";
             // 
             // c1CommandLink19
             // 
             this.c1CommandLink19.Command = this.c1Command_Paste;
             this.c1CommandLink19.SortOrder = 4;
-            this.c1CommandLink19.Text = "粘贴";
             // 
             // c1Command_Paste
             // 
@@ -574,7 +603,6 @@
             this.c1Command_Paste.Image = global::ControlExplorer.Properties.Resources.Paste;
             this.c1Command_Paste.Name = "c1Command_Paste";
             this.c1Command_Paste.Shortcut = System.Windows.Forms.Shortcut.CtrlP;
-            this.c1Command_Paste.ShortcutText = "";
             this.c1Command_Paste.Text = "&Paste";
             // 
             // c1CommandLink63
@@ -601,14 +629,10 @@
             this.c1CommandLink77,
             this.c1CommandLink78,
             this.c1CommandLink79});
-            this.c1Command_Format.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1Command_Format.HideNonRecentLinks = false;
             this.c1Command_Format.Name = "c1Command_Format";
-            this.c1Command_Format.ShortcutText = "";
-            this.c1Command_Format.Text = "格式";
-            this.c1ThemeController1.SetTheme(this.c1Command_Format, "(default)");
-            this.c1Command_Format.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1Command_Format.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1Command_Format.Text = "&Format";
+            this.c1Command_Format.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
             // 
             // c1CommandLink64
             // 
@@ -621,7 +645,6 @@
             this.c1Command_Bold.Image = global::ControlExplorer.Properties.Resources.Bold;
             this.c1Command_Bold.Name = "c1Command_Bold";
             this.c1Command_Bold.Shortcut = System.Windows.Forms.Shortcut.CtrlB;
-            this.c1Command_Bold.ShortcutText = "";
             this.c1Command_Bold.Text = "&Bold";
             // 
             // c1CommandLink65
@@ -636,7 +659,6 @@
             this.c1Command_Italic.Image = global::ControlExplorer.Properties.Resources.Italic;
             this.c1Command_Italic.Name = "c1Command_Italic";
             this.c1Command_Italic.Shortcut = System.Windows.Forms.Shortcut.CtrlI;
-            this.c1Command_Italic.ShortcutText = "";
             this.c1Command_Italic.Text = "&Italic";
             // 
             // c1CommandLink66
@@ -651,7 +673,6 @@
             this.c1Command_Underline.Image = global::ControlExplorer.Properties.Resources.Underline;
             this.c1Command_Underline.Name = "c1Command_Underline";
             this.c1Command_Underline.Shortcut = System.Windows.Forms.Shortcut.CtrlU;
-            this.c1Command_Underline.ShortcutText = "";
             this.c1Command_Underline.Text = "&Underline";
             // 
             // c1CommandLink67
@@ -665,7 +686,6 @@
             this.c1Command_Strikethrough.CheckAutoToggle = true;
             this.c1Command_Strikethrough.Image = global::ControlExplorer.Properties.Resources.Strikethrough;
             this.c1Command_Strikethrough.Name = "c1Command_Strikethrough";
-            this.c1Command_Strikethrough.ShortcutText = "";
             this.c1Command_Strikethrough.Text = "&Strikethrough";
             // 
             // c1CommandLink68
@@ -680,8 +700,7 @@
             this.c1Command_Subscript.Image = global::ControlExplorer.Properties.Resources.Subscript;
             this.c1Command_Subscript.Name = "c1Command_Subscript";
             this.c1Command_Subscript.Shortcut = System.Windows.Forms.Shortcut.CtrlShiftS;
-            this.c1Command_Subscript.ShortcutText = "";
-            this.c1Command_Subscript.Text = "下标";
+            this.c1Command_Subscript.Text = "Subscript";
             // 
             // c1CommandLink69
             // 
@@ -694,8 +713,7 @@
             this.c1Command_Superscript.Image = global::ControlExplorer.Properties.Resources.Superscript;
             this.c1Command_Superscript.Name = "c1Command_Superscript";
             this.c1Command_Superscript.Shortcut = System.Windows.Forms.Shortcut.CtrlShift6;
-            this.c1Command_Superscript.ShortcutText = "";
-            this.c1Command_Superscript.Text = "上标";
+            this.c1Command_Superscript.Text = "Superscript";
             // 
             // c1CommandLink70
             // 
@@ -707,8 +725,7 @@
             this.c1Command_ShrinkFont.Category = "Format";
             this.c1Command_ShrinkFont.Image = global::ControlExplorer.Properties.Resources.ShrinkFont;
             this.c1Command_ShrinkFont.Name = "c1Command_ShrinkFont";
-            this.c1Command_ShrinkFont.ShortcutText = "";
-            this.c1Command_ShrinkFont.Text = "缩小字体";
+            this.c1Command_ShrinkFont.Text = "Shrink Font";
             // 
             // c1CommandLink71
             // 
@@ -720,8 +737,7 @@
             this.c1Command_GrowFont.Category = "Format";
             this.c1Command_GrowFont.Image = global::ControlExplorer.Properties.Resources.GrowFont;
             this.c1Command_GrowFont.Name = "c1Command_GrowFont";
-            this.c1Command_GrowFont.ShortcutText = "";
-            this.c1Command_GrowFont.Text = "增大字体";
+            this.c1Command_GrowFont.Text = "Grow Font";
             // 
             // c1CommandLink72
             // 
@@ -734,8 +750,7 @@
             this.c1Command_DecIndent.Category = "Format";
             this.c1Command_DecIndent.Image = global::ControlExplorer.Properties.Resources.DecreaseIndent;
             this.c1Command_DecIndent.Name = "c1Command_DecIndent";
-            this.c1Command_DecIndent.ShortcutText = "";
-            this.c1Command_DecIndent.Text = "减少缩进";
+            this.c1Command_DecIndent.Text = "Decrease Indent";
             // 
             // c1CommandLink73
             // 
@@ -747,8 +762,7 @@
             this.c1Command_IncIndent.Category = "Format";
             this.c1Command_IncIndent.Image = global::ControlExplorer.Properties.Resources.IncreaseIndent;
             this.c1Command_IncIndent.Name = "c1Command_IncIndent";
-            this.c1Command_IncIndent.ShortcutText = "";
-            this.c1Command_IncIndent.Text = "增加缩进";
+            this.c1Command_IncIndent.Text = "Increase Indent";
             // 
             // c1CommandLink74
             // 
@@ -761,8 +775,7 @@
             this.c1Command_Bullets.Category = "Format";
             this.c1Command_Bullets.Image = global::ControlExplorer.Properties.Resources.Bullets;
             this.c1Command_Bullets.Name = "c1Command_Bullets";
-            this.c1Command_Bullets.ShortcutText = "";
-            this.c1Command_Bullets.Text = "目的";
+            this.c1Command_Bullets.Text = "Bullets";
             // 
             // c1CommandLink75
             // 
@@ -774,8 +787,7 @@
             this.c1Command_Numbering.Category = "Format";
             this.c1Command_Numbering.Image = global::ControlExplorer.Properties.Resources.Numbering;
             this.c1Command_Numbering.Name = "c1Command_Numbering";
-            this.c1Command_Numbering.ShortcutText = "";
-            this.c1Command_Numbering.Text = "编号";
+            this.c1Command_Numbering.Text = "Numbering";
             // 
             // c1CommandLink76
             // 
@@ -790,8 +802,7 @@
             this.c1Command_AlignLeft.Image = global::ControlExplorer.Properties.Resources.AlignTextLeft;
             this.c1Command_AlignLeft.Name = "c1Command_AlignLeft";
             this.c1Command_AlignLeft.Shortcut = System.Windows.Forms.Shortcut.CtrlL;
-            this.c1Command_AlignLeft.ShortcutText = "";
-            this.c1Command_AlignLeft.Text = "文本左对齐";
+            this.c1Command_AlignLeft.Text = "Align Text &Left";
             this.c1Command_AlignLeft.Click += new C1.Win.C1Command.ClickEventHandler(this.c1Command_AlignCenter_Click);
             // 
             // c1CommandLink77
@@ -807,8 +818,7 @@
             this.c1Command_AlignCenter.Image = global::ControlExplorer.Properties.Resources.AlignTextCenter;
             this.c1Command_AlignCenter.Name = "c1Command_AlignCenter";
             this.c1Command_AlignCenter.Shortcut = System.Windows.Forms.Shortcut.CtrlE;
-            this.c1Command_AlignCenter.ShortcutText = "";
-            this.c1Command_AlignCenter.Text = "文本中心对齐";
+            this.c1Command_AlignCenter.Text = "Align Text C&enter";
             this.c1Command_AlignCenter.Click += new C1.Win.C1Command.ClickEventHandler(this.c1Command_AlignCenter_Click);
             // 
             // c1CommandLink78
@@ -823,8 +833,7 @@
             this.c1Command_AlignRight.Image = global::ControlExplorer.Properties.Resources.AlignTextRight;
             this.c1Command_AlignRight.Name = "c1Command_AlignRight";
             this.c1Command_AlignRight.Shortcut = System.Windows.Forms.Shortcut.CtrlR;
-            this.c1Command_AlignRight.ShortcutText = "";
-            this.c1Command_AlignRight.Text = "文本右对齐";
+            this.c1Command_AlignRight.Text = "Align Text &Right";
             this.c1Command_AlignRight.Click += new C1.Win.C1Command.ClickEventHandler(this.c1Command_AlignCenter_Click);
             // 
             // c1CommandLink79
@@ -839,8 +848,7 @@
             this.c1Command_Justify.Image = global::ControlExplorer.Properties.Resources.AlignTextJustify;
             this.c1Command_Justify.Name = "c1Command_Justify";
             this.c1Command_Justify.Shortcut = System.Windows.Forms.Shortcut.CtrlJ;
-            this.c1Command_Justify.ShortcutText = "";
-            this.c1Command_Justify.Text = "两端对齐";
+            this.c1Command_Justify.Text = "&Justify";
             this.c1Command_Justify.Click += new C1.Win.C1Command.ClickEventHandler(this.c1Command_AlignCenter_Click);
             // 
             // c1CommandMenu_View
@@ -850,14 +858,10 @@
             this.c1CommandLink6,
             this.c1CommandLink25,
             this.c1CommandLink35});
-            this.c1CommandMenu_View.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1CommandMenu_View.HideNonRecentLinks = false;
             this.c1CommandMenu_View.Name = "c1CommandMenu_View";
-            this.c1CommandMenu_View.ShortcutText = "";
-            this.c1CommandMenu_View.Text = "视图";
-            this.c1ThemeController1.SetTheme(this.c1CommandMenu_View, "(default)");
-            this.c1CommandMenu_View.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1CommandMenu_View.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenu_View.Text = "&View";
+            this.c1CommandMenu_View.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
             // 
             // c1CommandLink6
             // 
@@ -870,14 +874,10 @@
             this.c1CommandLink24,
             this.c1CommandLink27,
             this.c1CommandLink28});
-            this.c1Command_NavigationPane.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1Command_NavigationPane.HideNonRecentLinks = false;
             this.c1Command_NavigationPane.Name = "c1Command_NavigationPane";
-            this.c1Command_NavigationPane.ShortcutText = "";
-            this.c1Command_NavigationPane.Text = "导航面板";
-            this.c1ThemeController1.SetTheme(this.c1Command_NavigationPane, "(default)");
-            this.c1Command_NavigationPane.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1Command_NavigationPane.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1Command_NavigationPane.Text = "&Navigation Pane";
+            this.c1Command_NavigationPane.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
             // 
             // c1CommandLink24
             // 
@@ -889,8 +889,7 @@
             this.c1Command_NavBarNormal.CheckAutoToggle = true;
             this.c1Command_NavBarNormal.Checked = true;
             this.c1Command_NavBarNormal.Name = "c1Command_NavBarNormal";
-            this.c1Command_NavBarNormal.ShortcutText = "";
-            this.c1Command_NavBarNormal.Text = "正常";
+            this.c1Command_NavBarNormal.Text = "&Normal";
             this.c1Command_NavBarNormal.Click += new C1.Win.C1Command.ClickEventHandler(this.c1Command_NavBarNormal_Click);
             // 
             // c1CommandLink27
@@ -903,8 +902,7 @@
             this.c1Command_NavBarMinimized.Category = "View";
             this.c1Command_NavBarMinimized.CheckAutoToggle = true;
             this.c1Command_NavBarMinimized.Name = "c1Command_NavBarMinimized";
-            this.c1Command_NavBarMinimized.ShortcutText = "";
-            this.c1Command_NavBarMinimized.Text = "最小化";
+            this.c1Command_NavBarMinimized.Text = "&Minimized";
             this.c1Command_NavBarMinimized.Click += new C1.Win.C1Command.ClickEventHandler(this.c1Command_NavBarNormal_Click);
             // 
             // c1CommandLink28
@@ -918,8 +916,7 @@
             this.c1Command_NavBarOff.CheckAutoToggle = true;
             this.c1Command_NavBarOff.Name = "c1Command_NavBarOff";
             this.c1Command_NavBarOff.Shortcut = System.Windows.Forms.Shortcut.AltF1;
-            this.c1Command_NavBarOff.ShortcutText = "";
-            this.c1Command_NavBarOff.Text = "关闭";
+            this.c1Command_NavBarOff.Text = "&Closed";
             this.c1Command_NavBarOff.Click += new C1.Win.C1Command.ClickEventHandler(this.c1Command_NavBarNormal_Click);
             // 
             // c1CommandLink25
@@ -935,42 +932,36 @@
             this.c1CommandLink46,
             this.c1CommandLink80,
             this.c1CommandLink95});
-            this.c1Command_Toolbars.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1Command_Toolbars.HideNonRecentLinks = false;
             this.c1Command_Toolbars.Name = "c1Command_Toolbars";
-            this.c1Command_Toolbars.ShortcutText = "";
-            this.c1Command_Toolbars.Text = "工具栏";
-            this.c1ThemeController1.SetTheme(this.c1Command_Toolbars, "(default)");
-            this.c1Command_Toolbars.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1Command_Toolbars.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1Command_Toolbars.Text = "&Toolbars";
+            this.c1Command_Toolbars.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
             // 
             // c1CommandLink26
             // 
             this.c1CommandLink26.Command = this.c1Command_ToolbarFile;
-            this.c1CommandLink26.Text = "文件";
+            this.c1CommandLink26.Text = "File";
             // 
             // c1Command_ToolbarFile
             // 
             this.c1Command_ToolbarFile.CheckAutoToggle = true;
             this.c1Command_ToolbarFile.Checked = true;
             this.c1Command_ToolbarFile.Name = "c1Command_ToolbarFile";
-            this.c1Command_ToolbarFile.ShortcutText = "";
-            this.c1Command_ToolbarFile.Text = "文件";
+            this.c1Command_ToolbarFile.Text = "&File";
             this.c1Command_ToolbarFile.CheckedChanged += new C1.Win.C1Command.CheckedChangedEventHandler(this.c1Command_ToolbarFile_CheckedChanged);
             // 
             // c1CommandLink46
             // 
             this.c1CommandLink46.Command = this.c1Command_ToolbarEdit;
             this.c1CommandLink46.SortOrder = 1;
-            this.c1CommandLink46.Text = "编辑";
+            this.c1CommandLink46.Text = "Edit";
             // 
             // c1Command_ToolbarEdit
             // 
             this.c1Command_ToolbarEdit.CheckAutoToggle = true;
             this.c1Command_ToolbarEdit.Checked = true;
             this.c1Command_ToolbarEdit.Name = "c1Command_ToolbarEdit";
-            this.c1Command_ToolbarEdit.ShortcutText = "";
-            this.c1Command_ToolbarEdit.Text = "编辑";
+            this.c1Command_ToolbarEdit.Text = "&Edit";
             this.c1Command_ToolbarEdit.CheckedChanged += new C1.Win.C1Command.CheckedChangedEventHandler(this.c1Command_ToolbarFile_CheckedChanged);
             // 
             // c1CommandLink80
@@ -983,8 +974,7 @@
             this.c1Command_ToolbarFormat.CheckAutoToggle = true;
             this.c1Command_ToolbarFormat.Checked = true;
             this.c1Command_ToolbarFormat.Name = "c1Command_ToolbarFormat";
-            this.c1Command_ToolbarFormat.ShortcutText = "";
-            this.c1Command_ToolbarFormat.Text = "格式";
+            this.c1Command_ToolbarFormat.Text = "Format";
             this.c1Command_ToolbarFormat.CheckedChanged += new C1.Win.C1Command.CheckedChangedEventHandler(this.c1Command_ToolbarFile_CheckedChanged);
             // 
             // c1CommandLink95
@@ -997,8 +987,7 @@
             this.c1Command_ToolbarTools.CheckAutoToggle = true;
             this.c1Command_ToolbarTools.Checked = true;
             this.c1Command_ToolbarTools.Name = "c1Command_ToolbarTools";
-            this.c1Command_ToolbarTools.ShortcutText = "";
-            this.c1Command_ToolbarTools.Text = "工具";
+            this.c1Command_ToolbarTools.Text = "Tools";
             this.c1Command_ToolbarTools.CheckedChanged += new C1.Win.C1Command.CheckedChangedEventHandler(this.c1Command_ToolbarFile_CheckedChanged);
             // 
             // c1CommandLink35
@@ -1012,8 +1001,7 @@
             this.c1Command_Statusbar.CheckAutoToggle = true;
             this.c1Command_Statusbar.Checked = true;
             this.c1Command_Statusbar.Name = "c1Command_Statusbar";
-            this.c1Command_Statusbar.ShortcutText = "";
-            this.c1Command_Statusbar.Text = "状态栏";
+            this.c1Command_Statusbar.Text = "&Statusbar";
             // 
             // c1CommandMenu_Tools
             // 
@@ -1021,28 +1009,23 @@
             this.c1CommandLink8,
             this.c1CommandLink31,
             this.c1CommandLink32});
-            this.c1CommandMenu_Tools.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1CommandMenu_Tools.HideNonRecentLinks = false;
             this.c1CommandMenu_Tools.Name = "c1CommandMenu_Tools";
-            this.c1CommandMenu_Tools.ShortcutText = "";
-            this.c1CommandMenu_Tools.Text = "工具";
-            this.c1ThemeController1.SetTheme(this.c1CommandMenu_Tools, "(default)");
-            this.c1CommandMenu_Tools.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1CommandMenu_Tools.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenu_Tools.Text = "&Tools";
+            this.c1CommandMenu_Tools.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
             // 
             // c1CommandLink8
             // 
             this.c1CommandLink8.Command = this.c1Command_AddressBook;
-            this.c1CommandLink8.Text = "通讯簿...";
-            this.c1CommandLink8.ToolTipText = "打开通讯簿";
+            this.c1CommandLink8.Text = "Address &Book...";
+            this.c1CommandLink8.ToolTipText = "Open Address Book";
             // 
             // c1Command_AddressBook
             // 
             this.c1Command_AddressBook.Category = "Tools";
             this.c1Command_AddressBook.Image = global::ControlExplorer.Properties.Resources.AddressBook;
             this.c1Command_AddressBook.Name = "c1Command_AddressBook";
-            this.c1Command_AddressBook.ShortcutText = "";
-            this.c1Command_AddressBook.Text = "通讯簿";
+            this.c1Command_AddressBook.Text = "&Address Book";
             // 
             // c1CommandLink31
             // 
@@ -1055,8 +1038,7 @@
             this.c1Command_SpellCheck.Category = "Tools";
             this.c1Command_SpellCheck.Image = global::ControlExplorer.Properties.Resources.Spelling;
             this.c1Command_SpellCheck.Name = "c1Command_SpellCheck";
-            this.c1Command_SpellCheck.ShortcutText = "";
-            this.c1Command_SpellCheck.Text = "拼写检查...";
+            this.c1Command_SpellCheck.Text = "&Spell Check...";
             // 
             // c1CommandLink32
             // 
@@ -1068,14 +1050,10 @@
             this.c1Command_InstantSearch.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
             this.c1CommandLink33,
             this.c1CommandLink85});
-            this.c1Command_InstantSearch.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1Command_InstantSearch.HideNonRecentLinks = false;
             this.c1Command_InstantSearch.Name = "c1Command_InstantSearch";
-            this.c1Command_InstantSearch.ShortcutText = "";
-            this.c1Command_InstantSearch.Text = "即时搜索";
-            this.c1ThemeController1.SetTheme(this.c1Command_InstantSearch, "(default)");
-            this.c1Command_InstantSearch.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1Command_InstantSearch.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1Command_InstantSearch.Text = "&Instant Search";
+            this.c1Command_InstantSearch.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
             // 
             // c1CommandLink33
             // 
@@ -1085,8 +1063,7 @@
             // 
             this.c1Command_TextSearchMenu.Control = this.c1TextBox2;
             this.c1Command_TextSearchMenu.Name = "c1Command_TextSearchMenu";
-            this.c1Command_TextSearchMenu.ShortcutText = "";
-            this.c1Command_TextSearchMenu.Text = "搜索:";
+            this.c1Command_TextSearchMenu.Text = "Search:";
             // 
             // c1CommandLink85
             // 
@@ -1098,8 +1075,7 @@
             this.c1Command_Search.Category = "Tools";
             this.c1Command_Search.Image = global::ControlExplorer.Properties.Resources.Zoom;
             this.c1Command_Search.Name = "c1Command_Search";
-            this.c1Command_Search.ShortcutText = "";
-            this.c1Command_Search.Text = "执行搜索";
+            this.c1Command_Search.Text = "Perform Search";
             // 
             // c1CommandMenu_Help
             // 
@@ -1107,27 +1083,22 @@
             this.c1CommandMenu_Help.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
             this.c1CommandLink10,
             this.c1CommandLink34});
-            this.c1CommandMenu_Help.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1CommandMenu_Help.HideNonRecentLinks = false;
             this.c1CommandMenu_Help.Name = "c1CommandMenu_Help";
-            this.c1CommandMenu_Help.ShortcutText = "";
-            this.c1CommandMenu_Help.Text = "帮助";
-            this.c1ThemeController1.SetTheme(this.c1CommandMenu_Help, "(default)");
-            this.c1CommandMenu_Help.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1CommandMenu_Help.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenu_Help.Text = "&Help";
+            this.c1CommandMenu_Help.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
             // 
             // c1CommandLink10
             // 
             this.c1CommandLink10.Command = this.c1Command_Help;
-            this.c1CommandLink10.Text = "C1命令帮助";
+            this.c1CommandLink10.Text = "C1Command &Help";
             // 
             // c1Command_Help
             // 
             this.c1Command_Help.Category = "Help";
             this.c1Command_Help.Image = global::ControlExplorer.Properties.Resources.Help;
             this.c1Command_Help.Name = "c1Command_Help";
-            this.c1Command_Help.ShortcutText = "";
-            this.c1Command_Help.Text = "C1命令帮助";
+            this.c1Command_Help.Text = "C1Command Help";
             // 
             // c1CommandLink34
             // 
@@ -1138,32 +1109,26 @@
             // 
             this.c1Command_About.Category = "Help";
             this.c1Command_About.Name = "c1Command_About";
-            this.c1Command_About.ShortcutText = "";
-            this.c1Command_About.Text = "关于C1命令...";
+            this.c1Command_About.Text = "&About C1Command...";
             // 
             // c1Command_TextSearchBox
             // 
             this.c1Command_TextSearchBox.Category = "Tools";
             this.c1Command_TextSearchBox.Control = this.c1TextBox1;
             this.c1Command_TextSearchBox.Name = "c1Command_TextSearchBox";
-            this.c1Command_TextSearchBox.ShortcutText = "";
-            this.c1Command_TextSearchBox.Text = "搜索:";
+            this.c1Command_TextSearchBox.Text = "Search:";
             // 
             // c1TextBox1
             // 
             this.c1TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.c1TextBox1.EmptyAsNull = true;
-            this.c1TextBox1.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.c1TextBox1.Location = new System.Drawing.Point(105, 4);
-            this.c1TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1TextBox1.Location = new System.Drawing.Point(109, 3);
             this.c1TextBox1.Name = "c1TextBox1";
             this.c1TextBox1.NullText = "Search";
-            this.c1TextBox1.Size = new System.Drawing.Size(117, 21);
+            this.c1TextBox1.Size = new System.Drawing.Size(100, 18);
             this.c1TextBox1.TabIndex = 4;
             this.c1TextBox1.Tag = null;
             this.c1TextBox1.TextDetached = true;
-            this.c1ThemeController1.SetTheme(this.c1TextBox1, "(default)");
-            this.c1TextBox1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
             // c1ContextMenu1
             // 
@@ -1177,12 +1142,8 @@
             this.c1CommandLink92,
             this.c1CommandLink93,
             this.c1CommandLink94});
-            this.c1ContextMenu1.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1ContextMenu1.Name = "c1ContextMenu1";
-            this.c1ContextMenu1.ShortcutText = "";
-            this.c1ThemeController1.SetTheme(this.c1ContextMenu1, "(default)");
-            this.c1ContextMenu1.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1ContextMenu1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1ContextMenu1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
             // 
             // c1CommandLink86
             // 
@@ -1230,72 +1191,6 @@
             this.c1CommandLink94.Command = this.c1Command_Strikethrough;
             this.c1CommandLink94.SortOrder = 8;
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.c1CommandHolder1.SetC1ContextMenu(this.label1, this.c1ContextMenu1);
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.label1.Location = new System.Drawing.Point(0, 85);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.label1.Size = new System.Drawing.Size(557, 301);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "使用ComponentOne Menus and Toolbars™ for WinForms控件，您可以创建停靠/浮动工具栏，多级菜单以及上下文菜单。这些强大的" +
-                "控件以C1Command的架构为基础，内置了最新的Microsoft Office视觉样式，因此您可以为整个应用程序实现专业的界面外观。";
-            this.c1ThemeController1.SetTheme(this.label1, "(default)");
-            this.label1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label1_MouseUp);
-            // 
-            // c1CommandDock4
-            // 
-            this.c1CommandDock4.BackColor = System.Drawing.Color.White;
-            this.c1CommandDock4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.c1CommandDock4.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.c1CommandDock4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1CommandDock4.Id = 10;
-            this.c1CommandDock4.Location = new System.Drawing.Point(0, 386);
-            this.c1CommandDock4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.c1CommandDock4.Name = "c1CommandDock4";
-            this.c1CommandDock4.Size = new System.Drawing.Size(557, 13);
-            this.c1ThemeController1.SetTheme(this.c1CommandDock4, "(default)");
-            // 
-            // c1CommandDock1
-            // 
-            this.c1CommandDock1.BackColor = System.Drawing.Color.White;
-            this.c1CommandDock1.Controls.Add(this.c1ToolBar_Tools);
-            this.c1CommandDock1.Controls.Add(this.c1ToolBar_Format);
-            this.c1CommandDock1.Controls.Add(this.c1ToolBar_Edit);
-            this.c1CommandDock1.Controls.Add(this.c1ToolBar_File);
-            this.c1CommandDock1.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.c1CommandDock1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1CommandDock1.Id = 1;
-            this.c1CommandDock1.Location = new System.Drawing.Point(0, 27);
-            this.c1CommandDock1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.c1CommandDock1.Name = "c1CommandDock1";
-            this.c1CommandDock1.Size = new System.Drawing.Size(557, 58);
-            this.c1ThemeController1.SetTheme(this.c1CommandDock1, "(default)");
-            // 
-            // c1ToolBar_Tools
-            // 
-            this.c1ToolBar_Tools.AccessibleName = "Tool Bar";
-            this.c1ToolBar_Tools.AutoSize = false;
-            this.c1ToolBar_Tools.CommandHolder = this.c1CommandHolder1;
-            this.c1ToolBar_Tools.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
-            this.c1CommandLink81,
-            this.c1CommandLink82,
-            this.c1CommandLink83,
-            this.c1CommandLink84});
-            this.c1ToolBar_Tools.Controls.Add(this.c1TextBox1);
-            this.c1ToolBar_Tools.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.c1ToolBar_Tools.Location = new System.Drawing.Point(300, 0);
-            this.c1ToolBar_Tools.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.c1ToolBar_Tools.Name = "c1ToolBar_Tools";
-            this.c1ToolBar_Tools.Size = new System.Drawing.Size(248, 27);
-            this.c1ToolBar_Tools.Text = "工具";
-            this.c1ThemeController1.SetTheme(this.c1ToolBar_Tools, "(default)");
-            // 
             // c1CommandLink81
             // 
             this.c1CommandLink81.Command = this.c1Command_AddressBook;
@@ -1311,7 +1206,7 @@
             this.c1CommandLink83.Command = this.c1Command_TextSearchBox;
             this.c1CommandLink83.Delimiter = true;
             this.c1CommandLink83.SortOrder = 2;
-            this.c1CommandLink83.Text = "搜索:";
+            this.c1CommandLink83.Text = "Search:";
             // 
             // c1CommandLink84
             // 
@@ -1321,7 +1216,6 @@
             // c1ToolBar_Format
             // 
             this.c1ToolBar_Format.AccessibleName = "Tool Bar";
-            this.c1ToolBar_Format.AutoSize = false;
             this.c1ToolBar_Format.CommandHolder = this.c1CommandHolder1;
             this.c1ToolBar_Format.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
             this.c1CommandLink47,
@@ -1341,13 +1235,11 @@
             this.c1CommandLink61,
             this.c1CommandLink62});
             this.c1ToolBar_Format.CustomizeButton = true;
-            this.c1ToolBar_Format.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.c1ToolBar_Format.Location = new System.Drawing.Point(1, 27);
-            this.c1ToolBar_Format.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1ToolBar_Format.Location = new System.Drawing.Point(0, 24);
             this.c1ToolBar_Format.Name = "c1ToolBar_Format";
-            this.c1ToolBar_Format.Size = new System.Drawing.Size(434, 27);
-            this.c1ToolBar_Format.Text = "格式";
-            this.c1ThemeController1.SetTheme(this.c1ToolBar_Format, "(default)");
+            this.c1ToolBar_Format.Size = new System.Drawing.Size(413, 24);
+            this.c1ToolBar_Format.Text = "Format";
+            this.c1ToolBar_Format.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandLink47
             // 
@@ -1435,7 +1327,6 @@
             // c1ToolBar_Edit
             // 
             this.c1ToolBar_Edit.AccessibleName = "Tool Bar";
-            this.c1ToolBar_Edit.AutoSize = false;
             this.c1ToolBar_Edit.CommandHolder = this.c1CommandHolder1;
             this.c1ToolBar_Edit.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
             this.c1CommandLink41,
@@ -1443,13 +1334,11 @@
             this.c1CommandLink43,
             this.c1CommandLink44,
             this.c1CommandLink45});
-            this.c1ToolBar_Edit.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.c1ToolBar_Edit.Location = new System.Drawing.Point(159, 0);
-            this.c1ToolBar_Edit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1ToolBar_Edit.Location = new System.Drawing.Point(154, 0);
             this.c1ToolBar_Edit.Name = "c1ToolBar_Edit";
-            this.c1ToolBar_Edit.Size = new System.Drawing.Size(140, 27);
-            this.c1ToolBar_Edit.Text = "编辑";
-            this.c1ThemeController1.SetTheme(this.c1ToolBar_Edit, "(default)");
+            this.c1ToolBar_Edit.Size = new System.Drawing.Size(128, 24);
+            this.c1ToolBar_Edit.Text = "Edit";
+            this.c1ToolBar_Edit.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandLink41
             // 
@@ -1479,7 +1368,6 @@
             // c1ToolBar_File
             // 
             this.c1ToolBar_File.AccessibleName = "Tool Bar";
-            this.c1ToolBar_File.AutoSize = false;
             this.c1ToolBar_File.CommandHolder = this.c1CommandHolder1;
             this.c1ToolBar_File.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
             this.c1CommandLink36,
@@ -1487,13 +1375,11 @@
             this.c1CommandLink38,
             this.c1CommandLink39,
             this.c1CommandLink40});
-            this.c1ToolBar_File.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1ToolBar_File.Location = new System.Drawing.Point(1, 0);
-            this.c1ToolBar_File.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1ToolBar_File.Name = "c1ToolBar_File";
-            this.c1ToolBar_File.Size = new System.Drawing.Size(157, 27);
-            this.c1ToolBar_File.Text = "文件";
-            this.c1ThemeController1.SetTheme(this.c1ToolBar_File, "(default)");
+            this.c1ToolBar_File.Size = new System.Drawing.Size(149, 24);
+            this.c1ToolBar_File.Text = "File";
+            this.c1ToolBar_File.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandLink36
             // 
@@ -1530,12 +1416,10 @@
             this.c1CommandLink7,
             this.c1CommandLink9});
             this.c1MainMenu1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.c1MainMenu1.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1MainMenu1.Location = new System.Drawing.Point(0, 0);
-            this.c1MainMenu1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1MainMenu1.Name = "c1MainMenu1";
-            this.c1MainMenu1.Size = new System.Drawing.Size(557, 27);
-            this.c1ThemeController1.SetTheme(this.c1MainMenu1, "(default)");
+            this.c1MainMenu1.Size = new System.Drawing.Size(592, 27);
+            this.c1MainMenu1.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandLink1
             // 
@@ -1558,34 +1442,33 @@
             // 
             // c1CommandLink9
             // 
-            this.c1CommandLink9.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Text;
             this.c1CommandLink9.Command = this.c1CommandMenu_Help;
             this.c1CommandLink9.SortOrder = 4;
             // 
             // Overview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 399);
+            this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.c1CommandDock4);
+            this.Controls.Add(this.c1CommandDock3);
+            this.Controls.Add(this.c1CommandDock2);
             this.Controls.Add(this.c1CommandDock1);
             this.Controls.Add(this.c1MainMenu1);
-            this.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Overview";
-            this.Text = "概览";
-            this.c1ThemeController1.SetTheme(this, "(default)");
+            this.Text = "Overview";
             this.Load += new System.EventHandler(this.Overview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1TextBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1TextBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock1)).EndInit();
             this.c1CommandDock1.ResumeLayout(false);
             this.c1ToolBar_Tools.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1TextBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1678,7 +1561,9 @@
         private C1.Win.C1Command.C1CommandLink c1CommandLink43;
         private C1.Win.C1Command.C1CommandLink c1CommandLink44;
         private C1.Win.C1Command.C1CommandLink c1CommandLink45;
+        private C1.Win.C1Command.C1CommandDock c1CommandDock2;
         private C1.Win.C1Command.C1CommandDock c1CommandDock4;
+        private C1.Win.C1Command.C1CommandDock c1CommandDock3;
         private C1.Win.C1Command.C1ToolBar c1ToolBar_Format;
         private C1.Win.C1Command.C1CommandLink c1CommandLink47;
         private C1.Win.C1Command.C1Command c1Command_Bold;
@@ -1756,6 +1641,5 @@
         private System.Windows.Forms.Label label1;
         private C1.Win.C1Command.C1CommandLink c1CommandLink95;
         private C1.Win.C1Command.C1Command c1Command_ToolbarTools;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
     }
 }

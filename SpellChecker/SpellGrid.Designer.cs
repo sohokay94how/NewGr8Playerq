@@ -53,8 +53,8 @@
             this._spellCheck.Image = global::ControlExplorer.Properties.Resources.Spelling;
             this._spellCheck.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._spellCheck.Name = "_spellCheck";
-            this._spellCheck.Size = new System.Drawing.Size(107, 24);
-            this._spellCheck.Text = "拼写检查";
+            this._spellCheck.Size = new System.Drawing.Size(90, 22);
+            this._spellCheck.Text = "Spell-Check";
             this._spellCheck.Click += new System.EventHandler(this._spellCheck_Click);
             // 
             // c1FlexGrid1
@@ -77,7 +77,7 @@
             this.Controls.Add(this.c1FlexGrid1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "SpellGrid";
-            this.Text = "拼写网格";
+            this.Text = "SpellGrid";
             this.Load += new System.EventHandler(this.SpellGrid_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

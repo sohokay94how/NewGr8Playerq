@@ -25,13 +25,12 @@ namespace ControlExplorer.MenusToolbars
         private void C1OutBar_Load(object sender, EventArgs e)
         {
             //fill schedule
-            c1Schedule1.DataStorage.AppointmentStorage.Appointments.Add(new C1.C1Schedule.Appointment(new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 7, 0, 0), new TimeSpan(2, 0, 0), "和克雷格见面"));
+            c1Schedule1.DataStorage.AppointmentStorage.Appointments.Add(new C1.C1Schedule.Appointment(new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 7, 0, 0), new TimeSpan(2, 0, 0), "Meeting with Craig"));
             
             //add demo properties
             AddProperty("Animate", c1OutBar1);
             AddProperty("PageTitleHeight", c1OutBar1);
             AddProperty("ShowScrollButtons", c1OutBar1);
-            AddProperty("VisualStyle", c1OutBar1);
         }
     }
 }

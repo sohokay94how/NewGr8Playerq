@@ -45,7 +45,7 @@ namespace ControlExplorer.FlexGrid
 
             //Image column
             Column imageCol = c1FlexGrid1.Cols[_imageCol];
-            imageCol.Caption = "图片";
+            imageCol.Caption = "Images";
             imageCol.DataType = typeof(Image);
             imageCol.ImageAlign = ImageAlignEnum.CenterCenter;
             //imageCol.Editor = new ImagePicker();
@@ -53,44 +53,41 @@ namespace ControlExplorer.FlexGrid
 
             //Text column
             Column textCol = c1FlexGrid1.Cols[_textCol];
-            textCol.Caption = "文本";
+            textCol.Caption = "Text";
 
             //Checkbox column
             Column checkboxCol = c1FlexGrid1.Cols[_checkboxCol];
             checkboxCol.DataType = typeof(Boolean);
-            checkboxCol.Caption = "复选框";
+            checkboxCol.Caption = "Checkbox";
             checkboxCol.Width = 75;
 
             //Numeric column
             Column numericCol = c1FlexGrid1.Cols[_numericCol];
-            //numericCol.Caption = "Numeric";
-            numericCol.Caption = "数字";
+            numericCol.Caption = "Numeric";
             numericCol.DataType = typeof(double);
             numericCol.Editor = c1NumericEdit1;
             numericCol.Format = "c";
 
             //Combo column
             Column comboCol = c1FlexGrid1.Cols[_comboCol];
-            comboCol.ComboList = "|共和制|联邦共和制|君主立宪制|君主国会制";
-            //comboCol.Caption = "Editable Combobox";
-            comboCol.Caption = "可编辑组合框";
+            comboCol.ComboList = "|Republic|Federal Republic|Constitutional Monarchy|Parliamentary Monarchy";
+            comboCol.Caption = "Editable Combobox";
             comboCol.Width = 150;
 
             //Date column
             Column dateCol = c1FlexGrid1.Cols[_dateCol];
-            dateCol.DataType = typeof(DateTime);    
-            dateCol.Caption = "日期";
-
+            dateCol.DataType = typeof(DateTime);
+            dateCol.Caption = "Date";
 
             //Input mask column
             Column editMaskCol = c1FlexGrid1.Cols[_editMaskCol];
             editMaskCol.EditMask = "GMT#0:00";
-            editMaskCol.Caption = "输入占位符";
+            editMaskCol.Caption = "Input Mask";
 
             //Checkbox List column
             Column checkListCol = c1FlexGrid1.Cols[_checkListCol];
-            CheckListEditor checkListEditor = new CheckListEditor(new string[] { "丹麦语", "荷兰语", "英语", "芬兰语", "法语", "德语", "意大利语", "挪威语", "波兰语", "葡萄牙语", "西班牙语", "瑞典语" });
-            checkListCol.Caption = "复选框列表";
+            CheckListEditor checkListEditor = new CheckListEditor(new string[] { "Danish", "Dutch", "English", "Finnish", "French", "German", "Italian", "Norwegian", "Polish", "Portuguese", "Spanish", "Swedish" });
+            checkListCol.Caption = "Checkbox List";
             checkListCol.Editor = new UITypeEditorControl(checkListEditor, false);
             checkListCol.Width = 150;
 
@@ -114,18 +111,15 @@ namespace ControlExplorer.FlexGrid
             c1Combo1.Splits[0].DisplayColumns[0].Width = 50;
             c1Combo1.Splits[0].DisplayColumns[1].Width = 30;
             Column multiComboCol = c1FlexGrid1.Cols[_multiComboCol];
-          
-            multiComboCol.Caption = "多列组合框";
+            multiComboCol.Caption = "Multi-Column Combo";
             multiComboCol.Editor = c1Combo1;
             multiComboCol.Width = 130;     
             
             //Hyperlink column
             Column hyperlinkCol = c1FlexGrid1.Cols[_hyperlinkCol];
-
+            hyperlinkCol.Caption = "Hyperlink";
             hyperlinkCol.AllowEditing = true;
             hyperlinkCol.Width = 160;
-
-            hyperlinkCol.Caption = "超链接";
             hyperlinkCol.ComboList = "...";
             CellStyle cs = c1FlexGrid1.Styles.Add("NewLink");
             cs.Font = new Font(c1FlexGrid1.Font, FontStyle.Underline);
@@ -136,8 +130,7 @@ namespace ControlExplorer.FlexGrid
 
             //Large text column
             Column largeTextCol = c1FlexGrid1.Cols[_largeTextCol];
-            //largeTextCol.Caption = "Large Text";
-            largeTextCol.Caption = "大规模文本";
+            largeTextCol.Caption = "Large Text";
             cs = c1FlexGrid1.Styles.Add("LargeText");
             cs.Trimming = StringTrimming.EllipsisWord;
             largeTextCol.Style = cs;
@@ -146,8 +139,7 @@ namespace ControlExplorer.FlexGrid
 
             //Progress bar column
             Column progressBarCol = c1FlexGrid1.Cols[_progressBarCol];
-            //progressBarCol.Caption = "ProgressBar";
-            progressBarCol.Caption = "进度条";
+            progressBarCol.Caption = "ProgressBar";
             progressBarCol.DataType = typeof(int);
             pb = new ProgressBar();
           
@@ -169,12 +161,11 @@ namespace ControlExplorer.FlexGrid
             c1FlexGrid1.Rows.Count = 21;
             Random rnd = new Random();
 
-            //string countries = "Argentina|Austria|Belgium|Brazil|Canada|Denmark|Finland|France|Germany|Ireland|Italy|Mexico|Norway|Poland|Portugal|Spain|Sweden|Switzerland|UK|USA";
-            string countries = "阿根廷|澳大利亚|比利时|巴西|加拿大|丹麦|芬兰|法国|德国|爱尔兰|意大利|墨西哥|挪威|波兰|葡萄牙|西班牙|瑞典|瑞士|英国|美国";
+            string countries = "Argentina|Austria|Belgium|Brazil|Canada|Denmark|Finland|France|Germany|Ireland|Italy|Mexico|Norway|Poland|Portugal|Spain|Sweden|Switzerland|UK|USA";
             string currencies = "ARS|EUR|EUR|BRL|CAD|DKK|EUR|EUR|EUR|EUR|EUR|MXN|NOK|PLK|EUR|EUR|SEK|CHF|EUR|USD";
-            string govs = "共和制|联邦政府共和制|其他|联邦政府共和制|其他|君主立宪制 |共和制|共和制|联邦政府共和制|共和制|共和制|联邦政府共和制|君主立宪制|共和制|共和制|君主国会制|君主立宪制 |其他| 君主立宪制|联邦共和制 ";
+            string govs = "Republic|Federal Republic|Other|Federal Republic|Other|Constitutional Monarchy|Republic|Republic|Federal Republic|Republic|Republic|Federal Republic|Constitutional Monarchy|Republic|Republic|Parliamentary Monarchy|Constitutional Monarchy|Other|Constitutional Monarchy|Federal Republic";
             string times = "GMT-3:00|GMT+2:00|GMT+2:00|GMT-3:00|GMT-3:30|GMT+2:00|GMT+3:00|GMT+2:00|GMT+1:00|GMT+1:00|GMT+1:00|GMT-6:00|GMT+1:00|GMT+1:00|GMT+1:00|GMT+1:00|GMT+1:00|GMT+1:00|GMT+0:00|GMT-6:00";
-            string languages = "西班牙语|德语|荷兰语, 法语, 德语|葡萄牙语|英语, 法语|丹麦语|芬兰语, 瑞典语|法语|德语|英语|意大利语|西班牙语|芬兰语, 挪威语|波兰语|葡萄牙语|西班牙语|瑞典语|法语, 德语, 意大利语|英语|英语";
+            string languages = "Spanish|German|Dutch, French, German|Portuguese|English, French|Danish|Finnish, Swedish|French|German|English|Italian|Spanish|Finnish, Norwegian|Polish|Portuguese|Spanish|Swedish|French, German, Italian|English|English";
             
             for (int i = 1; i < c1FlexGrid1.Rows.Count; i++)
             {
@@ -211,53 +202,40 @@ namespace ControlExplorer.FlexGrid
             }
 
             //Load hyperlink column
-            c1FlexGrid1[1, _hyperlinkCol] = new FlexHyperlink("旅游秘书处", "http://www.turismo.gov.ar/eng/menu.htm");
-            c1FlexGrid1[2, _hyperlinkCol] = new FlexHyperlink("澳大利亚大使馆", "http://www.austria.org/");
-            c1FlexGrid1[3, _hyperlinkCol] = new FlexHyperlink("游览比利时", "http://www.visitbelgium.com/");
-            c1FlexGrid1[4, _hyperlinkCol] = new FlexHyperlink("巴西 - 维基百科", "http://en.wikipedia.org/wiki/Brazil");
-            c1FlexGrid1[5, _hyperlinkCol] = new FlexHyperlink("加拿大官网", "http://www.canada.com/");
-            c1FlexGrid1[6, _hyperlinkCol] = new FlexHyperlink("丹麦的官方网", "http://www.denmark.dk/");
-            c1FlexGrid1[7, _hyperlinkCol] = new FlexHyperlink("芬兰的新闻", "http://finland.fi/");
-            c1FlexGrid1[8, _hyperlinkCol] = new FlexHyperlink("法国导游网", "http://www.franceguide.com/");
-            c1FlexGrid1[9, _hyperlinkCol] = new FlexHyperlink("德国信息网", "http://www.germany.info/");
-            c1FlexGrid1[10, _hyperlinkCol] = new FlexHyperlink("发现爱尔兰", "http://www.discoverireland.ie/");
-            c1FlexGrid1[11, _hyperlinkCol] = new FlexHyperlink("关于意大利", "http://www.state.gov/r/pa/ei/bgn/4033.htm");
-            c1FlexGrid1[12, _hyperlinkCol] = new FlexHyperlink("游览墨西哥", "http://www.visitmexico.com/");
-            c1FlexGrid1[13, _hyperlinkCol] = new FlexHyperlink("挪威官方网", "http://www.norway.org/");
-            c1FlexGrid1[14, _hyperlinkCol] = new FlexHyperlink("波兰.pl", "http://www.poland.pl/");
-            c1FlexGrid1[15, _hyperlinkCol] = new FlexHyperlink("葡萄牙地图", "http://www.portugal-info.net/maps/");
-            c1FlexGrid1[16, _hyperlinkCol] = new FlexHyperlink("西班牙旅行者", "http://www.spain.info/");
-            c1FlexGrid1[17, _hyperlinkCol] = new FlexHyperlink("游览瑞典", "http://www.visitsweden.com/");
-            c1FlexGrid1[18, _hyperlinkCol] = new FlexHyperlink("游览瑞士", "http://www.about.ch/");
-            c1FlexGrid1[19, _hyperlinkCol] = new FlexHyperlink("谷歌 英国", "http://www.google.co.uk/");
-            c1FlexGrid1[20, _hyperlinkCol] = new FlexHyperlink("美利坚合众国 - 维基百科", "http://en.wikipedia.org/wiki/United_States");
+            c1FlexGrid1[1, _hyperlinkCol] = new FlexHyperlink("Secretariat of Tourism", "http://www.turismo.gov.ar/eng/menu.htm");
+            c1FlexGrid1[2, _hyperlinkCol] = new FlexHyperlink("Embassy of Austria", "http://www.austria.org/");
+            c1FlexGrid1[3, _hyperlinkCol] = new FlexHyperlink("Visit Belgium", "http://www.visitbelgium.com/");
+            c1FlexGrid1[4, _hyperlinkCol] = new FlexHyperlink("Brazil - Wikipedia", "http://en.wikipedia.org/wiki/Brazil");
+            c1FlexGrid1[5, _hyperlinkCol] = new FlexHyperlink("Canada.com", "http://www.canada.com/");
+            c1FlexGrid1[6, _hyperlinkCol] = new FlexHyperlink("Official website of Denmark", "http://www.denmark.dk/");
+            c1FlexGrid1[7, _hyperlinkCol] = new FlexHyperlink("Breaking News from Finland", "http://finland.fi/");
+            c1FlexGrid1[8, _hyperlinkCol] = new FlexHyperlink("France Guide.com", "http://www.franceguide.com/");
+            c1FlexGrid1[9, _hyperlinkCol] = new FlexHyperlink("Germany.info", "http://www.germany.info/");
+            c1FlexGrid1[10, _hyperlinkCol] = new FlexHyperlink("Discover Ireland", "http://www.discoverireland.ie/");
+            c1FlexGrid1[11, _hyperlinkCol] = new FlexHyperlink("Facts About Italy", "http://www.state.gov/r/pa/ei/bgn/4033.htm");
+            c1FlexGrid1[12, _hyperlinkCol] = new FlexHyperlink("Visit Mexico", "http://www.visitmexico.com/");
+            c1FlexGrid1[13, _hyperlinkCol] = new FlexHyperlink("Official Norwegian website", "http://www.norway.org/");
+            c1FlexGrid1[14, _hyperlinkCol] = new FlexHyperlink("Poland.pl", "http://www.poland.pl/");
+            c1FlexGrid1[15, _hyperlinkCol] = new FlexHyperlink("Portugal Maps", "http://www.portugal-info.net/maps/");
+            c1FlexGrid1[16, _hyperlinkCol] = new FlexHyperlink("Spain Tourism", "http://www.spain.info/");
+            c1FlexGrid1[17, _hyperlinkCol] = new FlexHyperlink("Visit Sweden", "http://www.visitsweden.com/");
+            c1FlexGrid1[18, _hyperlinkCol] = new FlexHyperlink("Info About Switzerland", "http://www.about.ch/");
+            c1FlexGrid1[19, _hyperlinkCol] = new FlexHyperlink("Google UK", "http://www.google.co.uk/");
+            c1FlexGrid1[20, _hyperlinkCol] = new FlexHyperlink("The United States - Wikipedia", "http://en.wikipedia.org/wiki/United_States");
 
             //Load large text column
-            //c1FlexGrid1[1, _largeTextCol] = "Argentina is the eighth largest country in the world by land area and the largest among Spanish-speaking nations, though Mexico, Colombia and Spain are more populous.";
-            c1FlexGrid1[1, _largeTextCol] = "阿根廷的土地面积是世界上第八大的，在讲西班牙语的国家中是最大的国家，但墨西哥，哥伦比亚和西班牙是人口较多的.";
-            //c1FlexGrid1[2, _largeTextCol] = "The origins of Austria date back to the time of the Roman Empire when a Celtic kingdom was conquered by the Romans in approximately 15 BC, and later became Noricum, a Roman province, in the mid 1st century AD—an area which mostly encloses today's Austria.";
-            c1FlexGrid1[2, _largeTextCol] = "奥地利的起源追溯到罗马帝国时期，那时凯尔特王国征服了罗马人，时间大约公元前15年，后来在公元1世纪中期成为Noricum，罗马省，这些区域大多包围今天的奥地利。";
-            //c1FlexGrid1[3, _largeTextCol] = "Straddling the cultural boundary between Germanic and Latin Europe, Belgium is home to two main linguistic groups, the Flemish and the French-speakers, mostly Walloons, plus a small group of German-speakers.";
-            c1FlexGrid1[3, _largeTextCol] = "跨界日尔曼和拉丁欧洲之间的文化边界，比利时是两大语言群体的家乡，佛兰芒语和法语，大多是瓦隆人，再加上小部分说德语的人。";
-            //c1FlexGrid1[4, _largeTextCol] = "Brazil is the world's tenth largest economy at market exchange rates and the ninth largest by purchasing power parity.";
-            c1FlexGrid1[4, _largeTextCol] = "巴西是世界经济市场汇率第十大和购买力平价的第九大的国家。";
-            //c1FlexGrid1[9, _largeTextCol] = "The territory of Germany covers 357,021 square kilometers (137,847 sq mi) and is influenced by a temperate seasonal climate. With 82 million inhabitants, it accounts for the largest population among the member states of the European Union and is home to the third-largest number of international migrants worldwide.";
-            c1FlexGrid1[9, _largeTextCol] = "德国境内占地357021平方公里（137847平方英里），受温带季节性气候的影响，82万居民，是人口最多的欧洲联盟成员国，是国际移民的数量全球第三。";
-            //c1FlexGrid1[10, _largeTextCol] = "Traditionally, the island of Ireland is subdivided into four provinces: Connacht, Leinster, Munster and Ulster; and, in a system developed between the 13th and 17th centuries, thirty-two counties.";
-            c1FlexGrid1[10, _largeTextCol] = "传统上，爱尔兰岛分为四个省：康诺特，伦斯特，蒙斯特和阿尔斯特;第13和17世纪发展成的一个系统，该系统中有32个县。";
-            //c1FlexGrid1[12, _largeTextCol] = "Mexico is crossed from north to south by two mountain ranges known as Sierra Madre Oriental and Sierra Madre Occidental, which are the extension of the Rocky Mountains from northern North America.";
-            c1FlexGrid1[12, _largeTextCol] = "墨西哥被两山横跨南北，两山为马德雷东方和马德雷西方，这是从北美洲北部的洛基山脉的延伸范围。";
-            
-            //c1FlexGrid1[16, _largeTextCol] = "Because of its location, the territory of Spain was subject to many external influences, often simultaneously, since prehistoric times and through the dawn of the new era.";
-            c1FlexGrid1[16, _largeTextCol] = "因为西班牙的位置，它的领土是受到许多外部因素的影响的，往往同时，自史前时代，到曙光的新时代。";
-            //c1FlexGrid1[17, _largeTextCol] = "Sweden emerged as an independent and unified country during the Middle Ages. In the 17th century the country expanded its territories to form the Swedish empire.";
-            c1FlexGrid1[17, _largeTextCol] = "在中世纪瑞典成为一个独立的和统一的国家，在17世纪国家扩大其领土，形成了瑞典帝国。";
-            //c1FlexGrid1[18, _largeTextCol] = "Switzerland is a landlocked country whose territory is geographically divided between the Jura, the Central Plateau and the Alps; adding together an area of 41,285 km².";
-            c1FlexGrid1[18, _largeTextCol] = "瑞士是一个内陆国家，其领土在地理上分为汝拉，中部高原和阿尔卑斯山，面积相加一共41285平方千米";
-            //c1FlexGrid1[19, _largeTextCol] = "The UK is a developed country, with the world's sixth largest economy by nominal GDP and the seventh largest by purchasing power parity.";
-            c1FlexGrid1[19, _largeTextCol] = "英国是一个发达国家，从国内生产总值来看是世界第六大经济体，购买力水平世界第七大。";
-            //c1FlexGrid1[20, _largeTextCol] = "The country is situated mostly in central North America, where its 48 contiguous states and Washington, D.C., the capital district, lie between the Pacific and Atlantic Oceans, bordered by Canada to the north and Mexico to the south.";
-            c1FlexGrid1[20, _largeTextCol] = "该国的大部分地区，如48个州和华盛顿特区，首都地区大都位于北美洲中部，介于太平洋和大西洋，与加拿大北部和墨西哥南部接壤。";
+            c1FlexGrid1[1, _largeTextCol] = "Argentina is the eighth largest country in the world by land area and the largest among Spanish-speaking nations, though Mexico, Colombia and Spain are more populous.";
+            c1FlexGrid1[2, _largeTextCol] = "The origins of Austria date back to the time of the Roman Empire when a Celtic kingdom was conquered by the Romans in approximately 15 BC, and later became Noricum, a Roman province, in the mid 1st century AD—an area which mostly encloses today's Austria.";
+            c1FlexGrid1[3, _largeTextCol] = "Straddling the cultural boundary between Germanic and Latin Europe, Belgium is home to two main linguistic groups, the Flemish and the French-speakers, mostly Walloons, plus a small group of German-speakers.";
+            c1FlexGrid1[4, _largeTextCol] = "Brazil is the world's tenth largest economy at market exchange rates and the ninth largest by purchasing power parity.";
+            c1FlexGrid1[9, _largeTextCol] = "The territory of Germany covers 357,021 square kilometers (137,847 sq mi) and is influenced by a temperate seasonal climate. With 82 million inhabitants, it accounts for the largest population among the member states of the European Union and is home to the third-largest number of international migrants worldwide.";
+            c1FlexGrid1[10, _largeTextCol] = "Traditionally, the island of Ireland is subdivided into four provinces: Connacht, Leinster, Munster and Ulster; and, in a system developed between the 13th and 17th centuries, thirty-two counties.";
+            c1FlexGrid1[12, _largeTextCol] = "Mexico is crossed from north to south by two mountain ranges known as Sierra Madre Oriental and Sierra Madre Occidental, which are the extension of the Rocky Mountains from northern North America.";
+            c1FlexGrid1[16, _largeTextCol] = "Because of its location, the territory of Spain was subject to many external influences, often simultaneously, since prehistoric times and through the dawn of the new era.";
+            c1FlexGrid1[17, _largeTextCol] = "Sweden emerged as an independent and unified country during the Middle Ages. In the 17th century the country expanded its territories to form the Swedish empire.";
+            c1FlexGrid1[18, _largeTextCol] = "Switzerland is a landlocked country whose territory is geographically divided between the Jura, the Central Plateau and the Alps; adding together an area of 41,285 km².";
+            c1FlexGrid1[19, _largeTextCol] = "The UK is a developed country, with the world's sixth largest economy by nominal GDP and the seventh largest by purchasing power parity.";
+            c1FlexGrid1[20, _largeTextCol] = "The country is situated mostly in central North America, where its 48 contiguous states and Washington, D.C., the capital district, lie between the Pacific and Atlantic Oceans, bordered by Canada to the north and Mexico to the south.";
 
             //Load progressbar column
             for (int i = 1; i < c1FlexGrid1.Rows.Count; i++)
@@ -272,7 +250,7 @@ namespace ControlExplorer.FlexGrid
         }
 
         Bitmap _bmp;
-        //CellStyle csCellStyle;
+        CellStyle csCellStyle;
         ProgressBar pb;
 
         private void c1FlexGrid1_OwnerDrawCell(object sender, OwnerDrawCellEventArgs e)

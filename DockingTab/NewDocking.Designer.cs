@@ -86,7 +86,6 @@
             this.c1CommandLink7 = new C1.Win.C1Command.C1CommandLink();
             this.c1CommandLink9 = new C1.Win.C1Command.C1CommandLink();
             this.c1CommandLink11 = new C1.Win.C1Command.C1CommandLink();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock2)).BeginInit();
@@ -103,21 +102,16 @@
             this.c1CommandDock3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab2)).BeginInit();
             this.c1DockingTab2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.SuspendLayout();
             // 
             // c1CommandMenu_Format
             // 
             this.c1CommandMenu_Format.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
             this.c1CommandLink10});
-            this.c1CommandMenu_Format.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1CommandMenu_Format.HideNonRecentLinks = false;
             this.c1CommandMenu_Format.Name = "c1CommandMenu_Format";
-            this.c1CommandMenu_Format.ShortcutText = "";
             this.c1CommandMenu_Format.Text = "Format";
-            this.c1ThemeController1.SetTheme(this.c1CommandMenu_Format, "(default)");
-            this.c1CommandMenu_Format.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1CommandMenu_Format.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenu_Format.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandLink10
             // 
@@ -150,14 +144,10 @@
             // 
             this.c1CommandMenu_Help.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
             this.c1CommandLink12});
-            this.c1CommandMenu_Help.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1CommandMenu_Help.HideNonRecentLinks = false;
             this.c1CommandMenu_Help.Name = "c1CommandMenu_Help";
-            this.c1CommandMenu_Help.ShortcutText = "";
-            this.c1CommandMenu_Help.Text = "Help（&H）";
-            this.c1ThemeController1.SetTheme(this.c1CommandMenu_Help, "(default)");
-            this.c1CommandMenu_Help.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1CommandMenu_Help.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenu_Help.Text = "Help";
+            this.c1CommandMenu_Help.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandLink12
             // 
@@ -166,33 +156,26 @@
             // c1Command_New
             // 
             this.c1Command_New.Name = "c1Command_New";
-            this.c1Command_New.ShortcutText = "";
             this.c1Command_New.Text = "&New";
             // 
             // c1Command_Open
             // 
             this.c1Command_Open.Name = "c1Command_Open";
-            this.c1Command_Open.ShortcutText = "";
             this.c1Command_Open.Text = "&Open";
             // 
             // c1Command_Save
             // 
             this.c1Command_Save.Name = "c1Command_Save";
-            this.c1Command_Save.ShortcutText = "";
             this.c1Command_Save.Text = "&Save";
             // 
             // c1CommandMenu_Project
             // 
             this.c1CommandMenu_Project.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
             this.c1CommandLink8});
-            this.c1CommandMenu_Project.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1CommandMenu_Project.HideNonRecentLinks = false;
             this.c1CommandMenu_Project.Name = "c1CommandMenu_Project";
-            this.c1CommandMenu_Project.ShortcutText = "";
             this.c1CommandMenu_Project.Text = "Project";
-            this.c1ThemeController1.SetTheme(this.c1CommandMenu_Project, "(default)");
-            this.c1CommandMenu_Project.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1CommandMenu_Project.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenu_Project.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandLink8
             // 
@@ -205,19 +188,14 @@
             this.c1CommandLink13,
             this.c1CommandLink14,
             this.c1CommandLink15});
-            this.c1CommandMenu_File.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1CommandMenu_File.HideNonRecentLinks = false;
             this.c1CommandMenu_File.Name = "c1CommandMenu_File";
-            this.c1CommandMenu_File.ShortcutText = "";
-            this.c1CommandMenu_File.Text = "文件";
-            this.c1ThemeController1.SetTheme(this.c1CommandMenu_File, "(default)");
-            this.c1CommandMenu_File.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
+            this.c1CommandMenu_File.Text = "File";
             this.c1CommandMenu_File.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink2
             // 
             this.c1CommandLink2.Command = this.c1Command_New;
-            this.c1CommandLink2.Text = "新建（&N）";
             // 
             // c1CommandLink13
             // 
@@ -238,21 +216,16 @@
             // c1Command_Exit
             // 
             this.c1Command_Exit.Name = "c1Command_Exit";
-            this.c1Command_Exit.ShortcutText = "";
             this.c1Command_Exit.Text = "&Exit";
             // 
             // c1CommandMenu_Edit
             // 
             this.c1CommandMenu_Edit.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
             this.c1CommandLink4});
-            this.c1CommandMenu_Edit.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1CommandMenu_Edit.HideNonRecentLinks = false;
             this.c1CommandMenu_Edit.Name = "c1CommandMenu_Edit";
-            this.c1CommandMenu_Edit.ShortcutText = "";
             this.c1CommandMenu_Edit.Text = "Edit";
-            this.c1ThemeController1.SetTheme(this.c1CommandMenu_Edit, "(default)");
-            this.c1CommandMenu_Edit.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1CommandMenu_Edit.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenu_Edit.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandLink4
             // 
@@ -269,14 +242,10 @@
             this.c1CommandLink23,
             this.c1CommandLink20,
             this.c1CommandLink24});
-            this.c1CommandMenu_View.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1CommandMenu_View.HideNonRecentLinks = false;
             this.c1CommandMenu_View.Name = "c1CommandMenu_View";
-            this.c1CommandMenu_View.ShortcutText = "";
-            this.c1CommandMenu_View.Text = "视图";
-            this.c1ThemeController1.SetTheme(this.c1CommandMenu_View, "(default)");
-            this.c1CommandMenu_View.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1CommandMenu_View.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenu_View.Text = "View";
+            this.c1CommandMenu_View.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Black;
             // 
             // c1CommandLink6
             // 
@@ -285,8 +254,7 @@
             // c1Command_ViewServerExplorer
             // 
             this.c1Command_ViewServerExplorer.Name = "c1Command_ViewServerExplorer";
-            this.c1Command_ViewServerExplorer.ShortcutText = "";
-            this.c1Command_ViewServerExplorer.Text = "服务器资源管理器";
+            this.c1Command_ViewServerExplorer.Text = "Server Explorer";
             // 
             // c1CommandLink19
             // 
@@ -296,8 +264,7 @@
             // c1Command_ViewSolutionExplorer
             // 
             this.c1Command_ViewSolutionExplorer.Name = "c1Command_ViewSolutionExplorer";
-            this.c1Command_ViewSolutionExplorer.ShortcutText = "";
-            this.c1Command_ViewSolutionExplorer.Text = "解决方案资源管理器";
+            this.c1Command_ViewSolutionExplorer.Text = "Solution Explorer";
             // 
             // c1CommandLink22
             // 
@@ -307,8 +274,7 @@
             // c1Command_ViewErrorList
             // 
             this.c1Command_ViewErrorList.Name = "c1Command_ViewErrorList";
-            this.c1Command_ViewErrorList.ShortcutText = "";
-            this.c1Command_ViewErrorList.Text = "错误列表";
+            this.c1Command_ViewErrorList.Text = "Error List";
             // 
             // c1CommandLink25
             // 
@@ -318,20 +284,18 @@
             // c1Command_ViewOutput
             // 
             this.c1Command_ViewOutput.Name = "c1Command_ViewOutput";
-            this.c1Command_ViewOutput.ShortcutText = "";
-            this.c1Command_ViewOutput.Text = "输出";
+            this.c1Command_ViewOutput.Text = "Output";
             // 
             // c1CommandLink21
             // 
             this.c1CommandLink21.Command = this.c1Command_ViewProperties;
             this.c1CommandLink21.SortOrder = 4;
-            this.c1CommandLink21.Text = "属性窗口";
+            this.c1CommandLink21.Text = "Properties Window";
             // 
             // c1Command_ViewProperties
             // 
             this.c1Command_ViewProperties.Name = "c1Command_ViewProperties";
-            this.c1Command_ViewProperties.ShortcutText = "";
-            this.c1Command_ViewProperties.Text = "属性";
+            this.c1Command_ViewProperties.Text = "Properties";
             // 
             // c1CommandLink23
             // 
@@ -341,8 +305,7 @@
             // c1Command_ViewTaskList
             // 
             this.c1Command_ViewTaskList.Name = "c1Command_ViewTaskList";
-            this.c1Command_ViewTaskList.ShortcutText = "";
-            this.c1Command_ViewTaskList.Text = "任务列表";
+            this.c1Command_ViewTaskList.Text = "Task List";
             // 
             // c1CommandLink20
             // 
@@ -352,8 +315,7 @@
             // c1Command_ViewToolbox
             // 
             this.c1Command_ViewToolbox.Name = "c1Command_ViewToolbox";
-            this.c1Command_ViewToolbox.ShortcutText = "";
-            this.c1Command_ViewToolbox.Text = "工具箱";
+            this.c1Command_ViewToolbox.Text = "Toolbox";
             // 
             // c1CommandLink24
             // 
@@ -363,62 +325,50 @@
             // c1Command_ViewStartPage
             // 
             this.c1Command_ViewStartPage.Name = "c1Command_ViewStartPage";
-            this.c1Command_ViewStartPage.ShortcutText = "";
-            this.c1Command_ViewStartPage.Text = "起始页";
+            this.c1Command_ViewStartPage.Text = "Start Page";
             // 
             // c1CommandDock1
             // 
-            this.c1CommandDock1.BackColor = System.Drawing.Color.Red;
             this.c1CommandDock1.DockingStyle = C1.Win.C1Command.DockingStyle.VS2010;
-            this.c1CommandDock1.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.c1CommandDock1.ForeColor = System.Drawing.Color.Black;
             this.c1CommandDock1.Id = 2;
-            this.c1CommandDock1.Location = new System.Drawing.Point(0, 27);
-            this.c1CommandDock1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1CommandDock1.Location = new System.Drawing.Point(0, 25);
+            this.c1CommandDock1.Margin = new System.Windows.Forms.Padding(4);
             this.c1CommandDock1.Name = "c1CommandDock1";
-            this.c1CommandDock1.Size = new System.Drawing.Size(794, 13);
-            this.c1ThemeController1.SetTheme(this.c1CommandDock1, "(default)");
+            this.c1CommandDock1.Size = new System.Drawing.Size(789, 12);
             // 
             // c1CommandDock2
             // 
-            this.c1CommandDock2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.c1CommandDock2.Controls.Add(this.c1DockingTab1);
             this.c1CommandDock2.Dock = System.Windows.Forms.DockStyle.Left;
             this.c1CommandDock2.DockingStyle = C1.Win.C1Command.DockingStyle.VS2010;
-            this.c1CommandDock2.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.c1CommandDock2.ForeColor = System.Drawing.Color.Black;
             this.c1CommandDock2.Id = 5;
-            this.c1CommandDock2.Location = new System.Drawing.Point(0, 40);
-            this.c1CommandDock2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1CommandDock2.Location = new System.Drawing.Point(0, 37);
+            this.c1CommandDock2.Margin = new System.Windows.Forms.Padding(4);
             this.c1CommandDock2.Name = "c1CommandDock2";
-            this.c1CommandDock2.Size = new System.Drawing.Size(209, 128);
-            this.c1ThemeController1.SetTheme(this.c1CommandDock2, "(default)");
+            this.c1CommandDock2.Size = new System.Drawing.Size(239, 289);
             // 
             // c1DockingTab1
             // 
             this.c1DockingTab1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.c1DockingTab1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
             this.c1DockingTab1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.c1DockingTab1.CanAutoHide = true;
             this.c1DockingTab1.CanCloseTabs = true;
             this.c1DockingTab1.CanMoveTabs = true;
             this.c1DockingTab1.Controls.Add(this.c1TabPage_ServerExplorer);
             this.c1DockingTab1.Controls.Add(this.c1TabPage_Toolbox);
-            this.c1DockingTab1.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1DockingTab1.HotTrack = true;
             this.c1DockingTab1.Location = new System.Drawing.Point(0, 0);
-            this.c1DockingTab1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1DockingTab1.Margin = new System.Windows.Forms.Padding(4);
             this.c1DockingTab1.Name = "c1DockingTab1";
             this.c1DockingTab1.SelectedIndex = 1;
             this.c1DockingTab1.ShowCaption = true;
             this.c1DockingTab1.ShowSingleTab = false;
             this.c1DockingTab1.ShowTabList = true;
-            this.c1DockingTab1.Size = new System.Drawing.Size(209, 128);
+            this.c1DockingTab1.Size = new System.Drawing.Size(239, 289);
             this.c1DockingTab1.TabIndex = 0;
             this.c1DockingTab1.TabLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
             this.c1DockingTab1.TabsSpacing = 5;
-            this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.c1ThemeController1.SetTheme(this.c1DockingTab1, "(default)");
+            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1TabPage_ServerExplorer
             // 
@@ -426,9 +376,9 @@
             this.c1TabPage_ServerExplorer.Location = new System.Drawing.Point(1, 1);
             this.c1TabPage_ServerExplorer.Margin = new System.Windows.Forms.Padding(4);
             this.c1TabPage_ServerExplorer.Name = "c1TabPage_ServerExplorer";
-            this.c1TabPage_ServerExplorer.Size = new System.Drawing.Size(204, 100);
+            this.c1TabPage_ServerExplorer.Size = new System.Drawing.Size(234, 262);
             this.c1TabPage_ServerExplorer.TabIndex = 0;
-            this.c1TabPage_ServerExplorer.Text = "服务器资源管理器";
+            this.c1TabPage_ServerExplorer.Text = "Server Explorer";
             // 
             // c1TabPage_Toolbox
             // 
@@ -436,49 +386,42 @@
             this.c1TabPage_Toolbox.Location = new System.Drawing.Point(1, 1);
             this.c1TabPage_Toolbox.Margin = new System.Windows.Forms.Padding(4);
             this.c1TabPage_Toolbox.Name = "c1TabPage_Toolbox";
-            this.c1TabPage_Toolbox.Size = new System.Drawing.Size(204, 100);
+            this.c1TabPage_Toolbox.Size = new System.Drawing.Size(234, 262);
             this.c1TabPage_Toolbox.TabIndex = 1;
-            this.c1TabPage_Toolbox.Text = "工具箱";
+            this.c1TabPage_Toolbox.Text = "Toolbox";
             // 
             // c1CommandDock4
             // 
-            this.c1CommandDock4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.c1CommandDock4.Controls.Add(this.c1DockingTab3);
             this.c1CommandDock4.Dock = System.Windows.Forms.DockStyle.Right;
             this.c1CommandDock4.DockingStyle = C1.Win.C1Command.DockingStyle.VS2010;
-            this.c1CommandDock4.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.c1CommandDock4.ForeColor = System.Drawing.Color.Black;
             this.c1CommandDock4.Id = 14;
-            this.c1CommandDock4.Location = new System.Drawing.Point(549, 40);
-            this.c1CommandDock4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1CommandDock4.Location = new System.Drawing.Point(509, 37);
+            this.c1CommandDock4.Margin = new System.Windows.Forms.Padding(4);
             this.c1CommandDock4.Name = "c1CommandDock4";
-            this.c1CommandDock4.Size = new System.Drawing.Size(245, 128);
-            this.c1ThemeController1.SetTheme(this.c1CommandDock4, "(default)");
+            this.c1CommandDock4.Size = new System.Drawing.Size(280, 289);
             // 
             // c1DockingTab3
             // 
             this.c1DockingTab3.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.c1DockingTab3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
             this.c1DockingTab3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.c1DockingTab3.CanAutoHide = true;
             this.c1DockingTab3.CanCloseTabs = true;
             this.c1DockingTab3.CanMoveTabs = true;
             this.c1DockingTab3.Controls.Add(this.c1TabPage_SolutionExplorer);
             this.c1DockingTab3.Controls.Add(this.c1TabPage_Properties);
-            this.c1DockingTab3.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1DockingTab3.HotTrack = true;
             this.c1DockingTab3.Location = new System.Drawing.Point(0, 0);
-            this.c1DockingTab3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1DockingTab3.Margin = new System.Windows.Forms.Padding(4);
             this.c1DockingTab3.Name = "c1DockingTab3";
             this.c1DockingTab3.SelectedIndex = 1;
             this.c1DockingTab3.ShowCaption = true;
             this.c1DockingTab3.ShowSingleTab = false;
             this.c1DockingTab3.ShowTabList = true;
-            this.c1DockingTab3.Size = new System.Drawing.Size(245, 128);
+            this.c1DockingTab3.Size = new System.Drawing.Size(280, 289);
             this.c1DockingTab3.TabIndex = 0;
             this.c1DockingTab3.TabsSpacing = 5;
-            this.c1DockingTab3.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.c1ThemeController1.SetTheme(this.c1DockingTab3, "(default)");
+            this.c1DockingTab3.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1TabPage_SolutionExplorer
             // 
@@ -486,9 +429,9 @@
             this.c1TabPage_SolutionExplorer.Location = new System.Drawing.Point(4, 1);
             this.c1TabPage_SolutionExplorer.Margin = new System.Windows.Forms.Padding(4);
             this.c1TabPage_SolutionExplorer.Name = "c1TabPage_SolutionExplorer";
-            this.c1TabPage_SolutionExplorer.Size = new System.Drawing.Size(240, 100);
+            this.c1TabPage_SolutionExplorer.Size = new System.Drawing.Size(275, 262);
             this.c1TabPage_SolutionExplorer.TabIndex = 0;
-            this.c1TabPage_SolutionExplorer.Text = "解决方案资源管理器";
+            this.c1TabPage_SolutionExplorer.Text = "Solution Explorer";
             // 
             // c1TabPage_Properties
             // 
@@ -496,36 +439,33 @@
             this.c1TabPage_Properties.Location = new System.Drawing.Point(4, 1);
             this.c1TabPage_Properties.Margin = new System.Windows.Forms.Padding(4);
             this.c1TabPage_Properties.Name = "c1TabPage_Properties";
-            this.c1TabPage_Properties.Size = new System.Drawing.Size(240, 100);
+            this.c1TabPage_Properties.Size = new System.Drawing.Size(275, 262);
             this.c1TabPage_Properties.TabIndex = 1;
-            this.c1TabPage_Properties.Text = "属性";
+            this.c1TabPage_Properties.Text = "Properties";
             // 
             // c1DockingTab4
             // 
-            this.c1DockingTab4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
             this.c1DockingTab4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.c1DockingTab4.CanCloseTabs = true;
             this.c1DockingTab4.Controls.Add(this.c1TabPage_StartPage);
             this.c1DockingTab4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1DockingTab4.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.c1DockingTab4.Location = new System.Drawing.Point(209, 40);
-            this.c1DockingTab4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1DockingTab4.Location = new System.Drawing.Point(239, 37);
+            this.c1DockingTab4.Margin = new System.Windows.Forms.Padding(4);
             this.c1DockingTab4.Name = "c1DockingTab4";
             this.c1DockingTab4.ShowTabList = true;
-            this.c1DockingTab4.Size = new System.Drawing.Size(340, 128);
+            this.c1DockingTab4.Size = new System.Drawing.Size(270, 289);
             this.c1DockingTab4.TabIndex = 11;
             this.c1DockingTab4.TabsSpacing = 5;
-            this.c1DockingTab4.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.c1ThemeController1.SetTheme(this.c1DockingTab4, "(default)");
+            this.c1DockingTab4.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1TabPage_StartPage
             // 
-            this.c1TabPage_StartPage.Location = new System.Drawing.Point(1, 27);
+            this.c1TabPage_StartPage.Location = new System.Drawing.Point(1, 26);
             this.c1TabPage_StartPage.Margin = new System.Windows.Forms.Padding(4);
             this.c1TabPage_StartPage.Name = "c1TabPage_StartPage";
-            this.c1TabPage_StartPage.Size = new System.Drawing.Size(338, 100);
+            this.c1TabPage_StartPage.Size = new System.Drawing.Size(268, 262);
             this.c1TabPage_StartPage.TabIndex = 0;
-            this.c1TabPage_StartPage.Text = "起始页";
+            this.c1TabPage_StartPage.Text = "Start Page";
             // 
             // c1TabPage_ErrorList
             // 
@@ -533,9 +473,9 @@
             this.c1TabPage_ErrorList.Location = new System.Drawing.Point(1, 4);
             this.c1TabPage_ErrorList.Margin = new System.Windows.Forms.Padding(4);
             this.c1TabPage_ErrorList.Name = "c1TabPage_ErrorList";
-            this.c1TabPage_ErrorList.Size = new System.Drawing.Size(792, 221);
+            this.c1TabPage_ErrorList.Size = new System.Drawing.Size(787, 193);
             this.c1TabPage_ErrorList.TabIndex = 0;
-            this.c1TabPage_ErrorList.Text = "错误列表";
+            this.c1TabPage_ErrorList.Text = "Error List";
             // 
             // c1TabPage_TaskList
             // 
@@ -543,9 +483,9 @@
             this.c1TabPage_TaskList.Location = new System.Drawing.Point(1, 4);
             this.c1TabPage_TaskList.Margin = new System.Windows.Forms.Padding(4);
             this.c1TabPage_TaskList.Name = "c1TabPage_TaskList";
-            this.c1TabPage_TaskList.Size = new System.Drawing.Size(792, 221);
+            this.c1TabPage_TaskList.Size = new System.Drawing.Size(787, 193);
             this.c1TabPage_TaskList.TabIndex = 1;
-            this.c1TabPage_TaskList.Text = "任务列表";
+            this.c1TabPage_TaskList.Text = "Task List";
             // 
             // c1TabPage_Output
             // 
@@ -553,29 +493,24 @@
             this.c1TabPage_Output.Location = new System.Drawing.Point(1, 4);
             this.c1TabPage_Output.Margin = new System.Windows.Forms.Padding(4);
             this.c1TabPage_Output.Name = "c1TabPage_Output";
-            this.c1TabPage_Output.Size = new System.Drawing.Size(792, 221);
+            this.c1TabPage_Output.Size = new System.Drawing.Size(787, 193);
             this.c1TabPage_Output.TabIndex = 2;
-            this.c1TabPage_Output.Text = "输出";
+            this.c1TabPage_Output.Text = "Output";
             // 
             // c1CommandDock3
             // 
-            this.c1CommandDock3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(219)))), ((int)(((byte)(233)))));
             this.c1CommandDock3.Controls.Add(this.c1DockingTab2);
             this.c1CommandDock3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.c1CommandDock3.DockingStyle = C1.Win.C1Command.DockingStyle.VS2010;
-            this.c1CommandDock3.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.c1CommandDock3.ForeColor = System.Drawing.Color.Black;
             this.c1CommandDock3.Id = 9;
-            this.c1CommandDock3.Location = new System.Drawing.Point(0, 168);
-            this.c1CommandDock3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1CommandDock3.Location = new System.Drawing.Point(0, 326);
+            this.c1CommandDock3.Margin = new System.Windows.Forms.Padding(4);
             this.c1CommandDock3.Name = "c1CommandDock3";
-            this.c1CommandDock3.Size = new System.Drawing.Size(794, 252);
-            this.c1ThemeController1.SetTheme(this.c1CommandDock3, "(default)");
+            this.c1CommandDock3.Size = new System.Drawing.Size(789, 223);
             // 
             // c1DockingTab2
             // 
             this.c1DockingTab2.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.c1DockingTab2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(214)))), ((int)(((byte)(229)))));
             this.c1DockingTab2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.c1DockingTab2.CanAutoHide = true;
             this.c1DockingTab2.CanCloseTabs = true;
@@ -583,20 +518,18 @@
             this.c1DockingTab2.Controls.Add(this.c1TabPage_ErrorList);
             this.c1DockingTab2.Controls.Add(this.c1TabPage_TaskList);
             this.c1DockingTab2.Controls.Add(this.c1TabPage_Output);
-            this.c1DockingTab2.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1DockingTab2.HotTrack = true;
             this.c1DockingTab2.Location = new System.Drawing.Point(0, 0);
-            this.c1DockingTab2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1DockingTab2.Margin = new System.Windows.Forms.Padding(4);
             this.c1DockingTab2.Name = "c1DockingTab2";
             this.c1DockingTab2.SelectedIndex = 2;
             this.c1DockingTab2.ShowCaption = true;
             this.c1DockingTab2.ShowSingleTab = false;
             this.c1DockingTab2.ShowTabList = true;
-            this.c1DockingTab2.Size = new System.Drawing.Size(794, 252);
+            this.c1DockingTab2.Size = new System.Drawing.Size(789, 223);
             this.c1DockingTab2.TabIndex = 0;
             this.c1DockingTab2.TabsSpacing = 5;
-            this.c1DockingTab2.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.c1ThemeController1.SetTheme(this.c1DockingTab2, "(default)");
+            this.c1DockingTab2.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1MainMenu1
             // 
@@ -610,66 +543,56 @@
             this.c1CommandLink9,
             this.c1CommandLink11});
             this.c1MainMenu1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.c1MainMenu1.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.c1MainMenu1.Location = new System.Drawing.Point(0, 0);
-            this.c1MainMenu1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1MainMenu1.Margin = new System.Windows.Forms.Padding(4);
             this.c1MainMenu1.Name = "c1MainMenu1";
-            this.c1MainMenu1.Size = new System.Drawing.Size(794, 27);
-            this.c1ThemeController1.SetTheme(this.c1MainMenu1, "(default)");
+            this.c1MainMenu1.Size = new System.Drawing.Size(789, 25);
             this.c1MainMenu1.Visible = false;
+            this.c1MainMenu1.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandLink1
             // 
             this.c1CommandLink1.Command = this.c1CommandMenu_File;
-            this.c1CommandLink1.Text = "文件（&F）";
             // 
             // c1CommandLink3
             // 
             this.c1CommandLink3.Command = this.c1CommandMenu_Edit;
             this.c1CommandLink3.SortOrder = 1;
-            this.c1CommandLink3.Text = "编辑（&E）";
             // 
             // c1CommandLink5
             // 
             this.c1CommandLink5.Command = this.c1CommandMenu_View;
             this.c1CommandLink5.SortOrder = 2;
-            this.c1CommandLink5.Text = "视图（&V）";
             // 
             // c1CommandLink7
             // 
             this.c1CommandLink7.Command = this.c1CommandMenu_Project;
             this.c1CommandLink7.SortOrder = 3;
-            this.c1CommandLink7.Text = "项目（&P）";
             // 
             // c1CommandLink9
             // 
             this.c1CommandLink9.Command = this.c1CommandMenu_Format;
             this.c1CommandLink9.SortOrder = 4;
-            this.c1CommandLink9.Text = "生成（&B）";
             // 
             // c1CommandLink11
             // 
             this.c1CommandLink11.Command = this.c1CommandMenu_Help;
             this.c1CommandLink11.SortOrder = 5;
-            this.c1CommandLink11.Text = "帮助";
             // 
             // NewDocking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 420);
+            this.ClientSize = new System.Drawing.Size(789, 549);
             this.Controls.Add(this.c1DockingTab4);
             this.Controls.Add(this.c1CommandDock2);
             this.Controls.Add(this.c1CommandDock4);
             this.Controls.Add(this.c1CommandDock3);
             this.Controls.Add(this.c1CommandDock1);
             this.Controls.Add(this.c1MainMenu1);
-            this.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.ForeColor = System.Drawing.Color.Black;
-            this.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "NewDocking";
             this.Text = "NewDocking";
-            this.c1ThemeController1.SetTheme(this, "(default)");
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock2)).EndInit();
@@ -686,7 +609,6 @@
             this.c1CommandDock3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab2)).EndInit();
             this.c1DockingTab2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -751,7 +673,6 @@
         private C1.Win.C1Command.C1CommandLink c1CommandLink7;
         private C1.Win.C1Command.C1CommandLink c1CommandLink9;
         private C1.Win.C1Command.C1CommandLink c1CommandLink11;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
 
     }
 }

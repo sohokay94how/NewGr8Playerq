@@ -30,13 +30,11 @@ namespace ControlExplorer.Ribbon
 
             this.InitializeRecentDocumentList();
 
-            // handle visual style
-            c1Ribbon1.VisualStyle = ControlExplorer.Properties.Settings.Default.VisualStyle;
-            this.RaiseControlExplorerVisualStyleChanged += new EventHandler(WordPad_RaiseControlExplorerVisualStyleChanged);
+            // handle visual style (why special need?)
+            // C1.Win.C1Themes.C1ThemeController.ApplyThemeToControlTree(c1Ribbon1, MainForm.Theme);
 
             // save application settings on exit.
             this.FormClosed += delegate { ControlExplorer.Properties.Settings.Default.Save(); };
-            
         }
 
         private void WordPad_Load(object sender, EventArgs e)
@@ -53,11 +51,6 @@ namespace ControlExplorer.Ribbon
             AddProperty("Visible", c1Ribbon1.Qat);
             AddPropertyHeader("C1SpellChecker Settings");
             AddProperty("SetActiveSpellChecking", this);
-        }
-
-        void WordPad_RaiseControlExplorerVisualStyleChanged(object sender, EventArgs e)
-        {
-            c1Ribbon1.VisualStyle = ControlExplorer.Properties.Settings.Default.VisualStyle;
         }
 
         #region Clipboard Group
@@ -326,42 +319,50 @@ namespace ControlExplorer.Ribbon
         #endregion
         #region View Zoom Group
 
+        int[] _percents = new int[] { 10, 20, 30, 40, 50, 70, 80, 90, 100, 120, 150, 200, 250, 300, 400, 700, 1000 };
+
         private void InitializeViewZoomGroup()
         {
-            foreach (int percent in new int[] { 10, 30, 50, 80, 100, 120, 150, 200, 250, 300, 400, 700, 1000 })
+            foreach (int percent in _percents)
             {
-                this.ViewZoomCombobox.Items.Add(new RibbonButton(percent + "%"));
+                ViewZoomCombobox.Items.Add(new RibbonButton(percent + "%"));
             }
 
-            this.UpdateViewZoomComboBox();
+            ViewZoomCombobox.SelectedIndex = 8;
 
             // Update the combo box when user zooms with the mouse wheel.
-            this.richTextBox1.MouseWheel += delegate
+            richTextBox1.ContentsResized += delegate
             {
-                this.UpdateViewZoomComboBox();
+                UpdateViewZoomComboBox();
             };
         }
 
-        private void ViewZoomCombobox_ChangeCommitted(object sender, EventArgs e)
+        private void ViewZoomCombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string s = this.ViewZoomCombobox.Text;
-            if (string.IsNullOrEmpty(s)) return;
-            if (s.EndsWith("%")) s = s.Substring(0, s.Length - 1);
-            float percent;
-            if (!float.TryParse(s, out percent)) return;
-            this.SetZoomFactor(percent / 100);
+            ZoomTrackBar1.Value = ViewZoomCombobox.SelectedIndex;
         }
 
         private void ZoomTrackBar1_ValueChanged(object sender, EventArgs e)
         {
-            float percent = ZoomTrackBar1.Value;
-            this.SetZoomFactor(percent / 100);
-            zoomLabel1.Text = ZoomTrackBar1.Value.ToString() + "%";
+            var index = ZoomTrackBar1.Value;
+            ViewZoomCombobox.SelectedIndex = index;
+            int zf = _percents[index];
+            zoomLabel1.Text = zf.ToString() + "%";
+            SetZoomFactor(zf / 100f);
         }
 
         private void UpdateViewZoomComboBox()
         {
-            this.ViewZoomCombobox.Text = (this.richTextBox1.ZoomFactor * 100).ToString() + "%";
+            int zf = (int)(richTextBox1.ZoomFactor * 100f + 0.5f);
+            for (int i = 0; i < _percents.Length; i++)
+            {
+                if (_percents[i] == zf)
+                {
+                    ViewZoomCombobox.SelectedIndex = i;
+                    return;
+                }
+            }
+            ViewZoomCombobox.Text = zf.ToString() + "%";
         }
 
         private void NormalSizeButton_Click(object sender, EventArgs e)

@@ -15,5 +15,14 @@ namespace ControlExplorer.Sizer
             InitializeComponent();
         }
 
+        private void SizerLightForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected override void OnFontChanged(EventArgs e)
+        {
+            base.OnFontChanged(e);
+        }
     }
 }

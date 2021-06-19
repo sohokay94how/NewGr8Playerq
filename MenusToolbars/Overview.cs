@@ -20,7 +20,7 @@ namespace ControlExplorer.MenusToolbars
         private void c1CommandHolder1_CommandClick(object sender, CommandClickEventArgs e)
         {
             //c1command click event
-            label1.Text = "执行 " + e.Command.Text + " 操作";
+            label1.Text = e.Command.Text + " clicked";
         }
 
         private void c1Command_NavBarNormal_Click(object sender, ClickEventArgs e)
@@ -73,7 +73,6 @@ namespace ControlExplorer.MenusToolbars
         {
             //add demo properties
             AddProperty("AllowFloat", c1CommandDock1);
-            AddProperty("VisualStyle", c1CommandHolder1);
         }
     }
 }

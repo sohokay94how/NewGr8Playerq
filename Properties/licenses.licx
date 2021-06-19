@@ -4,6 +4,7 @@ C1.Win.C1List.C1List, C1.Win.C1List.4
 C1.Win.C1Input.C1PictureBox, C1.Win.C1Input.4
 C1.Win.C1Input.C1CheckBox, C1.Win.C1Input.4
 C1.Win.C1Input.C1TextBox, C1.Win.C1Input.4
+C1.Win.C1Input.C1RangeSlider, C1.Win.C1Input.4
 C1.Win.C1Preview.C1PrintPreviewControl, C1.Win.C1Report.4
 C1.Win.C1Editor.ToolStrips.C1EditorToolStripMain, C1.Win.C1Editor.4
 C1.C1Preview.C1PrintDocument, C1.C1Report.4
@@ -17,7 +18,6 @@ C1.Win.C1Preview.C1PreviewPane, C1.Win.C1Report.4
 C1.Win.C1SuperTooltip.C1SuperTooltip, C1.Win.C1SuperTooltip.4
 C1.Win.C1Preview.C1PreviewTextSearchPanel, C1.Win.C1Report.4
 C1.Win.C1Schedule.C1Schedule, C1.Win.C1Schedule.4
-C1.Win.C1BarCode.C1QRCode, C1.Win.C1BarCode.4
 C1.Win.C1Win7Pack.C1TaskbarButton, C1.Win.C1Win7Pack.4
 C1.Win.C1Schedule.C1Calendar, C1.Win.C1Schedule.4
 C1.Win.C1Input.C1Label, C1.Win.C1Input.4
@@ -27,6 +27,7 @@ C1.Win.C1Ribbon.C1StatusBar, C1.Win.C1Ribbon.4
 C1.Win.C1Input.C1NumericEdit, C1.Win.C1Input.4
 C1.Win.C1TrueDBGrid.C1TrueDBGrid, C1.Win.C1TrueDBGrid.4
 C1.Win.C1FlexGrid.C1FlexGrid, C1.Win.C1FlexGrid.4
+C1.Win.C1FlexGrid.C1FlexGridSearchPanel, C1.Win.C1FlexGrid.SearchPanel.4
 C1.Win.C1Command.C1ToolBar, C1.Win.C1Command.4
 C1.Win.C1Command.C1CommandHolder, C1.Win.C1Command.4
 C1.Win.C1Input.C1DropDownControl, C1.Win.C1Input.4
@@ -43,7 +44,7 @@ C1.Win.C1Input.C1DateEdit, C1.Win.C1Input.4
 C1.Win.C1SuperTooltip.C1SuperLabel, C1.Win.C1SuperTooltip.4
 C1.Win.C1SplitContainer.C1SplitContainer, C1.Win.C1SplitContainer.4
 C1.C1Excel.C1XLBook, C1.C1Excel.4
-C1.Win.C1BarCode.C1BarCode, C1.Win.C1BarCode.4
+C1.Win.BarCode.C1BarCode, C1.Win.BarCode.4
 C1.Win.C1Tile.C1TileControl, C1.Win.C1TileControl.4
 C1.Win.C1Editor.C1Editor, C1.Win.C1Editor.4
 C1.Win.C1Sizer.C1SizerLight, C1.Win.C1Sizer.4
@@ -53,9 +54,22 @@ C1.Win.C1Command.C1CommandDock, C1.Win.C1Command.4
 C1.Win.C1Command.C1MainMenu, C1.Win.C1Command.4
 C1.Win.C1Editor.ToolStrips.C1EditorToolStripTable, C1.Win.C1Editor.4
 C1.Win.C1Preview.C1PreviewThumbnailView, C1.Win.C1Report.4
+C1.Win.C1RibbonPreview.C1RibbonPreview, C1.Win.C1RibbonPreview.4
 C1.C1Report.C1Report, C1.C1Report.4
 C1.Win.C1Gauge.C1Gauge, C1.Win.C1Gauge.4
 C1.Win.C1List.C1Combo, C1.Win.C1List.4
 C1.Win.C1InputPanel.C1InputPanel, C1.Win.C1InputPanel.4
 C1.Win.C1Themes.C1ThemeController, C1.Win.C1Themes.4
 C1.Win.C1Command.C1RadialMenu, C1.Win.C1Command.4
+C1.Win.C1Document.C1SSRSDocumentSource, C1.Win.C1Document.4
+C1.Win.C1Input.C1ComboBox, C1.Win.C1Input.4
+C1.Win.FlexPivot.C1FlexPivotPage, C1.Win.FlexPivot.4
+C1.Win.FlexReport.C1FlexReport, C1.Win.FlexReport.4
+C1.Win.FlexViewer.C1FlexViewer, C1.Win.FlexViewer.4
+C1.Win.Chart.FlexChart, C1.Win.FlexChart.4
+C1.Win.Chart.FlexPie, C1.Win.FlexChart.4
+C1.C1Word.C1WordDocument, C1.C1Word.4
+C1.Win.TreeView.C1TreeView, C1.Win.TreeView.4
+C1.Win.Map.C1Map, C1.Win.Map.4
+C1.Win.Calendar.C1CalendarView, C1.Win.Calendar.4
+C1.Win.Chart.Finance.FinancialChart, C1.Win.FinancialChart.4

@@ -12,12 +12,11 @@ using C1.Win.C1FlexGrid;
 
 namespace ControlExplorer.FlexGrid
 {
-    public partial class DateTrees : C1DemoForm
+    public partial class DataTrees : C1DemoForm
     {
-        public DateTrees()
+        public DataTrees()
         {
             InitializeComponent();
-            AddProperty("VisualStyle", _flex);
         }
 
         // ** fields
@@ -149,12 +148,12 @@ namespace ControlExplorer.FlexGrid
             DataTable dt = _ds.Tables["Orders"];
             dt.ExtendedProperties.Add("ShowColumns", new string[] {
 																	  "OrderID",
-																	  "EmployeeID, 员工",
-																	  "OrderDate, 订单日期",
-																	  "RequiredDate, 需求日期",
-																	  "ShippedDate, 发货日期",
-																	  "ShipVia, 发货源",
-																	  "Freight, 运费, c"
+																	  "EmployeeID, Employee",
+																	  "OrderDate, Order Date",
+																	  "RequiredDate, Required Date",
+																	  "ShippedDate, Shipped Date",
+																	  "ShipVia, Ship Via",
+																	  "Freight, Freight, c"
 																  });
             dt.Columns["EmployeeID"].ExtendedProperties.Add("DataMap",
                 BuildDataMap("Employees", "EmployeeID", "LastName"));
@@ -165,10 +164,10 @@ namespace ControlExplorer.FlexGrid
             //
             dt = _ds.Tables["Order Details"];
             dt.ExtendedProperties.Add("ShowColumns", new string[] {
-																	  "ProductID, 产品",
-																	  "UnitPrice, 单价, c",
-																	  "Quantity, 数量, 0.00",
-																	  "Discount, 折扣, c"
+																	  "ProductID, Product",
+																	  "UnitPrice, Unit Price, c",
+																	  "Quantity, Qty, 0.00",
+																	  "Discount, Discount, c"
 																  });
             dt.Columns["ProductID"].ExtendedProperties.Add("DataMap",
                 BuildDataMap("Products", "ProductID", "ProductName"));
@@ -181,10 +180,10 @@ namespace ControlExplorer.FlexGrid
             // re-arrange the columns on the customer table
             //
             dt.ExtendedProperties.Add("ShowColumns", new string[] {
-																	  "CustomerID, 客户",
-																	  "OrderCount, 订单",
-																	  "CompanyName, 公司",
-																	  "ContactName, 合同",
+																	  "CustomerID, Customer",
+																	  "OrderCount, Orders",
+																	  "CompanyName, Company",
+																	  "ContactName, Contact",
 																	  "Phone",
 																	  "City",
 																	  "Region",

@@ -138,7 +138,7 @@
             // inputGroupHeader1
             // 
             this.inputGroupHeader1.Name = "inputGroupHeader1";
-            this.inputGroupHeader1.Text = "组头";
+            this.inputGroupHeader1.Text = "Group Header";
             this.inputGroupHeader1.ToolTipText = "This is a GroupHeader";
             // 
             // inputLabel2
@@ -150,7 +150,7 @@
             // inputTextBox1
             // 
             this.inputTextBox1.Name = "inputTextBox1";
-            this.inputTextBox1.Text = "文本信息";
+            this.inputTextBox1.Text = "Some Text";
             // 
             // inputLabel3
             // 
@@ -217,17 +217,17 @@
             // inputOption5
             // 
             this.inputOption5.Name = "inputOption5";
-            this.inputOption5.Text = "选项 1";
+            this.inputOption5.Text = "Option 1";
             // 
             // inputOption6
             // 
             this.inputOption6.Name = "inputOption6";
-            this.inputOption6.Text = "选项 2";
+            this.inputOption6.Text = "Option 2";
             // 
             // inputOption7
             // 
             this.inputOption7.Name = "inputOption7";
-            this.inputOption7.Text = "选项 3";
+            this.inputOption7.Text = "Option 3";
             // 
             // inputLabel19
             // 
@@ -246,17 +246,17 @@
             // inputOption8
             // 
             this.inputOption8.Name = "inputOption8";
-            this.inputOption8.Text = "选项 1";
+            this.inputOption8.Text = "Option 1";
             // 
             // inputOption9
             // 
             this.inputOption9.Name = "inputOption9";
-            this.inputOption9.Text = "选项 2";
+            this.inputOption9.Text = "Option 2";
             // 
             // inputOption10
             // 
             this.inputOption10.Name = "inputOption10";
-            this.inputOption10.Text = "选项 3";
+            this.inputOption10.Text = "Option 3";
             // 
             // inputLabel8
             // 
@@ -268,13 +268,13 @@
             // 
             this.inputRadioButton1.Break = C1.Win.C1InputPanel.BreakType.None;
             this.inputRadioButton1.Name = "inputRadioButton1";
-            this.inputRadioButton1.Text = "选项 1";
+            this.inputRadioButton1.Text = "Option 1";
             // 
             // inputRadioButton2
             // 
             this.inputRadioButton2.Checked = true;
             this.inputRadioButton2.Name = "inputRadioButton2";
-            this.inputRadioButton2.Text = "选项 2";
+            this.inputRadioButton2.Text = "Option 2";
             this.inputRadioButton2.Width = 100;
             // 
             // inputLabel9
@@ -327,7 +327,7 @@
             this.inputButton1.Image = ((System.Drawing.Image)(resources.GetObject("inputButton1.Image")));
             this.inputButton1.ImageAlign = C1.Win.C1InputPanel.InputImageAlignment.MiddleRight;
             this.inputButton1.Name = "inputButton1";
-            this.inputButton1.Text = "提交";
+            this.inputButton1.Text = "Submit";
             // 
             // inputLabel14
             // 
@@ -341,19 +341,19 @@
             this.inputSplitButton2.Items.Add(this.inputButton4);
             this.inputSplitButton2.Items.Add(this.inputButton5);
             this.inputSplitButton2.Name = "inputSplitButton2";
-            this.inputSplitButton2.Text = "保存...";
+            this.inputSplitButton2.Text = "Save...";
             // 
             // inputButton4
             // 
             this.inputButton4.Image = ((System.Drawing.Image)(resources.GetObject("inputButton4.Image")));
             this.inputButton4.Name = "inputButton4";
-            this.inputButton4.Text = "另存为";
+            this.inputButton4.Text = "Save As";
             // 
             // inputButton5
             // 
             this.inputButton5.Image = ((System.Drawing.Image)(resources.GetObject("inputButton5.Image")));
             this.inputButton5.Name = "inputButton5";
-            this.inputButton5.Text = "保存工作区";
+            this.inputButton5.Text = "Save Workspace";
             // 
             // inputLabel13
             // 
@@ -369,25 +369,25 @@
             this.inputMenu1.Items.Add(this.inputSeparator2);
             this.inputMenu1.Items.Add(this.inputSplitButton1);
             this.inputMenu1.Name = "inputMenu1";
-            this.inputMenu1.Text = "选项";
+            this.inputMenu1.Text = "Options";
             this.inputMenu1.Width = 100;
             // 
             // inputGroupHeader2
             // 
             this.inputGroupHeader2.Name = "inputGroupHeader2";
-            this.inputGroupHeader2.Text = "证明";
+            this.inputGroupHeader2.Text = "Proofing";
             // 
             // inputButton2
             // 
             this.inputButton2.Image = ((System.Drawing.Image)(resources.GetObject("inputButton2.Image")));
             this.inputButton2.Name = "inputButton2";
-            this.inputButton2.Text = "拼写检查";
+            this.inputButton2.Text = "Spell-Check";
             // 
             // inputButton3
             // 
             this.inputButton3.Image = ((System.Drawing.Image)(resources.GetObject("inputButton3.Image")));
             this.inputButton3.Name = "inputButton3";
-            this.inputButton3.Text = "清除字段";
+            this.inputButton3.Text = "Clear Fields";
             // 
             // inputSeparator2
             // 
@@ -399,19 +399,19 @@
             this.inputSplitButton1.Items.Add(this.inputButton6);
             this.inputSplitButton1.Items.Add(this.inputButton7);
             this.inputSplitButton1.Name = "inputSplitButton1";
-            this.inputSplitButton1.Text = "保存...";
+            this.inputSplitButton1.Text = "Save...";
             // 
             // inputButton6
             // 
             this.inputButton6.Image = ((System.Drawing.Image)(resources.GetObject("inputButton6.Image")));
             this.inputButton6.Name = "inputButton6";
-            this.inputButton6.Text = "另存为";
+            this.inputButton6.Text = "Save As";
             // 
             // inputButton7
             // 
             this.inputButton7.Image = ((System.Drawing.Image)(resources.GetObject("inputButton7.Image")));
             this.inputButton7.Name = "inputButton7";
-            this.inputButton7.Text = "保存工作区";
+            this.inputButton7.Text = "Save Workspace";
             // 
             // inputLabel15
             // 
@@ -426,7 +426,7 @@
             // inputLabel18
             // 
             this.inputLabel18.Name = "inputLabel18";
-            this.inputLabel18.Text = "&ProgressBar";
+            this.inputLabel18.Text = "ProgressBar";
             this.inputLabel18.Width = 100;
             // 
             // inputProgressBar1
@@ -438,43 +438,42 @@
             // 
             this.inputGroupHeader3.Collapsible = true;
             this.inputGroupHeader3.Name = "inputGroupHeader3";
-            this.inputGroupHeader3.Text = "可收起的组头";
+            this.inputGroupHeader3.Text = "Collapsible Header";
             // 
             // inputLabel16
             // 
             this.inputLabel16.Name = "inputLabel16";
-            this.inputLabel16.Text = "数据导航";
+            this.inputLabel16.Text = "DataNavigator";
             this.inputLabel16.Width = 100;
             // 
             // inputDataNavigator1
             // 
             this.inputDataNavigator1.AddNewImage = ((System.Drawing.Image)(resources.GetObject("inputDataNavigator1.AddNewImage")));
-            this.inputDataNavigator1.AddNewToolTip = "新建";
+            this.inputDataNavigator1.AddNewToolTip = "Add New";
             this.inputDataNavigator1.ApplyImage = ((System.Drawing.Image)(resources.GetObject("inputDataNavigator1.ApplyImage")));
-            this.inputDataNavigator1.ApplyToolTip = "应用变更";
+            this.inputDataNavigator1.ApplyToolTip = "Apply Changes";
             this.inputDataNavigator1.CancelImage = ((System.Drawing.Image)(resources.GetObject("inputDataNavigator1.CancelImage")));
-            this.inputDataNavigator1.CancelToolTip = "取消变更";
+            this.inputDataNavigator1.CancelToolTip = "Cancel Changes";
             this.inputDataNavigator1.DeleteImage = ((System.Drawing.Image)(resources.GetObject("inputDataNavigator1.DeleteImage")));
-            this.inputDataNavigator1.DeleteToolTip = "删除";
+            this.inputDataNavigator1.DeleteToolTip = "Delete";
             this.inputDataNavigator1.MoveFirstImage = ((System.Drawing.Image)(resources.GetObject("inputDataNavigator1.MoveFirstImage")));
-            this.inputDataNavigator1.MoveFirstToolTip = "移到第一";
+            this.inputDataNavigator1.MoveFirstToolTip = "Move First";
             this.inputDataNavigator1.MoveLastImage = ((System.Drawing.Image)(resources.GetObject("inputDataNavigator1.MoveLastImage")));
-            this.inputDataNavigator1.MoveLastToolTip = "移到最后";
+            this.inputDataNavigator1.MoveLastToolTip = "Move Last";
             this.inputDataNavigator1.MoveNextImage = ((System.Drawing.Image)(resources.GetObject("inputDataNavigator1.MoveNextImage")));
-            this.inputDataNavigator1.MoveNextToolTip = "移到下一个";
+            this.inputDataNavigator1.MoveNextToolTip = "Move Next";
             this.inputDataNavigator1.MovePreviousImage = ((System.Drawing.Image)(resources.GetObject("inputDataNavigator1.MovePreviousImage")));
-            this.inputDataNavigator1.MovePreviousToolTip = "移到前一个";
+            this.inputDataNavigator1.MovePreviousToolTip = "Move Previous";
             this.inputDataNavigator1.Name = "inputDataNavigator1";
             this.inputDataNavigator1.ReloadImage = ((System.Drawing.Image)(resources.GetObject("inputDataNavigator1.ReloadImage")));
-            this.inputDataNavigator1.ReloadToolTip = "重下载数据";
+            this.inputDataNavigator1.ReloadToolTip = "Reload Data";
             this.inputDataNavigator1.SaveImage = ((System.Drawing.Image)(resources.GetObject("inputDataNavigator1.SaveImage")));
-            this.inputDataNavigator1.SaveToolTip = "保存数据";
+            this.inputDataNavigator1.SaveToolTip = "Save Data";
             // 
             // inputLabel1
             // 
             this.inputLabel1.Name = "inputLabel1";
-            this.inputLabel1.Text 
-                = "这里展示了C1InputPanel中所有內迁编辑器。";
+            this.inputLabel1.Text = "These are all of the built-in editor types found in C1InputPanel.";
             // 
             // Overview
             // 
@@ -484,7 +483,7 @@
             this.Controls.Add(this.c1InputPanel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Overview";
-            this.Text = "总览";
+            this.Text = "Overview";
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).EndInit();
             this.ResumeLayout(false);
 

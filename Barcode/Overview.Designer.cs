@@ -86,13 +86,13 @@
             this.c1InputPanel1.Items.Add(this.c1BarcodeHostUpcE);
             this.c1InputPanel1.Items.Add(this.lblUpcE);
             this.c1InputPanel1.Location = new System.Drawing.Point(0, 0);
-            this.c1InputPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1InputPanel1.Name = "c1InputPanel1";
             this.c1InputPanel1.Padding = new System.Windows.Forms.Padding(2, 5, 2, 2);
-            this.c1InputPanel1.Size = new System.Drawing.Size(867, 626);
+            this.c1InputPanel1.Size = new System.Drawing.Size(743, 479);
             this.c1InputPanel1.TabIndex = 1;
             this.c1InputPanel1.ToolTipSettings.AutomaticDelay = 0;
-            this.c1InputPanel1.ToolTipSettings.Images.Add(new C1.Win.C1InputPanel.ImageEntry("TraceError.png", ((System.Drawing.Image)(resources.GetObject("c1InputPanel1.ToolTipSettings.Images")))));
+            this.c1InputPanel1.ToolTipSettings.AutoPopDelay = 5000;
+            this.c1InputPanel1.ToolTipSettings.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("TraceError.png", ((System.Drawing.Image)(resources.GetObject("c1InputPanel1.ToolTipSettings.Images")))));
             this.c1InputPanel1.ToolTipSettings.InitialDelay = 200;
             this.c1InputPanel1.ToolTipSettings.IsBalloon = true;
             this.c1InputPanel1.ToolTipSettings.MaximumWidth = 300;
@@ -100,45 +100,36 @@
             // 
             // lblValue
             // 
-            this.lblValue.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValue.Name = "lblValue";
             this.lblValue.Padding = new System.Windows.Forms.Padding(10, 5, 0, 0);
-            this.lblValue.Text = "条码值: ";
+            this.lblValue.Text = "Barcode Value: ";
             // 
             // txtValue
             // 
             this.txtValue.Name = "txtValue";
             this.txtValue.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.txtValue.Text = "12345";
             this.txtValue.Width = 150;
             this.txtValue.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
             // 
             // hdrTypes
             // 
-            this.hdrTypes.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.hdrTypes.Name = "hdrTypes";
-            this.hdrTypes.Text = "支持的编码类型";
+            this.hdrTypes.Text = "Supported Encodings";
             // 
             // c1BarcodeHost39
             // 
             this.c1BarcodeHost39.BackColor = System.Drawing.Color.White;
             this.c1BarcodeHost39.BarHeight = 40;
             this.c1BarcodeHost39.Break = C1.Win.C1InputPanel.BreakType.None;
-            this.c1BarcodeHost39.CodeType = C1.Win.C1BarCode.CodeTypeEnum.Code39;
-            this.c1BarcodeHost39.Font = new System.Drawing.Font("Courier New", 8F);
+            this.c1BarcodeHost39.CodeType = C1.BarCode.CodeType.Code39;
             this.c1BarcodeHost39.ForeColor = System.Drawing.Color.Black;
-            this.c1BarcodeHost39.Height = 55;
             this.c1BarcodeHost39.Name = "c1BarcodeHost39";
             this.c1BarcodeHost39.Padding = new System.Windows.Forms.Padding(2);
-            this.c1BarcodeHost39.ShowText = true;
-            this.c1BarcodeHost39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.c1BarcodeHost39.Text = "12345";
-            this.c1BarcodeHost39.Width = 250;
+            this.c1BarcodeHost39.CaptionPosition = C1.BarCode.BarCodeCaptionPosition.Below;
             // 
             // lbl39
             // 
             this.lbl39.Break = C1.Win.C1InputPanel.BreakType.Row;
-            this.lbl39.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl39.FontPadding = true;
             this.lbl39.Name = "lbl39";
             this.lbl39.Text = "39";
@@ -149,21 +140,15 @@
             this.c1BarcodeHost93.BackColor = System.Drawing.Color.White;
             this.c1BarcodeHost93.BarHeight = 40;
             this.c1BarcodeHost93.Break = C1.Win.C1InputPanel.BreakType.None;
-            this.c1BarcodeHost93.CodeType = C1.Win.C1BarCode.CodeTypeEnum.Code93;
-            this.c1BarcodeHost93.Font = new System.Drawing.Font("Courier New", 8F);
+            this.c1BarcodeHost93.CodeType = C1.BarCode.CodeType.Code_93;
             this.c1BarcodeHost93.ForeColor = System.Drawing.Color.Black;
-            this.c1BarcodeHost93.Height = 55;
             this.c1BarcodeHost93.Name = "c1BarcodeHost93";
             this.c1BarcodeHost93.Padding = new System.Windows.Forms.Padding(2);
-            this.c1BarcodeHost93.ShowText = true;
-            this.c1BarcodeHost93.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.c1BarcodeHost93.Text = "12345";
-            this.c1BarcodeHost93.Width = 250;
+            this.c1BarcodeHost93.CaptionPosition = C1.BarCode.BarCodeCaptionPosition.Below;
             // 
             // lbl93
             // 
             this.lbl93.Break = C1.Win.C1InputPanel.BreakType.Row;
-            this.lbl93.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbl93.FontPadding = true;
             this.lbl93.Name = "lbl93";
             this.lbl93.Text = "93";
@@ -174,21 +159,15 @@
             this.c1BarcodeHosti2of5.BackColor = System.Drawing.Color.White;
             this.c1BarcodeHosti2of5.BarHeight = 40;
             this.c1BarcodeHosti2of5.Break = C1.Win.C1InputPanel.BreakType.None;
-            this.c1BarcodeHosti2of5.CodeType = C1.Win.C1BarCode.CodeTypeEnum.CodeI2of5;
-            this.c1BarcodeHosti2of5.Font = new System.Drawing.Font("Courier New", 8F);
+            this.c1BarcodeHosti2of5.CodeType = C1.BarCode.CodeType.Code_2_of_5;
             this.c1BarcodeHosti2of5.ForeColor = System.Drawing.Color.Black;
-            this.c1BarcodeHosti2of5.Height = 55;
             this.c1BarcodeHosti2of5.Name = "c1BarcodeHosti2of5";
             this.c1BarcodeHosti2of5.Padding = new System.Windows.Forms.Padding(2);
-            this.c1BarcodeHosti2of5.ShowText = true;
-            this.c1BarcodeHosti2of5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.c1BarcodeHosti2of5.Text = "12345";
-            this.c1BarcodeHosti2of5.Width = 250;
+            this.c1BarcodeHosti2of5.CaptionPosition = C1.BarCode.BarCodeCaptionPosition.Below;
             // 
             // lbli2of5
             // 
             this.lbli2of5.Break = C1.Win.C1InputPanel.BreakType.Row;
-            this.lbli2of5.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbli2of5.FontPadding = true;
             this.lbli2of5.Name = "lbli2of5";
             this.lbli2of5.Text = "i2of5";
@@ -199,21 +178,15 @@
             this.c1BarcodeHostCodabar.BackColor = System.Drawing.Color.White;
             this.c1BarcodeHostCodabar.BarHeight = 40;
             this.c1BarcodeHostCodabar.Break = C1.Win.C1InputPanel.BreakType.None;
-            this.c1BarcodeHostCodabar.CodeType = C1.Win.C1BarCode.CodeTypeEnum.Codabar;
-            this.c1BarcodeHostCodabar.Font = new System.Drawing.Font("Courier New", 8F);
+            this.c1BarcodeHostCodabar.CodeType = C1.BarCode.CodeType.Codabar;
             this.c1BarcodeHostCodabar.ForeColor = System.Drawing.Color.Black;
-            this.c1BarcodeHostCodabar.Height = 55;
             this.c1BarcodeHostCodabar.Name = "c1BarcodeHostCodabar";
             this.c1BarcodeHostCodabar.Padding = new System.Windows.Forms.Padding(2);
-            this.c1BarcodeHostCodabar.ShowText = true;
-            this.c1BarcodeHostCodabar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.c1BarcodeHostCodabar.Text = "12345";
-            this.c1BarcodeHostCodabar.Width = 250;
+            this.c1BarcodeHostCodabar.CaptionPosition = C1.BarCode.BarCodeCaptionPosition.Below;
             // 
             // lblCodabar
             // 
             this.lblCodabar.Break = C1.Win.C1InputPanel.BreakType.Row;
-            this.lblCodabar.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblCodabar.FontPadding = true;
             this.lblCodabar.Name = "lblCodabar";
             this.lblCodabar.Text = "Codabar";
@@ -224,21 +197,15 @@
             this.c1BarcodeHost128.BackColor = System.Drawing.Color.White;
             this.c1BarcodeHost128.BarHeight = 40;
             this.c1BarcodeHost128.Break = C1.Win.C1InputPanel.BreakType.None;
-            this.c1BarcodeHost128.CodeType = C1.Win.C1BarCode.CodeTypeEnum.Code128;
-            this.c1BarcodeHost128.Font = new System.Drawing.Font("Courier New", 8F);
+            this.c1BarcodeHost128.CodeType = C1.BarCode.CodeType.Code_128auto;
             this.c1BarcodeHost128.ForeColor = System.Drawing.Color.Black;
-            this.c1BarcodeHost128.Height = 55;
             this.c1BarcodeHost128.Name = "c1BarcodeHost128";
             this.c1BarcodeHost128.Padding = new System.Windows.Forms.Padding(2);
-            this.c1BarcodeHost128.ShowText = true;
-            this.c1BarcodeHost128.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.c1BarcodeHost128.Text = "12345";
-            this.c1BarcodeHost128.Width = 250;
+            this.c1BarcodeHost128.CaptionPosition = C1.BarCode.BarCodeCaptionPosition.Below;
             // 
             // lbl128
             // 
             this.lbl128.Break = C1.Win.C1InputPanel.BreakType.Column;
-            this.lbl128.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl128.FontPadding = true;
             this.lbl128.Name = "lbl128";
             this.lbl128.Text = "128";
@@ -249,21 +216,15 @@
             this.c1BarcodeHostPostNet.BackColor = System.Drawing.Color.White;
             this.c1BarcodeHostPostNet.BarHeight = 40;
             this.c1BarcodeHostPostNet.Break = C1.Win.C1InputPanel.BreakType.None;
-            this.c1BarcodeHostPostNet.CodeType = C1.Win.C1BarCode.CodeTypeEnum.PostNet;
-            this.c1BarcodeHostPostNet.Font = new System.Drawing.Font("Courier New", 8F);
+            this.c1BarcodeHostPostNet.CodeType = C1.BarCode.CodeType.PostNet;
             this.c1BarcodeHostPostNet.ForeColor = System.Drawing.Color.Black;
-            this.c1BarcodeHostPostNet.Height = 55;
             this.c1BarcodeHostPostNet.Name = "c1BarcodeHostPostNet";
             this.c1BarcodeHostPostNet.Padding = new System.Windows.Forms.Padding(2);
-            this.c1BarcodeHostPostNet.ShowText = true;
-            this.c1BarcodeHostPostNet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.c1BarcodeHostPostNet.Text = "12345";
-            this.c1BarcodeHostPostNet.Width = 250;
+            this.c1BarcodeHostPostNet.CaptionPosition = C1.BarCode.BarCodeCaptionPosition.Below;
             // 
             // lblPostNet
             // 
             this.lblPostNet.Break = C1.Win.C1InputPanel.BreakType.Row;
-            this.lblPostNet.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblPostNet.FontPadding = true;
             this.lblPostNet.Name = "lblPostNet";
             this.lblPostNet.Text = "PostNet";
@@ -274,21 +235,15 @@
             this.c1BarcodeHostEAN8.BackColor = System.Drawing.Color.White;
             this.c1BarcodeHostEAN8.BarHeight = 40;
             this.c1BarcodeHostEAN8.Break = C1.Win.C1InputPanel.BreakType.None;
-            this.c1BarcodeHostEAN8.CodeType = C1.Win.C1BarCode.CodeTypeEnum.Ean8;
-            this.c1BarcodeHostEAN8.Font = new System.Drawing.Font("Courier New", 8F);
+            this.c1BarcodeHostEAN8.CodeType = C1.BarCode.CodeType.EAN_8;
             this.c1BarcodeHostEAN8.ForeColor = System.Drawing.Color.Black;
-            this.c1BarcodeHostEAN8.Height = 55;
             this.c1BarcodeHostEAN8.Name = "c1BarcodeHostEAN8";
             this.c1BarcodeHostEAN8.Padding = new System.Windows.Forms.Padding(2);
-            this.c1BarcodeHostEAN8.ShowText = true;
-            this.c1BarcodeHostEAN8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.c1BarcodeHostEAN8.Text = "12345";
-            this.c1BarcodeHostEAN8.Width = 250;
+            this.c1BarcodeHostEAN8.CaptionPosition = C1.BarCode.BarCodeCaptionPosition.Below;
             // 
             // lblEAN8
             // 
             this.lblEAN8.Break = C1.Win.C1InputPanel.BreakType.Row;
-            this.lblEAN8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEAN8.FontPadding = true;
             this.lblEAN8.Name = "lblEAN8";
             this.lblEAN8.Text = "EAN-8";
@@ -299,21 +254,15 @@
             this.c1BarcodeHostEAN13.BackColor = System.Drawing.Color.White;
             this.c1BarcodeHostEAN13.BarHeight = 40;
             this.c1BarcodeHostEAN13.Break = C1.Win.C1InputPanel.BreakType.None;
-            this.c1BarcodeHostEAN13.CodeType = C1.Win.C1BarCode.CodeTypeEnum.Ean13;
-            this.c1BarcodeHostEAN13.Font = new System.Drawing.Font("Courier New", 8F);
+            this.c1BarcodeHostEAN13.CodeType = C1.BarCode.CodeType.EAN_13;
             this.c1BarcodeHostEAN13.ForeColor = System.Drawing.Color.Black;
-            this.c1BarcodeHostEAN13.Height = 55;
             this.c1BarcodeHostEAN13.Name = "c1BarcodeHostEAN13";
             this.c1BarcodeHostEAN13.Padding = new System.Windows.Forms.Padding(2);
-            this.c1BarcodeHostEAN13.ShowText = true;
-            this.c1BarcodeHostEAN13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.c1BarcodeHostEAN13.Text = "12345";
-            this.c1BarcodeHostEAN13.Width = 250;
+            this.c1BarcodeHostEAN13.CaptionPosition = C1.BarCode.BarCodeCaptionPosition.Below;
             // 
             // lblEAN13
             // 
             this.lblEAN13.Break = C1.Win.C1InputPanel.BreakType.Row;
-            this.lblEAN13.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblEAN13.FontPadding = true;
             this.lblEAN13.Name = "lblEAN13";
             this.lblEAN13.Text = "EAN-13";
@@ -324,21 +273,15 @@
             this.c1BarcodeHostUpcA.BackColor = System.Drawing.Color.White;
             this.c1BarcodeHostUpcA.BarHeight = 40;
             this.c1BarcodeHostUpcA.Break = C1.Win.C1InputPanel.BreakType.None;
-            this.c1BarcodeHostUpcA.CodeType = C1.Win.C1BarCode.CodeTypeEnum.UpcA;
-            this.c1BarcodeHostUpcA.Font = new System.Drawing.Font("Courier New", 8F);
+            this.c1BarcodeHostUpcA.CodeType = C1.BarCode.CodeType.UPC_A;
             this.c1BarcodeHostUpcA.ForeColor = System.Drawing.Color.Black;
-            this.c1BarcodeHostUpcA.Height = 55;
             this.c1BarcodeHostUpcA.Name = "c1BarcodeHostUpcA";
             this.c1BarcodeHostUpcA.Padding = new System.Windows.Forms.Padding(2);
-            this.c1BarcodeHostUpcA.ShowText = true;
-            this.c1BarcodeHostUpcA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.c1BarcodeHostUpcA.Text = "12345";
-            this.c1BarcodeHostUpcA.Width = 250;
+            this.c1BarcodeHostUpcA.CaptionPosition = C1.BarCode.BarCodeCaptionPosition.Below;
             // 
             // lblUpcA
             // 
             this.lblUpcA.Break = C1.Win.C1InputPanel.BreakType.Row;
-            this.lblUpcA.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpcA.FontPadding = true;
             this.lblUpcA.Name = "lblUpcA";
             this.lblUpcA.Text = "UPC-A";
@@ -349,20 +292,14 @@
             this.c1BarcodeHostUpcE.BackColor = System.Drawing.Color.White;
             this.c1BarcodeHostUpcE.BarHeight = 40;
             this.c1BarcodeHostUpcE.Break = C1.Win.C1InputPanel.BreakType.None;
-            this.c1BarcodeHostUpcE.CodeType = C1.Win.C1BarCode.CodeTypeEnum.UpcE;
-            this.c1BarcodeHostUpcE.Font = new System.Drawing.Font("Courier New", 8F);
+            this.c1BarcodeHostUpcE.CodeType = C1.BarCode.CodeType.UPC_E0;
             this.c1BarcodeHostUpcE.ForeColor = System.Drawing.Color.Black;
-            this.c1BarcodeHostUpcE.Height = 55;
             this.c1BarcodeHostUpcE.Name = "c1BarcodeHostUpcE";
             this.c1BarcodeHostUpcE.Padding = new System.Windows.Forms.Padding(2);
-            this.c1BarcodeHostUpcE.ShowText = true;
-            this.c1BarcodeHostUpcE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.c1BarcodeHostUpcE.Text = "12345";
-            this.c1BarcodeHostUpcE.Width = 250;
+            this.c1BarcodeHostUpcE.CaptionPosition = C1.BarCode.BarCodeCaptionPosition.Below;
             // 
             // lblUpcE
             // 
-            this.lblUpcE.Font = new System.Drawing.Font("微软雅黑", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblUpcE.FontPadding = true;
             this.lblUpcE.Name = "lblUpcE";
             this.lblUpcE.Text = "UPC-E";
@@ -374,12 +311,11 @@
             // 
             // Overview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(867, 626);
+            this.ClientSize = new System.Drawing.Size(743, 479);
             this.Controls.Add(this.c1InputPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Overview";
             this.Text = "Overview";
             this.Load += new System.EventHandler(this.Overview_Load);

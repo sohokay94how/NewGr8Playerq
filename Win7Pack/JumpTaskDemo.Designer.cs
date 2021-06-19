@@ -108,8 +108,7 @@
             this.c1SuperLabel1.Name = "c1SuperLabel1";
             this.c1SuperLabel1.Size = new System.Drawing.Size(370, 159);
             this.c1SuperLabel1.TabIndex = 0;
-            this.c1SuperLabel1.Text = "使用 <b>C1TaskbarButton</b> 控件控制弹出列表是非常简单的.在该演示中我们给弹出列表增加动态任务,可以改变任务栏按钮的图标.当用户选择不同任" +
-                "务时,我们同样可以用<b>C1TaskDialog</b>展示一个Windows7对话框. <br>\r\n<br>\r\n右击窗口任务栏按钮产看弹出菜单.";
+            this.c1SuperLabel1.Text = resources.GetString("c1SuperLabel1.Text");
             this.c1SuperLabel1.UseMnemonic = true;
             // 
             // button1
@@ -118,7 +117,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "明确任务";
+            this.button1.Text = "Clear Tasks";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -132,7 +131,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "JumpTaskDemo";
-            this.Text = "跳转列表演示";
+            this.Text = "Jump List Demo";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.JumpTaskDemo_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.JumpTaskDemo_FormClosed);
             this.ResumeLayout(false);
 

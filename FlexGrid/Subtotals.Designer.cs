@@ -60,18 +60,16 @@
             this.c1FlexGrid1.ColumnInfo = resources.GetString("c1FlexGrid1.ColumnInfo");
             this.c1FlexGrid1.DataSource = this.invoicesBindingSource;
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1FlexGrid1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
-            this.c1FlexGrid1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.NewRowWatermark = "Click to add new row";
             this.c1FlexGrid1.Rows.Count = 1;
-            this.c1FlexGrid1.Rows.DefaultSize = 19;
+            this.c1FlexGrid1.Rows.DefaultSize = 17;
             this.c1FlexGrid1.ScrollOptions = ((C1.Win.C1FlexGrid.ScrollFlags)((C1.Win.C1FlexGrid.ScrollFlags.DelayedScroll | C1.Win.C1FlexGrid.ScrollFlags.ShowScrollTips)));
             this.c1FlexGrid1.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row;
             this.c1FlexGrid1.ShowCellLabels = true;
             this.c1FlexGrid1.ShowCursor = true;
-            this.c1FlexGrid1.Size = new System.Drawing.Size(691, 583);
+            this.c1FlexGrid1.Size = new System.Drawing.Size(592, 446);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 1;
             this.c1FlexGrid1.AfterDragColumn += new C1.Win.C1FlexGrid.DragRowColEventHandler(this.c1FlexGrid1_AfterDragColumn);
@@ -79,13 +77,12 @@
             // 
             // Subtotals
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 583);
+            this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.c1FlexGrid1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Subtotals";
-            this.Text = "小计";
+            this.Text = "NewSubtotals";
             this.Load += new System.EventHandler(this.NewSubtotals_Load);
             ((System.ComponentModel.ISupportInitialize)(this.invoicesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1DemoDataSet)).EndInit();

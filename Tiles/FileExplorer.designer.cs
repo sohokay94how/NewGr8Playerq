@@ -81,9 +81,8 @@
             // 
             this.itemTiles.AllowChecking = true;
             this.itemTiles.BackColor = System.Drawing.Color.Gainsboro;
-            this.itemTiles.CellHeight = 75;
-            this.itemTiles.CellSpacing = 11;
-            this.itemTiles.CellWidth = 75;
+            this.itemTiles.CellHeight = 70;
+            this.itemTiles.CellWidth = 70;
             this.itemTiles.CheckBorderColor = System.Drawing.Color.Crimson;
             // 
             // 
@@ -91,39 +90,42 @@
             panelElement1.Alignment = System.Drawing.ContentAlignment.BottomLeft;
             panelElement1.Children.Add(imageElement1);
             panelElement1.Children.Add(textElement1);
-            panelElement1.Margin = new System.Windows.Forms.Padding(11, 6, 11, 6);
+            panelElement1.Margin = new System.Windows.Forms.Padding(10, 6, 10, 6);
             this.itemTiles.DefaultTemplate.Elements.Add(panelElement1);
             this.itemTiles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.itemTiles.FocusedBorderColor = System.Drawing.Color.RoyalBlue;
-            this.itemTiles.GroupPadding = new System.Windows.Forms.Padding(11, 43, 11, 11);
+            this.itemTiles.GroupPadding = new System.Windows.Forms.Padding(10, 40, 10, 10);
             this.itemTiles.Groups.Add(this.group1);
             this.itemTiles.GroupSpacing = 5;
             this.itemTiles.GroupTextSize = 14F;
-            this.itemTiles.GroupTextX = 11;
+            this.itemTiles.GroupTextX = 10;
             this.itemTiles.HotBorderColor = System.Drawing.Color.White;
-            this.itemTiles.Location = new System.Drawing.Point(0, 54);
+            this.itemTiles.Location = new System.Drawing.Point(0, 48);
             this.itemTiles.Name = "itemTiles";
             this.itemTiles.Padding = new System.Windows.Forms.Padding(0);
-            this.itemTiles.Size = new System.Drawing.Size(694, 369);
-            this.itemTiles.SurfacePadding = new System.Windows.Forms.Padding(16, 5, 16, 16);
-            this.itemTiles.SwipeDistance = 27;
-            this.itemTiles.SwipeRearrangeDistance = 133;
+            this.itemTiles.Size = new System.Drawing.Size(694, 326);
+            this.itemTiles.SurfacePadding = new System.Windows.Forms.Padding(15, 5, 15, 15);
             this.itemTiles.TabIndex = 0;
             this.itemTiles.Templates.Add(this.tempDrive);
             this.itemTiles.Templates.Add(this.tempFolder);
             this.itemTiles.Templates.Add(this.tempFile);
             this.itemTiles.TextSize = 16F;
-            this.itemTiles.TextX = 16;
-            this.itemTiles.TextY = 11;
+            this.itemTiles.TextX = 15;
+            this.itemTiles.TextY = 10;
             this.itemTiles.TileBackColor = System.Drawing.Color.SaddleBrown;
             this.itemTiles.TileChecked += new System.EventHandler<C1.Win.C1Tile.TileEventArgs>(this.itemTiles_TileCheckedChanged);
             this.itemTiles.TileUnchecked += new System.EventHandler<C1.Win.C1Tile.TileEventArgs>(this.itemTiles_TileCheckedChanged);
+            
+            //code used before event changes to tile control
+            //this.itemTiles.TileChecked += new C1.Win.C1Tile.TileEventHandler(this.itemTiles_TileCheckedChanged);
+            //this.itemTiles.TileUnchecked += new C1.Win.C1Tile.TileEventHandler(this.itemTiles_TileCheckedChanged);
+            
             this.itemTiles.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.itemTiles_KeyPress);
             // 
             // group1
             // 
             this.group1.Name = "group1";
-            this.group1.Text = "主题";
+            this.group1.Text = "Topic";
             this.group1.Tiles.Add(this.tile1);
             this.group1.Tiles.Add(this.tile2);
             this.group1.Tiles.Add(this.tile3);
@@ -141,16 +143,19 @@
             // tempDrive
             // 
             panelElement2.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleCenter;
+            imageElement2.FixedHeight = 32;
+            imageElement2.FixedWidth = 32;
+            imageElement2.ImageLayout = C1.Win.C1Tile.ForeImageLayout.ScaleInner;
             panelElement2.Children.Add(imageElement2);
             panelElement2.Dock = System.Windows.Forms.DockStyle.Left;
-            panelElement2.FixedWidth = 53;
+            panelElement2.FixedWidth = 50;
             panelElement3.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleLeft;
             textElement2.Alignment = System.Drawing.ContentAlignment.TopLeft;
             textElement3.Alignment = System.Drawing.ContentAlignment.BottomLeft;
             textElement3.TextSelector = C1.Win.C1Tile.TextSelector.Text1;
             panelElement3.Children.Add(textElement2);
             panelElement3.Children.Add(textElement3);
-            panelElement3.ChildSpacing = 27;
+            panelElement3.ChildSpacing = 25;
             panelElement3.Dock = System.Windows.Forms.DockStyle.Fill;
             panelElement3.Orientation = C1.Win.C1Tile.LayoutOrientation.Vertical;
             this.tempDrive.Elements.Add(panelElement2);
@@ -174,12 +179,12 @@
             panelElement4.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleCenter;
             panelElement4.Children.Add(imageElement3);
             panelElement4.Dock = System.Windows.Forms.DockStyle.Left;
-            panelElement4.FixedWidth = 53;
+            panelElement4.FixedWidth = 50;
             panelElement5.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleLeft;
             textElement4.FontBold = C1.Win.C1Tile.ThreeStateBoolean.True;
             panelElement5.Children.Add(textElement4);
             panelElement5.Dock = System.Windows.Forms.DockStyle.Top;
-            panelElement5.FixedHeight = 35;
+            panelElement5.FixedHeight = 33;
             panelElement5.Padding = new System.Windows.Forms.Padding(0, 2, 4, 0);
             panelElement6.Alignment = System.Drawing.ContentAlignment.TopLeft;
             textElement5.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -214,12 +219,12 @@
             panelElement7.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleCenter;
             panelElement7.Children.Add(imageElement4);
             panelElement7.Dock = System.Windows.Forms.DockStyle.Left;
-            panelElement7.FixedWidth = 53;
+            panelElement7.FixedWidth = 50;
             panelElement8.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleLeft;
             textElement7.FontBold = C1.Win.C1Tile.ThreeStateBoolean.True;
             panelElement8.Children.Add(textElement7);
             panelElement8.Dock = System.Windows.Forms.DockStyle.Top;
-            panelElement8.FixedHeight = 35;
+            panelElement8.FixedHeight = 33;
             panelElement8.Padding = new System.Windows.Forms.Padding(0, 2, 4, 0);
             panelElement9.Alignment = System.Drawing.ContentAlignment.TopLeft;
             textElement8.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -241,22 +246,21 @@
             this.bottomPanel.BackColor = System.Drawing.Color.DimGray;
             this.bottomPanel.Controls.Add(this.pathLabel);
             this.bottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bottomPanel.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bottomPanel.ForeColor = System.Drawing.Color.White;
-            this.bottomPanel.Location = new System.Drawing.Point(0, 423);
+            this.bottomPanel.Location = new System.Drawing.Point(0, 374);
             this.bottomPanel.Name = "bottomPanel";
-            this.bottomPanel.Size = new System.Drawing.Size(694, 39);
+            this.bottomPanel.Size = new System.Drawing.Size(694, 34);
             this.bottomPanel.TabIndex = 1;
             // 
             // pathLabel
             // 
-            this.pathLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pathLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pathLabel.Location = new System.Drawing.Point(14, 2);
             this.pathLabel.Name = "pathLabel";
-            this.pathLabel.Size = new System.Drawing.Size(675, 34);
+            this.pathLabel.Size = new System.Drawing.Size(675, 30);
             this.pathLabel.TabIndex = 1;
-            this.pathLabel.Text = "(磁盘)";
+            this.pathLabel.Text = "(Drives)";
             this.pathLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // topPanel
@@ -266,16 +270,16 @@
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(694, 54);
+            this.topPanel.Size = new System.Drawing.Size(694, 48);
             this.topPanel.TabIndex = 2;
             // 
             // topTiles
             // 
             this.topTiles.AllowPanningFeedback = false;
             this.topTiles.BackColor = System.Drawing.Color.Silver;
-            this.topTiles.CellHeight = 43;
+            this.topTiles.CellHeight = 40;
             this.topTiles.CellSpacing = 6;
-            this.topTiles.CellWidth = 102;
+            this.topTiles.CellWidth = 96;
             // 
             // 
             // 
@@ -290,19 +294,14 @@
             this.topTiles.FocusedBorderColor = System.Drawing.Color.ForestGreen;
             this.topTiles.GroupPadding = new System.Windows.Forms.Padding(4);
             this.topTiles.Groups.Add(this.group2);
-            this.topTiles.GroupTextX = 21;
             this.topTiles.HotBorderColor = System.Drawing.Color.White;
             this.topTiles.Location = new System.Drawing.Point(0, 0);
             this.topTiles.Name = "topTiles";
             this.topTiles.Padding = new System.Windows.Forms.Padding(0);
-            this.topTiles.Size = new System.Drawing.Size(694, 54);
+            this.topTiles.Size = new System.Drawing.Size(694, 48);
             this.topTiles.SurfacePadding = new System.Windows.Forms.Padding(0);
-            this.topTiles.SwipeDistance = 27;
-            this.topTiles.SwipeRearrangeDistance = 133;
             this.topTiles.TabIndex = 1;
             this.topTiles.TabStop = false;
-            this.topTiles.TextX = 37;
-            this.topTiles.TextY = 16;
             this.topTiles.TileBackColor = System.Drawing.Color.DimGray;
             // 
             // group2
@@ -319,7 +318,7 @@
             // 
             this.upLevelTile.Image = global::ControlExplorer.Properties.Resources.upLevel;
             this.upLevelTile.Name = "upLevelTile";
-            this.upLevelTile.Text = "返回上一级";
+            this.upLevelTile.Text = "Level Up";
             this.upLevelTile.Click += new System.EventHandler(this.upLevelTile_Click);
             // 
             // drivesTile
@@ -327,57 +326,56 @@
             this.drivesTile.Image = global::ControlExplorer.Properties.Resources.drives;
             this.drivesTile.Name = "drivesTile";
             this.drivesTile.Symbol = C1.Win.C1Tile.TileSymbol.VerticalDots;
-            this.drivesTile.Text = "磁盘";
+            this.drivesTile.Text = "Drives";
             this.drivesTile.Click += new System.EventHandler(this.drivesTile_Click);
             // 
             // refreshTile
             // 
             this.refreshTile.Image = global::ControlExplorer.Properties.Resources.refresh2;
             this.refreshTile.Name = "refreshTile";
-            this.refreshTile.Text = "刷新";
+            this.refreshTile.Text = "Refresh";
             this.refreshTile.Click += new System.EventHandler(this.refreshTile_Click);
             // 
             // newFolderTile
             // 
             this.newFolderTile.Image = global::ControlExplorer.Properties.Resources.newFolder;
             this.newFolderTile.Name = "newFolderTile";
-            this.newFolderTile.Text = "  新建       文件夹";
+            this.newFolderTile.Text = "New Folder";
             this.newFolderTile.Click += new System.EventHandler(this.newFolderTile_Click);
             // 
             // deleteTile
             // 
             this.deleteTile.Image = global::ControlExplorer.Properties.Resources.delete;
             this.deleteTile.Name = "deleteTile";
-            this.deleteTile.Text = "删除";
+            this.deleteTile.Text = "Delete";
             this.deleteTile.Click += new System.EventHandler(this.deleteTile_Click);
             // 
             // renameTile
             // 
             this.renameTile.Image = global::ControlExplorer.Properties.Resources.rename;
             this.renameTile.Name = "renameTile";
-            this.renameTile.Text = "重命名";
+            this.renameTile.Text = "Rename";
             this.renameTile.Click += new System.EventHandler(this.renameTile_Click);
             // 
             // upButton
             // 
-            this.upButton.Location = new System.Drawing.Point(596, 32);
+            this.upButton.Location = new System.Drawing.Point(596, 28);
             this.upButton.Name = "upButton";
-            this.upButton.Size = new System.Drawing.Size(87, 31);
+            this.upButton.Size = new System.Drawing.Size(87, 27);
             this.upButton.TabIndex = 0;
             this.upButton.Text = "One Level Up";
             this.upButton.UseVisualStyleBackColor = true;
             // 
-            // FileExplorer
+            // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 462);
+            this.ClientSize = new System.Drawing.Size(694, 408);
             this.Controls.Add(this.itemTiles);
             this.Controls.Add(this.bottomPanel);
             this.Controls.Add(this.topPanel);
-            this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.Name = "FileExplorer";
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Name = "Form1";
             this.Text = "File Explorer";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.bottomPanel.ResumeLayout(false);

@@ -50,14 +50,12 @@
             // 
             // c1Chart1
             // 
-            this.c1Chart1.BackColor = System.Drawing.Color.White;
             this.c1Chart1.DataSource = this.categorySales1;
             this.c1Chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1Chart1.Location = new System.Drawing.Point(0, 31);
-            this.c1Chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1Chart1.Location = new System.Drawing.Point(0, 24);
             this.c1Chart1.Name = "c1Chart1";
             this.c1Chart1.PropBag = resources.GetString("c1Chart1.PropBag");
-            this.c1Chart1.Size = new System.Drawing.Size(691, 552);
+            this.c1Chart1.Size = new System.Drawing.Size(592, 422);
             this.c1Chart1.TabIndex = 1;
             // 
             // categorySales1
@@ -78,11 +76,11 @@
             this.c1CommandLink5});
             this.c1ToolBar1.Dock = System.Windows.Forms.DockStyle.Top;
             this.c1ToolBar1.Location = new System.Drawing.Point(0, 0);
-            this.c1ToolBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1ToolBar1.Movable = false;
             this.c1ToolBar1.Name = "c1ToolBar1";
-            this.c1ToolBar1.Size = new System.Drawing.Size(691, 31);
+            this.c1ToolBar1.Size = new System.Drawing.Size(592, 24);
             this.c1ToolBar1.Text = "c1ToolBar1";
+            this.c1ToolBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandHolder1
             // 
@@ -98,36 +96,31 @@
             // 
             this.c1Command_ChartWizard.Image = global::ControlExplorer.Properties.Resources.ChartWizard;
             this.c1Command_ChartWizard.Name = "c1Command_ChartWizard";
-            this.c1Command_ChartWizard.ShortcutText = "";
-            this.c1Command_ChartWizard.Text = "向导...";
+            this.c1Command_ChartWizard.Text = "Wizard...";
             // 
             // c1Command_ChartType
             // 
             this.c1Command_ChartType.Image = global::ControlExplorer.Properties.Resources.Chart;
             this.c1Command_ChartType.Name = "c1Command_ChartType";
-            this.c1Command_ChartType.ShortcutText = "";
-            this.c1Command_ChartType.Text = "图表类型...";
+            this.c1Command_ChartType.Text = "Chart Type...";
             // 
             // c1Command_ChartProperties
             // 
             this.c1Command_ChartProperties.Image = global::ControlExplorer.Properties.Resources.Properties;
             this.c1Command_ChartProperties.Name = "c1Command_ChartProperties";
-            this.c1Command_ChartProperties.ShortcutText = "";
-            this.c1Command_ChartProperties.Text = "图表属性..";
+            this.c1Command_ChartProperties.Text = "Chart Properties...";
             // 
             // c1Command_DataBinding
             // 
             this.c1Command_DataBinding.Image = global::ControlExplorer.Properties.Resources.Database;
             this.c1Command_DataBinding.Name = "c1Command_DataBinding";
-            this.c1Command_DataBinding.ShortcutText = "";
-            this.c1Command_DataBinding.Text = "数据连接...";
+            this.c1Command_DataBinding.Text = "Data Binding...";
             // 
             // c1Command_VisualEffects
             // 
             this.c1Command_VisualEffects.Image = global::ControlExplorer.Properties.Resources.ColorGallery1;
             this.c1Command_VisualEffects.Name = "c1Command_VisualEffects";
-            this.c1Command_VisualEffects.ShortcutText = "";
-            this.c1Command_VisualEffects.Text = "可视化效果...";
+            this.c1Command_VisualEffects.Text = "Visual Effects...";
             // 
             // c1CommandLink2
             // 
@@ -155,14 +148,13 @@
             // 
             // ChartEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 583);
+            this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.c1Chart1);
             this.Controls.Add(this.c1ToolBar1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "ChartEditor";
-            this.Text = "图标编辑";
+            this.Text = "ChartEditor";
             ((System.ComponentModel.ISupportInitialize)(this.c1Chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categorySales1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();

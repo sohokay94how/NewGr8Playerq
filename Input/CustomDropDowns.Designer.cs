@@ -100,7 +100,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 17);
             this.label1.TabIndex = 4;
-            this.label1.Text = "信用卡类型：";
+            this.label1.Text = "Credit Card:";
             // 
             // label2
             // 
@@ -110,7 +110,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 17);
             this.label2.TabIndex = 5;
-            this.label2.Text = "保险方案:";
+            this.label2.Text = "Insurance Options:";
             // 
             // label3
             // 
@@ -120,7 +120,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(153, 17);
             this.label3.TabIndex = 6;
-            this.label3.Text = "省份/市";
+            this.label3.Text = "State/Region/Province:";
             // 
             // label4
             // 
@@ -130,7 +130,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 17);
             this.label4.TabIndex = 7;
-            this.label4.Text = "国家:";
+            this.label4.Text = "Country:";
             // 
             // categoriesBindingSource
             // 
@@ -181,7 +181,12 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 17);
             this.label5.TabIndex = 11;
-            this.label5.Text = "类型:";
+            this.label5.Text = "Category:";
+            // 
+            // c1Magnify1
+            // 
+            this.c1Magnify1.Size = new System.Drawing.Size(200, 200);
+            this.c1Magnify1.ZoomFactor = 2.5F;
             // 
             // CustomDropDowns
             // 

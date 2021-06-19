@@ -28,16 +28,6 @@ namespace ControlExplorer.ZoomPolicies
 
             control.Refresh();
         }
-
-        public override void ZoomFont(Control control, ZoomFontInfo infos)
-        {
-            C1Calendar calendar = control as C1Calendar;
-            if (calendar.Theme != null)
-            {
-                calendar.Theme.BaseFont = infos.Zoom(calendar.Theme.BaseFont);
-            }
-            base.ZoomFont(control, infos);
-        }
     }
 
     public class C1ScheduleZoomPolicy : ZoomPolicy
@@ -57,21 +47,6 @@ namespace ControlExplorer.ZoomPolicies
             }
             control.Refresh();
         }
-
-        public override void ZoomFont(Control control, ZoomFontInfo infos)
-        {
-            C1Schedule schedule = control as C1Schedule;
-            if (schedule.Theme != null)
-            {
-                schedule.Theme.BaseFont = infos.Zoom(schedule.Theme.BaseFont);
-                if (schedule.Theme.TimeRulerMinutesFont != null && !object.ReferenceEquals(schedule.Theme.TimeRulerMinutesFont, schedule.Theme.BaseFont))
-                {
-                    schedule.Theme.TimeRulerMinutesFont = infos.Zoom(schedule.Theme.TimeRulerMinutesFont);
-                }
-
-            }
-            base.ZoomFont(control, infos);
-        }
-    }
+     }
 }
 

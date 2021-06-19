@@ -229,8 +229,8 @@
   <data name="Busy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Busy.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="New2014" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\New2014.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="New" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Toolbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Toolbox-VS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -267,6 +267,9 @@
   </data>
   <data name="Zoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Zoom.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SsrsConfig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SsrsConfig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reservedWords" xml:space="preserve">
     <value>abstract
@@ -555,6 +558,9 @@ namespace ControlExplorer.Excel
   <data name="NewComment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NewComment.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MoreReports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MoreReports.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ColorGallery1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ColorGallery1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -735,7 +741,121 @@ namespace ControlExplorer.Excel
   <data name="route66" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\route66.kml;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="New" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\New.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ci_Barcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Barcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_Chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_FlexChart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_FlexChart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_DockingTab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_DockingTab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_DynamicHelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_DynamicHelp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_Editor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Editor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_Excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Excel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_FlexGrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_FlexGrid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_FlexPivot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_FlexPivot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_FlexReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_FlexReport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_GanttView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_GanttView.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_Gauge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Gauge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Input.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_InputPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_InputPanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_List.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_Map" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_PDF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_PDF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_Report" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_Ribbon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Ribbon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_Scheduler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Scheduler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_Sizer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Sizer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_SpellChecker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_SpellChecker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_SplitContainer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_SplitContainer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_SSRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_SSRS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_SuperTooltip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_SuperTooltip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_Themes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Themes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_TileControl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_TileControl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_Toolbars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Toolbars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_TrueDBGrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_TrueDBGrid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_Win7Pack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Win7Pack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FlexPivotViews" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\flexpivot\resources\flexpivotviews.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="FlexCommonTasks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FlexCommonTasks.flxr;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ci_Word" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_Word.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_TreeView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_TreeView.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClosedFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ClosedFolder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenedFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpenedFolder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ci_CalendarView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlIcons\ci_CalendarView.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -87,27 +87,27 @@
             this.lblLabel.AutoSize = true;
             this.lblLabel.Location = new System.Drawing.Point(8, 147);
             this.lblLabel.Name = "lblLabel";
-            this.lblLabel.Size = new System.Drawing.Size(35, 13);
+            this.lblLabel.Size = new System.Drawing.Size(36, 13);
             this.lblLabel.TabIndex = 8;
-            this.lblLabel.Text = "等级:";
+            this.lblLabel.Text = "Le&vel:";
             // 
             // lblLocation
             // 
             this.lblLocation.AutoSize = true;
             this.lblLocation.Location = new System.Drawing.Point(8, 44);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(35, 13);
+            this.lblLocation.Size = new System.Drawing.Size(51, 13);
             this.lblLocation.TabIndex = 2;
-            this.lblLocation.Text = "位置:";
+            this.lblLocation.Text = "&Location:";
             // 
             // lblSubject
             // 
             this.lblSubject.AutoSize = true;
             this.lblSubject.Location = new System.Drawing.Point(8, 10);
             this.lblSubject.Name = "lblSubject";
-            this.lblSubject.Size = new System.Drawing.Size(35, 13);
+            this.lblSubject.Size = new System.Drawing.Size(51, 13);
             this.lblSubject.TabIndex = 0;
-            this.lblSubject.Text = "项目:";
+            this.lblSubject.Text = "&Exercise:";
             // 
             // pnTime
             // 
@@ -167,18 +167,18 @@
             this.lblEnd.AutoSize = true;
             this.lblEnd.Location = new System.Drawing.Point(8, 40);
             this.lblEnd.Name = "lblEnd";
-            this.lblEnd.Size = new System.Drawing.Size(59, 13);
+            this.lblEnd.Size = new System.Drawing.Size(52, 13);
             this.lblEnd.TabIndex = 3;
-            this.lblEnd.Text = "结束时间:";
+            this.lblEnd.Text = "En&d time:";
             // 
             // lblStart
             // 
             this.lblStart.AutoSize = true;
             this.lblStart.Location = new System.Drawing.Point(8, 13);
             this.lblStart.Name = "lblStart";
-            this.lblStart.Size = new System.Drawing.Size(59, 13);
+            this.lblStart.Size = new System.Drawing.Size(58, 13);
             this.lblStart.TabIndex = 0;
-            this.lblStart.Text = "开始时间:";
+            this.lblStart.Text = "Start &time:";
             // 
             // pnProps
             // 
@@ -218,8 +218,8 @@
             // 
             this.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(72, 22);
-            this.btnSave.Text = "保存和关闭";
+            this.btnSave.Size = new System.Drawing.Size(90, 22);
+            this.btnSave.Text = "&Save and Close";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // toolStripSeparator1
@@ -232,8 +232,8 @@
             this.btnDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(36, 22);
-            this.btnDelete.Text = "删除";
+            this.btnDelete.Size = new System.Drawing.Size(44, 22);
+            this.btnDelete.Text = "Delete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // pnSubject
@@ -260,32 +260,32 @@
             // 
             this.cmbExcercise.FormattingEnabled = true;
             this.cmbExcercise.Items.AddRange(new object[] {
-            "室内骑行",
-            "健美操",
-            "瑜伽",
-            "身体泵",
-            "普拉提",
-            "ABS和背部锻炼",
-            "打击跆拳道",
-            "游泳课",
-            "有氧舞蹈",
-            "游泳时间",
-            "昆达利尼瑜伽",
-            "游泳",
-            "迈步",
-            "健美操",
-            "瑜伽融合",
-            "LA水中健美操",
-            "风情拉丁",
-            "太极",
-            "对打",
-            "有氧搏击",
-            "迂回",
-            "统和综效",
-            "LA 稳定核心性",
-            "战斗跆拳道"});
-            this.cmbExcercise.Location = new System.Drawing.Point(73, 9);
-            this.cmbExcercise.Margin = new System.Windows.Forms.Padding(4);
+            "LA Spin ",
+            "Aerobics",
+            "Yoga ",
+            "Body Pump",
+            "Pilates",
+            "Abs and Back Workout",
+            "Combat Kickboxing",
+            "Kids Parties",
+            "Swimming Lessons",
+            "Dance Cardio Funk",
+            "Swim Time",
+            "Yoga Kundalini",
+            "Swimming",
+            "Step",
+            "Aerobics",
+            "Yoga Fusion",
+            "LA Water Aerobics",
+            "Dance Salsa",
+            "Tai Chi",
+            "Combat Fight",
+            "Body Combat",
+            "Circuit",
+            "Synergize",
+            "LA Core Stability",
+            "Combat Tae Kwon Do"});
+            this.cmbExcercise.Location = new System.Drawing.Point(73, 7);
             this.cmbExcercise.Name = "cmbExcercise";
             this.cmbExcercise.Size = new System.Drawing.Size(244, 21);
             this.cmbExcercise.TabIndex = 1;
@@ -295,18 +295,18 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 6;
-            this.label2.Text = "类型:";
+            this.label2.Text = "&Category:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(8, 78);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "教练:";
+            this.label1.Text = "&Instructor:";
             // 
             // cmbCategory
             // 
@@ -373,7 +373,7 @@
             this.MinimumSize = new System.Drawing.Size(241, 245);
             this.Name = "ExcerciseForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "练习";
+            this.Text = "Exercise";
             this.pnTime.ResumeLayout(false);
             this.pnTime.PerformLayout();
             this.pnProps.ResumeLayout(false);

@@ -51,10 +51,6 @@ namespace ControlExplorer.Ribbon
 
             // Navigate to the start page
             webBrowser.Navigate(homeUrl);
-
-            // handle visual style
-            c1Ribbon.VisualStyle = ControlExplorer.Properties.Settings.Default.VisualStyle;
-            this.RaiseControlExplorerVisualStyleChanged += new EventHandler(Form_RaiseControlExplorerVisualStyleChanged);
         }
 
        private void RibbonEarthForm_Shown(object sender, EventArgs e)
@@ -327,11 +323,6 @@ namespace ControlExplorer.Ribbon
                     break;
                 }
             }
-        }
-
-        void Form_RaiseControlExplorerVisualStyleChanged(object sender, EventArgs e)
-        {
-            c1Ribbon.VisualStyle = ControlExplorer.Properties.Settings.Default.VisualStyle;
         }
         #endregion
     }

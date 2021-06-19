@@ -1,7 +1,4 @@
-<p>
-  超过65个.NET控件，包括那些你在任何地方都找不到的控件。开发WinForms控件的ComponentOne Studio充满了聪明的代码自由的设计者
-  有超强的内置功能，可以超越开箱体验，超强的灵活性且保证这些控件可以经受时间的考验。
-
+<p>Over 65 .NET controls, including the ones you can't get anywhere else. ComponentOne Studio for WinForms controls come packed with smart, code-free designers, endless built-in features that go above and beyond the out-of-the box experience, superior flexibility and the outstanding assurance that these controls can stand the test of time.
 </p>
 <h3>What's New 2012 v3</h3>
 <hr/>
@@ -15,7 +12,7 @@
       <img src="Editor_RTF.png" /><!--Put in new images with Editor containing RTF Text-->
     </td>
     <td>
-      ComponentOne Editor for Winforms now supports loading and saving text from and to RTF files. Any XHTML content rendered into the Editor Document can now be saved directly to the RTF format. Loading an RTF file shows the content with RTF formatting intact.
+      ComponentOne Editor Winforms Edition now supports loading and saving text from and to RTF files. Any XHTML content rendered into the Editor Document can now be saved directly to the RTF format. Loading an RTF file shows the content with RTF formatting intact.
       <a href="c1editor">Launch Demo.</a>
     </td>
   </tr>

@@ -72,7 +72,6 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1OutBar1)).BeginInit();
             this.c1OutBar1.SuspendLayout();
             this.c1OutPage1.SuspendLayout();
@@ -86,12 +85,10 @@
             this.c1DockingTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1Calendar1)).BeginInit();
             this.c1OutPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.SuspendLayout();
             // 
             // c1OutBar1
             // 
-            this.c1OutBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(221)))), ((int)(((byte)(238)))));
             this.c1OutBar1.Controls.Add(this.c1OutPage1);
             this.c1OutBar1.Controls.Add(this.c1OutPage3);
             this.c1OutBar1.Controls.Add(this.c1OutPage2);
@@ -99,23 +96,19 @@
             this.c1OutBar1.ImageList = this.imageList1;
             this.c1OutBar1.Location = new System.Drawing.Point(0, 0);
             this.c1OutBar1.Name = "c1OutBar1";
-            this.c1OutBar1.PageTitleHeight = 28;
+            this.c1OutBar1.PageTitleHeight = 22;
             this.c1OutBar1.ShowToolTips = true;
-            this.c1OutBar1.Size = new System.Drawing.Size(225, 412);
-            this.c1ThemeController1.SetTheme(this.c1OutBar1, "(default)");
-            this.c1OutBar1.VisualStyle = C1.Win.C1Command.VisualStyle.Office2007Blue;
-            this.c1OutBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1OutBar1.Size = new System.Drawing.Size(300, 549);
+            this.c1OutBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1OutPage1
             // 
             this.c1OutPage1.Controls.Add(this.c1ToolBar1);
-            this.c1OutPage1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.c1OutPage1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1OutPage1.ImageIndex = 0;
+            this.c1OutPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1OutPage1.Name = "c1OutPage1";
-            this.c1OutPage1.Size = new System.Drawing.Size(225, 328);
-            this.c1OutPage1.Text = "我的Outlook";
-            this.c1ThemeController1.SetTheme(this.c1OutPage1, "(default)");
+            this.c1OutPage1.Size = new System.Drawing.Size(300, 483);
+            this.c1OutPage1.Text = "My Outlook";
             // 
             // c1ToolBar1
             // 
@@ -133,13 +126,12 @@
             this.c1ToolBar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1ToolBar1.Horizontal = false;
             this.c1ToolBar1.Location = new System.Drawing.Point(0, 0);
+            this.c1ToolBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1ToolBar1.Movable = false;
             this.c1ToolBar1.Name = "c1ToolBar1";
-            this.c1ToolBar1.Size = new System.Drawing.Size(225, 328);
-            this.c1ToolBar1.Text = "第一页";
-            this.c1ThemeController1.SetTheme(this.c1ToolBar1, "(default)");
-            this.c1ToolBar1.VisualStyle = C1.Win.C1Command.VisualStyle.Office2010Blue;
-            this.c1ToolBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this.c1ToolBar1.Size = new System.Drawing.Size(300, 483);
+            this.c1ToolBar1.Text = "Page1";
+            this.c1ToolBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandHolder1
             // 
@@ -161,77 +153,66 @@
             // 
             this.c1Command1.Image = ((System.Drawing.Image)(resources.GetObject("c1Command1.Image")));
             this.c1Command1.Name = "c1Command1";
-            this.c1Command1.ShortcutText = "";
-            this.c1Command1.Text = "收件箱";
+            this.c1Command1.Text = "Inbox";
             // 
             // c1Command2
             // 
             this.c1Command2.Image = global::ControlExplorer.Properties.Resources.CalendarSchedule;
             this.c1Command2.Name = "c1Command2";
-            this.c1Command2.ShortcutText = "";
-            this.c1Command2.Text = "日历";
+            this.c1Command2.Text = "Calendar";
             // 
             // c1Command3
             // 
             this.c1Command3.Image = global::ControlExplorer.Properties.Resources.AddressBook;
             this.c1Command3.Name = "c1Command3";
-            this.c1Command3.ShortcutText = "";
-            this.c1Command3.Text = "联系人";
+            this.c1Command3.Text = "Contacts";
             // 
             // c1Command4
             // 
             this.c1Command4.Image = global::ControlExplorer.Properties.Resources.Options;
             this.c1Command4.Name = "c1Command4";
-            this.c1Command4.ShortcutText = "";
-            this.c1Command4.Text = "任务";
+            this.c1Command4.Text = "Tasks";
             // 
             // c1Command5
             // 
             this.c1Command5.Image = global::ControlExplorer.Properties.Resources.Report;
             this.c1Command5.Name = "c1Command5";
-            this.c1Command5.ShortcutText = "";
-            this.c1Command5.Text = "日志";
+            this.c1Command5.Text = "Journal";
             // 
             // c1Command6
             // 
             this.c1Command6.Image = global::ControlExplorer.Properties.Resources.EditComment;
             this.c1Command6.Name = "c1Command6";
-            this.c1Command6.ShortcutText = "";
-            this.c1Command6.Text = "记录";
+            this.c1Command6.Text = "Notes";
             // 
             // c1Command7
             // 
             this.c1Command7.Image = global::ControlExplorer.Properties.Resources.FolderOpen;
             this.c1Command7.Name = "c1Command7";
-            this.c1Command7.ShortcutText = "";
-            this.c1Command7.Text = "我的文档";
+            this.c1Command7.Text = "My Documents";
             // 
             // c1Command8
             // 
             this.c1Command8.Image = global::ControlExplorer.Properties.Resources.SendMail;
             this.c1Command8.Name = "c1Command8";
-            this.c1Command8.ShortcutText = "";
-            this.c1Command8.Text = "已发送邮件";
+            this.c1Command8.Text = "Sent Items";
             // 
             // c1Command9
             // 
             this.c1Command9.Image = global::ControlExplorer.Properties.Resources.SearchWeb;
             this.c1Command9.Name = "c1Command9";
-            this.c1Command9.ShortcutText = "";
-            this.c1Command9.Text = "网页搜索";
+            this.c1Command9.Text = "Web Search";
             // 
             // c1Command10
             // 
             this.c1Command10.Image = global::ControlExplorer.Properties.Resources.DeleteComment;
             this.c1Command10.Name = "c1Command10";
-            this.c1Command10.ShortcutText = "";
-            this.c1Command10.Text = "已删除邮件";
+            this.c1Command10.Text = "Deleted Items";
             // 
             // c1Command11
             // 
             this.c1Command11.Name = "c1Command11";
-            this.c1Command11.ShortcutText = "";
-            this.c1Command11.Text = "新增快捷方式...";
+            this.c1Command11.Text = "Add Shortcut...";
             // 
             // c1CommandLink1
             // 
@@ -267,20 +248,18 @@
             // 
             this.c1OutPage3.Controls.Add(this.c1Schedule1);
             this.c1OutPage3.Controls.Add(this.c1CommandDock1);
-            this.c1OutPage3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.c1OutPage3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1OutPage3.ImageIndex = 1;
+            this.c1OutPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1OutPage3.Name = "c1OutPage3";
-            this.c1OutPage3.Size = new System.Drawing.Size(225, 328);
-            this.c1OutPage3.Text = "约会";
-            this.c1ThemeController1.SetTheme(this.c1OutPage3, "(default)");
+            this.c1OutPage3.Size = new System.Drawing.Size(300, 483);
+            this.c1OutPage3.Text = "Appointments";
             // 
             // c1Schedule1
             // 
             // 
             // 
             // 
-            this.c1Schedule1.CalendarInfo.CultureInfo = new System.Globalization.CultureInfo("zh-Hans");
+            this.c1Schedule1.CalendarInfo.CultureInfo = new System.Globalization.CultureInfo("en-US");
             this.c1Schedule1.CalendarInfo.DateFormatString = "M/d/yyyy";
             this.c1Schedule1.CalendarInfo.EndDayTime = System.TimeSpan.Parse("19:00:00");
             this.c1Schedule1.CalendarInfo.StartDayTime = System.TimeSpan.Parse("07:00:00");
@@ -295,25 +274,26 @@
             this.c1Schedule1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Schedule1.GroupPageSize = 2;
             this.c1Schedule1.Location = new System.Drawing.Point(0, 0);
+            this.c1Schedule1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1Schedule1.Name = "c1Schedule1";
-            printStyle1.Description = "每日样式";
+            printStyle1.Description = "Daily Style";
             printStyle1.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle1.PreviewImage")));
             printStyle1.StyleName = "Daily";
             printStyle1.StyleSource = "day.c1d";
-            printStyle2.Description = "每周样式";
+            printStyle2.Description = "Weekly Style";
             printStyle2.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle2.PreviewImage")));
             printStyle2.StyleName = "Week";
             printStyle2.StyleSource = "week.c1d";
-            printStyle3.Description = "每月样式";
+            printStyle3.Description = "Monthly Style";
             printStyle3.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle3.PreviewImage")));
             printStyle3.StyleName = "Month";
             printStyle3.StyleSource = "month.c1d";
-            printStyle4.Description = "细节样式";
+            printStyle4.Description = "Details Style";
             printStyle4.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle4.PreviewImage")));
             printStyle4.StyleName = "Details";
             printStyle4.StyleSource = "details.c1d";
             printStyle5.Context = C1.C1Schedule.Printing.PrintContextType.Appointment;
-            printStyle5.Description = "备注样式";
+            printStyle5.Description = "Memo Style";
             printStyle5.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle5.PreviewImage")));
             printStyle5.StyleName = "Memo";
             printStyle5.StyleSource = "memo.c1d";
@@ -329,23 +309,19 @@
             this.c1Schedule1.Settings.FirstVisibleTime = System.TimeSpan.Parse("07:00:00");
             this.c1Schedule1.ShowReminderForm = false;
             this.c1Schedule1.ShowTitle = false;
-            this.c1Schedule1.Size = new System.Drawing.Size(225, 109);
+            this.c1Schedule1.Size = new System.Drawing.Size(300, 305);
             this.c1Schedule1.TabIndex = 1;
-            this.c1ThemeController1.SetTheme(this.c1Schedule1, "(default)");
-            this.c1Schedule1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Blue;
+            this.c1Schedule1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Silver;
             // 
             // c1CommandDock1
             // 
-            this.c1CommandDock1.BackColor = System.Drawing.Color.White;
             this.c1CommandDock1.Controls.Add(this.c1DockingTab1);
             this.c1CommandDock1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.c1CommandDock1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.c1CommandDock1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1CommandDock1.Id = 1;
-            this.c1CommandDock1.Location = new System.Drawing.Point(0, 109);
+            this.c1CommandDock1.Location = new System.Drawing.Point(0, 305);
+            this.c1CommandDock1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1CommandDock1.Name = "c1CommandDock1";
-            this.c1CommandDock1.Size = new System.Drawing.Size(225, 219);
-            this.c1ThemeController1.SetTheme(this.c1CommandDock1, "(default)");
+            this.c1CommandDock1.Size = new System.Drawing.Size(300, 178);
             // 
             // c1DockingTab1
             // 
@@ -354,50 +330,45 @@
             this.c1DockingTab1.CanAutoHide = true;
             this.c1DockingTab1.Controls.Add(this.c1DockingTabPage1);
             this.c1DockingTab1.Location = new System.Drawing.Point(0, 0);
+            this.c1DockingTab1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1DockingTab1.Name = "c1DockingTab1";
-            this.c1DockingTab1.Size = new System.Drawing.Size(225, 219);
+            this.c1DockingTab1.Size = new System.Drawing.Size(300, 219);
             this.c1DockingTab1.TabIndex = 0;
             this.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
-            this.c1DockingTab1.TabsSpacing = 7;
-            this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2010;
-            this.c1ThemeController1.SetTheme(this.c1DockingTab1, "(default)");
-            this.c1DockingTab1.VisualStyle = C1.Win.C1Command.VisualStyle.Office2010Blue;
-            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this.c1DockingTab1.TabsSpacing = 5;
+            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1DockingTabPage1
             // 
             this.c1DockingTabPage1.Controls.Add(this.c1Calendar1);
-            this.c1DockingTabPage1.Location = new System.Drawing.Point(0, 28);
-            this.c1DockingTabPage1.Margin = new System.Windows.Forms.Padding(4);
+            this.c1DockingTabPage1.Location = new System.Drawing.Point(0, 29);
+            this.c1DockingTabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1DockingTabPage1.Name = "c1DockingTabPage1";
-            this.c1DockingTabPage1.Size = new System.Drawing.Size(225, 191);
+            this.c1DockingTabPage1.Size = new System.Drawing.Size(300, 187);
             this.c1DockingTabPage1.TabIndex = 0;
-            this.c1DockingTabPage1.Text = "日历";
+            this.c1DockingTabPage1.Text = "Calendar";
             // 
             // c1Calendar1
             // 
             this.c1Calendar1.BoldedDates = new System.DateTime[0];
             this.c1Calendar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Calendar1.Location = new System.Drawing.Point(0, 0);
-            this.c1Calendar1.Margin = new System.Windows.Forms.Padding(4);
+            this.c1Calendar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1Calendar1.Name = "c1Calendar1";
             this.c1Calendar1.Schedule = this.c1Schedule1;
             this.c1Calendar1.ShowWeekNumbers = false;
-            this.c1Calendar1.Size = new System.Drawing.Size(225, 191);
+            this.c1Calendar1.Size = new System.Drawing.Size(300, 187);
             this.c1Calendar1.TabIndex = 0;
-            this.c1ThemeController1.SetTheme(this.c1Calendar1, "(default)");
-            this.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Blue;
+            this.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Silver;
             // 
             // c1OutPage2
             // 
             this.c1OutPage2.Controls.Add(this.c1ToolBar2);
-            this.c1OutPage2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.c1OutPage2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1OutPage2.ImageIndex = 2;
+            this.c1OutPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1OutPage2.Name = "c1OutPage2";
-            this.c1OutPage2.Size = new System.Drawing.Size(225, 300);
-            this.c1OutPage2.Text = "我的快捷方式";
-            this.c1ThemeController1.SetTheme(this.c1OutPage2, "(default)");
+            this.c1OutPage2.Size = new System.Drawing.Size(300, 461);
+            this.c1OutPage2.Text = "My Shortcuts";
             // 
             // c1ToolBar2
             // 
@@ -416,13 +387,12 @@
             this.c1ToolBar2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1ToolBar2.Horizontal = false;
             this.c1ToolBar2.Location = new System.Drawing.Point(0, 0);
+            this.c1ToolBar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1ToolBar2.Movable = false;
             this.c1ToolBar2.Name = "c1ToolBar2";
-            this.c1ToolBar2.Size = new System.Drawing.Size(225, 300);
-            this.c1ToolBar2.Text = "第二页";
-            this.c1ThemeController1.SetTheme(this.c1ToolBar2, "(default)");
-            this.c1ToolBar2.VisualStyle = C1.Win.C1Command.VisualStyle.Office2010Blue;
-            this.c1ToolBar2.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this.c1ToolBar2.Size = new System.Drawing.Size(300, 461);
+            this.c1ToolBar2.Text = "Page2";
+            this.c1ToolBar2.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandLink7
             // 
@@ -461,42 +431,37 @@
             // 
             // splitter1
             // 
-            this.splitter1.BackColor = System.Drawing.SystemColors.Control;
-            this.splitter1.Location = new System.Drawing.Point(225, 0);
+            this.splitter1.Location = new System.Drawing.Point(300, 0);
+            this.splitter1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 412);
+            this.splitter1.Size = new System.Drawing.Size(4, 549);
             this.splitter1.TabIndex = 1;
             this.splitter1.TabStop = false;
-            this.c1ThemeController1.SetTheme(this.splitter1, "(default)");
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.groupBox1.Location = new System.Drawing.Point(228, 0);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(304, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(364, 412);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(485, 549);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "收件箱";
-            this.c1ThemeController1.SetTheme(this.groupBox1, "(default)");
+            this.groupBox1.Text = "Inbox";
             // 
             // C1OutBar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 412);
+            this.ClientSize = new System.Drawing.Size(789, 549);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.c1OutBar1);
-            this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "C1OutBar";
             this.Text = "C1OutBar";
-            this.c1ThemeController1.SetTheme(this, "(default)");
             this.Load += new System.EventHandler(this.C1OutBar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1OutBar1)).EndInit();
             this.c1OutBar1.ResumeLayout(false);
@@ -511,7 +476,6 @@
             this.c1DockingTabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.c1Calendar1)).EndInit();
             this.c1OutPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -555,6 +519,5 @@
         private C1.Win.C1Command.C1Command c1Command11;
         private C1.Win.C1Command.C1CommandLink c1CommandLink11;
         private System.Windows.Forms.ImageList imageList1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
     }
 }

@@ -117,15 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="C1Editor1.Xml" xml:space="preserve">
-    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
-  &lt;head&gt;
-    &lt;title&gt;Document Title 3&lt;/title&gt;
-    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&amp;nbsp;&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</value>
-  </data>
 </root>

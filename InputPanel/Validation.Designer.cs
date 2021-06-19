@@ -78,39 +78,40 @@
             this.c1InputPanel1.Name = "c1InputPanel1";
             this.c1InputPanel1.Size = new System.Drawing.Size(592, 446);
             this.c1InputPanel1.TabIndex = 2;
-            this.c1InputPanel1.ToolTipSettings.Images.Add(new C1.Win.C1InputPanel.ImageEntry("Protect.png", ((System.Drawing.Image)(resources.GetObject("c1InputPanel1.ToolTipSettings.Images")))));
-            this.c1InputPanel1.ToolTipSettings.Images.Add(new C1.Win.C1InputPanel.ImageEntry("Warning.png", ((System.Drawing.Image)(resources.GetObject("c1InputPanel1.ToolTipSettings.Images1")))));
+            this.c1InputPanel1.ToolTipSettings.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Protect.png", ((System.Drawing.Image)(resources.GetObject("c1InputPanel1.ToolTipSettings.Images")))));
+            this.c1InputPanel1.ToolTipSettings.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Warning.png", ((System.Drawing.Image)(resources.GetObject("c1InputPanel1.ToolTipSettings.Images1")))));
             this.c1InputPanel1.ToolTipSettings.MaximumWidth = 300;
             // 
             // inputGroupHeader1
             // 
             this.inputGroupHeader1.Name = "inputGroupHeader1";
-            this.inputGroupHeader1.Text = "错误提示";
+            this.inputGroupHeader1.Text = "Error Providers";
             // 
             // inputLabel1
             // 
             this.inputLabel1.Name = "inputLabel1";
-            this.inputLabel1.Text = "输入一些文字以 \'a\'开头:";
+            this.inputLabel1.Text = "Type something that starts with \'a\':";
             this.inputLabel1.Width = 236;
             // 
             // inputTextBox1
             // 
             this.inputTextBox1.Name = "inputTextBox1";
             this.inputTextBox1.Text = "acceptable...";
-            this.inputTextBox1.ToolTipText = "这是一个<b>输入文本框</b>.<br>输入什么无所谓，只要以\'a\'开头" ;
+            this.inputTextBox1.ToolTipText = "This is an <b>InputTextBox</b>.<br>What you type here doesn\'t really matter, as l" +
+    "ong as it starts with \'a\'...";
             this.inputTextBox1.Width = 187;
             this.inputTextBox1.Validating += new System.ComponentModel.CancelEventHandler(this.inputTextBox1_Validating);
             // 
             // inputLabel2
             // 
             this.inputLabel2.Name = "inputLabel2";
-            this.inputLabel2.Text = "输入一个偶数:";
+            this.inputLabel2.Text = "Enter an even value:";
             this.inputLabel2.Width = 236;
             // 
             // inputNumericBox1
             // 
             this.inputNumericBox1.Name = "inputNumericBox1";
-            this.inputNumericBox1.ToolTipText = "这是一个 <b>输入数字框</b>.<br>只能输偶数.";
+            this.inputNumericBox1.ToolTipText = "This is an <b>InputNumericBox</b>.<br>It only accepts even numbers.";
             this.inputNumericBox1.Value = new decimal(new int[] {
             98,
             0,
@@ -121,13 +122,14 @@
             // inputLabel5
             // 
             this.inputLabel5.Name = "inputLabel5";
-            this.inputLabel5.Text = "输入一个大于100的值:";
+            this.inputLabel5.Text = "Enter a value that totals 100 or more:";
             this.inputLabel5.Width = 236;
             // 
             // inputNumericBox2
             // 
             this.inputNumericBox2.Name = "inputNumericBox2";
-            this.inputNumericBox2.ToolTipText = "这是一个 <b>输入数字框</b>.<br>值应该比前面的框里的值至少增加100";
+            this.inputNumericBox2.ToolTipText = "This is an <b>InputNumericBox</b>.<br>The value should add to at least 100 with t" +
+    "he value in the previous box.";
             this.inputNumericBox2.Value = new decimal(new int[] {
             2,
             0,
@@ -138,20 +140,21 @@
             // inputLabel4
             // 
             this.inputLabel4.Name = "inputLabel4";
-            this.inputLabel4.Text = "输入一个下午1点到2点之间的时间:";
+            this.inputLabel4.Text = "Enter a time between 1 and 2 PM:";
             this.inputLabel4.Width = 236;
             // 
             // inputTimePicker1
             // 
             this.inputTimePicker1.Name = "inputTimePicker1";
-            this.inputTimePicker1.ToolTipText = "这是一个<b>输入时间采集器</b>.<br>输入一个下午1点到2点之间的时间";
+            this.inputTimePicker1.ToolTipText = "This is an <b>InputTimePicker</b>.<br>The time you enter here should be between 1" +
+    " and 2 PM.";
             this.inputTimePicker1.Value = System.TimeSpan.Parse("13:01:00");
             this.inputTimePicker1.TextChanged += new System.EventHandler(this.inputTimePicker1_TextChanged);
             // 
             // inputLabel3
             // 
             this.inputLabel3.Name = "inputLabel3";
-            this.inputLabel3.Text = "至少检查一个框:";
+            this.inputLabel3.Text = "Check at least one box:";
             this.inputLabel3.Width = 236;
             // 
             // inputCheckBox1
@@ -159,20 +162,22 @@
             this.inputCheckBox1.Break = C1.Win.C1InputPanel.BreakType.None;
             this.inputCheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.inputCheckBox1.Name = "inputCheckBox1";
-            this.inputCheckBox1.ToolTipText = "这是一个 <b>输入检查框<b>.<br处理前请至少检查一个框.";
+            this.inputCheckBox1.ToolTipText = "This is an <b>InputCheckBox<b>.<br>Please check at least one of the boxes before " +
+    "proceeding.";
             this.inputCheckBox1.CheckedChanged += new System.EventHandler(this.inputCheckBox1_CheckedChanged);
             // 
             // inputCheckBox2
             // 
             this.inputCheckBox2.Name = "inputCheckBox2";
-            this.inputCheckBox2.ToolTipText = "这是一个 <b>输入检查框<b>.<br处理前请至少检查一个框.";
+            this.inputCheckBox2.ToolTipText = "This is an <b>InputCheckBox<b>.<br>Please check at least one of the boxes before " +
+    "proceeding.";
             this.inputCheckBox2.CheckedChanged += new System.EventHandler(this.inputCheckBox1_CheckedChanged);
             // 
             // inputLabel12
             // 
             this.inputLabel12.Name = "inputLabel12";
             this.inputLabel12.Padding = new System.Windows.Forms.Padding(0, 0, 0, 35);
-            this.inputLabel12.Text = "输入至少50个字符:";
+            this.inputLabel12.Text = "Enter at least 50 characters:";
             this.inputLabel12.Width = 236;
             // 
             // inputTextBox2
@@ -180,7 +185,7 @@
             this.inputTextBox2.ElementHeight = 60;
             this.inputTextBox2.Multiline = true;
             this.inputTextBox2.Name = "inputTextBox2";
-            this.inputTextBox2.Text = "此文本框是多行，需要至少50个字符.";
+            this.inputTextBox2.Text = "This hosted text box is multiline and requires at least 50 characters.";
             this.inputTextBox2.ToolTipText = "Characters entered: 70";
             this.inputTextBox2.Width = 237;
             this.inputTextBox2.TextChanged += new System.EventHandler(this.inputTextBox2_TextChanged);
@@ -193,7 +198,7 @@
             // inputLabel6
             // 
             this.inputLabel6.Name = "inputLabel6";
-            this.inputLabel6.Text = "输入你的登录资格:";
+            this.inputLabel6.Text = "Enter your login credentials:";
             this.inputLabel6.Width = 236;
             // 
             // inputTextBox3
@@ -216,7 +221,7 @@
             this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.c1InputPanel1);
             this.Name = "Validation";
-            this.Text = "确认";
+            this.Text = "Validation";
             this.Load += new System.EventHandler(this.Validation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).EndInit();
             this.ResumeLayout(false);

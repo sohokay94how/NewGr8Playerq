@@ -93,7 +93,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 42);
             this.button1.TabIndex = 11;
-            this.button1.Text = "客户";
+            this.button1.Text = "Custom";
             this.c1SuperTooltip1.SetToolTip(this.button1, resources.GetString("button1.ToolTip"));
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -128,7 +128,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 50);
             this.label1.TabIndex = 0;
-            this.label1.Text = "不透明度";
+            this.label1.Text = "Opacity";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.c1superCorners.SetToolTip(this.label1, resources.GetString("label1.ToolTip"));
             // 
@@ -150,7 +150,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 39);
             this.label3.TabIndex = 2;
-            this.label3.Text = "阴影";
+            this.label3.Text = "Shadow";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.c1superShadow.SetToolTip(this.label3, resources.GetString("label3.ToolTip"));
             // 
@@ -203,7 +203,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(124, 51);
             this.label4.TabIndex = 0;
-            this.label4.Text = "渐变";
+            this.label4.Text = "Gradients";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.c1superGradients.SetToolTip(this.label4, resources.GetString("label4.ToolTip"));
             // 
@@ -216,7 +216,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 16);
             this.label6.TabIndex = 7;
-            this.label6.Text = "气球";
+            this.label6.Text = "Balloon";
             // 
             // c1Sizer4
             // 
@@ -274,7 +274,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(98, 55);
             this.label7.TabIndex = 10;
-            this.label7.Text = "时间延迟";
+            this.label7.Text = "Timed Delay";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.c1superDelay.SetToolTip(this.label7, resources.GetString("label7.ToolTip"));
             // 
@@ -392,7 +392,7 @@
             this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.c1Sizer6);
             this.Name = "Overview";
-            this.Text = "总览";
+            this.Text = "Overview";
             ((System.ComponentModel.ISupportInitialize)(this.c1Sizer1)).EndInit();
             this.c1Sizer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.c1Sizer2)).EndInit();

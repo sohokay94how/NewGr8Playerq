@@ -16,16 +16,19 @@ namespace ControlExplorer
     public partial class C1DemoForm : Form
     {
         protected static string TEMP_DIR = System.Environment.GetEnvironmentVariable("tmp");
+        private static bool inSetVisible;
+
         private Hashtable tempFiles = null;
         private ArrayList properties = null;
-        private string description = "";
         private string code;
-        
+       
         public C1DemoForm()
         {
+            TopLevel = false;
+            FormBorderStyle = FormBorderStyle.None;
+            Dock = DockStyle.Fill;
             InitializeComponent();
             properties = null;
-            description = "";
         }
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
@@ -37,53 +40,6 @@ namespace ControlExplorer
                     properties = new ArrayList();
 
                 return properties;
-            }
-        }
-
-        [Browsable(false)]
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public string Description
-        {
-            get
-            {
-                return description;
-            }
-        }
-
-        //public enum ControlExplorerVisualStyleEnum { Office2007Blue, Office2007Silver, Office2007Black, Office2010Blue, Office2010Silver, Office2010Black, System };
-        VisualStyle _controlExplorerVisualStyle;
-        public VisualStyle ControlExplorerVisualStyle
-        {
-            get
-            {
-                return _controlExplorerVisualStyle;
-            }
-            set
-            {
-                _controlExplorerVisualStyle = value;
-                OnRaiseControlExplorerVisualStyleChanged(new EventArgs());
-            }
-        }
-
-        public delegate void ControlExplorerVisualStyleChanged(object sender, EventArgs e);
-        public event EventHandler RaiseControlExplorerVisualStyleChanged;
-
-        protected virtual void OnRaiseControlExplorerVisualStyleChanged(EventArgs e)
-        {
-            // Make a temporary copy of the event to avoid possibility of
-            // a race condition if the last subscriber unsubscribes
-            // immediately after the null check and before the event is raised.
-            EventHandler handler = RaiseControlExplorerVisualStyleChanged;
-
-            // Event will be null if there are no subscribers
-            if (handler != null)
-            {
-                // Format the string to send inside the CustomEventArgs parameter
-                
-                //e.Message += String.Format(" at {0}", DateTime.Now.ToString());
-
-                // Use the () operator to raise the event.
-                handler(this, e);
             }
         }
 
@@ -157,31 +113,39 @@ namespace ControlExplorer
 
         static public void ClearContainer(Control.ControlCollection controls)
         {
-            while (controls.Count > 0)
+            if (!inSetVisible)
             {
-                Control c = controls[0];
-                controls.Remove(c);
-                c.Dispose();
+                while (controls.Count > 0)
+                {
+                    Control c = controls[0];
+                    controls.Remove(c);
+                    c.Dispose();
+                }
             }
         }
 
         public virtual void DisplayIn(Control.ControlCollection controls)
         {
             ClearContainer(controls);
-            TopLevel = false;
-            FormBorderStyle = FormBorderStyle.None;
-            Size = new Size(1, 1);
             controls.Add(this);
-            MainForm.Form.UpdateVisualStyle(); // propagate visual style from the main ribbon form to all child controls
-            Dock = DockStyle.Fill;
-            try
+            Explorer.ApplyTheme(this);
+            if (!(this is ControlExplorer.Main.HomePage))
             {
-                Visible = true;
-            }
-            catch (Exception x)
-            {
-                Visible = false;
-                throw new Exception(x.Message, x.GetBaseException());
+                bool prev = inSetVisible;
+                inSetVisible = true;
+                try
+                {
+                    Visible = true;
+                }
+                catch (Exception x)
+                {
+                    Visible = false;
+                    throw new Exception(x.Message, x.GetBaseException());
+                }
+                finally
+                {
+                    inSetVisible = prev;
+                }
             }
         }
 
@@ -218,18 +182,6 @@ namespace ControlExplorer
                 properties = new ArrayList();
 
             properties.Add(text);
-        }
-
-        public void AddDescription(string text)
-        {
-            if (description != "")
-            {
-                description = description + Environment.NewLine + text;
-            }
-            else
-            {
-                description = text;
-            }
         }
 
         public void AddCode(string text)
@@ -340,6 +292,52 @@ namespace ControlExplorer
             else if (member.Equals("Orders"))
             {
                 sql = "SELECT * FROM Orders";
+            }
+            else if (member.Equals("Sales"))
+            {
+                sql = "SELECT DISTINCT " +
+                    "([Order Details].UnitPrice * Quantity) * (1 - [Order Details].Discount) AS [Sales], " +
+                    "Orders_olap.OrderDate AS [OrderDate], " +
+                    "Products.ProductID AS [Product], " +
+                    "Customers_olap.CompanyID AS [Customer], " +
+                    "Customers_olap.CountryID AS [Country], " +
+                    "Employees.EmployeeID AS [Employee], " +
+                    "Categories.CategoryID AS [Category] " +
+                "FROM  " +
+                    "(Companies INNER JOIN " +
+                    "(Countries INNER JOIN  " +
+                    "(Employees INNER JOIN " +
+                    "(Customers_olap INNER JOIN " +
+                    "(Orders_olap INNER JOIN " +
+                    "([Order Details] INNER JOIN " +
+                    "(Products INNER JOIN Categories " +
+                    "ON Categories.CategoryID = Products.CategoryID) " +
+                    "ON Products.ProductID = [Order Details].ProductID) " +
+                    "ON Orders_olap.OrderID = [Order Details].OrderID) " +
+                    "ON Customers_olap.CustomerID = Orders_olap.CustomerID) " +
+                    "ON Employees.EmployeeID = Orders_olap.EmployeeID) " +
+                    "ON Countries.CountryID = Customers_olap.CountryID) " +
+                    "ON Companies.CompanyID = Customers_olap.CountryID);";
+            }
+            else if (member.Equals("LookupCategory"))
+            {
+                sql = "SELECT [CategoryID], [CategoryName] FROM Categories";
+            }
+            else if (member.Equals("LookupCountry"))
+            {
+                sql = "SELECT [CountryID], [CountryName] FROM [Countries]";
+            }
+            else if (member.Equals("LookupCustomer"))
+            {
+                sql = "SELECT [CompanyID], [CompanyName] FROM [Companies]";
+            }
+            else if (member.Equals("LookupEmployee"))
+            {
+                sql = "SELECT Employees.EmployeeID, [LastName] + ', ' + [FirstName] AS Name FROM Employees";
+            }
+            else if (member.Equals("LookupProduct"))
+            {
+                sql = "SELECT [ProductID],[ProductName] FROM Products";
             }
             OleDbDataAdapter da = new OleDbDataAdapter(sql, DemoConnectionString);
             da.Fill(dt);

@@ -69,17 +69,17 @@
             this.c1TrueDBDropdown2.HeadingStyle = style4;
             this.c1TrueDBDropdown2.HighLightRowStyle = style5;
             this.c1TrueDBDropdown2.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBDropdown2.Images"))));
-            this.c1TrueDBDropdown2.Location = new System.Drawing.Point(126, 353);
-            this.c1TrueDBDropdown2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1TrueDBDropdown2.Location = new System.Drawing.Point(108, 270);
             this.c1TrueDBDropdown2.Name = "c1TrueDBDropdown2";
             this.c1TrueDBDropdown2.OddRowStyle = style6;
+            this.c1TrueDBDropdown2.PropBag = resources.GetString("c1TrueDBDropdown2.PropBag");
             this.c1TrueDBDropdown2.RecordSelectorStyle = style7;
             this.c1TrueDBDropdown2.RowDivider.Color = System.Drawing.Color.DarkGray;
             this.c1TrueDBDropdown2.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
             this.c1TrueDBDropdown2.RowHeight = 20;
             this.c1TrueDBDropdown2.RowSubDividerColor = System.Drawing.Color.DarkGray;
             this.c1TrueDBDropdown2.ScrollTips = false;
-            this.c1TrueDBDropdown2.Size = new System.Drawing.Size(490, 196);
+            this.c1TrueDBDropdown2.Size = new System.Drawing.Size(420, 150);
             this.c1TrueDBDropdown2.Style = style8;
             this.c1TrueDBDropdown2.TabIndex = 2;
             this.c1TrueDBDropdown2.TabStop = false;
@@ -87,7 +87,6 @@
             this.c1TrueDBDropdown2.ValueMember = "EmployeeID";
             this.c1TrueDBDropdown2.ValueTranslate = true;
             this.c1TrueDBDropdown2.Visible = false;
-            this.c1TrueDBDropdown2.PropBag = resources.GetString("c1TrueDBDropdown2.PropBag");
             // 
             // c1TrueDBDropdown1
             // 
@@ -105,17 +104,17 @@
             this.c1TrueDBDropdown1.HeadingStyle = style12;
             this.c1TrueDBDropdown1.HighLightRowStyle = style13;
             this.c1TrueDBDropdown1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBDropdown1.Images"))));
-            this.c1TrueDBDropdown1.Location = new System.Drawing.Point(33, 314);
-            this.c1TrueDBDropdown1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1TrueDBDropdown1.Location = new System.Drawing.Point(28, 240);
             this.c1TrueDBDropdown1.Name = "c1TrueDBDropdown1";
             this.c1TrueDBDropdown1.OddRowStyle = style14;
+            this.c1TrueDBDropdown1.PropBag = resources.GetString("c1TrueDBDropdown1.PropBag");
             this.c1TrueDBDropdown1.RecordSelectorStyle = style15;
             this.c1TrueDBDropdown1.RowDivider.Color = System.Drawing.Color.DarkGray;
             this.c1TrueDBDropdown1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
             this.c1TrueDBDropdown1.RowHeight = 20;
             this.c1TrueDBDropdown1.RowSubDividerColor = System.Drawing.Color.DarkGray;
             this.c1TrueDBDropdown1.ScrollTips = false;
-            this.c1TrueDBDropdown1.Size = new System.Drawing.Size(490, 196);
+            this.c1TrueDBDropdown1.Size = new System.Drawing.Size(420, 150);
             this.c1TrueDBDropdown1.Style = style16;
             this.c1TrueDBDropdown1.TabIndex = 1;
             this.c1TrueDBDropdown1.TabStop = false;
@@ -123,38 +122,34 @@
             this.c1TrueDBDropdown1.ValueMember = "CustomerID";
             this.c1TrueDBDropdown1.ValueTranslate = true;
             this.c1TrueDBDropdown1.Visible = false;
-            this.c1TrueDBDropdown1.PropBag = resources.GetString("c1TrueDBDropdown1.PropBag");
             // 
             // c1TrueDBGrid1
             // 
-            this.c1TrueDBGrid1.Caption = "使用 C1TrueDBDropDown";
+            this.c1TrueDBGrid1.Caption = "Using C1TrueDBDropDown";
             this.c1TrueDBGrid1.CaptionHeight = 17;
             this.c1TrueDBGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
             this.c1TrueDBGrid1.Location = new System.Drawing.Point(0, 0);
-            this.c1TrueDBGrid1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.PreviewInfo.Caption = "PrintPreview窗口";
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
             this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
+            this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             this.c1TrueDBGrid1.RecordSelectorWidth = 20;
             this.c1TrueDBGrid1.RowHeight = 20;
-            this.c1TrueDBGrid1.Size = new System.Drawing.Size(691, 583);
+            this.c1TrueDBGrid1.Size = new System.Drawing.Size(592, 446);
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // TDBDropDown
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 583);
+            this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.c1TrueDBDropdown2);
             this.Controls.Add(this.c1TrueDBDropdown1);
             this.Controls.Add(this.c1TrueDBGrid1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "TDBDropDown";
             this.Text = "TDBDropDown";
             this.Load += new System.EventHandler(this.TDBDropDown_Load);

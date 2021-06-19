@@ -31,9 +31,9 @@
             C1.Win.C1DynamicHelp.MapItem mapItem1 = new C1.Win.C1DynamicHelp.MapItem();
             C1.Win.C1DynamicHelp.MapItem mapItem2 = new C1.Win.C1DynamicHelp.MapItem();
             C1.Win.C1DynamicHelp.MapItem mapItem3 = new C1.Win.C1DynamicHelp.MapItem();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Design time");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Runtime");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("How to use C1DynamicHelp", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("设计时");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("运行时");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("怎样使用 C1DynamicHelp", new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2});
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -156,7 +156,7 @@
             treeNode2.Name = "Node2";
             treeNode2.Text = "运行时";
             treeNode3.Name = "Node0";
-            treeNode3.Text = "怎样使用 C1DynamicHelp";
+            treeNode3.Text = "怎样使用  C1DynamicHelp";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode3});
             this.treeView1.Size = new System.Drawing.Size(167, 104);
@@ -210,7 +210,7 @@
             this.btnBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(23, 22);
-            this.btnBack.Text = "返回";
+            this.btnBack.Text = "Go Back";
             // 
             // btnForward
             // 
@@ -221,7 +221,7 @@
             this.btnForward.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnForward.Name = "btnForward";
             this.btnForward.Size = new System.Drawing.Size(23, 22);
-            this.btnForward.Text = "向前";
+            this.btnForward.Text = "toolStripButton1";
             // 
             // toolStripSeparator1
             // 
@@ -238,7 +238,7 @@
             this.btnAuthoringMode.Name = "btnAuthoringMode";
             this.btnAuthoringMode.Size = new System.Drawing.Size(64, 22);
             this.btnAuthoringMode.Text = "作者";
-            this.btnAuthoringMode.ToolTipText = "创作模式";
+            this.btnAuthoringMode.ToolTipText = "Authoring Mode";
             this.btnAuthoringMode.CheckedChanged += new System.EventHandler(this.btnAuthoringMode_CheckedChanged);
             // 
             // btnContents
@@ -274,7 +274,7 @@
             this.btnPin.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnPin.Name = "btnPin";
             this.btnPin.Size = new System.Drawing.Size(23, 22);
-            this.btnPin.Text = "修复主题";
+            this.btnPin.Text = "Fix Topic";
             this.btnPin.CheckedChanged += new System.EventHandler(this.btnPin_CheckedChanged);
             // 
             // DynamicHelp

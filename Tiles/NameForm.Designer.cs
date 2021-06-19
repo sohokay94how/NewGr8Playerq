@@ -40,9 +40,9 @@
             this.nameLabel.AutoSize = true;
             this.nameLabel.Location = new System.Drawing.Point(15, 16);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(70, 15);
+            this.nameLabel.Size = new System.Drawing.Size(105, 15);
             this.nameLabel.TabIndex = 0;
-            this.nameLabel.Text = "新文件夹名:";
+            this.nameLabel.Text = "New Folder Name:";
             // 
             // nameBox
             // 
@@ -66,7 +66,7 @@
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 3;
-            this.okButton.Text = "确定";
+            this.okButton.Text = "OK";
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
@@ -77,13 +77,12 @@
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 4;
-            this.cancelButton.Text = "取消";
+            this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
             // NameForm
             // 
             this.AcceptButton = this.okButton;
-            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
@@ -102,7 +101,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "创建新文件夹";
+            this.Text = "Create New Folder";
             this.ResumeLayout(false);
             this.PerformLayout();
 

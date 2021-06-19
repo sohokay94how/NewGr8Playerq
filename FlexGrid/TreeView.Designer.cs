@@ -133,85 +133,85 @@
             // 
             this.c1CommandSortAsc.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandSortAsc.Image")));
             this.c1CommandSortAsc.Name = "c1CommandSortAsc";
-            this.c1CommandSortAsc.Text = "将孩子升序排列";
+            this.c1CommandSortAsc.Text = "Sort Children Ascending";
             // 
             // c1CommandSortDesc
             // 
             this.c1CommandSortDesc.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandSortDesc.Image")));
             this.c1CommandSortDesc.Name = "c1CommandSortDesc";
-            this.c1CommandSortDesc.Text = "将孩子降序排列";
+            this.c1CommandSortDesc.Text = "Sort Children Descending";
             // 
             // c1CommandAddChild
             // 
             this.c1CommandAddChild.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandAddChild.Image")));
             this.c1CommandAddChild.Name = "c1CommandAddChild";
-            this.c1CommandAddChild.Text = "添加孩子";
+            this.c1CommandAddChild.Text = "Add Child";
             // 
             // c1CommandDelete
             // 
             this.c1CommandDelete.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandDelete.Image")));
             this.c1CommandDelete.Name = "c1CommandDelete";
-            this.c1CommandDelete.Text = "删除";
+            this.c1CommandDelete.Text = "Delete";
             // 
             // c1CommandInsertItem
             // 
             this.c1CommandInsertItem.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandInsertItem.Image")));
             this.c1CommandInsertItem.Name = "c1CommandInsertItem";
-            this.c1CommandInsertItem.Text = "在上面插入项目";
+            this.c1CommandInsertItem.Text = "Insert Item Above";
             // 
             // c1CommandAppendItem
             // 
             this.c1CommandAppendItem.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandAppendItem.Image")));
             this.c1CommandAppendItem.Name = "c1CommandAppendItem";
-            this.c1CommandAppendItem.Text = " 追加项目";
+            this.c1CommandAppendItem.Text = "Append Item";
             // 
             // c1CommandMoveLeft
             // 
             this.c1CommandMoveLeft.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandMoveLeft.Image")));
             this.c1CommandMoveLeft.Name = "c1CommandMoveLeft";
-            this.c1CommandMoveLeft.Text = "从父节点中移除";
+            this.c1CommandMoveLeft.Text = "Move Item to Parent";
             // 
             // c1CommandMoveUp
             // 
             this.c1CommandMoveUp.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandMoveUp.Image")));
             this.c1CommandMoveUp.Name = "c1CommandMoveUp";
-            this.c1CommandMoveUp.Text = "项目上移";
+            this.c1CommandMoveUp.Text = "Move Item Up";
             // 
             // c1CommandMoveDown
             // 
             this.c1CommandMoveDown.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandMoveDown.Image")));
             this.c1CommandMoveDown.Name = "c1CommandMoveDown";
-            this.c1CommandMoveDown.Text = "项目下移";
+            this.c1CommandMoveDown.Text = "Move Item Down";
             // 
             // c1CommandMoveRight
             // 
             this.c1CommandMoveRight.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandMoveRight.Image")));
             this.c1CommandMoveRight.Name = "c1CommandMoveRight";
-            this.c1CommandMoveRight.Text = "将项目移到孩子节点";
+            this.c1CommandMoveRight.Text = "Move Item to Child";
             // 
             // c1CommandPrint
             // 
             this.c1CommandPrint.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandPrint.Image")));
             this.c1CommandPrint.Name = "c1CommandPrint";
-            this.c1CommandPrint.Text = "打印";
+            this.c1CommandPrint.Text = "Print";
             // 
             // c1CommandInsertBelow
             // 
             this.c1CommandInsertBelow.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandInsertBelow.Image")));
             this.c1CommandInsertBelow.Name = "c1CommandInsertBelow";
-            this.c1CommandInsertBelow.Text = "在下面插入";
+            this.c1CommandInsertBelow.Text = "Insert Item Below";
             // 
             // c1CommandExpand
             // 
             this.c1CommandExpand.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandExpand.Image")));
             this.c1CommandExpand.Name = "c1CommandExpand";
-            this.c1CommandExpand.Text = "扩展所有";
+            this.c1CommandExpand.Text = "Expand All";
             // 
             // c1CommandCollapse
             // 
             this.c1CommandCollapse.Image = ((System.Drawing.Image)(resources.GetObject("c1CommandCollapse.Image")));
             this.c1CommandCollapse.Name = "c1CommandCollapse";
-            this.c1CommandCollapse.Text = "折叠所有";
+            this.c1CommandCollapse.Text = "Collapse All";
             // 
             // c1CommandLink8
             // 
@@ -259,20 +259,20 @@
             // 
             this.c1CommandLink4.Command = this.c1CommandDelete;
             this.c1CommandLink4.SortOrder = 8;
-            this.c1CommandLink4.Text = "删除";
+            this.c1CommandLink4.Text = "Delete";
             // 
             // c1CommandLink1
             // 
             this.c1CommandLink1.Command = this.c1CommandSortAsc;
             this.c1CommandLink1.Delimiter = true;
             this.c1CommandLink1.SortOrder = 9;
-            this.c1CommandLink1.Text = "将孩子升序排列";
+            this.c1CommandLink1.Text = "Sort Children Ascending";
             // 
             // c1CommandLink2
             // 
             this.c1CommandLink2.Command = this.c1CommandSortDesc;
             this.c1CommandLink2.SortOrder = 10;
-            this.c1CommandLink2.Text = "将孩子降序排列";
+            this.c1CommandLink2.Text = "Sort Children Descending";
             // 
             // c1CommandLink13
             // 
@@ -305,7 +305,7 @@
             this.Controls.Add(this.flex);
             this.Controls.Add(this.c1ToolBar1);
             this.Name = "TreeView";
-            this.Text = "新树视图";
+            this.Text = "NewTreeView";
             this.Load += new System.EventHandler(this.NewTreeView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.flex)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();

@@ -19,9 +19,6 @@ namespace ControlExplorer.InputPanel
         {
             // TODO: This line of code loads data into the 'c1DemoDataSet.Employees' table.
             this.employeesTableAdapter.Fill(this.c1DemoDataSet.Employees);
-
-            //add demo properties
-            AddProperty("VisualStyle", c1InputPanel1);
         }
 
         private void cbReportsTo_Format(object sender, ListControlConvertEventArgs e)

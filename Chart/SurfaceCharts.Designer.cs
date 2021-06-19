@@ -103,7 +103,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Z轴旋转";
+            this.label4.Text = "Z Axis Rotation";
             // 
             // trkYAxis
             // 
@@ -123,7 +123,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 13);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Y轴旋转";
+            this.label3.Text = "Y-Axis Rotation";
             // 
             // label2
             // 
@@ -132,7 +132,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "X轴旋转";
+            this.label2.Text = "X-Axis Rotation";
             // 
             // trkXAxis
             // 
@@ -164,7 +164,7 @@
             this.chk2DProjection.Name = "chk2DProjection";
             this.chk2DProjection.Size = new System.Drawing.Size(90, 17);
             this.chk2DProjection.TabIndex = 2;
-            this.chk2DProjection.Text = "二维投影";
+            this.chk2DProjection.Text = "2D Projection";
             this.chk2DProjection.UseVisualStyleBackColor = true;
             this.chk2DProjection.CheckedChanged += new System.EventHandler(this.chk2DProjection_CheckedChanged);
             // 
@@ -175,7 +175,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "图表类型:";
+            this.label1.Text = "Chart Type:";
             // 
             // cbChartTypes
             // 
@@ -195,7 +195,7 @@
             this.Controls.Add(this.c1Chart3D1);
             this.Controls.Add(this.panel1);
             this.Name = "SurfaceCharts";
-            this.Text = "曲面图";
+            this.Text = "SurfaceCharts";
             this.Load += new System.EventHandler(this.SurfaceCharts_Load);
             ((System.ComponentModel.ISupportInitialize)(this.categorySales1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Chart3D1)).EndInit();

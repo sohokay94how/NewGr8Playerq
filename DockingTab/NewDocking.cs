@@ -16,7 +16,6 @@ namespace ControlExplorer.DockingTab
         {
             InitializeComponent();
             AddProperty("DockingStyle", this);
-            AddProperty("VisualStyle", c1CommandHolder1);
         }
 
         private void SetDockingStyle(DockingStyle value)

@@ -48,19 +48,16 @@
             this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
             this.c1TrueDBGrid1.LinesPerRow = 3;
             this.c1TrueDBGrid1.Location = new System.Drawing.Point(0, 0);
-            this.c1TrueDBGrid1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.HighlightRow;
             this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.PreviewInfo.Caption = "PrintPreview窗口";
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
             this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
-            this.c1TrueDBGrid1.RowHeight = 15;
-            this.c1TrueDBGrid1.Size = new System.Drawing.Size(746, 583);
+            this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
+            this.c1TrueDBGrid1.Size = new System.Drawing.Size(592, 446);
             this.c1TrueDBGrid1.TabIndex = 5;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // ordersBindingSource
             // 
@@ -78,11 +75,10 @@
             // 
             // MultipleLines
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 583);
+            this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.c1TrueDBGrid1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "MultipleLines";
             this.Text = "MultipleLines";
             this.Load += new System.EventHandler(this.MultipleLines_Load);

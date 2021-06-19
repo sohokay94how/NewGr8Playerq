@@ -349,12 +349,12 @@ namespace ControlExplorer.Chart
             if (s_regr.Length > 0 && s_exact.Length > 0)
             {
                 lbl.Visible = true;
-                lbl.Text = string.Format("数据公式: {0}\n\n回归公式: {1}", s_exact, s_regr);
+                lbl.Text = string.Format("Data formula: {0}\n\nRegression formula: {1}", s_exact, s_regr);
             }
             else if (s_regr.Length > 0)
             {
                 lbl.Visible = true;
-                lbl.Text = string.Format("回归公式: {1}", s_exact, s_regr);
+                lbl.Text = string.Format("Regression formula: {1}", s_exact, s_regr);
             }
             else
                 lbl.Visible = false;
@@ -419,7 +419,7 @@ namespace ControlExplorer.Chart
 
         string CreateStatisticsString(RegressionStatistics rs, string fmt, bool coeffs)
         {
-            string s = "统计\n----------\n";
+            string s = "Statistics\n----------\n";
 
             if (coeffs)
             {
@@ -468,9 +468,9 @@ namespace ControlExplorer.Chart
                 udYIntercept.Visible = isPoly;
 
                 if (tl.TrendLineType == C1.Win.C1Chart.TrendLineTypeEnum.MovingAverage)
-                    lblNumber.Text = "周期:";
+                    lblNumber.Text = "Period:";
                 else
-                    lblNumber.Text = "条件的数目:";
+                    lblNumber.Text = "Number of terms:";
 
                 UpdateStatisticsLabel();
                 UpdateFormulaLabel();

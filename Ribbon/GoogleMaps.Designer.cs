@@ -97,11 +97,8 @@
             // 
             this.c1Ribbon.ApplicationMenuHolder = this.ribbonAppMenu;
             this.c1Ribbon.ConfigToolBarHolder = this.ribbonToolBar;
-            this.c1Ribbon.Location = new System.Drawing.Point(0, 0);
-            this.c1Ribbon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1Ribbon.Name = "c1Ribbon";
             this.c1Ribbon.QatHolder = this.ribbonQat;
-            this.c1Ribbon.Size = new System.Drawing.Size(691, 153);
             this.c1Ribbon.Tabs.Add(this.tabHome);
             this.c1Ribbon.Tabs.Add(this.tabActions);
             this.c1Ribbon.VisualStyle = C1.Win.C1Ribbon.VisualStyle.Office2010Black;
@@ -124,20 +121,20 @@
             this.ribbonAppMenu.RightPaneItems.Add(this.recentLabelListItem);
             this.ribbonAppMenu.RightPaneItems.Add(this.recentSeparatorListItem);
             this.ribbonAppMenu.SmallImage = global::ControlExplorer.Properties.Resources.SearchWeb;
-            this.ribbonAppMenu.Text = " ";
             this.ribbonAppMenu.Win7Look = true;
+            this.ribbonAppMenu.Text = " ";
             // 
             // appExitButton
             // 
             this.appExitButton.Name = "appExitButton";
             this.appExitButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("appExitButton.SmallImage")));
-            this.appExitButton.Text = "退出";
+            this.appExitButton.Text = "Exit";
             // 
             // appHomeButton
             // 
             this.appHomeButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("appHomeButton.LargeImage")));
             this.appHomeButton.Name = "appHomeButton";
-            this.appHomeButton.Text = "主目录";
+            this.appHomeButton.Text = "Home";
             this.appHomeButton.Click += new System.EventHandler(this.appHomeButton_Click);
             // 
             // appOpenSplitButton
@@ -147,34 +144,35 @@
             this.appOpenSplitButton.Items.Add(this.appOpenRoute66Button);
             this.appOpenSplitButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("appOpenSplitButton.LargeImage")));
             this.appOpenSplitButton.Name = "appOpenSplitButton";
-            this.appOpenSplitButton.Text = "打开";
+            this.appOpenSplitButton.Text = "Open";
             // 
             // appOpenLabel
             // 
             this.appOpenLabel.Name = "appOpenLabel";
-            this.appOpenLabel.Text = "打开当地指定标记 (KML)";
+            this.appOpenLabel.Text = "Open location-specific markup (KML)";
             // 
             // appOpenBaseballButton
             // 
-            this.appOpenBaseballButton.Description = "美国职棒和名人堂的每一个棒球场.";
+            this.appOpenBaseballButton.Description = "Every baseball park in MLB plus the Hall of Fame.";
             this.appOpenBaseballButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("appOpenBaseballButton.LargeImage")));
             this.appOpenBaseballButton.Name = "appOpenBaseballButton";
-            this.appOpenBaseballButton.Text = "美国职棒大联盟";
+            this.appOpenBaseballButton.Text = "Major League Baseball";
             this.appOpenBaseballButton.Click += new System.EventHandler(this.appOpenButton_Click);
             // 
             // appOpenRoute66Button
             // 
-            this.appOpenRoute66Button.Description = "对居住、工作、旅行的人的采访的集合，在 路。";
+            this.appOpenRoute66Button.Description = "A collection of interviews with the people who live, work, and travel on the old " +
+                "road.";
             this.appOpenRoute66Button.LargeImage = ((System.Drawing.Image)(resources.GetObject("appOpenRoute66Button.LargeImage")));
             this.appOpenRoute66Button.Name = "appOpenRoute66Button";
-            this.appOpenRoute66Button.Text = "美国的高速路：66号公路";
+            this.appOpenRoute66Button.Text = "America\'s Highway: Route 66";
             this.appOpenRoute66Button.Click += new System.EventHandler(this.appOpenButton_Click);
             // 
             // appRandomButton
             // 
             this.appRandomButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("appRandomButton.LargeImage")));
             this.appRandomButton.Name = "appRandomButton";
-            this.appRandomButton.Text = "随机";
+            this.appRandomButton.Text = "Random";
             this.appRandomButton.Click += new System.EventHandler(this.appRandomButton_Click);
             // 
             // appSeparator1
@@ -185,14 +183,14 @@
             // 
             this.appPrintButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("appPrintButton.LargeImage")));
             this.appPrintButton.Name = "appPrintButton";
-            this.appPrintButton.Text = "打印";
+            this.appPrintButton.Text = "Print";
             this.appPrintButton.Click += new System.EventHandler(this.ribbonItem_Click);
             // 
             // appSendButton
             // 
             this.appSendButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("appSendButton.LargeImage")));
             this.appSendButton.Name = "appSendButton";
-            this.appSendButton.Text = "发送";
+            this.appSendButton.Text = "Send";
             // 
             // appSeparator2
             // 
@@ -202,7 +200,7 @@
             // 
             this.appCloseButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("appCloseButton.LargeImage")));
             this.appCloseButton.Name = "appCloseButton";
-            this.appCloseButton.Text = "关闭";
+            this.appCloseButton.Text = "Close";
             // 
             // recentLabelListItem
             // 
@@ -213,7 +211,7 @@
             // recentLabel
             // 
             this.recentLabel.Name = "recentLabel";
-            this.recentLabel.Text = "当前位置";
+            this.recentLabel.Text = "Recent Locations";
             // 
             // recentSeparatorListItem
             // 
@@ -233,8 +231,8 @@
             // 
             this.styleMenu.Items.Add(this.styleToggleGroup);
             this.styleMenu.Name = "styleMenu";
-            this.styleMenu.Text = "风格";
-            this.styleMenu.ToolTip = "改变颜色方案";
+            this.styleMenu.Text = "Style";
+            this.styleMenu.ToolTip = "Change the color scheme";
             // 
             // styleToggleGroup
             // 
@@ -300,14 +298,14 @@
             // 
             this.zoomInButton.Name = "zoomInButton";
             this.zoomInButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("zoomInButton.SmallImage")));
-            this.zoomInButton.Text = "放大";
+            this.zoomInButton.Text = "Zoom In";
             this.zoomInButton.Click += new System.EventHandler(this.ribbonItem_Click);
             // 
             // zoomOutButton
             // 
             this.zoomOutButton.Name = "zoomOutButton";
             this.zoomOutButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("zoomOutButton.SmallImage")));
-            this.zoomOutButton.Text = "缩小";
+            this.zoomOutButton.Text = "Zoom Out";
             this.zoomOutButton.Click += new System.EventHandler(this.ribbonItem_Click);
             // 
             // tabHome
@@ -317,13 +315,13 @@
             this.tabHome.Groups.Add(this.panGroup);
             this.tabHome.Groups.Add(this.findGroup);
             this.tabHome.Name = "tabHome";
-            this.tabHome.Text = "主目录";
+            this.tabHome.Text = "Home";
             // 
             // mapGroup
             // 
             this.mapGroup.Items.Add(this.mapToggleGroup);
             this.mapGroup.Name = "mapGroup";
-            this.mapGroup.Text = "地图类型";
+            this.mapGroup.Text = "Map Type";
             // 
             // mapToggleGroup
             // 
@@ -339,31 +337,31 @@
             this.mapStreetButton.Name = "mapStreetButton";
             this.mapStreetButton.Pressed = true;
             this.mapStreetButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("mapStreetButton.SmallImage")));
-            this.mapStreetButton.Text = "街道";
-            this.mapStreetButton.ToolTip = "展示街道场景";
+            this.mapStreetButton.Text = "Street";
+            this.mapStreetButton.ToolTip = "Show street map";
             // 
             // mapSatelliteButton
             // 
             this.mapSatelliteButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("mapSatelliteButton.LargeImage")));
             this.mapSatelliteButton.Name = "mapSatelliteButton";
             this.mapSatelliteButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("mapSatelliteButton.SmallImage")));
-            this.mapSatelliteButton.Text = "卫星";
-            this.mapSatelliteButton.ToolTip = "展示卫星图像";
+            this.mapSatelliteButton.Text = "Satellite";
+            this.mapSatelliteButton.ToolTip = "Show satellite imagery";
             // 
             // mapHybridButton
             // 
             this.mapHybridButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("mapHybridButton.LargeImage")));
             this.mapHybridButton.Name = "mapHybridButton";
             this.mapHybridButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("mapHybridButton.SmallImage")));
-            this.mapHybridButton.Text = "混合";
-            this.mapHybridButton.ToolTip = "以街道名来展示图像";
+            this.mapHybridButton.Text = "Hybrid";
+            this.mapHybridButton.ToolTip = "Show imagery with street names";
             // 
             // zoomGroup
             // 
             this.zoomGroup.Items.Add(this.zoomInButton);
             this.zoomGroup.Items.Add(this.zoomOutButton);
             this.zoomGroup.Name = "zoomGroup";
-            this.zoomGroup.Text = "缩放";
+            this.zoomGroup.Text = "Zoom";
             // 
             // panGroup
             // 
@@ -374,13 +372,13 @@
             this.panGroup.Items.Add(this.panSeparator2);
             this.panGroup.Items.Add(this.panRightButton);
             this.panGroup.Name = "panGroup";
-            this.panGroup.Text = "平移";
+            this.panGroup.Text = "Pan";
             // 
             // panLeftButton
             // 
             this.panLeftButton.Name = "panLeftButton";
             this.panLeftButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("panLeftButton.SmallImage")));
-            this.panLeftButton.ToolTip = "向左";
+            this.panLeftButton.ToolTip = "Left";
             this.panLeftButton.Click += new System.EventHandler(this.ribbonItem_Click);
             // 
             // panSeparator1
@@ -391,14 +389,14 @@
             // 
             this.panUpButton.Name = "panUpButton";
             this.panUpButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("panUpButton.SmallImage")));
-            this.panUpButton.ToolTip = "向上";
+            this.panUpButton.ToolTip = "Up";
             this.panUpButton.Click += new System.EventHandler(this.ribbonItem_Click);
             // 
             // panDownButton
             // 
             this.panDownButton.Name = "panDownButton";
             this.panDownButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("panDownButton.SmallImage")));
-            this.panDownButton.ToolTip = "向下";
+            this.panDownButton.ToolTip = "Down";
             this.panDownButton.Click += new System.EventHandler(this.ribbonItem_Click);
             // 
             // panSeparator2
@@ -409,14 +407,14 @@
             // 
             this.panRightButton.Name = "panRightButton";
             this.panRightButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("panRightButton.SmallImage")));
-            this.panRightButton.ToolTip = "向右";
+            this.panRightButton.ToolTip = "Right";
             this.panRightButton.Click += new System.EventHandler(this.ribbonItem_Click);
             // 
             // findGroup
             // 
             this.findGroup.Items.Add(this.findToolbar);
             this.findGroup.Name = "findGroup";
-            this.findGroup.Text = "位置和地址";
+            this.findGroup.Text = "Places and Addresses";
             // 
             // findToolbar
             // 
@@ -428,7 +426,7 @@
             // 
             this.findEditBox.Name = "findEditBox";
             this.findEditBox.TextAreaWidth = 248;
-            this.findEditBox.ToolTip = "输入一个地址，地名或邮政编码";
+            this.findEditBox.ToolTip = "Enter an address, place name, or zip code";
             this.findEditBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.findEditBox_KeyPress);
             // 
             // findButton
@@ -436,8 +434,8 @@
             this.findButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("findButton.LargeImage")));
             this.findButton.Name = "findButton";
             this.findButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("findButton.SmallImage")));
-            this.findButton.Text = "搜索";
-            this.findButton.ToolTip = "搜索这个地方";
+            this.findButton.Text = "Find";
+            this.findButton.ToolTip = "Find this location";
             this.findButton.Click += new System.EventHandler(this.findButton_Click);
             // 
             // tabActions
@@ -445,28 +443,28 @@
             this.tabActions.Groups.Add(this.mouseGroup);
             this.tabActions.Groups.Add(this.positionGroup);
             this.tabActions.Name = "tabActions";
-            this.tabActions.Text = "动作";
+            this.tabActions.Text = "Actions";
             // 
             // mouseGroup
             // 
             this.mouseGroup.Items.Add(this.mouseDraggingCheckBox);
             this.mouseGroup.Items.Add(this.mouseScrollWheelCheckBox);
             this.mouseGroup.Name = "mouseGroup";
-            this.mouseGroup.Text = "鼠标";
+            this.mouseGroup.Text = "Mouse";
             // 
             // mouseDraggingCheckBox
             // 
             this.mouseDraggingCheckBox.Checked = true;
             this.mouseDraggingCheckBox.Name = "mouseDraggingCheckBox";
-            this.mouseDraggingCheckBox.Text = "拖动";
-            this.mouseDraggingCheckBox.ToolTip = "拖动来平移地图";
+            this.mouseDraggingCheckBox.Text = "Dragging";
+            this.mouseDraggingCheckBox.ToolTip = "Enable panning by dragging the map";
             this.mouseDraggingCheckBox.CheckedChanged += new System.EventHandler(this.ribbonCheckBox_CheckedChanged);
             // 
             // mouseScrollWheelCheckBox
             // 
             this.mouseScrollWheelCheckBox.Name = "mouseScrollWheelCheckBox";
-            this.mouseScrollWheelCheckBox.Text = "滚动鼠标轮";
-            this.mouseScrollWheelCheckBox.ToolTip = "滚动鼠标轮来缩放地图";
+            this.mouseScrollWheelCheckBox.Text = "Scroll Wheel";
+            this.mouseScrollWheelCheckBox.ToolTip = "Enable zooming with the mouse wheel";
             this.mouseScrollWheelCheckBox.CheckedChanged += new System.EventHandler(this.ribbonCheckBox_CheckedChanged);
             // 
             // positionGroup
@@ -474,15 +472,15 @@
             this.positionGroup.Items.Add(this.positionSaveButton);
             this.positionGroup.Items.Add(this.positionRestoreButton);
             this.positionGroup.Name = "positionGroup";
-            this.positionGroup.Text = "位置";
+            this.positionGroup.Text = "Position";
             // 
             // positionSaveButton
             // 
             this.positionSaveButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("positionSaveButton.LargeImage")));
             this.positionSaveButton.Name = "positionSaveButton";
             this.positionSaveButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("positionSaveButton.SmallImage")));
-            this.positionSaveButton.Text = "保存";
-            this.positionSaveButton.ToolTip = "保存当前地图位置和缩放等级";
+            this.positionSaveButton.Text = "Save";
+            this.positionSaveButton.ToolTip = "Store current map position and zoom level";
             this.positionSaveButton.Click += new System.EventHandler(this.ribbonItem_Click);
             // 
             // positionRestoreButton
@@ -490,25 +488,22 @@
             this.positionRestoreButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("positionRestoreButton.LargeImage")));
             this.positionRestoreButton.Name = "positionRestoreButton";
             this.positionRestoreButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("positionRestoreButton.SmallImage")));
-            this.positionRestoreButton.Text = "重新保存";
-            this.positionRestoreButton.ToolTip = "重新保存已保存的地图位置和缩放等级";
+            this.positionRestoreButton.Text = "Restore";
+            this.positionRestoreButton.ToolTip = "Restore saved map position and zoom level";
             this.positionRestoreButton.Click += new System.EventHandler(this.ribbonItem_Click);
             // 
             // c1StatusBar1
             // 
             this.c1StatusBar1.LeftPaneItems.Add(this.statusLabel);
-            this.c1StatusBar1.Location = new System.Drawing.Point(0, 560);
-            this.c1StatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1StatusBar1.Name = "c1StatusBar1";
             this.c1StatusBar1.RightPaneItems.Add(this.statusTrackBar);
             this.c1StatusBar1.RightPaneWidth = 100;
-            this.c1StatusBar1.Size = new System.Drawing.Size(691, 23);
             this.c1StatusBar1.VisualStyle = C1.Win.C1Ribbon.VisualStyle.Office2010Black;
             // 
             // statusLabel
             // 
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Text = "载入中...";
+            this.statusLabel.Text = "Loading...";
             // 
             // statusTrackBar
             // 
@@ -523,27 +518,25 @@
             // 
             this.webBrowser.AllowWebBrowserDrop = false;
             this.webBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser.Location = new System.Drawing.Point(0, 153);
-            this.webBrowser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.webBrowser.MinimumSize = new System.Drawing.Size(23, 26);
+            this.webBrowser.Location = new System.Drawing.Point(0, 151);
+            this.webBrowser.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser.Name = "webBrowser";
             this.webBrowser.ScrollBarsEnabled = false;
-            this.webBrowser.Size = new System.Drawing.Size(691, 407);
+            this.webBrowser.Size = new System.Drawing.Size(592, 272);
             this.webBrowser.TabIndex = 2;
             this.webBrowser.WebBrowserShortcutsEnabled = false;
             this.webBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser_DocumentCompleted);
             // 
             // GoogleMaps
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 583);
+            this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.webBrowser);
             this.Controls.Add(this.c1Ribbon);
             this.Controls.Add(this.c1StatusBar1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "GoogleMaps";
-            this.Text = "谷歌地图";
+            this.Text = "GoogleMaps";
             this.Load += new System.EventHandler(this.GoogleMaps_Load);
             this.Shown += new System.EventHandler(this.RibbonEarthForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon)).EndInit();

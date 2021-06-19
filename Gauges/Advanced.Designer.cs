@@ -286,7 +286,7 @@
             c1GaugeSingleLabel1.FontSize = 9D;
             c1GaugeSingleLabel1.Location = 100D;
             c1GaugeSingleLabel1.SequenceNo = 0;
-            c1GaugeSingleLabel1.Text = " 转速\r\nx1000";
+            c1GaugeSingleLabel1.Text = " RPM\r\nx1000";
             c1GaugeSingleLabel1.ViewTag = ((long)(637122515720112954));
             c1GaugeLabels1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             c1GaugeLabels1.FontSize = 10D;
@@ -305,7 +305,7 @@
             c1GaugeSingleLabel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             c1GaugeSingleLabel2.FontSize = 10D;
             c1GaugeSingleLabel2.Location = 24D;
-            c1GaugeSingleLabel2.Text = "时速";
+            c1GaugeSingleLabel2.Text = "MPH";
             c1GaugeSingleLabel2.ViewTag = ((long)(637403993970580858));
             c1GaugeLabels2.Color = System.Drawing.Color.White;
             c1GaugeLabels2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
@@ -321,7 +321,7 @@
             c1GaugeSingleLabel3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
             c1GaugeSingleLabel3.FontSize = 10D;
             c1GaugeSingleLabel3.Location = 102D;
-            c1GaugeSingleLabel3.Text = "油量";
+            c1GaugeSingleLabel3.Text = "Fuel";
             c1GaugeSingleLabel3.ViewTag = ((long)(688914168538589149));
             c1GaugeRange4.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.In;
             c1GaugeRange4.AntiAliasing = C1.Win.C1Gauge.C1GaugeRangeAntiAliasing.LowQuality;

@@ -78,11 +78,12 @@
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.DragMode = C1.Win.C1FlexGrid.DragModeEnum.Automatic;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
+            this.c1FlexGrid1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 1;
             this.c1FlexGrid1.Rows.DefaultSize = 17;
             this.c1FlexGrid1.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row;
-            this.c1FlexGrid1.Size = new System.Drawing.Size(196, 151);
+            this.c1FlexGrid1.Size = new System.Drawing.Size(261, 201);
             this.c1FlexGrid1.TabIndex = 0;
             this.c1FlexGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
             // 
@@ -93,7 +94,7 @@
             // 
             // 
             // 
-            this.c1Schedule1.CalendarInfo.CultureInfo = new System.Globalization.CultureInfo("zh-CN");
+            this.c1Schedule1.CalendarInfo.CultureInfo = new System.Globalization.CultureInfo("en-US");
             this.c1Schedule1.CalendarInfo.DateFormatString = "M/d/yyyy";
             this.c1Schedule1.CalendarInfo.EndDayTime = System.TimeSpan.Parse("19:00:00");
             this.c1Schedule1.CalendarInfo.StartDayTime = System.TimeSpan.Parse("07:00:00");
@@ -107,7 +108,8 @@
             System.DayOfWeek.Friday});
             this.c1Schedule1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Schedule1.GroupPageSize = 2;
-            this.c1Schedule1.Location = new System.Drawing.Point(0, 37);
+            this.c1Schedule1.Location = new System.Drawing.Point(0, 49);
+            this.c1Schedule1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1Schedule1.Name = "c1Schedule1";
             printStyle1.Description = "Daily Style";
             printStyle1.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle1.PreviewImage")));
@@ -141,7 +143,7 @@
             // 
             this.c1Schedule1.Settings.FirstVisibleTime = System.TimeSpan.Parse("08:00:00");
             this.c1Schedule1.ShowReminderForm = false;
-            this.c1Schedule1.Size = new System.Drawing.Size(198, 375);
+            this.c1Schedule1.Size = new System.Drawing.Size(264, 500);
             this.c1Schedule1.TabIndex = 2;
             this.c1Schedule1.SelectionChanged += new System.EventHandler<C1.Win.C1Schedule.SelectionChangedEventArgs>(this.c1Schedule1_SelectionChanged);
             this.c1Schedule1.DragDrop += new System.Windows.Forms.DragEventHandler(this.c1Schedule1_DragDrop);
@@ -151,6 +153,7 @@
             // 
             this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer3.Name = "splitContainer3";
             // 
             // splitContainer3.Panel1
@@ -162,8 +165,9 @@
             // 
             this.splitContainer3.Panel2.Controls.Add(this.c1Schedule2);
             this.splitContainer3.Panel2.Controls.Add(this.panel2);
-            this.splitContainer3.Size = new System.Drawing.Size(396, 412);
-            this.splitContainer3.SplitterDistance = 198;
+            this.splitContainer3.Size = new System.Drawing.Size(528, 549);
+            this.splitContainer3.SplitterDistance = 264;
+            this.splitContainer3.SplitterWidth = 5;
             this.splitContainer3.TabIndex = 0;
             // 
             // panel1
@@ -173,16 +177,18 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(198, 37);
+            this.panel1.Size = new System.Drawing.Size(264, 49);
             this.panel1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 8);
+            this.label1.Location = new System.Drawing.Point(16, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 21);
+            this.label1.Size = new System.Drawing.Size(173, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nancy Davolio";
             // 
@@ -190,9 +196,10 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::ControlExplorer.Properties.Resources.User;
-            this.pictureBox1.Location = new System.Drawing.Point(161, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(215, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 34);
+            this.pictureBox1.Size = new System.Drawing.Size(45, 46);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -203,7 +210,7 @@
             // 
             // 
             // 
-            this.c1Schedule2.CalendarInfo.CultureInfo = new System.Globalization.CultureInfo("zh-CN");
+            this.c1Schedule2.CalendarInfo.CultureInfo = new System.Globalization.CultureInfo("en-US");
             this.c1Schedule2.CalendarInfo.DateFormatString = "M/d/yyyy";
             this.c1Schedule2.CalendarInfo.EndDayTime = System.TimeSpan.Parse("19:00:00");
             this.c1Schedule2.CalendarInfo.StartDayTime = System.TimeSpan.Parse("07:00:00");
@@ -217,7 +224,8 @@
             System.DayOfWeek.Friday});
             this.c1Schedule2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Schedule2.GroupPageSize = 2;
-            this.c1Schedule2.Location = new System.Drawing.Point(0, 37);
+            this.c1Schedule2.Location = new System.Drawing.Point(0, 49);
+            this.c1Schedule2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1Schedule2.Name = "c1Schedule2";
             printStyle6.Description = "Daily Style";
             printStyle6.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle6.PreviewImage")));
@@ -251,7 +259,7 @@
             // 
             this.c1Schedule2.Settings.FirstVisibleTime = System.TimeSpan.Parse("08:00:00");
             this.c1Schedule2.ShowReminderForm = false;
-            this.c1Schedule2.Size = new System.Drawing.Size(194, 375);
+            this.c1Schedule2.Size = new System.Drawing.Size(259, 500);
             this.c1Schedule2.TabIndex = 3;
             this.c1Schedule2.SelectionChanged += new System.EventHandler<C1.Win.C1Schedule.SelectionChangedEventArgs>(this.c1Schedule2_SelectionChanged);
             this.c1Schedule2.DragDrop += new System.Windows.Forms.DragEventHandler(this.c1Schedule1_DragDrop);
@@ -264,16 +272,18 @@
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(194, 37);
+            this.panel2.Size = new System.Drawing.Size(259, 49);
             this.panel2.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 8);
+            this.label2.Location = new System.Drawing.Point(17, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 21);
+            this.label2.Size = new System.Drawing.Size(133, 28);
             this.label2.TabIndex = 2;
             this.label2.Text = "Robert King";
             // 
@@ -281,16 +291,18 @@
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::ControlExplorer.Properties.Resources.User;
-            this.pictureBox2.Location = new System.Drawing.Point(153, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(204, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(36, 33);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 44);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitContainer2.Location = new System.Drawing.Point(396, 0);
+            this.splitContainer2.Location = new System.Drawing.Point(528, 0);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -301,8 +313,9 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.c1FlexGrid1);
-            this.splitContainer2.Size = new System.Drawing.Size(196, 412);
-            this.splitContainer2.SplitterDistance = 257;
+            this.splitContainer2.Size = new System.Drawing.Size(261, 549);
+            this.splitContainer2.SplitterDistance = 343;
+            this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 0;
             // 
             // c1Calendar1
@@ -312,31 +325,33 @@
             this.c1Calendar1.CalendarDimensions = 4;
             this.c1Calendar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Calendar1.Location = new System.Drawing.Point(0, 0);
+            this.c1Calendar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1Calendar1.Name = "c1Calendar1";
             this.c1Calendar1.Schedule = this.c1Schedule1;
             this.c1Calendar1.ShowWeekNumbers = false;
-            this.c1Calendar1.Size = new System.Drawing.Size(200, 257);
+            this.c1Calendar1.Size = new System.Drawing.Size(261, 343);
             this.c1Calendar1.TabIndex = 0;
             // 
             // splitter1
             // 
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter1.Location = new System.Drawing.Point(392, 0);
+            this.splitter1.Location = new System.Drawing.Point(523, 0);
+            this.splitter1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(4, 412);
+            this.splitter1.Size = new System.Drawing.Size(5, 549);
             this.splitter1.TabIndex = 1;
             this.splitter1.TabStop = false;
             // 
             // DragDrop
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(203)))), ((int)(((byte)(240)))));
-            this.ClientSize = new System.Drawing.Size(592, 412);
+            this.ClientSize = new System.Drawing.Size(789, 549);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.splitContainer3);
             this.Controls.Add(this.splitContainer2);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "DragDrop";
             this.Text = "DragDrop";
             this.Load += new System.EventHandler(this.DragDrop_Load);

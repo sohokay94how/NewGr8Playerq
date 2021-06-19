@@ -80,14 +80,14 @@ namespace ControlExplorer.SuperTooltip
                 //clear error tip
                 epError.SetError(tb, "");
                 //set info tip
-                epInfo.SetError(tbEmail, GetInfoMessage("这是必填项目", "必须输入有效邮件地址"));
+                epInfo.SetError(tbEmail, GetInfoMessage("This is a required field", "Must be a valid email address"));
             }
             else if (!s.Contains('@') || !s.Contains('.'))
             {
                 //clear info tip
                 epInfo.SetError(tb, "");
                 //set error tip
-                epError.SetError(tb, GetErrorMessage("邮件地址无效", "例如: johndoe@hotmail.com"));
+                epError.SetError(tb, GetErrorMessage("Email address must be valid", "Example: johndoe@hotmail.com"));
             }
             else
             {

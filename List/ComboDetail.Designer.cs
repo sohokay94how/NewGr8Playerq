@@ -42,22 +42,26 @@
             this.c1Combo1.AutoDropDown = true;
             this.c1Combo1.AutoSelect = true;
             this.c1Combo1.Caption = "C1Combo";
+            this.c1Combo1.CaptionHeight = 17;
             this.c1Combo1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.c1Combo1.ColumnCaptionHeight = 17;
+            this.c1Combo1.ColumnFooterHeight = 17;
+            this.c1Combo1.ContentHeight = 15;
             this.c1Combo1.DeadAreaBackColor = System.Drawing.Color.Empty;
             this.c1Combo1.EditorBackColor = System.Drawing.SystemColors.Window;
             this.c1Combo1.EditorFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1Combo1.EditorForeColor = System.Drawing.SystemColors.WindowText;
+            this.c1Combo1.EditorHeight = 15;
             this.c1Combo1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1Combo1.Images"))));
-            this.c1Combo1.Location = new System.Drawing.Point(24, 39);
-            this.c1Combo1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1Combo1.ItemHeight = 15;
+            this.c1Combo1.Location = new System.Drawing.Point(21, 30);
             this.c1Combo1.MatchEntryTimeout = ((long)(2000));
             this.c1Combo1.MaxDropDownItems = ((short)(8));
             this.c1Combo1.MaxLength = 32767;
             this.c1Combo1.MouseCursor = System.Windows.Forms.Cursors.Default;
             this.c1Combo1.Name = "c1Combo1";
-            this.c1Combo1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
             this.c1Combo1.RowSubDividerColor = System.Drawing.Color.DarkGray;
-            this.c1Combo1.Size = new System.Drawing.Size(310, 21);
+            this.c1Combo1.Size = new System.Drawing.Size(266, 21);
             this.c1Combo1.TabIndex = 0;
             this.c1Combo1.Text = "c1Combo1";
             this.c1Combo1.Change += new C1.Win.C1List.ChangeEventHandler(this.c1Combo1_Change);
@@ -66,7 +70,7 @@
             // c1List1
             // 
             this.c1List1.AddItemSeparator = ';';
-            this.c1List1.Caption = "C1列表";
+            this.c1List1.Caption = "C1List";
             this.c1List1.CaptionHeight = 17;
             this.c1List1.ColumnCaptionHeight = 17;
             this.c1List1.ColumnFooterHeight = 17;
@@ -74,30 +78,22 @@
             this.c1List1.ExtendRightColumn = true;
             this.c1List1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1List1.Images"))));
             this.c1List1.ItemHeight = 15;
-            this.c1List1.Location = new System.Drawing.Point(366, 39);
-            this.c1List1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1List1.Location = new System.Drawing.Point(314, 30);
             this.c1List1.MatchEntryTimeout = ((long)(2000));
             this.c1List1.Name = "c1List1";
-            this.c1List1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
-            this.c1List1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
-            this.c1List1.PreviewInfo.ZoomFactor = 75D;
-            this.c1List1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1List1.PrintInfo.PageSettings")));
-            this.c1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
             this.c1List1.RowSubDividerColor = System.Drawing.Color.DarkGray;
-            this.c1List1.ShowHeaderCheckBox = false;
-            this.c1List1.Size = new System.Drawing.Size(322, 323);
+            this.c1List1.Size = new System.Drawing.Size(277, 248);
             this.c1List1.TabIndex = 1;
-            this.c1List1.Text = "c1列表1";
+            this.c1List1.Text = "c1List1";
             this.c1List1.PropBag = resources.GetString("c1List1.PropBag");
             // 
             // ComboDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 583);
+            this.ClientSize = new System.Drawing.Size(629, 446);
             this.Controls.Add(this.c1List1);
             this.Controls.Add(this.c1Combo1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "ComboDetail";
             this.Text = "ComboDetail";
             this.Load += new System.EventHandler(this.ComboDetail_Load);

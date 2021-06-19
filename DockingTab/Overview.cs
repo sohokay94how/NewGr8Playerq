@@ -19,7 +19,7 @@ namespace ControlExplorer.DockingTab
         private void btnAddTab_Click(object sender, EventArgs e)
         {
             C1DockingTabPage page = new C1DockingTabPage();
-            page.Text = "第" + (c1DockingTab1.TabPages.Count + 1).ToString()+"页";
+            page.Text = "Page" + (c1DockingTab1.TabPages.Count + 1).ToString();
             page.ImageIndex = c1DockingTab1.TabPages.Count % 3;
             c1DockingTab1.TabPages.Add(page);
         }
@@ -44,7 +44,6 @@ namespace ControlExplorer.DockingTab
             AddProperty("TabsSpacing", c1DockingTab1);
             AddProperty("TabStyle", c1DockingTab1);
             AddProperty("TextDirection", c1DockingTab1);
-            AddProperty("VisualStyle", c1DockingTab1);
         }
     }
 }

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>C:\a\|C:\Users\Irina\Documents\Winforms Publish\V1 For Trevor\</PublishUrlHistory>
+    <InstallUrlHistory>http://demo.gcpowertools.com.cn/ComponentOne/WinForms/ControlExplorer/|http://download.componentone.com/pub/Demo/WinForms/ControlExplorer/</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory>http://download.componentone.com/pub/Demo/WinForms/ControlExplorer/</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>zh-CN</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+</Project>

@@ -59,7 +59,6 @@ namespace ControlExplorer.MenusToolbars
             AddProperty("ShowOptionsMenu", c1NavBar1);
             AddProperty("StackButtonCount", c1NavBar1);
             AddProperty("StripHeight", c1NavBar1);
-            AddProperty("VisualStyle", c1NavBar1); 
         }
     }
 }

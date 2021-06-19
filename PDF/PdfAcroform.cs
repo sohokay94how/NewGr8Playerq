@@ -62,7 +62,7 @@ namespace ControlExplorer.PDF
             // save to file and show it
             // save pdf file
             string filename = GetTempFileName(".pdf");
-            _c1pdf.Compression = CompressionEnum.None;
+            //_c1pdf.Compression = CompressionLevel.NoCompression;
             _c1pdf.Save(filename);
 
             // display it

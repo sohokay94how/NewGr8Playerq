@@ -699,7 +699,7 @@ FROM Categories INNER JOIN Products ON Categories.CategoryID = Products.Category
       <Field>
         <Name>ftrRight</Name>
         <Section>4</Section>
-        <Text>"Page " &amp; [Page] &amp; " of " &amp; [页]</Text>
+        <Text>"Page " &amp; [Page] &amp; " of " &amp; [Pages]</Text>
         <Calculated>-1</Calculated>
         <Left>4680</Left>
         <Top>180</Top>
@@ -823,7 +823,7 @@ FROM Categories INNER JOIN Products ON Categories.CategoryID = Products.Category
       <Field>
         <Name>ftrRight</Name>
         <Section>4</Section>
-        <Text>"Page " &amp; [Page] &amp; " of " &amp; [页]</Text>
+        <Text>"Page " &amp; [Page] &amp; " of " &amp; [Pages]</Text>
         <Calculated>-1</Calculated>
         <Left>4680</Left>
         <Top>180</Top>
@@ -1048,7 +1048,7 @@ FROM Categories INNER JOIN Products ON Categories.CategoryID = Products.Category
       <Field>
         <Name>ftrRight</Name>
         <Section>4</Section>
-        <Text>"Page " &amp; [Page] &amp; " of " &amp; [页]</Text>
+        <Text>"Page " &amp; [Page] &amp; " of " &amp; [Pages]</Text>
         <Calculated>-1</Calculated>
         <Left>4680</Left>
         <Top>180</Top>

@@ -123,14 +123,11 @@
   <metadata name="c1DemoDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="c1DemoDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="invoicesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>331, 17</value>
   </metadata>
   <data name="c1FlexGrid1.ColumnInfo" xml:space="preserve">
-    <value>7,1,0,0,0,85,Columns:0{Width:27;}	1{Width:95;Name:"Salesperson";Caption:"售货员";AllowEditing:False;Style:"DataType:System.String;TextAlign:LeftCenter;";}	2{Width:99;Name:"Country";Caption:"地区";Style:"DataType:System.String;TextAlign:LeftCenter;";}	3{Width:138;Name:"Customers_CompanyName";Caption:"公司名称";Style:"DataType:System.String;TextAlign:LeftCenter;";}	4{Width:123;Name:"ProductName";Caption:"产品名称";Style:"DataType:System.String;TextAlign:LeftCenter;";}	5{Name:"OrderDate";Caption:"订单日期";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";}	6{Name:"ExtendedPrice";Caption:"数量";AllowEditing:False;Style:"DataType:System.Decimal;TextAlign:GeneralCenter;";}	</value>
+    <value>7,1,0,0,0,85,Columns:0{Width:27;}	1{Width:95;Name:"Salesperson";Caption:"Salesperson";AllowEditing:False;Style:"DataType:System.String;TextAlign:LeftCenter;";}	2{Width:99;Name:"Country";Caption:"Country";Style:"DataType:System.String;TextAlign:LeftCenter;";}	3{Width:138;Name:"Customers_CompanyName";Caption:"Company Name";Style:"DataType:System.String;TextAlign:LeftCenter;";}	4{Width:123;Name:"ProductName";Caption:"Product Name";Style:"DataType:System.String;TextAlign:LeftCenter;";}	5{Name:"OrderDate";Caption:"Order Date";Style:"Format:""d"";DataType:System.DateTime;TextAlign:LeftCenter;";}	6{Name:"ExtendedPrice";Caption:"Amount";AllowEditing:False;Style:"DataType:System.Decimal;TextAlign:GeneralCenter;";}	</value>
   </data>
   <data name="c1FlexGrid1.StyleInfo" xml:space="preserve">
     <value>Normal{Font:Microsoft Sans Serif, 8.25pt;}	Alternate{}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;BackgroundImageLayout:Hide;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Focus{}	Editor{}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:234, 236, 245;}	NewRow{ForeColor:GrayText;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	SelectedColumnHeader{}	SelectedRowHeader{}	GrandTotal{BackColor:DimGray;ForeColor:White;}	Subtotal0{BackColor:Gray;ForeColor:White;}	Subtotal1{BackColor:DarkGray;ForeColor:White;}	Subtotal2{BackColor:Silver;ForeColor:White;}	Subtotal3{BackColor:LightGray;ForeColor:White;}	Subtotal4{BackColor:Gainsboro;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	FilterEditor{}	FirstCustomStyle{}	</value>

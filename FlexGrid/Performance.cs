@@ -14,7 +14,7 @@ namespace ControlExplorer.FlexGrid
     {
         int count = 20000;
         List<MyItem> list = new List<MyItem>();
-        BackgroundWorker worker = new BackgroundWorker(); 
+        BackgroundWorker worker = new BackgroundWorker();
 
         public Performance()
         {
@@ -32,9 +32,9 @@ namespace ControlExplorer.FlexGrid
             numericUpDown1.Maximum = int.MaxValue;
         }
 
-        private void c1Command1_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void c1Command2_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
         {
-            c1Command1.Enabled = false;
+            c1Command2.Enabled = false;
 
             // clear FlexGrid
             c1FlexGrid1.DataSource = null;
@@ -66,16 +66,16 @@ namespace ControlExplorer.FlexGrid
                     }
 
                     MyItem m = new MyItem();
-                    m.ID = i;
-                    m.姓名 = "Row" + i.ToString();
-                    m.标记 = i % 2 == 0 ? true : false;
-                    m.日期 = DateTime.Now.Add(new TimeSpan(i, i, i));
-                    m.值1 = (double)rnd.Next(int.MaxValue);
-                    m.值2 = (double)rnd.Next(int.MaxValue);
-                    m.值3 = (double)rnd.Next(int.MaxValue);
-                    m.值4 = (double)rnd.Next(int.MaxValue);
-                    m.值5 = (double)rnd.Next(int.MaxValue);
-                    m.值6 = (double)rnd.Next(int.MaxValue);
+                    m.MyId = i;
+                    m.MyName = "Row" + i.ToString();
+                    m.MyBoolean = i % 2 == 0 ? true : false;
+                    m.MyDate = DateTime.Now.Add(new TimeSpan(i, i, i));
+                    m.MyValue1 = (double)rnd.Next(int.MaxValue);
+                    m.MyValue2 = (double)rnd.Next(int.MaxValue);
+                    m.MyValue3 = (double)rnd.Next(int.MaxValue);
+                    m.MyValue4 = (double)rnd.Next(int.MaxValue);
+                    m.MyValue5 = (double)rnd.Next(int.MaxValue);
+                    m.MyValue6 = (double)rnd.Next(int.MaxValue);
                     list.Add(m);
                 }
                 worker.ReportProgress(0, count);
@@ -93,7 +93,7 @@ namespace ControlExplorer.FlexGrid
             var items = (IList)e.Result;
             if (items.Count == 0)
             {
-                MessageBox.Show("超出内存。请试一个个数较少的项目集。");
+                MessageBox.Show("Out of memory. Try a lower number of items.");
             }
             else
             {
@@ -105,26 +105,26 @@ namespace ControlExplorer.FlexGrid
                     c1FlexGrid1.Redraw = true;
 
                     // custom editors
-                    c1FlexGrid1.Cols["日期"].Editor = dateTimePicker1;
-                    c1FlexGrid1.Cols["值1"].Editor = numericUpDown1;
-                    c1FlexGrid1.Cols["值2"].Editor = numericUpDown1;
-                    c1FlexGrid1.Cols["值3"].Editor = numericUpDown1;
-                    c1FlexGrid1.Cols["值4"].Editor = numericUpDown1;
-                    c1FlexGrid1.Cols["值5"].Editor = numericUpDown1;
-                    c1FlexGrid1.Cols["值6"].Editor = numericUpDown1;
+                    c1FlexGrid1.Cols["MyDate"].Editor = dateTimePicker1;
+                    c1FlexGrid1.Cols["MyValue1"].Editor = numericUpDown1;
+                    c1FlexGrid1.Cols["MyValue2"].Editor = numericUpDown1;
+                    c1FlexGrid1.Cols["MyValue3"].Editor = numericUpDown1;
+                    c1FlexGrid1.Cols["MyValue4"].Editor = numericUpDown1;
+                    c1FlexGrid1.Cols["MyValue5"].Editor = numericUpDown1;
+                    c1FlexGrid1.Cols["MyValue6"].Editor = numericUpDown1;
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("超出内存。请试一个个数较少的项目集。");
+                    MessageBox.Show("Out of memory. Try a lower number of items.");
                 }
             }
-            c1Command1.Enabled = true;
+            c1Command2.Enabled = true;
         }
 
         void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
             progressBar.Value = (int)e.UserState;
-            lblStatus.Text = string.Format("{0} / {1} 行", ((int)e.UserState).ToString(), count.ToString());
+            lblStatus.Text = string.Format("{0} / {1} rows", ((int)e.UserState).ToString(), count.ToString());
         }
 
         #endregion
@@ -137,15 +137,15 @@ namespace ControlExplorer.FlexGrid
 
     public class MyItem
     {
-        public int ID { get; set; }
-        public string 姓名 { get; set; }
-        public bool? 标记 { get; set; }
-        public DateTime? 日期 { get; set; }
-        public double? 值1 { get; set; }
-        public double? 值2 { get; set; }
-        public double? 值3 { get; set; }
-        public double? 值4 { get; set; }
-        public double? 值5 { get; set; }
-        public double? 值6 { get; set; }
+        public int MyId { get; set; }
+        public string MyName { get; set; }
+        public bool? MyBoolean { get; set; }
+        public DateTime? MyDate { get; set; }
+        public double? MyValue1 { get; set; }
+        public double? MyValue2 { get; set; }
+        public double? MyValue3 { get; set; }
+        public double? MyValue4 { get; set; }
+        public double? MyValue5 { get; set; }
+        public double? MyValue6 { get; set; }
     }
 }

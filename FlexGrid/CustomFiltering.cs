@@ -21,11 +21,11 @@ namespace ControlExplorer.FlexGrid
 
             // create data table
             var dt = new DataTable();
-            dt.Columns.Add("字符串", typeof(String));
-            dt.Columns.Add("日期", typeof(DateTime));
-            dt.Columns.Add("整型", typeof(int));
-            dt.Columns.Add("颜色名", typeof(KnownColor));
-            dt.Columns.Add("颜色", typeof(Color));
+            dt.Columns.Add("Some String", typeof(String));
+            dt.Columns.Add("Some Date", typeof(DateTime));
+            dt.Columns.Add("Some Integer", typeof(int));
+            dt.Columns.Add("KnownColor", typeof(KnownColor));
+            dt.Columns.Add("Color", typeof(Color));
 
             String[] names =
             {
@@ -55,9 +55,9 @@ namespace ControlExplorer.FlexGrid
             _flex.AllowFiltering = true;
 
             // assign custom filters
-            _flex.Cols["颜色"].Filter = new CustomFilters.ColorFilter();
-            _flex.Cols["日期"].Filter = new CustomFilters.DateFilter();
-            _flex.Cols["颜色名"].Filter = new CustomFilters.StringFilter();
+            _flex.Cols["Color"].Filter = new CustomFilters.ColorFilter();
+            _flex.Cols["Some Date"].Filter = new CustomFilters.DateFilter();
+            _flex.Cols["KnownColor"].Filter = new CustomFilters.StringFilter();
             
         }  
 

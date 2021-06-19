@@ -171,7 +171,7 @@ namespace ControlExplorer.Excel
             }
             catch
             {
-                MessageBox.Show("无法在当前目录中加载文件: " + filename);
+                MessageBox.Show("Unable to load file from temp directory: " + filename);
             }
         }
 

@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using C1.Win.C1InputPanel;
-using C1.Win.C1BarCode;
+using C1.Win.BarCode;
 
 namespace ControlExplorer.InputPanel.ControlHosts
 {
@@ -15,6 +15,18 @@ namespace ControlExplorer.InputPanel.ControlHosts
         public C1BarcodeHost()
             : base(new C1BarCode())
         {
+            // initialize width and height
+            Width = 250;
+            Height = BarCode.Height = 55;
+            BarCode.SizeChanged += BarCode_SizeChanged;
+            BarCode.AutoSize = false;
+        }
+
+        void BarCode_SizeChanged(object sender, EventArgs e)
+        {
+            // adjust size, so that all barcode fits into space at zooming
+            Height = BarCode.Height + Padding.Size.Height;
+            Width = BarCode.Width + Padding.Size.Width;
         }
 
         /// <summary>
@@ -32,29 +44,18 @@ namespace ControlExplorer.InputPanel.ControlHosts
         /// </summary>
         [Category("Appearance")]
         [Description("Gets or sets the Code Type that the C1BarCode displays.")]
-        public CodeTypeEnum CodeType
+        public C1.BarCode.CodeType CodeType
         {
             get { return BarCode.CodeType; }
             set { BarCode.CodeType = value; }
         }
 
-        /// <summary>
-        /// Gets or sets the Size Mode that the C1BarCode displays.
-        /// </summary>
         [Category("Appearance")]
-        [Description("Gets or sets the Size Mode that the C1BarCode displays.")]
-        public PictureBoxSizeMode SizeMode
+        [Description("Gets or sets Text position.")]
+        public C1.BarCode.BarCodeCaptionPosition CaptionPosition
         {
-            get { return BarCode.SizeMode; }
-            set { BarCode.SizeMode = value; }
-        }
-
-        [Category("Appearance")]
-        [Description("Gets or sets whether Text is displayed ontop of the barcode.")]
-        public bool ShowText
-        {
-            get { return BarCode.ShowText; }
-            set { BarCode.ShowText = value; }
+            get { return BarCode.CaptionPosition; }
+            set { BarCode.CaptionPosition = value; }
         }
 
         [Category("Appearance")]

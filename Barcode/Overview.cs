@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1BarCode;
+using C1.Win.BarCode;
 using C1.Win.C1InputPanel;
 
 namespace ControlExplorer.Barcode
@@ -15,6 +15,7 @@ namespace ControlExplorer.Barcode
         public Overview()
         {
             InitializeComponent();
+            txtValue.Text = "1234567889012";
         }
 
         private void txtValue_TextChanged(object sender, EventArgs e)
@@ -26,7 +27,7 @@ namespace ControlExplorer.Barcode
         {
             //add demo properties
             AddProperty("BarHeight", this);
-            AddProperty("ShowText", this);
+            AddProperty("CaptionPosition", this);
         }
 
         //gets and sets the Text property for all C1Barcodes inside the C1InputPanel
@@ -45,9 +46,9 @@ namespace ControlExplorer.Barcode
         }
 
         //gets and sets the ShowText property for all C1Barcodes inside the C1InputPanel
-        public bool ShowText
+        public C1.BarCode.BarCodeCaptionPosition CaptionPosition
         {
-            get { return c1BarcodeHost39.ShowText; }
+            get { return c1BarcodeHost39.CaptionPosition; }
             set
             {
                 foreach (InputComponent ic in c1InputPanel1.Items)
@@ -55,7 +56,7 @@ namespace ControlExplorer.Barcode
                     if (ic.GetType() == typeof(InputPanel.ControlHosts.C1BarcodeHost))
                     {
                         InputPanel.ControlHosts.C1BarcodeHost bch = (InputPanel.ControlHosts.C1BarcodeHost)ic;
-                        bch.ShowText = value;
+                        bch.CaptionPosition = value;
                     }
                 }
             }

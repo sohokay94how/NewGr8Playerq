@@ -63,17 +63,15 @@ namespace ControlExplorer.Schedule
             this.c1Schedule1.DataStorage.Import(AppDomain.CurrentDomain.BaseDirectory + "Schedule\\C1Schedule.xml", FileFormatEnum.XML);
 
             // Add demo properties
-            AddPropertyHeader("C1Calendar 属性");
+            AddPropertyHeader("C1Calendar Properties");
             AddProperty("CalendarDimensions", c1Calendar1);
             AddProperty("ShowWeekNumbers", c1Calendar1);
-            AddProperty("VisualStyle", c1Calendar1);
-
-            AddPropertyHeader("C1Schedule 属性");
+            
+            AddPropertyHeader("C1Schedule Properties");
             AddProperty("SetReminder", c1Schedule1.Settings);
             AddProperty("TimeInterval", c1Schedule1.CalendarInfo);
             AddProperty("WeekStart", c1Schedule1.CalendarInfo);
             AddProperty("WeekViewStyle", c1Schedule1);
-            AddProperty("VisualStyle", c1Schedule1);
         }
     }
 }

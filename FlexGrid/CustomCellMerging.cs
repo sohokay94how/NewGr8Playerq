@@ -29,15 +29,15 @@ namespace ControlExplorer.FlexGrid
             // create header row (weekdays)
             _flex.Cols.Count = 8;
             _flex.Rows.Count = 0;
-            _flex.AddItem("\t星期一\t星期二\t星期三\t星期四\t星期五\t星期六\t星期天");
+            _flex.AddItem("\tMonday\tTuesday\tWednesday\tThursday\tFriday\tSaturday\tSunday");
             _flex.Rows.Fixed = 1;
 
             // add the schedule
-            _flex.AddItem("12:00\t散步\t早间节目\t早间节目\t运动\t天气\tN/A\tN/A");
-            _flex.AddItem("13:00\t早间节目\t早间节目\t芝麻街\t足球\t市场观察\tN/A\tN/A");
-            _flex.AddItem("14:00\t早间节目\t早间节目\t儿童区\t足球l\t肥皂剧\tN/A\tN/A");
-            _flex.AddItem("15:00\t新闻\t新闻\t新闻\t新闻\t新闻\tN/A\tN/A");
-            _flex.AddItem("16:00\t新闻\t新闻\t新闻\t新闻\t新闻\tN/A\tN/A");
+            _flex.AddItem("12:00\tWalker\tMorning Show\tMorning Show\tSport\tWeather\tN/A\tN/A");
+            _flex.AddItem("13:00\tToday Show\tToday Show\tSesame Street\tFootball\tMarket Watch\tN/A\tN/A");
+            _flex.AddItem("14:00\tToday Show\tToday Show\tKid Zone\tFootball\tSoap Opera\tN/A\tN/A");
+            _flex.AddItem("15:00\tNews\tNews\tNews\tNews\tNews\tN/A\tN/A");
+            _flex.AddItem("16:00\tNews\tNews\tNews\tNews\tNews\tN/A\tN/A");
 
             // add some formatting
             _flex.Styles.Normal.Border.Style = BorderStyleEnum.Double;

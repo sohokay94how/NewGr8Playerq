@@ -110,7 +110,7 @@
             // inputLabel1
             // 
             this.inputLabel1.Name = "inputLabel1";
-            this.inputLabel1.Text = "数据源:";
+            this.inputLabel1.Text = "Data Source:";
             // 
             // comboLocations
             // 
@@ -133,13 +133,13 @@
             // inputGroupHeader1
             // 
             this.inputGroupHeader1.Name = "inputGroupHeader1";
-            this.inputGroupHeader1.Text = "图例";
+            this.inputGroupHeader1.Text = "Legend";
             // 
             // checkConductivity
             // 
             this.checkConductivity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(160)))));
             this.checkConductivity.Name = "checkConductivity";
-            this.checkConductivity.Text = "电导率";
+            this.checkConductivity.Text = "Conductivity";
             this.checkConductivity.CheckedChanged += new System.EventHandler(this.checkConductivity_CheckedChanged);
             // 
             // checkPh
@@ -153,38 +153,38 @@
             // 
             this.checkTemperature.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(32)))), ((int)(((byte)(132)))));
             this.checkTemperature.Name = "checkTemperature";
-            this.checkTemperature.Text = "温度";
+            this.checkTemperature.Text = "Temperature";
             this.checkTemperature.CheckedChanged += new System.EventHandler(this.checkTemperature_CheckedChanged);
             // 
             // checkPressure
             // 
             this.checkPressure.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(2)))), ((int)(((byte)(153)))));
             this.checkPressure.Name = "checkPressure";
-            this.checkPressure.Text = "压力";
+            this.checkPressure.Text = "Pressure";
             this.checkPressure.CheckedChanged += new System.EventHandler(this.checkPressure_CheckedChanged);
             // 
             // inputGroupHeader2
             // 
             this.inputGroupHeader2.Name = "inputGroupHeader2";
-            this.inputGroupHeader2.Text = "动作";
+            this.inputGroupHeader2.Text = "Actions";
             // 
             // inputLabel2
             // 
             this.inputLabel2.Break = C1.Win.C1InputPanel.BreakType.Row;
             this.inputLabel2.Name = "inputLabel2";
-            this.inputLabel2.Text = "缩放：鼠标";
+            this.inputLabel2.Text = "Zoom: Mouse";
             // 
             // inputLabel3
             // 
             this.inputLabel3.Break = C1.Win.C1InputPanel.BreakType.Row;
             this.inputLabel3.Name = "inputLabel3";
-            this.inputLabel3.Text = "规模：CTRL +鼠标";
+            this.inputLabel3.Text = "Scale: CTRL + Mouse";
             // 
             // inputLabel4
             // 
             this.inputLabel4.Break = C1.Win.C1InputPanel.BreakType.Row;
             this.inputLabel4.Name = "inputLabel4";
-            this.inputLabel4.Text = "翻译：Shift +鼠标";
+            this.inputLabel4.Text = "Translate: Shift + Mouse";
             // 
             // inputMenu1
             // 
@@ -193,41 +193,41 @@
             this.inputMenu1.Items.Add(this.btnZoomOut);
             this.inputMenu1.Items.Add(this.btnReset);
             this.inputMenu1.Name = "inputMenu1";
-            this.inputMenu1.Text = "缩放";
+            this.inputMenu1.Text = "Zoom";
             // 
             // btnZoomIn
             // 
             this.btnZoomIn.Name = "btnZoomIn";
-            this.btnZoomIn.Text = "放大";
+            this.btnZoomIn.Text = "Zoom In";
             this.btnZoomIn.Click += new System.EventHandler(this.btnZoomIn_Click);
             // 
             // btnZoomOut
             // 
             this.btnZoomOut.Name = "btnZoomOut";
-            this.btnZoomOut.Text = "缩小";
+            this.btnZoomOut.Text = "Zoom Out";
             this.btnZoomOut.Click += new System.EventHandler(this.btnZoomOut_Click);
             // 
             // btnReset
             // 
             this.btnReset.Name = "btnReset";
-            this.btnReset.Text = "重置";
+            this.btnReset.Text = "Reset";
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // inputGroupHeader3
             // 
             this.inputGroupHeader3.Name = "inputGroupHeader3";
-            this.inputGroupHeader3.Text = "图标区";
+            this.inputGroupHeader3.Text = "Chart Area";
             // 
             // chkChartAreaInverted
             // 
             this.chkChartAreaInverted.Name = "chkChartAreaInverted";
-            this.chkChartAreaInverted.Text = "反向";
+            this.chkChartAreaInverted.Text = "Inverted";
             this.chkChartAreaInverted.CheckedChanged += new System.EventHandler(this.chkChartAreaInverted_CheckedChanged);
             // 
             // chkAxisXReversed
             // 
             this.chkAxisXReversed.Name = "chkAxisXReversed";
-            this.chkAxisXReversed.Text = "AxisX.翻转";
+            this.chkAxisXReversed.Text = "AxisX.Reversed";
             this.chkAxisXReversed.CheckedChanged += new System.EventHandler(this.chkAxisXReversed_CheckedChanged);
             // 
             // splitter1

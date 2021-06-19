@@ -74,7 +74,7 @@
             this.btnRegData.Name = "btnRegData";
             this.btnRegData.Size = new System.Drawing.Size(111, 23);
             this.btnRegData.TabIndex = 3;
-            this.btnRegData.Text = "再生数据";
+            this.btnRegData.Text = "Regenerate Data";
             this.btnRegData.UseVisualStyleBackColor = true;
             this.btnRegData.Click += new System.EventHandler(this.btnRegData_Click);
             // 
@@ -85,7 +85,7 @@
             this.chkPatterns.Name = "chkPatterns";
             this.chkPatterns.Size = new System.Drawing.Size(105, 17);
             this.chkPatterns.TabIndex = 2;
-            this.chkPatterns.Text = "使用HatchStyles";
+            this.chkPatterns.Text = "Use HatchStyles";
             this.chkPatterns.UseVisualStyleBackColor = true;
             this.chkPatterns.CheckedChanged += new System.EventHandler(this.chkPatterns_CheckedChanged);
             // 
@@ -96,7 +96,7 @@
             this.radShapes.Name = "radShapes";
             this.radShapes.Size = new System.Drawing.Size(61, 17);
             this.radShapes.TabIndex = 1;
-            this.radShapes.Text = "形状";
+            this.radShapes.Text = "Shapes";
             this.radShapes.UseVisualStyleBackColor = true;
             // 
             // radZones
@@ -108,7 +108,7 @@
             this.radZones.Size = new System.Drawing.Size(55, 17);
             this.radZones.TabIndex = 0;
             this.radZones.TabStop = true;
-            this.radZones.Text = "区域";
+            this.radZones.Text = "Zones";
             this.radZones.UseVisualStyleBackColor = true;
             this.radZones.CheckedChanged += new System.EventHandler(this.radZones_CheckedChanged);
             // 
@@ -121,7 +121,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AlarmZones";
-            this.Text = "警报区域";
+            this.Text = "AlarmZones";
             this.Load += new System.EventHandler(this.AlarmZones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1Chart1)).EndInit();
             this.panel1.ResumeLayout(false);

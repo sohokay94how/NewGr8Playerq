@@ -29,7 +29,7 @@ namespace ControlExplorer.DockingTab
 
         private void btnCancel1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("再见!");
+            MessageBox.Show("Goodbye!");
         }
 
         private void btnFinish4_Click(object sender, EventArgs e)

@@ -27,13 +27,13 @@ namespace ControlExplorer.Editor
 
             // add custom buttons for proofing
             C1EditorToolStripMain1.Items.Add(new ToolStripSeparator());
-            _btnShowErrors = new ToolStripButton("显示拼写错误", imageList1.Images["ShowErrors_small.png"]);
+            _btnShowErrors = new ToolStripButton("Show Spelling Errors", imageList1.Images["ShowErrors_small.png"]);
             _btnShowErrors.DisplayStyle = ToolStripItemDisplayStyle.Image;
             _btnShowErrors.Click += new EventHandler(_btnShowErrors_Click);
-            _btnSpell = new ToolStripButton("拼写检查", imageList1.Images["Spelling_small.png"]);
+            _btnSpell = new ToolStripButton("Spell-Check", imageList1.Images["Spelling_small.png"]);
             _btnSpell.DisplayStyle = ToolStripItemDisplayStyle.Image;
             _btnSpell.Click += new EventHandler(_btnSpell_Click);
-            _btnWordCount = new ToolStripButton("统计字数", imageList1.Images["WordCount_small.png"]);
+            _btnWordCount = new ToolStripButton("Word Count", imageList1.Images["WordCount_small.png"]);
             _btnWordCount.DisplayStyle = ToolStripItemDisplayStyle.Image;
             _btnWordCount.Click += new EventHandler(_btnWordCount_Click);
             C1EditorToolStripMain1.Items.Add(_btnShowErrors);
@@ -97,19 +97,19 @@ namespace ControlExplorer.Editor
 
             // show statistics
             var msg = string.Format(
-                "字数: {0:n0}\r\n" +
-                "字符: {1:n0}\r\n" +
-                "非空格字符: {2:n0}\r\n" +
-                "句子: {3:n0}\r\n" +
-                "段落: {4:n0}\r\n" +
-                "平均单词长度: {5:n1}\r\n" +
-                "平均句子长度: {6:n1}\r\n" +
-                "平均段落长度: {7:n1}\r\n",
+                "Words: {0:n0}\r\n" +
+                "Characters: {1:n0}\r\n" +
+                "Non-Space Characters: {2:n0}\r\n" +
+                "Sentences: {3:n0}\r\n" +
+                "Paragraphs: {4:n0}\r\n" +
+                "Average Word Length: {5:n1}\r\n" +
+                "Average Sentence Length: {6:n1}\r\n" +
+                "Average Paragraph Length: {7:n1}\r\n",
                 words, chars, nonSpaceChars, sentences, paragraphs,
                 words > 0 ? nonSpaceChars / (float)words : 0f,
                 sentences > 0 ? nonSpaceChars / (float)sentences : 0f,
                 paragraphs > 0 ? nonSpaceChars / (float)paragraphs : 0f);
-            MessageBox.Show(msg, "统计字数");
+            MessageBox.Show(msg, "Word Count");
         }
 
         void _btnSpell_Click(object sender, EventArgs e)

@@ -29,18 +29,18 @@ namespace ControlExplorer.Tiles
             Bitmap m11 = ControlExplorer.Properties.Resources.m11;
             Bitmap m12 = ControlExplorer.Properties.Resources.m12;
 
-            string t01 = "一月";
-            string t02 = "二月";
-            string t03 = "三月";
-            string t04 = "四月";
-            string t05 = "五月";
-            string t06 = "六月";
-            string t07 = "七月";
-            string t08 = "八月";
-            string t09 = "九月";
-            string t10 = "十月";
-            string t11 = "十一月";
-            string t12 = "十二月";
+            string t01 = "January";
+            string t02 = "February";
+            string t03 = "March";
+            string t04 = "April";
+            string t05 = "May";
+            string t06 = "June";
+            string t07 = "July";
+            string t08 = "August";
+            string t09 = "September";
+            string t10 = "October";
+            string t11 = "November";
+            string t12 = "December";
 
             tile1.Image1 = m01; tile1.Text1 = t01;
             tile1.Image2 = m02; tile1.Text2 = t02;

@@ -29,34 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WordPad));
             C1.Win.C1Ribbon.RibbonToggleGroup ribbonToggleGroup2;
             C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar1;
             C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar2;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WordPad));
             C1.Win.C1Ribbon.RibbonSeparator ribbonSeparator1;
             C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar3;
             C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar4;
             C1.Win.C1Ribbon.RibbonToggleGroup ribbonToggleGroup1;
-            this.Office2010BlueStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.Office2010SilverStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.Office2010BlackStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.Office2007BlueStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.Office2007SilverStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.Office2007BlackStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.Windows7StyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.FontFaceComboBox = new C1.Win.C1Ribbon.RibbonFontComboBox();
-            this.FontSizeComboBox = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.FontBoldButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.FontItalicButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.FontUnderlineButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.FontStrikeoutButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.FontColorPicker = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.BackColorPicker = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.DecreaseIndentButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.IncreaseIndentButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.ParagraphAlignLeftButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.ParagraphAlignCenterButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.ParagraphAlignRightButton = new C1.Win.C1Ribbon.RibbonToggleButton();
             this.c1SpellChecker1 = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.c1StatusBar1 = new C1.Win.C1Ribbon.C1StatusBar();
@@ -75,6 +55,13 @@
             this.SaveDocumentAsOtherButton = new C1.Win.C1Ribbon.RibbonButton();
             this.ribbonConfigToolBar1 = new C1.Win.C1Ribbon.RibbonConfigToolBar();
             this.RibbonStyleMenu = new C1.Win.C1Ribbon.RibbonMenu();
+            this.Office2010BlueStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
+            this.Office2010SilverStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
+            this.Office2010BlackStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
+            this.Office2007BlueStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
+            this.Office2007SilverStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
+            this.Office2007BlackStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
+            this.Windows7StyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
             this.F1HelpButton = new C1.Win.C1Ribbon.RibbonButton();
             this.ribbonContextualTabGroup1 = new C1.Win.C1Ribbon.RibbonContextualTabGroup();
             this.ribbonTab1 = new C1.Win.C1Ribbon.RibbonTab();
@@ -102,7 +89,20 @@
             this.CopyButton = new C1.Win.C1Ribbon.RibbonButton();
             this.FormatPainterButton = new C1.Win.C1Ribbon.RibbonButton();
             this.FontGroup = new C1.Win.C1Ribbon.RibbonGroup();
+            this.FontFaceComboBox = new C1.Win.C1Ribbon.RibbonFontComboBox();
+            this.FontSizeComboBox = new C1.Win.C1Ribbon.RibbonComboBox();
+            this.FontBoldButton = new C1.Win.C1Ribbon.RibbonToggleButton();
+            this.FontItalicButton = new C1.Win.C1Ribbon.RibbonToggleButton();
+            this.FontUnderlineButton = new C1.Win.C1Ribbon.RibbonToggleButton();
+            this.FontStrikeoutButton = new C1.Win.C1Ribbon.RibbonToggleButton();
+            this.FontColorPicker = new C1.Win.C1Ribbon.RibbonColorPicker();
+            this.BackColorPicker = new C1.Win.C1Ribbon.RibbonColorPicker();
             this.ParagraphGroup = new C1.Win.C1Ribbon.RibbonGroup();
+            this.DecreaseIndentButton = new C1.Win.C1Ribbon.RibbonButton();
+            this.IncreaseIndentButton = new C1.Win.C1Ribbon.RibbonButton();
+            this.ParagraphAlignLeftButton = new C1.Win.C1Ribbon.RibbonToggleButton();
+            this.ParagraphAlignCenterButton = new C1.Win.C1Ribbon.RibbonToggleButton();
+            this.ParagraphAlignRightButton = new C1.Win.C1Ribbon.RibbonToggleButton();
             this.ProofingGroup = new C1.Win.C1Ribbon.RibbonGroup();
             this.btnSpelling = new C1.Win.C1Ribbon.RibbonButton();
             this.ViewTab = new C1.Win.C1Ribbon.RibbonTab();
@@ -130,213 +130,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             this.SuspendLayout();
             // 
-            // ribbonToggleGroup2
-            // 
-            ribbonToggleGroup2.Items.Add(this.Office2010BlueStyleButton);
-            ribbonToggleGroup2.Items.Add(this.Office2010SilverStyleButton);
-            ribbonToggleGroup2.Items.Add(this.Office2010BlackStyleButton);
-            ribbonToggleGroup2.Items.Add(this.Office2007BlueStyleButton);
-            ribbonToggleGroup2.Items.Add(this.Office2007SilverStyleButton);
-            ribbonToggleGroup2.Items.Add(this.Office2007BlackStyleButton);
-            ribbonToggleGroup2.Items.Add(this.Windows7StyleButton);
-            ribbonToggleGroup2.Name = "ribbonToggleGroup2";
-            // 
-            // Office2010BlueStyleButton
-            // 
-            this.Office2010BlueStyleButton.Name = "Office2010BlueStyleButton";
-            this.Office2010BlueStyleButton.Pressed = true;
-            this.Office2010BlueStyleButton.Text = "Blue 2010";
-            // 
-            // Office2010SilverStyleButton
-            // 
-            this.Office2010SilverStyleButton.Name = "Office2010SilverStyleButton";
-            this.Office2010SilverStyleButton.Text = "Silver 2010";
-            // 
-            // Office2010BlackStyleButton
-            // 
-            this.Office2010BlackStyleButton.Name = "Office2010BlackStyleButton";
-            this.Office2010BlackStyleButton.Text = "Black 2010";
-            // 
-            // Office2007BlueStyleButton
-            // 
-            this.Office2007BlueStyleButton.Name = "Office2007BlueStyleButton";
-            this.Office2007BlueStyleButton.Text = "Blue 2007";
-            // 
-            // Office2007SilverStyleButton
-            // 
-            this.Office2007SilverStyleButton.Name = "Office2007SilverStyleButton";
-            this.Office2007SilverStyleButton.Text = "Silver 2007";
-            // 
-            // Office2007BlackStyleButton
-            // 
-            this.Office2007BlackStyleButton.Name = "Office2007BlackStyleButton";
-            this.Office2007BlackStyleButton.Text = "Black 2007";
-            // 
-            // Windows7StyleButton
-            // 
-            this.Windows7StyleButton.Name = "Windows7StyleButton";
-            this.Windows7StyleButton.Text = "Windows 7";
-            // 
-            // ribbonToolBar1
-            // 
-            ribbonToolBar1.Items.Add(this.FontFaceComboBox);
-            ribbonToolBar1.Items.Add(this.FontSizeComboBox);
-            ribbonToolBar1.Name = "ribbonToolBar1";
-            // 
-            // FontFaceComboBox
-            // 
-            this.FontFaceComboBox.Name = "FontFaceComboBox";
-            this.FontFaceComboBox.TextAreaWidth = 120;
-            this.FontFaceComboBox.ChangeCommitted += new System.EventHandler(this.FontFaceComboBox_ChangeCommitted);
-            // 
-            // FontSizeComboBox
-            // 
-            this.FontSizeComboBox.GripHandleVisible = true;
-            this.FontSizeComboBox.MaxDropDownItems = 100;
-            this.FontSizeComboBox.MaxLength = 3;
-            this.FontSizeComboBox.Name = "FontSizeComboBox";
-            this.FontSizeComboBox.Text = "12";
-            this.FontSizeComboBox.TextAreaWidth = 40;
-            this.FontSizeComboBox.ChangeCommitted += new System.EventHandler(this.FontSizeComboBox_ChangeCommitted);
-            // 
-            // ribbonToolBar2
-            // 
-            ribbonToolBar2.Items.Add(this.FontBoldButton);
-            ribbonToolBar2.Items.Add(this.FontItalicButton);
-            ribbonToolBar2.Items.Add(this.FontUnderlineButton);
-            ribbonToolBar2.Items.Add(this.FontStrikeoutButton);
-            ribbonToolBar2.Items.Add(ribbonSeparator1);
-            ribbonToolBar2.Items.Add(this.FontColorPicker);
-            ribbonToolBar2.Items.Add(this.BackColorPicker);
-            ribbonToolBar2.Name = "ribbonToolBar2";
-            // 
-            // FontBoldButton
-            // 
-            this.FontBoldButton.Name = "FontBoldButton";
-            this.FontBoldButton.SmallImage = global::ControlExplorer.Properties.Resources.Bold;
-            this.FontBoldButton.ToolTip = resources.GetString("FontBoldButton.ToolTip");
-            this.FontBoldButton.Click += new System.EventHandler(this.FontBoldButton_Click);
-            // 
-            // FontItalicButton
-            // 
-            this.FontItalicButton.Name = "FontItalicButton";
-            this.FontItalicButton.SmallImage = global::ControlExplorer.Properties.Resources.Italic;
-            this.FontItalicButton.ToolTip = resources.GetString("FontItalicButton.ToolTip");
-            this.FontItalicButton.Click += new System.EventHandler(this.FontItalicButton_Click);
-            // 
-            // FontUnderlineButton
-            // 
-            this.FontUnderlineButton.Name = "FontUnderlineButton";
-            this.FontUnderlineButton.SmallImage = global::ControlExplorer.Properties.Resources.Underline;
-            this.FontUnderlineButton.ToolTip = resources.GetString("FontUnderlineButton.ToolTip");
-            this.FontUnderlineButton.Click += new System.EventHandler(this.FontUnderlineButton_Click);
-            // 
-            // FontStrikeoutButton
-            // 
-            this.FontStrikeoutButton.Name = "FontStrikeoutButton";
-            this.FontStrikeoutButton.SmallImage = global::ControlExplorer.Properties.Resources.Strikethrough;
-            this.FontStrikeoutButton.ToolTip = resources.GetString("FontStrikeoutButton.ToolTip");
-            this.FontStrikeoutButton.Click += new System.EventHandler(this.FontStrikeoutButton_Click);
-            // 
-            // ribbonSeparator1
-            // 
-            ribbonSeparator1.Name = "ribbonSeparator1";
-            // 
-            // FontColorPicker
-            // 
-            this.FontColorPicker.Color = System.Drawing.Color.Red;
-            this.FontColorPicker.Name = "FontColorPicker";
-            this.FontColorPicker.SmallImage = global::ControlExplorer.Properties.Resources.FontColor;
-            this.FontColorPicker.ToolTip = resources.GetString("FontColorPicker.ToolTip");
-            this.FontColorPicker.SelectedColorChanged += new System.EventHandler(this.FontColorPicker_SelectedColorChanged);
-            this.FontColorPicker.Click += new System.EventHandler(this.FontColorPicker_Click);
-            // 
-            // BackColorPicker
-            // 
-            this.BackColorPicker.Color = System.Drawing.Color.Yellow;
-            this.BackColorPicker.Name = "BackColorPicker";
-            this.BackColorPicker.SmallImage = global::ControlExplorer.Properties.Resources.HighlightColor;
-            this.BackColorPicker.ToolTip = resources.GetString("BackColorPicker.ToolTip");
-            this.BackColorPicker.SelectedColorChanged += new System.EventHandler(this.BackColorPicker_SelectedColorChanged);
-            this.BackColorPicker.Click += new System.EventHandler(this.BackColorPicker_Click);
-            // 
-            // ribbonToolBar3
-            // 
-            ribbonToolBar3.Items.Add(this.DecreaseIndentButton);
-            ribbonToolBar3.Items.Add(this.IncreaseIndentButton);
-            ribbonToolBar3.Name = "ribbonToolBar3";
-            // 
-            // DecreaseIndentButton
-            // 
-            this.DecreaseIndentButton.Name = "DecreaseIndentButton";
-            this.DecreaseIndentButton.SmallImage = global::ControlExplorer.Properties.Resources.DecreaseIndent;
-            this.DecreaseIndentButton.ToolTip = resources.GetString("DecreaseIndentButton.ToolTip");
-            this.DecreaseIndentButton.Click += new System.EventHandler(this.DecreaseIndentButton_Click);
-            // 
-            // IncreaseIndentButton
-            // 
-            this.IncreaseIndentButton.Name = "IncreaseIndentButton";
-            this.IncreaseIndentButton.SmallImage = global::ControlExplorer.Properties.Resources.IncreaseIndent;
-            this.IncreaseIndentButton.ToolTip = resources.GetString("IncreaseIndentButton.ToolTip");
-            this.IncreaseIndentButton.Click += new System.EventHandler(this.IncreaseIndentButton_Click);
-            // 
-            // ribbonToolBar4
-            // 
-            ribbonToolBar4.Items.Add(ribbonToggleGroup1);
-            ribbonToolBar4.Name = "ribbonToolBar4";
-            // 
-            // ribbonToggleGroup1
-            // 
-            ribbonToggleGroup1.Items.Add(this.ParagraphAlignLeftButton);
-            ribbonToggleGroup1.Items.Add(this.ParagraphAlignCenterButton);
-            ribbonToggleGroup1.Items.Add(this.ParagraphAlignRightButton);
-            ribbonToggleGroup1.Name = "ribbonToggleGroup1";
-            // 
-            // ParagraphAlignLeftButton
-            // 
-            this.ParagraphAlignLeftButton.Name = "ParagraphAlignLeftButton";
-            this.ParagraphAlignLeftButton.SmallImage = global::ControlExplorer.Properties.Resources.AlignTextLeft;
-            this.ParagraphAlignLeftButton.ToolTip = resources.GetString("ParagraphAlignLeftButton.ToolTip");
-            this.ParagraphAlignLeftButton.Click += new System.EventHandler(this.ParagraphAlignLeftButton_Click);
-            // 
-            // ParagraphAlignCenterButton
-            // 
-            this.ParagraphAlignCenterButton.Name = "ParagraphAlignCenterButton";
-            this.ParagraphAlignCenterButton.SmallImage = global::ControlExplorer.Properties.Resources.AlignTextCenter;
-            this.ParagraphAlignCenterButton.ToolTip = resources.GetString("ParagraphAlignCenterButton.ToolTip");
-            this.ParagraphAlignCenterButton.Click += new System.EventHandler(this.ParagraphAlignCenterButton_Click);
-            // 
-            // ParagraphAlignRightButton
-            // 
-            this.ParagraphAlignRightButton.Name = "ParagraphAlignRightButton";
-            this.ParagraphAlignRightButton.SmallImage = global::ControlExplorer.Properties.Resources.AlignTextRight;
-            this.ParagraphAlignRightButton.ToolTip = resources.GetString("ParagraphAlignRightButton.ToolTip");
-            this.ParagraphAlignRightButton.Click += new System.EventHandler(this.ParagraphAlignRightButton_Click);
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Font = new System.Drawing.Font("Garamond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.HideSelection = false;
             this.richTextBox1.Location = new System.Drawing.Point(0, 156);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(794, 405);
+            this.richTextBox1.Size = new System.Drawing.Size(681, 267);
             this.c1SpellChecker1.SetSpellChecking(this.richTextBox1, true);
             this.richTextBox1.TabIndex = 4;
-            this.richTextBox1.Text = "使用SpellChecker交验下方文本。错误处以红色波浪线标识。\nThe qiuck brown fox jumpd over the lazy dog.";
+            this.richTextBox1.Text = "The qiuck brown fox jumpd over the lazy dog.";
             this.richTextBox1.Enter += new System.EventHandler(this.richTextBox1_Enter);
             // 
             // c1StatusBar1
             // 
             this.c1StatusBar1.LeftPaneItems.Add(this.DocumentModifiedLabel);
-            this.c1StatusBar1.Location = new System.Drawing.Point(0, 561);
-            this.c1StatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1StatusBar1.Location = new System.Drawing.Point(0, 423);
             this.c1StatusBar1.Name = "c1StatusBar1";
             this.c1StatusBar1.RightPaneItems.Add(this.ZoomTrackBar1);
             this.c1StatusBar1.RightPaneItems.Add(this.zoomLabel1);
             this.c1StatusBar1.RightPaneWidth = 180;
-            this.c1StatusBar1.Size = new System.Drawing.Size(794, 22);
+            this.c1StatusBar1.Size = new System.Drawing.Size(681, 23);
             this.c1StatusBar1.Text = "Ready";
             this.c1StatusBar1.Enter += new System.EventHandler(this.c1StatusBar1_Enter);
             // 
@@ -347,10 +162,13 @@
             // 
             // ZoomTrackBar1
             // 
-            this.ZoomTrackBar1.Maximum = 1000;
-            this.ZoomTrackBar1.Minimum = 10;
+            this.ZoomTrackBar1.Minimum = 0;
+            this.ZoomTrackBar1.Maximum = 16;
+            this.ZoomTrackBar1.Value = 8;
             this.ZoomTrackBar1.Name = "ZoomTrackBar1";
-            this.ZoomTrackBar1.Value = 100;
+            this.ZoomTrackBar1.TickFrequency = 8;
+            this.ZoomTrackBar1.StepFrequency = 1;
+            this.ZoomTrackBar1.Width = 130;
             this.ZoomTrackBar1.ValueChanged += new System.EventHandler(this.ZoomTrackBar1_ValueChanged);
             // 
             // zoomLabel1
@@ -365,15 +183,15 @@
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.ContextualTabGroups.Add(this.ribbonContextualTabGroup1);
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
-            this.c1Ribbon1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
             this.c1Ribbon1.QatItemsHolder.Add(this.UndoButton);
             this.c1Ribbon1.QatItemsHolder.Add(this.RedoButton);
-            this.c1Ribbon1.Size = new System.Drawing.Size(794, 156);
+            this.c1Ribbon1.Selectable = false;
+            this.c1Ribbon1.Size = new System.Drawing.Size(681, 156);
             this.c1Ribbon1.Tabs.Add(this.HomeTab);
             this.c1Ribbon1.Tabs.Add(this.ViewTab);
-            this.c1Ribbon1.ToolTipSettings.Images.Add(new C1.Win.C1Ribbon.ImageEntry("Help.png", ((System.Drawing.Image)(resources.GetObject("c1Ribbon1.ToolTipSettings.Images")))));
+            this.c1Ribbon1.ToolTipSettings.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Help.png", global::ControlExplorer.Properties.Resources.Help));
             this.c1Ribbon1.ToolTipSettings.MaximumWidth = 250;
             // 
             // ribbonApplicationMenu1
@@ -463,6 +281,53 @@
             this.RibbonStyleMenu.Name = "RibbonStyleMenu";
             this.RibbonStyleMenu.Text = "Style";
             // 
+            // ribbonToggleGroup2
+            // 
+            ribbonToggleGroup2.Items.Add(this.Office2010BlueStyleButton);
+            ribbonToggleGroup2.Items.Add(this.Office2010SilverStyleButton);
+            ribbonToggleGroup2.Items.Add(this.Office2010BlackStyleButton);
+            ribbonToggleGroup2.Items.Add(this.Office2007BlueStyleButton);
+            ribbonToggleGroup2.Items.Add(this.Office2007SilverStyleButton);
+            ribbonToggleGroup2.Items.Add(this.Office2007BlackStyleButton);
+            ribbonToggleGroup2.Items.Add(this.Windows7StyleButton);
+            ribbonToggleGroup2.Name = "ribbonToggleGroup2";
+            // 
+            // Office2010BlueStyleButton
+            // 
+            this.Office2010BlueStyleButton.Name = "Office2010BlueStyleButton";
+            this.Office2010BlueStyleButton.Pressed = true;
+            this.Office2010BlueStyleButton.Text = "Blue 2010";
+            // 
+            // Office2010SilverStyleButton
+            // 
+            this.Office2010SilverStyleButton.Name = "Office2010SilverStyleButton";
+            this.Office2010SilverStyleButton.Text = "Silver 2010";
+            // 
+            // Office2010BlackStyleButton
+            // 
+            this.Office2010BlackStyleButton.Name = "Office2010BlackStyleButton";
+            this.Office2010BlackStyleButton.Text = "Black 2010";
+            // 
+            // Office2007BlueStyleButton
+            // 
+            this.Office2007BlueStyleButton.Name = "Office2007BlueStyleButton";
+            this.Office2007BlueStyleButton.Text = "Blue 2007";
+            // 
+            // Office2007SilverStyleButton
+            // 
+            this.Office2007SilverStyleButton.Name = "Office2007SilverStyleButton";
+            this.Office2007SilverStyleButton.Text = "Silver 2007";
+            // 
+            // Office2007BlackStyleButton
+            // 
+            this.Office2007BlackStyleButton.Name = "Office2007BlackStyleButton";
+            this.Office2007BlackStyleButton.Text = "Black 2007";
+            // 
+            // Windows7StyleButton
+            // 
+            this.Windows7StyleButton.Name = "Windows7StyleButton";
+            this.Windows7StyleButton.Text = "Windows 7";
+            // 
             // F1HelpButton
             // 
             this.F1HelpButton.Name = "F1HelpButton";
@@ -474,13 +339,13 @@
             // 
             this.ribbonContextualTabGroup1.Name = "ribbonContextualTabGroup1";
             this.ribbonContextualTabGroup1.Tabs.Add(this.ribbonTab1);
-            this.ribbonContextualTabGroup1.Text = "文本工具";
+            this.ribbonContextualTabGroup1.Text = "Text Tools";
             // 
             // ribbonTab1
             // 
             this.ribbonTab1.Groups.Add(this.ribbonGroup2);
             this.ribbonTab1.Name = "ribbonTab1";
-            this.ribbonTab1.Text = "格式";
+            this.ribbonTab1.Text = "Format";
             // 
             // ribbonGroup2
             // 
@@ -590,7 +455,7 @@
             this.HomeTab.Groups.Add(this.ParagraphGroup);
             this.HomeTab.Groups.Add(this.ProofingGroup);
             this.HomeTab.Name = "HomeTab";
-            this.HomeTab.Text = "开始";
+            this.HomeTab.Text = "&Home";
             // 
             // ClipboardGroup
             // 
@@ -600,7 +465,7 @@
             this.ClipboardGroup.Items.Add(this.CopyButton);
             this.ClipboardGroup.Items.Add(this.FormatPainterButton);
             this.ClipboardGroup.Name = "ClipboardGroup";
-            this.ClipboardGroup.Text = "剪切板";
+            this.ClipboardGroup.Text = "Clipboard";
             // 
             // PasteSplitButton
             // 
@@ -609,7 +474,7 @@
             this.PasteSplitButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("PasteSplitButton.LargeImage")));
             this.PasteSplitButton.Name = "PasteSplitButton";
             this.PasteSplitButton.SmallImage = global::ControlExplorer.Properties.Resources.Paste;
-            this.PasteSplitButton.Text = "粘贴 ";
+            this.PasteSplitButton.Text = "Paste";
             this.PasteSplitButton.ToolTip = resources.GetString("PasteSplitButton.ToolTip");
             this.PasteSplitButton.Click += new System.EventHandler(this.PasteSplitButton_Click);
             // 
@@ -629,7 +494,7 @@
             // 
             this.CutButton.Name = "CutButton";
             this.CutButton.SmallImage = global::ControlExplorer.Properties.Resources.Cut;
-            this.CutButton.Text = "剪切";
+            this.CutButton.Text = "Cut";
             this.CutButton.ToolTip = resources.GetString("CutButton.ToolTip");
             this.CutButton.Click += new System.EventHandler(this.CutButton_Click);
             // 
@@ -637,7 +502,7 @@
             // 
             this.CopyButton.Name = "CopyButton";
             this.CopyButton.SmallImage = global::ControlExplorer.Properties.Resources.Copy;
-            this.CopyButton.Text = "复制";
+            this.CopyButton.Text = "Copy";
             this.CopyButton.ToolTip = resources.GetString("CopyButton.ToolTip");
             this.CopyButton.Click += new System.EventHandler(this.CopyButton_Click);
             // 
@@ -645,7 +510,7 @@
             // 
             this.FormatPainterButton.Name = "FormatPainterButton";
             this.FormatPainterButton.SmallImage = global::ControlExplorer.Properties.Resources.Brush;
-            this.FormatPainterButton.Text = "格式刷";
+            this.FormatPainterButton.Text = "Format Painter";
             this.FormatPainterButton.ToolTip = resources.GetString("FormatPainterButton.ToolTip");
             // 
             // FontGroup
@@ -655,8 +520,91 @@
             this.FontGroup.Items.Add(ribbonToolBar1);
             this.FontGroup.Items.Add(ribbonToolBar2);
             this.FontGroup.Name = "FontGroup";
-            this.FontGroup.Text = "字体";
+            this.FontGroup.Text = "Font";
             this.FontGroup.DialogLauncherClick += new System.EventHandler(this.FontGroup_ClickDialogLauncher);
+            // 
+            // ribbonToolBar1
+            // 
+            ribbonToolBar1.Items.Add(this.FontFaceComboBox);
+            ribbonToolBar1.Items.Add(this.FontSizeComboBox);
+            ribbonToolBar1.Name = "ribbonToolBar1";
+            // 
+            // FontFaceComboBox
+            // 
+            this.FontFaceComboBox.Name = "FontFaceComboBox";
+            this.FontFaceComboBox.TextAreaWidth = 120;
+            this.FontFaceComboBox.ChangeCommitted += new System.EventHandler(this.FontFaceComboBox_ChangeCommitted);
+            // 
+            // FontSizeComboBox
+            // 
+            this.FontSizeComboBox.GripHandleVisible = true;
+            this.FontSizeComboBox.MaxDropDownItems = 100;
+            this.FontSizeComboBox.MaxLength = 3;
+            this.FontSizeComboBox.Name = "FontSizeComboBox";
+            this.FontSizeComboBox.Text = "12";
+            this.FontSizeComboBox.TextAreaWidth = 40;
+            this.FontSizeComboBox.ChangeCommitted += new System.EventHandler(this.FontSizeComboBox_ChangeCommitted);
+            // 
+            // ribbonToolBar2
+            // 
+            ribbonToolBar2.Items.Add(this.FontBoldButton);
+            ribbonToolBar2.Items.Add(this.FontItalicButton);
+            ribbonToolBar2.Items.Add(this.FontUnderlineButton);
+            ribbonToolBar2.Items.Add(this.FontStrikeoutButton);
+            ribbonToolBar2.Items.Add(ribbonSeparator1);
+            ribbonToolBar2.Items.Add(this.FontColorPicker);
+            ribbonToolBar2.Items.Add(this.BackColorPicker);
+            ribbonToolBar2.Name = "ribbonToolBar2";
+            // 
+            // FontBoldButton
+            // 
+            this.FontBoldButton.Name = "FontBoldButton";
+            this.FontBoldButton.SmallImage = global::ControlExplorer.Properties.Resources.Bold;
+            this.FontBoldButton.ToolTip = resources.GetString("FontBoldButton.ToolTip");
+            this.FontBoldButton.Click += new System.EventHandler(this.FontBoldButton_Click);
+            // 
+            // FontItalicButton
+            // 
+            this.FontItalicButton.Name = "FontItalicButton";
+            this.FontItalicButton.SmallImage = global::ControlExplorer.Properties.Resources.Italic;
+            this.FontItalicButton.ToolTip = resources.GetString("FontItalicButton.ToolTip");
+            this.FontItalicButton.Click += new System.EventHandler(this.FontItalicButton_Click);
+            // 
+            // FontUnderlineButton
+            // 
+            this.FontUnderlineButton.Name = "FontUnderlineButton";
+            this.FontUnderlineButton.SmallImage = global::ControlExplorer.Properties.Resources.Underline;
+            this.FontUnderlineButton.ToolTip = resources.GetString("FontUnderlineButton.ToolTip");
+            this.FontUnderlineButton.Click += new System.EventHandler(this.FontUnderlineButton_Click);
+            // 
+            // FontStrikeoutButton
+            // 
+            this.FontStrikeoutButton.Name = "FontStrikeoutButton";
+            this.FontStrikeoutButton.SmallImage = global::ControlExplorer.Properties.Resources.Strikethrough;
+            this.FontStrikeoutButton.ToolTip = resources.GetString("FontStrikeoutButton.ToolTip");
+            this.FontStrikeoutButton.Click += new System.EventHandler(this.FontStrikeoutButton_Click);
+            // 
+            // ribbonSeparator1
+            // 
+            ribbonSeparator1.Name = "ribbonSeparator1";
+            // 
+            // FontColorPicker
+            // 
+            this.FontColorPicker.Color = System.Drawing.Color.Red;
+            this.FontColorPicker.Name = "FontColorPicker";
+            this.FontColorPicker.SmallImage = global::ControlExplorer.Properties.Resources.FontColor;
+            this.FontColorPicker.ToolTip = resources.GetString("FontColorPicker.ToolTip");
+            this.FontColorPicker.SelectedColorChanged += new System.EventHandler(this.FontColorPicker_SelectedColorChanged);
+            this.FontColorPicker.Click += new System.EventHandler(this.FontColorPicker_Click);
+            // 
+            // BackColorPicker
+            // 
+            this.BackColorPicker.Color = System.Drawing.Color.Yellow;
+            this.BackColorPicker.Name = "BackColorPicker";
+            this.BackColorPicker.SmallImage = global::ControlExplorer.Properties.Resources.HighlightColor;
+            this.BackColorPicker.ToolTip = resources.GetString("BackColorPicker.ToolTip");
+            this.BackColorPicker.SelectedColorChanged += new System.EventHandler(this.BackColorPicker_SelectedColorChanged);
+            this.BackColorPicker.Click += new System.EventHandler(this.BackColorPicker_Click);
             // 
             // ParagraphGroup
             // 
@@ -664,21 +612,73 @@
             this.ParagraphGroup.Items.Add(ribbonToolBar3);
             this.ParagraphGroup.Items.Add(ribbonToolBar4);
             this.ParagraphGroup.Name = "ParagraphGroup";
-            this.ParagraphGroup.Text = "段落";
+            this.ParagraphGroup.Text = "Paragraph";
+            // 
+            // ribbonToolBar3
+            // 
+            ribbonToolBar3.Items.Add(this.DecreaseIndentButton);
+            ribbonToolBar3.Items.Add(this.IncreaseIndentButton);
+            ribbonToolBar3.Name = "ribbonToolBar3";
+            // 
+            // DecreaseIndentButton
+            // 
+            this.DecreaseIndentButton.Name = "DecreaseIndentButton";
+            this.DecreaseIndentButton.SmallImage = global::ControlExplorer.Properties.Resources.DecreaseIndent;
+            this.DecreaseIndentButton.ToolTip = resources.GetString("DecreaseIndentButton.ToolTip");
+            this.DecreaseIndentButton.Click += new System.EventHandler(this.DecreaseIndentButton_Click);
+            // 
+            // IncreaseIndentButton
+            // 
+            this.IncreaseIndentButton.Name = "IncreaseIndentButton";
+            this.IncreaseIndentButton.SmallImage = global::ControlExplorer.Properties.Resources.IncreaseIndent;
+            this.IncreaseIndentButton.ToolTip = resources.GetString("IncreaseIndentButton.ToolTip");
+            this.IncreaseIndentButton.Click += new System.EventHandler(this.IncreaseIndentButton_Click);
+            // 
+            // ribbonToolBar4
+            // 
+            ribbonToolBar4.Items.Add(ribbonToggleGroup1);
+            ribbonToolBar4.Name = "ribbonToolBar4";
+            // 
+            // ribbonToggleGroup1
+            // 
+            ribbonToggleGroup1.Items.Add(this.ParagraphAlignLeftButton);
+            ribbonToggleGroup1.Items.Add(this.ParagraphAlignCenterButton);
+            ribbonToggleGroup1.Items.Add(this.ParagraphAlignRightButton);
+            ribbonToggleGroup1.Name = "ribbonToggleGroup1";
+            // 
+            // ParagraphAlignLeftButton
+            // 
+            this.ParagraphAlignLeftButton.Name = "ParagraphAlignLeftButton";
+            this.ParagraphAlignLeftButton.SmallImage = global::ControlExplorer.Properties.Resources.AlignTextLeft;
+            this.ParagraphAlignLeftButton.ToolTip = resources.GetString("ParagraphAlignLeftButton.ToolTip");
+            this.ParagraphAlignLeftButton.Click += new System.EventHandler(this.ParagraphAlignLeftButton_Click);
+            // 
+            // ParagraphAlignCenterButton
+            // 
+            this.ParagraphAlignCenterButton.Name = "ParagraphAlignCenterButton";
+            this.ParagraphAlignCenterButton.SmallImage = global::ControlExplorer.Properties.Resources.AlignTextCenter;
+            this.ParagraphAlignCenterButton.ToolTip = resources.GetString("ParagraphAlignCenterButton.ToolTip");
+            this.ParagraphAlignCenterButton.Click += new System.EventHandler(this.ParagraphAlignCenterButton_Click);
+            // 
+            // ParagraphAlignRightButton
+            // 
+            this.ParagraphAlignRightButton.Name = "ParagraphAlignRightButton";
+            this.ParagraphAlignRightButton.SmallImage = global::ControlExplorer.Properties.Resources.AlignTextRight;
+            this.ParagraphAlignRightButton.ToolTip = resources.GetString("ParagraphAlignRightButton.ToolTip");
+            this.ParagraphAlignRightButton.Click += new System.EventHandler(this.ParagraphAlignRightButton_Click);
             // 
             // ProofingGroup
             // 
             this.ProofingGroup.Items.Add(this.btnSpelling);
             this.ProofingGroup.Name = "ProofingGroup";
-            this.ProofingGroup.Text = "校对";
+            this.ProofingGroup.Text = "Proofing";
             // 
             // btnSpelling
             // 
             this.btnSpelling.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSpelling.LargeImage")));
             this.btnSpelling.Name = "btnSpelling";
             this.btnSpelling.SmallImage = ((System.Drawing.Image)(resources.GetObject("btnSpelling.SmallImage")));
-            this.btnSpelling.Text = "拼写检查";
-            this.btnSpelling.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageAboveText;
+            this.btnSpelling.Text = "Spelling";
             this.btnSpelling.Click += new System.EventHandler(this.btnSpelling_Click);
             // 
             // ViewTab
@@ -686,14 +686,14 @@
             this.ViewTab.Groups.Add(this.ViewZoomGroup);
             this.ViewTab.Groups.Add(this.ribbonGroup1);
             this.ViewTab.Name = "ViewTab";
-            this.ViewTab.Text = "视图";
+            this.ViewTab.Text = "View";
             // 
             // ViewZoomGroup
             // 
             this.ViewZoomGroup.Items.Add(this.NormalSizeButton);
             this.ViewZoomGroup.Items.Add(this.ViewZoomCombobox);
             this.ViewZoomGroup.Name = "ViewZoomGroup";
-            this.ViewZoomGroup.Text = "缩放";
+            this.ViewZoomGroup.Text = "Zoom";
             // 
             // NormalSizeButton
             // 
@@ -706,16 +706,17 @@
             // 
             // ViewZoomCombobox
             // 
+            this.ViewZoomCombobox.DropDownStyle = C1.Win.C1Ribbon.RibbonComboBoxStyle.DropDownList;
             this.ViewZoomCombobox.MaxLength = 4;
             this.ViewZoomCombobox.Name = "ViewZoomCombobox";
-            this.ViewZoomCombobox.ChangeCommitted += new System.EventHandler(this.ViewZoomCombobox_ChangeCommitted);
+            this.ViewZoomCombobox.SelectedIndexChanged += new System.EventHandler(this.ViewZoomCombobox_SelectedIndexChanged);
             // 
             // ribbonGroup1
             // 
             this.ribbonGroup1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonGroup1.Image")));
             this.ribbonGroup1.Items.Add(this.VisualStyleGallery);
             this.ribbonGroup1.Name = "ribbonGroup1";
-            this.ribbonGroup1.Text = "样式";
+            this.ribbonGroup1.Text = "Visual Styles";
             // 
             // VisualStyleGallery
             // 
@@ -774,13 +775,13 @@
             // 
             // WordPad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 583);
+            this.ClientSize = new System.Drawing.Size(681, 446);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.c1StatusBar1);
             this.Controls.Add(this.c1Ribbon1);
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "WordPad";
             this.Text = "WordPad";
             this.Load += new System.EventHandler(this.WordPad_Load);

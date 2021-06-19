@@ -111,9 +111,8 @@
             this.c1InputPanel1.Items.Add(this.lblExtension);
             this.c1InputPanel1.Items.Add(this.txtExtension);
             this.c1InputPanel1.Location = new System.Drawing.Point(0, 0);
-            this.c1InputPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1InputPanel1.Name = "c1InputPanel1";
-            this.c1InputPanel1.Size = new System.Drawing.Size(691, 583);
+            this.c1InputPanel1.Size = new System.Drawing.Size(592, 446);
             this.c1InputPanel1.TabIndex = 0;
             // 
             // employeesBindingSource
@@ -129,7 +128,7 @@
             // hdrEmployees
             // 
             this.hdrEmployees.Name = "hdrEmployees";
-            this.hdrEmployees.Text = "员工（&E）";
+            this.hdrEmployees.Text = "&Employees";
             // 
             // navEmployees
             // 
@@ -163,12 +162,12 @@
             // hdrPersonal
             // 
             this.hdrPersonal.Name = "hdrPersonal";
-            this.hdrPersonal.Text = "个人信息";
+            this.hdrPersonal.Text = "Personal Info";
             // 
             // lblName
             // 
             this.lblName.Name = "lblName";
-            this.lblName.Text = "名字（&N）:";
+            this.lblName.Text = "&Name:";
             this.lblName.Width = 97;
             // 
             // txtTitleOfCourtesy
@@ -192,7 +191,7 @@
             // lblBirthDate
             // 
             this.lblBirthDate.Name = "lblBirthDate";
-            this.lblBirthDate.Text = "出生日期（&B）:";
+            this.lblBirthDate.Text = "&Birth Date:";
             this.lblBirthDate.Width = 97;
             // 
             // dtpBirthDate
@@ -203,7 +202,7 @@
             // lblNotes
             // 
             this.lblNotes.Name = "lblNotes";
-            this.lblNotes.Text = "说明（&N）:";
+            this.lblNotes.Text = "&Notes:";
             this.lblNotes.Width = 97;
             // 
             // txtNotes
@@ -227,12 +226,12 @@
             // 
             this.hdrJobInfo.Collapsible = true;
             this.hdrJobInfo.Name = "hdrJobInfo";
-            this.hdrJobInfo.Text = "工作信息";
+            this.hdrJobInfo.Text = "Job Information";
             // 
             // lblTitle
             // 
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Text = "职位（&T）:";
+            this.lblTitle.Text = "&Title:";
             this.lblTitle.Width = 97;
             // 
             // txtTitle
@@ -244,7 +243,7 @@
             // lblReportsTo
             // 
             this.lblReportsTo.Name = "lblReportsTo";
-            this.lblReportsTo.Text = "上级（&s）:";
+            this.lblReportsTo.Text = "Report&s To:";
             this.lblReportsTo.Width = 97;
             // 
             // cbReportsTo
@@ -264,7 +263,7 @@
             // lblHireDate
             // 
             this.lblHireDate.Name = "lblHireDate";
-            this.lblHireDate.Text = "入职日期（&H）:";
+            this.lblHireDate.Text = "&Hire Date:";
             this.lblHireDate.Width = 97;
             // 
             // dtpHireDate
@@ -276,12 +275,12 @@
             // 
             this.hdrAddress.Collapsible = true;
             this.hdrAddress.Name = "hdrAddress";
-            this.hdrAddress.Text = "地址";
+            this.hdrAddress.Text = "Address";
             // 
             // lblAddress
             // 
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Text = "街道（&S）:";
+            this.lblAddress.Text = "&Street:";
             this.lblAddress.Width = 97;
             // 
             // txtAddress
@@ -293,7 +292,7 @@
             // lblCity
             // 
             this.lblCity.Name = "lblCity";
-            this.lblCity.Text = "城市，区域（&C）:";
+            this.lblCity.Text = "&City, Region:";
             this.lblCity.Width = 97;
             // 
             // txtCity
@@ -311,7 +310,7 @@
             // lblCountry
             // 
             this.lblCountry.Name = "lblCountry";
-            this.lblCountry.Text = "国家（&u）:";
+            this.lblCountry.Text = "Co&untry:";
             this.lblCountry.Width = 97;
             // 
             // txtCountry
@@ -324,7 +323,7 @@
             // lblPostalCode
             // 
             this.lblPostalCode.Name = "lblPostalCode";
-            this.lblPostalCode.Text = "邮政编码（&P）:";
+            this.lblPostalCode.Text = "&Postal Code:";
             this.lblPostalCode.Width = 97;
             // 
             // txtPostalCode
@@ -335,7 +334,7 @@
             // lblHomePhone
             // 
             this.lblHomePhone.Name = "lblHomePhone";
-            this.lblHomePhone.Text = "家庭电话（&m）:";
+            this.lblHomePhone.Text = "Ho&me Phone:";
             this.lblHomePhone.Width = 97;
             // 
             // txtPhone
@@ -348,7 +347,7 @@
             // lblExtension
             // 
             this.lblExtension.Name = "lblExtension";
-            this.lblExtension.Text = "备注（&x）:";
+            this.lblExtension.Text = "E&xtension:";
             this.lblExtension.Width = 97;
             // 
             // txtExtension
@@ -362,11 +361,10 @@
             // 
             // DataBinding
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 583);
+            this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.c1InputPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "DataBinding";
             this.Text = "DataBound2";
             this.Load += new System.EventHandler(this.DataBinding_Load);

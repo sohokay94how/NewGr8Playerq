@@ -50,7 +50,6 @@
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -61,9 +60,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.c1Schedule1);
-            this.splitContainer1.Size = new System.Drawing.Size(740, 584);
+            this.splitContainer1.Size = new System.Drawing.Size(592, 446);
             this.splitContainer1.SplitterDistance = 192;
-            this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 0;
             // 
             // c1Calendar1
@@ -72,19 +70,18 @@
             this.c1Calendar1.CalendarDimensions = 5;
             this.c1Calendar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Calendar1.Location = new System.Drawing.Point(0, 0);
-            this.c1Calendar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1Calendar1.Name = "c1Calendar1";
             this.c1Calendar1.Schedule = this.c1Schedule1;
-            this.c1Calendar1.Size = new System.Drawing.Size(740, 192);
+            this.c1Calendar1.Size = new System.Drawing.Size(592, 192);
             this.c1Calendar1.TabIndex = 0;
-            this.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Yahoo;
+            this.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Blue;
             // 
             // c1Schedule1
             // 
             // 
             // 
             // 
-            this.c1Calendar1.CalendarInfo.CultureInfo = new System.Globalization.CultureInfo("zh-CN");
+            this.c1Calendar1.CalendarInfo.CultureInfo = new System.Globalization.CultureInfo("en-US");
             this.c1Calendar1.CalendarInfo.DateFormatString = "M/d/yyyy";
             this.c1Calendar1.CalendarInfo.EndDayTime = System.TimeSpan.Parse("19:00:00");
             this.c1Calendar1.CalendarInfo.StartDayTime = System.TimeSpan.Parse("07:00:00");
@@ -99,7 +96,6 @@
             this.c1Schedule1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Schedule1.GroupPageSize = 2;
             this.c1Schedule1.Location = new System.Drawing.Point(0, 0);
-            this.c1Schedule1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1Schedule1.Name = "c1Schedule1";
             printStyle1.Description = "Daily Style";
             printStyle1.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle1.PreviewImage")));
@@ -128,21 +124,21 @@
             printStyle3,
             printStyle4,
             printStyle5});
-            this.c1Schedule1.Size = new System.Drawing.Size(740, 386);
+            this.c1Schedule1.Size = new System.Drawing.Size(592, 250);
             this.c1Schedule1.TabIndex = 0;
             this.c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WorkWeekView;
-            this.c1Schedule1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Yahoo;
+            this.c1Schedule1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Blue;
             this.c1Schedule1.BeforeViewChange += new System.EventHandler<C1.Win.C1Schedule.BeforeViewChangeEventArgs>(this.c1Schedule1_BeforeViewChange);
             this.c1Schedule1.BeforeAppointmentShow += new C1.C1Schedule.CancelAppointmentEventHandler(this.c1Schedule1_BeforeAppointmentShow);
             this.c1Schedule1.BeforeAppointmentCreate += new C1.C1Schedule.CancelAppointmentEventHandler(this.c1Schedule1_BeforeAppointmentCreate);
             // 
             // CustomDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 584);
+            this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CustomDialog";
             this.Text = "CustomDialog";
             this.splitContainer1.Panel1.ResumeLayout(false);

@@ -48,16 +48,17 @@
             ControlExplorer.ZoomPolicies.C1ChartZoomPolicy c1ChartZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1ChartZoomPolicy();
             ControlExplorer.ZoomPolicies.C1DockingTabZoomPolicy c1DockingTabZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1DockingTabZoomPolicy();
             ControlExplorer.ZoomPolicies.C1FlexGridZoomPolicy c1FlexGridZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1FlexGridZoomPolicy();
+            ControlExplorer.ZoomPolicies.C1InputPanelZoomPolicy c1InputPanelZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1InputPanelZoomPolicy();
             ControlExplorer.ZoomPolicies.C1MainMenuZoomPolicy c1MainMenuZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1MainMenuZoomPolicy();
             ControlExplorer.ZoomPolicies.C1NavBarZoomPolicy c1NavBarZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1NavBarZoomPolicy();
             ControlExplorer.ZoomPolicies.C1OutBarZoomPolicy c1OutBarZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1OutBarZoomPolicy();
             ControlExplorer.ZoomPolicies.C1PreviewPaneZoomPolicy c1PreviewPaneZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1PreviewPaneZoomPolicy();
             ControlExplorer.ZoomPolicies.C1PrintPreviewControlZoomPolicy c1PrintPreviewControlZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1PrintPreviewControlZoomPolicy();
-            ControlExplorer.ZoomPolicies.C1RibbonZoomPolicy c1RibbonZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1RibbonZoomPolicy();
             ControlExplorer.ZoomPolicies.C1ScheduleZoomPolicy c1ScheduleZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1ScheduleZoomPolicy();
-            ControlExplorer.ZoomPolicies.C1StatusBarZoomPolicy c1StatusBarZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1StatusBarZoomPolicy();
+            ControlExplorer.ZoomPolicies.C1TileControlZoomPolicy c1TileControlZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1TileControlZoomPolicy();
             ControlExplorer.ZoomPolicies.C1TDBDropDownZoomPolicy c1TDBDropDownZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1TDBDropDownZoomPolicy();
             ControlExplorer.ZoomPolicies.C1TrueDBGridZoomPolicy c1TrueDBGridZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1TrueDBGridZoomPolicy();
+            ControlExplorer.ZoomPolicies.C1BarcodeZoomPolicy c1BarCodeZoomPolicy1 = new ControlExplorer.ZoomPolicies.C1BarcodeZoomPolicy();
             this.c1Zoom1 = new C1.Win.TouchToolKit.C1Zoom(this.components);
             this.SuspendLayout();
             // 
@@ -85,25 +86,25 @@
             this.c1Zoom1.ZoomPolicies.Add(c1ChartZoomPolicy1);
             this.c1Zoom1.ZoomPolicies.Add(c1DockingTabZoomPolicy1);
             this.c1Zoom1.ZoomPolicies.Add(c1FlexGridZoomPolicy1);
+            this.c1Zoom1.ZoomPolicies.Add(c1InputPanelZoomPolicy1);
             this.c1Zoom1.ZoomPolicies.Add(c1MainMenuZoomPolicy1);
             this.c1Zoom1.ZoomPolicies.Add(c1NavBarZoomPolicy1);
             this.c1Zoom1.ZoomPolicies.Add(c1OutBarZoomPolicy1);
             this.c1Zoom1.ZoomPolicies.Add(c1PreviewPaneZoomPolicy1);
             this.c1Zoom1.ZoomPolicies.Add(c1PrintPreviewControlZoomPolicy1);
-            this.c1Zoom1.ZoomPolicies.Add(c1RibbonZoomPolicy1);
             this.c1Zoom1.ZoomPolicies.Add(c1ScheduleZoomPolicy1);
-            this.c1Zoom1.ZoomPolicies.Add(c1StatusBarZoomPolicy1);
+            this.c1Zoom1.ZoomPolicies.Add(c1TileControlZoomPolicy1);
             this.c1Zoom1.ZoomPolicies.Add(c1TDBDropDownZoomPolicy1);
+            this.c1Zoom1.ZoomPolicies.Add(c1BarCodeZoomPolicy1);
             this.c1Zoom1.ZoomPolicies.Add(c1TrueDBGridZoomPolicy1);
             // 
             // C1DemoForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(691, 584);
-            this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ClientSize = new System.Drawing.Size(789, 549);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "C1DemoForm";
             this.Text = "C1DemoForm";
             this.ResumeLayout(false);
@@ -112,7 +113,7 @@
 
         #endregion
 
-        private C1.Win.TouchToolKit.C1Zoom c1Zoom1;
+        protected C1.Win.TouchToolKit.C1Zoom c1Zoom1;
 
     }
 }

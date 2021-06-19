@@ -38,7 +38,7 @@ namespace ControlExplorer
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new Explorer());
         }
 
         [DllImport("user32.dll", ExactSpelling = true)]

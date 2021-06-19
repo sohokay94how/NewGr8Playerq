@@ -84,15 +84,14 @@ namespace ControlExplorer.Chart
             //provide Header for description
             Title t = c1Chart1.Header;
             t.Style.Font = new Font("Tahoma", 14);
-            //t.Text = "Histogram/Frequency Data Measuring Distance from Crosshairs to Scatter data.";
-            t.Text = "散点数据到十字线距离的频率直方图";
+            t.Text = "Histogram/Frequency Data Measuring Distance from Crosshairs to Scatter data.";
 
             //provide Footer for instructions
             t = c1Chart1.Footer;
             Font f = new Font("Tahoma", 12);
-            t.AppendRtfText("拖动 ", f);
-            t.AppendRtfText("箭头", Color.FromArgb(255, 82, 24), f);
-            t.AppendRtfText(" 移动十字线 ", Color.Black, f, HorizontalAlignment.Center);
+            t.AppendRtfText("Drag the ", f);
+            t.AppendRtfText("Arrows", Color.FromArgb(255, 82, 24), f);
+            t.AppendRtfText(" to move the crosshairs", Color.Black, f, HorizontalAlignment.Center);
 
             //switch over the axes to mixed label mode and add some centered
             //markers to form a target.
@@ -101,9 +100,9 @@ namespace ControlExplorer.Chart
             double yMarker = AddChartAxisMarker(carea.AxisY);
 
             //set the Axis Titles.
-            carea.AxisX.Text = "散点图数据 X 值 / 到十字线的距离";
-            carea.AxisY.Text = "散点图数据 Y 值";
-            carea.AxisY2.Text = "到十字线距离数据的总数";
+            carea.AxisX.Text = "Scatter data X values / Distances from crosshair";
+            carea.AxisY.Text = "Scatter data Y values";
+            carea.AxisY2.Text = "Count of data at distance from crosshair";
         }
 
         private void SetupHistogram()

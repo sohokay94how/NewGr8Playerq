@@ -50,7 +50,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.C1Editor1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1SpellChecker1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
@@ -62,13 +61,11 @@
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.C1Editor1);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.statusStrip1);
-            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(859, 483);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(736, 346);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
-            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(859, 583);
+            this.toolStripContainer1.Size = new System.Drawing.Size(736, 446);
             this.toolStripContainer1.TabIndex = 0;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -84,22 +81,18 @@
             this.C1Editor1.BackColor = System.Drawing.SystemColors.Window;
             this.C1Editor1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.C1Editor1.Location = new System.Drawing.Point(0, 0);
-            this.C1Editor1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.C1Editor1.MinimumSize = new System.Drawing.Size(233, 260);
             this.C1Editor1.Name = "C1Editor1";
-            this.C1Editor1.Size = new System.Drawing.Size(859, 461);
+            this.C1Editor1.Size = new System.Drawing.Size(736, 324);
             this.C1Editor1.TabIndex = 1;
-            this.C1Editor1.Xml = resources.GetString("C1Editor1.Xml");
             this.C1Editor1.XmlExtensions = null;
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSplitButton1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 461);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 324);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(859, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(736, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -112,23 +105,23 @@
             this.toolStripSplitButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton1.Image")));
             this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton1.Name = "toolStripSplitButton1";
-            this.toolStripSplitButton1.Size = new System.Drawing.Size(63, 20);
-            this.toolStripSplitButton1.Text = "模式";
+            this.toolStripSplitButton1.Size = new System.Drawing.Size(70, 20);
+            this.toolStripSplitButton1.Text = "Mode";
             this.toolStripSplitButton1.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStripSplitButton1_DropDownItemClicked);
             // 
             // previewModeToolStripMenuItem
             // 
             this.previewModeToolStripMenuItem.CheckOnClick = true;
             this.previewModeToolStripMenuItem.Name = "previewModeToolStripMenuItem";
-            this.previewModeToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.previewModeToolStripMenuItem.Text = "预览模式";
+            this.previewModeToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.previewModeToolStripMenuItem.Text = "Preview Mode";
             // 
             // sourceModeToolStripMenuItem
             // 
             this.sourceModeToolStripMenuItem.CheckOnClick = true;
             this.sourceModeToolStripMenuItem.Name = "sourceModeToolStripMenuItem";
-            this.sourceModeToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.sourceModeToolStripMenuItem.Text = "资源模式";
+            this.sourceModeToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.sourceModeToolStripMenuItem.Text = "Source Mode";
             // 
             // designModeToolStripMenuItem
             // 
@@ -136,8 +129,8 @@
             this.designModeToolStripMenuItem.CheckOnClick = true;
             this.designModeToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.designModeToolStripMenuItem.Name = "designModeToolStripMenuItem";
-            this.designModeToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.designModeToolStripMenuItem.Text = "设计模式";
+            this.designModeToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.designModeToolStripMenuItem.Text = "Design Mode";
             // 
             // C1EditorToolStripMain1
             // 
@@ -155,7 +148,7 @@
             this.c1EditorToolStripStyle1.Editor = this.C1Editor1;
             this.c1EditorToolStripStyle1.Location = new System.Drawing.Point(3, 25);
             this.c1EditorToolStripStyle1.Name = "c1EditorToolStripStyle1";
-            this.c1EditorToolStripStyle1.Size = new System.Drawing.Size(856, 25);
+            this.c1EditorToolStripStyle1.Size = new System.Drawing.Size(725, 25);
             this.c1EditorToolStripStyle1.TabIndex = 4;
             this.c1EditorToolStripStyle1.Text = "c1EditorToolStripStyle1";
             // 
@@ -191,27 +184,24 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Panel1Collapsed = true;
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.toolStripContainer1);
-            this.splitContainer1.Size = new System.Drawing.Size(859, 583);
+            this.splitContainer1.Size = new System.Drawing.Size(736, 446);
             this.splitContainer1.SplitterDistance = 118;
-            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 1;
             // 
             // Editor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 583);
+            this.ClientSize = new System.Drawing.Size(736, 446);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Editor";
-            this.Text = "编辑器";
+            this.Text = "Editor";
             this.Load += new System.EventHandler(this.Editor_Load);
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.ContentPanel.PerformLayout();
@@ -224,7 +214,6 @@
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1SpellChecker1)).EndInit();
             this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
 

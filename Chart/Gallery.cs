@@ -77,7 +77,7 @@ namespace ControlExplorer.Chart
 
             foreach (ChartDataSeries ds in sc)
             {
-                ds.TooltipText = "系列: {#TEXT}" + '\r' + '\n' + "x = {#XVAL}" + '\r' + '\n' + "y = {#YVAL}";
+                ds.TooltipText = "Series: {#TEXT}" + '\r' + '\n' + "x = {#XVAL}" + '\r' + '\n' + "y = {#YVAL}";
             }
 
             // setup pointstyle
@@ -85,10 +85,6 @@ namespace ControlExplorer.Chart
             _ps.Selection = PointStyleSelectionEnum.Index;
             _ps.SeriesIndex = 0;
             _ps.PointIndex = 0;
-
-            // apply visual style
-            SetChartVisualStyle();
-            this.RaiseControlExplorerVisualStyleChanged += new EventHandler(Gallery_RaiseControlExplorerVisualStyleChanged);
 
             // add demo properties
             AddProperty("Compass", c1Chart1.ChartArea.AxisX, "AxisX.Compass");
@@ -99,27 +95,6 @@ namespace ControlExplorer.Chart
             AddProperty("ShowOutline", c1Chart1.ChartGroups.Group0);
             AddProperty("Enabled", c1Chart1.ToolTip, "Tooltips");
             AddProperty("Enabled", c1Chart1.VisualEffects["Default"], "VisualEffects");
-        }
-
-        void Gallery_RaiseControlExplorerVisualStyleChanged(object sender, EventArgs e)
-        {
-            SetChartVisualStyle();
-        }
-
-        private void SetChartVisualStyle()
-        {
-            if (this.ControlExplorerVisualStyle.ToString().Contains("Black"))
-            {
-                ChartVisualStyles.ApplyVisualStyle(c1Chart1, ChartVisualStyles.ChartStyles.Office2007Black);
-            }
-            else if (this.ControlExplorerVisualStyle.ToString().Contains("Silver"))
-            {
-                ChartVisualStyles.ApplyVisualStyle(c1Chart1, ChartVisualStyles.ChartStyles.Office2007Silver);
-            }
-            else
-            {
-                ChartVisualStyles.ApplyVisualStyle(c1Chart1, ChartVisualStyles.ChartStyles.Office2007Blue);
-            }
         }
 
         // combines all gridlines properties into one for demo

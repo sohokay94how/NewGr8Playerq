@@ -54,15 +54,15 @@ namespace ControlExplorer.InputPanel
         private void AddPropertyBox()
         {
             InputComboBox cb = new InputComboBox();
-            AddInputOption(cb, "产品名", "tstring");
-            AddInputOption(cb, "供应商ID", "tnumber");
-            AddInputOption(cb, "类别ID", "tnumber");
-            AddInputOption(cb, "单位量", "tstring");
-            AddInputOption(cb, "单价", "tnumber");
-            AddInputOption(cb, "库存量", "tnumber");
-            AddInputOption(cb, "订单量", "tnumber");
-            AddInputOption(cb, "再打货量", "tnumber");
-            AddInputOption(cb, "停止使用", "tbool");
+            AddInputOption(cb, "ProductName", "tstring");
+            AddInputOption(cb, "SupplierID", "tnumber");
+            AddInputOption(cb, "CategoryID", "tnumber");
+            AddInputOption(cb, "QuantityPerUnit", "tstring");
+            AddInputOption(cb, "UnitPrice", "tnumber");
+            AddInputOption(cb, "UnitsInStock", "tnumber");
+            AddInputOption(cb, "UnitsOnOrder", "tnumber");
+            AddInputOption(cb, "ReorderLevel", "tnumber");
+            AddInputOption(cb, "Discontinued", "tbool");
             cb.SelectedIndex = 0;
             cb.DropDownStyle = InputComboBoxStyle.DropDownList;
             cb.Break = BreakType.None;
@@ -73,10 +73,10 @@ namespace ControlExplorer.InputPanel
         private void AddOperatorBox()
         {
             InputComboBox cb = new InputComboBox();
-            AddInputOption(cb, "包含", "LIKE");
-            AddInputOption(cb, "等于", "=");  
-            AddInputOption(cb, "小于", "<");
-            AddInputOption(cb, "大于", ">");
+            AddInputOption(cb, "Contains", "LIKE");
+            AddInputOption(cb, "Equals", "=");  
+            AddInputOption(cb, "Less Than", "<");
+            AddInputOption(cb, "Greater Than", ">");
             cb.SelectedIndex = 0;
             cb.DropDownStyle = InputComboBoxStyle.DropDownList;
             cb.Break = BreakType.None;
@@ -133,7 +133,7 @@ namespace ControlExplorer.InputPanel
             InputTextBox tb = (InputTextBox)sender;
             if (tb.Text.Length < 1)
             {
-                tb.ErrorText = "必须输入值";
+                tb.ErrorText = "Must Enter Value";
                 //e.Cancel = true;
             }
             else

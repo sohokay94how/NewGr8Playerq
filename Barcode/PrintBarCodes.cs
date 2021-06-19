@@ -40,6 +40,8 @@ namespace ControlExplorer.Barcode
         {
             Graphics g = e.Graphics;
 
+            g.FillRectangle(Brushes.White, e.PageBounds);            
+
             Font font = new Font("Tahoma", 12);
             Rectangle rcPage = e.MarginBounds;
             Rectangle rc1 = rcPage;
@@ -55,9 +57,9 @@ namespace ControlExplorer.Barcode
             rc3.Width = 100;
             
             // show header at the top of the page
-            g.DrawString("产品ID", new Font(font, FontStyle.Bold), Brushes.Black, rc1);
-            g.DrawString("名称", new Font(font, FontStyle.Bold), Brushes.Black, rc2);
-            g.DrawString("单价", new Font(font, FontStyle.Bold), Brushes.Black, rc3);
+            g.DrawString("Product ID", new Font(font, FontStyle.Bold), Brushes.Black, rc1);
+            g.DrawString("Name", new Font(font, FontStyle.Bold), Brushes.Black, rc2);
+            g.DrawString("Unit Price", new Font(font, FontStyle.Bold), Brushes.Black, rc3);
             rc1.Y += rc1.Height + 10;
             rc2.Y += rc2.Height + 10;
             rc3.Y += rc3.Height + 10;
@@ -71,7 +73,7 @@ namespace ControlExplorer.Barcode
                 g.DrawString(id, font, Brushes.Black, rc1);
                 g.DrawString(name, font, Brushes.Black, rc2);
 
-                c1BarCode1.Text = ((decimal)dr["UnitPrice"]).ToString();
+                c1BarCode1.Text = ((decimal)dr["UnitPrice"]).ToString(System.Globalization.CultureInfo.InvariantCulture);
                 g.DrawImage(c1BarCode1.Image, rc3);
 
                 rc1.Y += rc1.Height + 10;
@@ -83,5 +85,6 @@ namespace ControlExplorer.Barcode
             // continue if necessary
             e.HasMorePages = (_item < _dt.Rows.Count - 1);
         }
+
     }
 }

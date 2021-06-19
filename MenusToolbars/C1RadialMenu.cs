@@ -18,6 +18,7 @@ namespace ControlExplorer.MenusToolbars
 
         private void C1RadialMenu_Load(object sender, EventArgs e)
         {
+            c1RadialMenu1.ThemeChanged(Explorer.Theme);
             c1RadialMenu1.ShowMenu(this, new Point(600,500), true);
         }
 
@@ -33,8 +34,12 @@ namespace ControlExplorer.MenusToolbars
 
         private void C1RadialMenu_MouseClick(object sender, MouseEventArgs e)
         {
-            if(e.Button == System.Windows.Forms.MouseButtons.Right)
+            if (e.Button == System.Windows.Forms.MouseButtons.Right)
+            {
+                c1RadialMenu1.ThemeChanged(Explorer.Theme);
+                // c1RadialMenu1.ShowMenu(this, new Point(600, 500), true);
                 c1RadialMenu1.ShowMenu(this, this.PointToScreen(e.Location), true);
+            }
             if (e.Button == System.Windows.Forms.MouseButtons.Left)
                 c1RadialMenu1.HideMenu();
         }

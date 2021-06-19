@@ -39,31 +39,6 @@ namespace ControlExplorer.ZoomPolicies
             base.Terminate(control);
         }
 
-        public override void ZoomFont(System.Windows.Forms.Control control, ZoomFontInfo infos)
-        {
-            base.ZoomFont(control, infos);
-            C1FlexGrid flexGrid = control as C1FlexGrid;
-            foreach (CellStyle style in flexGrid.Styles)
-            {
-                if (Object.ReferenceEquals(style.Font, flexGrid.Styles[CellStyleEnum.FilterEditor].Font))
-                {
-                    continue;
-                }
-                ZoomStyle(infos, style);
-            }
-            foreach (Column column in flexGrid.Cols)
-            {
-                ZoomStyle(infos, column.Style);
-                ZoomStyle(infos, column.StyleFixed);
-            }
-            foreach (Row row in flexGrid.Rows)
-            {
-                ZoomStyle(infos, row.Style);
-                ZoomStyle(infos, row.StyleFixed);
-            }
-
-        }
-
         public override void ZoomBounds(System.Windows.Forms.Control control, ZoomBoundsInfo infos)
         {
             C1FlexGrid flexGrid = control as C1FlexGrid;

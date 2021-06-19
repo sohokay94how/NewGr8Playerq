@@ -21,6 +21,7 @@ namespace ControlExplorer.Sizer
             lightForm.TopLevel = false;
             lightForm.SizeGripStyle = SizeGripStyle.Show;
             panel1.Controls.Add(lightForm);
+            Explorer.ApplyTheme(panel1);
             lightForm.Show();
         }
 

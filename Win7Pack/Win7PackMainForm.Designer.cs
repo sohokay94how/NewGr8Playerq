@@ -60,7 +60,7 @@
             this.groupBox1.Size = new System.Drawing.Size(516, 177);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "C1任务栏按钮示例";
+            this.groupBox1.Text = "C1TaskbarButton Demos";
             // 
             // btnThumbnailButtons
             // 
@@ -68,7 +68,7 @@
             this.btnThumbnailButtons.Name = "btnThumbnailButtons";
             this.btnThumbnailButtons.Size = new System.Drawing.Size(175, 23);
             this.btnThumbnailButtons.TabIndex = 3;
-            this.btnThumbnailButtons.Text = "启动缩略图按钮示例";
+            this.btnThumbnailButtons.Text = "Launch Thumbnail Button Demo";
             this.btnThumbnailButtons.UseVisualStyleBackColor = true;
             this.btnThumbnailButtons.Click += new System.EventHandler(this.btnThumbnailButtons_Click);
             // 
@@ -78,7 +78,7 @@
             this.btnProgressDemo.Name = "btnProgressDemo";
             this.btnProgressDemo.Size = new System.Drawing.Size(175, 23);
             this.btnProgressDemo.TabIndex = 2;
-            this.btnProgressDemo.Text = "启动进度条指示器示例";
+            this.btnProgressDemo.Text = "Launch Progress Indicator Demo";
             this.btnProgressDemo.UseVisualStyleBackColor = true;
             this.btnProgressDemo.Click += new System.EventHandler(this.btnProgressDemo_Click);
             // 
@@ -88,7 +88,7 @@
             this.btnJumpTaskDemo.Name = "btnJumpTaskDemo";
             this.btnJumpTaskDemo.Size = new System.Drawing.Size(175, 23);
             this.btnJumpTaskDemo.TabIndex = 0;
-            this.btnJumpTaskDemo.Text = "启动跳转列表示例";
+            this.btnJumpTaskDemo.Text = "Launch Jump List Demo";
             this.btnJumpTaskDemo.UseVisualStyleBackColor = true;
             this.btnJumpTaskDemo.Click += new System.EventHandler(this.btnJumpTaskDemo_Click);
             // 
@@ -104,7 +104,7 @@
             this.groupBox2.Size = new System.Drawing.Size(516, 172);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "C1任务对话框示例";
+            this.groupBox2.Text = "C1TaskDialog Demos";
             // 
             // btnDialogDemo
             // 
@@ -112,35 +112,35 @@
             this.btnDialogDemo.Name = "btnDialogDemo";
             this.btnDialogDemo.Size = new System.Drawing.Size(175, 23);
             this.btnDialogDemo.TabIndex = 0;
-            this.btnDialogDemo.Text = "执行Windows 7对话框示例";
+            this.btnDialogDemo.Text = "Launch Windows Dialog Demo";
             this.btnDialogDemo.UseVisualStyleBackColor = true;
             this.btnDialogDemo.Click += new System.EventHandler(this.btnDialogDemo_Click);
             // 
             // dialogError
             // 
-            this.dialogError.CheckBoxText = "不再询问";
+            this.dialogError.CheckBoxText = "Don\'t ask me again";
             this.dialogError.CheckedByDefault = true;
-            this.dialogError.CollapsedControlText = "显示细节";
-            this.dialogError.Content = "用C1任务对话框，您可以创建自定义Vista和Windows 7风格的消息框 " +
-                "就像这个一样，带有丰富的功能";
+            this.dialogError.CollapsedControlText = "Show details";
+            this.dialogError.Content = "With C1TaskDialog you can create custom Windows styled message boxes " +
+                "with rich features like this one.";
             c1CustomButton1.ID = 9;
             c1CustomButton1.Name = "sendButton";
-            c1CustomButton1.Note = "显示进度对话框";
-            c1CustomButton1.Text = "发送反馈";
+            c1CustomButton1.Note = "Shows progress dialog";
+            c1CustomButton1.Text = "Send Feedback";
             c1CustomButton2.ID = 10;
             c1CustomButton2.Name = "dontSendButton";
-            c1CustomButton2.Note = "关闭对话";
-            c1CustomButton2.Text = "不，谢谢";
+            c1CustomButton2.Note = "Closes the dialog";
+            c1CustomButton2.Text = "No Thanks";
             this.dialogError.CustomButtons.AddRange(new C1.Win.C1Win7Pack.C1CustomButton[] {
             c1CustomButton1,
             c1CustomButton2});
-            this.dialogError.ExpandedControlText = "隐藏详细信息";
-            this.dialogError.ExpandedInformation = "没有真正的出现错误，这只是一个示例。";
+            this.dialogError.ExpandedControlText = "Hide details";
+            this.dialogError.ExpandedInformation = "There is no real error! This is only a demo.";
             this.dialogError.ExpandFooterArea = true;
             this.dialogError.MainCommonIcon = C1.Win.C1Win7Pack.TaskDialogCommonIcon.Error;
-            this.dialogError.MainInstruction = "发生了意外错误，请发送一个反馈！";
+            this.dialogError.MainInstruction = "An unexpected error occured. Please send feedback now!";
             this.dialogError.NextID = 13;
-            this.dialogError.WindowTitle = "自定义对话框演示";
+            this.dialogError.WindowTitle = "Custom Dialog Demo";
             this.dialogError.ButtonClick += new C1.Win.C1Win7Pack.TaskDialogButtonClickEventHandler(this.dialogError_ButtonClick);
             // 
             // pictureBox1

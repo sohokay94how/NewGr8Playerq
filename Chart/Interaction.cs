@@ -128,7 +128,7 @@ namespace ControlExplorer.Chart
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("无法加载Excel文件: " + filename);
+                    MessageBox.Show("Unable to load Excel file: " + filename);
                 }
             }
             else

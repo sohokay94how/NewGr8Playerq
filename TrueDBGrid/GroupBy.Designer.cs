@@ -50,24 +50,22 @@
             this.c1TrueDBGrid1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
             this.c1TrueDBGrid1.Location = new System.Drawing.Point(0, 0);
-            this.c1TrueDBGrid1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.HighlightRow;
             this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.PreviewInfo.Caption = "PrintPreview窗口";
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
             this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
+            this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             this.c1TrueDBGrid1.RecordSelectorWidth = 20;
             this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
             this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.None;
             this.c1TrueDBGrid1.RowHeight = 20;
             this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.Gold;
-            this.c1TrueDBGrid1.Size = new System.Drawing.Size(691, 583);
+            this.c1TrueDBGrid1.Size = new System.Drawing.Size(592, 446);
             this.c1TrueDBGrid1.TabIndex = 2;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid2";
             this.c1TrueDBGrid1.UseColumnStyles = false;
-            this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // invoicesBindingSource
             // 
@@ -85,11 +83,10 @@
             // 
             // GroupBy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 583);
+            this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.c1TrueDBGrid1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "GroupBy";
             this.Text = "GroupBy";
             this.Load += new System.EventHandler(this.GroupBy_Load);

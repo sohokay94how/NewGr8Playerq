@@ -19,7 +19,6 @@ namespace ControlExplorer.FlexGrid
             AddProperty("Style", flex.Tree);
             AddProperty("LineStyle", flex.Tree);
             AddProperty("FocusRect", flex);
-            AddPropertyColumnBreak();
             //Custom demo properties
             AddProperty("AllowDragging", this);
             AddProperty("UseCheckBoxes", this);
@@ -33,8 +32,8 @@ namespace ControlExplorer.FlexGrid
             flex.Rows.Count = 1;
             flex.Cols.Count = 2;
             flex.Cols.Fixed = 0;
-            flex[0, 0] = "文件";
-            flex[0, 1] = "修改日期";
+            flex[0, 0] = "File";
+            flex[0, 1] = "Modified Date";
             flex.Cols[1].Format = "c";
 
             // styles

@@ -33,12 +33,8 @@ namespace ControlExplorer.Input.DropDowns
 
         private void ImageListView_PostChanges(object sender, EventArgs e)
         {
-            // Set the text of the parent control according to the ListView selection    
-            if (this.listView1.SelectedItems.Count == 0)
-            {
-                // do nothing.
-            }
-            else
+            // Set the text of the parent control according to the ListView selection   
+            if (listView1.SelectedItems.Count > 0)
             {
                 this.OwnerControl.Text = listView1.SelectedItems[0].Text;
             }

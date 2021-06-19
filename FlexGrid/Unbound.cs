@@ -128,7 +128,7 @@ namespace ControlExplorer.FlexGrid
         private void LoadData()
         {
             //This function loads random data from our pool of possible values
-            this.c1FlexGrid1[1, 0] = "季度 1: " + DateTime.Now.ToShortDateString() + " to " + DateTime.Now.AddDays(9).ToShortDateString();
+            this.c1FlexGrid1[1, 0] = "Quarter 1: " + DateTime.Now.ToShortDateString() + " to " + DateTime.Now.AddDays(9).ToShortDateString();
             this.c1FlexGrid1.SetCellStyle(1, 0, c1FlexGrid1.Styles["Heading"]);
             for (int i = 2; i < 12; i++)
             {
@@ -138,7 +138,7 @@ namespace ControlExplorer.FlexGrid
                 CalculateGrossMargins(i);
                 CalculateDeviation(i);
             }
-            this.c1FlexGrid1[12, 0] = "季度 2: " + DateTime.Now.AddDays(10).ToShortDateString() + " to " + DateTime.Now.AddDays(20).ToShortDateString() + " (注意这个文本溢出到空单元格 )";
+            this.c1FlexGrid1[12, 0] = "Quarter 2: " + DateTime.Now.AddDays(10).ToShortDateString() + " to " + DateTime.Now.AddDays(20).ToShortDateString() + " (Notice this text spills across empty cells)";
             this.c1FlexGrid1.SetCellStyle(12, 0, c1FlexGrid1.Styles["Heading"]);
             this.c1FlexGrid1[13, 1] = DateTime.Now.AddDays(10);
             this.c1FlexGrid1[13, 2] = values[rand.Next(0, 9)];
@@ -160,7 +160,7 @@ namespace ControlExplorer.FlexGrid
         private void c1FlexGrid1_BeforeEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
         {
             // if we begin to edit auto fill the date field
-            if (e.Col == 2 || e.Col == 3)
+            if (e.Row > 1 && (e.Col == 2 || e.Col == 3))
             {
                 if (c1FlexGrid1[e.Row, 1] == null)
                     if (c1FlexGrid1[e.Row - 1, 1] != null)

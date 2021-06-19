@@ -70,7 +70,7 @@ namespace ControlExplorer.Sizer
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            c1SuperTooltip1.Show("拖动分离器看到C1Sizer的行动！", c1Sizer2, new Point(c1Sizer2.Grid.Columns[1].Bounds.Left - 2, c1Sizer2.Grid.Rows[0].Size / 2), 6000);
+            c1SuperTooltip1.Show("Drag the splitters to see C1Sizer in action!", c1Sizer2, new Point(c1Sizer2.Grid.Columns[1].Bounds.Left - 2, c1Sizer2.Grid.Rows[0].Size / 2), 6000);
             timer1.Enabled = false;
         }
         

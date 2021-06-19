@@ -27,7 +27,7 @@ namespace ControlExplorer.Win7Pack
             }
             else
             {
-                MessageBox.Show("C1任务栏按钮只支持Vista以及更新的操作系统。");
+                MessageBox.Show("C1TaskbarButton is only supported on Windows 7 and later systems.");
             }
         }
 
@@ -41,7 +41,7 @@ namespace ControlExplorer.Win7Pack
             }
             else
             {
-                MessageBox.Show("C1任务栏按钮只支持Vista以及更新的操作系统。");
+                MessageBox.Show("C1TaskbarButton is only supported on Windows 7 and later systems.");
             }
         }
 
@@ -55,7 +55,7 @@ namespace ControlExplorer.Win7Pack
             }
             else
             {
-                MessageBox.Show("C1任务栏按钮只支持Vista以及更新的操作系统。");
+                MessageBox.Show("C1TaskbarButton is only supported on Windows 7 and later systems.");
             }
         }
 
@@ -68,7 +68,7 @@ namespace ControlExplorer.Win7Pack
             }
             else
             {
-                MessageBox.Show("抱歉, C1任务对话框只支持Vista以及更新的操作系统。");
+                MessageBox.Show("Sorry, C1TaskDialog is only supported on Vista and later systems.");
             }
         }
 
@@ -78,8 +78,8 @@ namespace ControlExplorer.Win7Pack
                 e.CustomButton.Name == "sendButton")
             {
                 C1TaskDialog sendDialog = new C1TaskDialog();
-                sendDialog.WindowTitle = "发送反馈对话框";
-                sendDialog.Content = "正在发送您的反馈.....";
+                sendDialog.WindowTitle = "Send Feedback Dialog";
+                sendDialog.Content = "Sending your feedback .....";
                 sendDialog.ProgressBar.Maximum = 5000;
                 sendDialog.ProgressBar.Visible = true;
                 sendDialog.EnableTimer = true;
@@ -95,13 +95,13 @@ namespace ControlExplorer.Win7Pack
             C1TaskDialog dialog = (C1TaskDialog)sender;
             if (e.Ticks <= 5000)
             {
-                dialog.MainInstruction = string.Format("发送中 ....{0}", e.Ticks);
+                dialog.MainInstruction = string.Format("Sending ....{0}", e.Ticks);
                 dialog.ProgressBar.Value = e.Ticks;
             }
             else
             {
-                dialog.MainInstruction = "感谢您的反馈!";
-                dialog.Content = "我们的开发者将得到正确的...";
+                dialog.MainInstruction = "Thanks for the feedback!";
+                dialog.Content = "Our developers will get right on that...";
                 dialog.ProgressBar.Value = 5000;
             }
         }

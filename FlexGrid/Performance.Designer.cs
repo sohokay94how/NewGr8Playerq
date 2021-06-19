@@ -30,8 +30,8 @@
         {
             this.c1ToolBar1 = new C1.Win.C1Command.C1ToolBar();
             this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
-            this.c1Command1 = new C1.Win.C1Command.C1Command();
-            this.c1Command2 = new C1.Win.C1Command.C1CommandControl();
+            this.c1Command1 = new C1.Win.C1Command.C1CommandControl();
+            this.c1Command2 = new C1.Win.C1Command.C1Command();
             this.txtCount = new System.Windows.Forms.NumericUpDown();
             this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
             this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
@@ -76,15 +76,15 @@
             // 
             // c1Command1
             // 
+            this.c1Command1.Control = this.txtCount;
             this.c1Command1.Name = "c1Command1";
-            this.c1Command1.Text = "产生项目";
-            this.c1Command1.Click += new C1.Win.C1Command.ClickEventHandler(this.c1Command1_Click);
+            this.c1Command1.Text = "Item Count";
             // 
             // c1Command2
             // 
-            this.c1Command2.Control = this.txtCount;
             this.c1Command2.Name = "c1Command2";
-            this.c1Command2.Text = "项目个数";
+            this.c1Command2.Text = "Generate Items";
+            this.c1Command2.Click += new C1.Win.C1Command.ClickEventHandler(this.c1Command2_Click);
             // 
             // txtCount
             // 
@@ -110,13 +110,12 @@
             // 
             // c1CommandLink1
             // 
-            this.c1CommandLink1.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Text;
             this.c1CommandLink1.Command = this.c1Command1;
             // 
             // c1CommandLink2
             // 
+            this.c1CommandLink2.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Text;
             this.c1CommandLink2.Command = this.c1Command2;
-            this.c1CommandLink2.SortOrder = 1;
             // 
             // c1FlexGrid1
             // 
@@ -158,7 +157,7 @@
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(592, 22);
             this.statusStrip1.TabIndex = 7;
-            this.statusStrip1.Text = "状态提示1";
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // progressBar
             // 
@@ -169,7 +168,7 @@
             // 
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(39, 17);
-            this.lblStatus.Text = "就绪";
+            this.lblStatus.Text = "Ready";
             // 
             // lblCounter
             // 
@@ -187,7 +186,7 @@
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.c1ToolBar1);
             this.Name = "Performance";
-            this.Text = "性能";
+            this.Text = "Performance";
             this.Load += new System.EventHandler(this.Performance_Load);
             this.c1ToolBar1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();
@@ -205,10 +204,10 @@
 
         private C1.Win.C1Command.C1ToolBar c1ToolBar1;
         private C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
-        private C1.Win.C1Command.C1Command c1Command1;
+        private C1.Win.C1Command.C1CommandControl c1Command1;
         private C1.Win.C1Command.C1CommandLink c1CommandLink1;
         private C1FlexDataTree c1FlexGrid1;
-        private C1.Win.C1Command.C1CommandControl c1Command2;
+        private C1.Win.C1Command.C1Command c1Command2;
         private System.Windows.Forms.NumericUpDown txtCount;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;

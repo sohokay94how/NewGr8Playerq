@@ -51,16 +51,14 @@
             // 
             // c1Editor1
             // 
-            this.c1Editor1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.c1Editor1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.c1Editor1.BackColor = System.Drawing.Color.White;
             this.c1Editor1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.c1Editor1.Location = new System.Drawing.Point(0, 196);
-            this.c1Editor1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.c1Editor1.MinimumSize = new System.Drawing.Size(233, 262);
+            this.c1Editor1.Location = new System.Drawing.Point(0, 150);
             this.c1Editor1.Name = "c1Editor1";
-            this.c1Editor1.Size = new System.Drawing.Size(728, 382);
+            this.c1Editor1.Size = new System.Drawing.Size(624, 292);
             this.c1Editor1.TabIndex = 0;
             this.c1Editor1.Xml = resources.GetString("c1Editor1.Xml");
             // 
@@ -69,10 +67,9 @@
             this.c1Ribbon1.ApplicationMenuHolder = this.ribbonApplicationMenu1;
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
-            this.c1Ribbon1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
-            this.c1Ribbon1.Size = new System.Drawing.Size(728, 156);
+            this.c1Ribbon1.Size = new System.Drawing.Size(624, 156);
             this.c1Ribbon1.Tabs.Add(this.ribbonTab1);
             // 
             // ribbonApplicationMenu1
@@ -102,8 +99,7 @@
             this.ribbonButton1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton1.LargeImage")));
             this.ribbonButton1.Name = "ribbonButton1";
             this.ribbonButton1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton1.SmallImage")));
-            this.ribbonButton1.Text = "加载";
-            this.ribbonButton1.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageAboveText;
+            this.ribbonButton1.Text = "Load";
             this.ribbonButton1.Click += new System.EventHandler(this.ribbonButton1_Click);
             // 
             // ribbonButton6
@@ -111,8 +107,7 @@
             this.ribbonButton6.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton6.LargeImage")));
             this.ribbonButton6.Name = "ribbonButton6";
             this.ribbonButton6.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton6.SmallImage")));
-            this.ribbonButton6.Text = "加载 RTF - 2";
-            this.ribbonButton6.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageAboveText;
+            this.ribbonButton6.Text = "Load RTF - 2";
             this.ribbonButton6.Click += new System.EventHandler(this.ribbonButton6_Click_1);
             // 
             // ribbonButton2
@@ -120,8 +115,7 @@
             this.ribbonButton2.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.LargeImage")));
             this.ribbonButton2.Name = "ribbonButton2";
             this.ribbonButton2.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.SmallImage")));
-            this.ribbonButton2.Text = "保存";
-            this.ribbonButton2.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageAboveText;
+            this.ribbonButton2.Text = "Save";
             this.ribbonButton2.Click += new System.EventHandler(this.ribbonButton2_Click);
             // 
             // ribbonTab1
@@ -129,7 +123,7 @@
             this.ribbonTab1.Groups.Add(this.oad);
             this.ribbonTab1.Groups.Add(this.ribbonGroup1);
             this.ribbonTab1.Name = "ribbonTab1";
-            this.ribbonTab1.Text = "文件";
+            this.ribbonTab1.Text = "File";
             // 
             // ribbonGroup1
             // 
@@ -137,15 +131,14 @@
             this.ribbonGroup1.Items.Add(this.ribbonButton4);
             this.ribbonGroup1.Items.Add(this.ribbonButton5);
             this.ribbonGroup1.Name = "ribbonGroup1";
-            this.ribbonGroup1.Text = "视图";
+            this.ribbonGroup1.Text = "Views";
             // 
             // ribbonButton3
             // 
             this.ribbonButton3.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.LargeImage")));
             this.ribbonButton3.Name = "ribbonButton3";
             this.ribbonButton3.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.SmallImage")));
-            this.ribbonButton3.Text = "设计";
-            this.ribbonButton3.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageAboveText;
+            this.ribbonButton3.Text = "Design";
             this.ribbonButton3.Click += new System.EventHandler(this.ribbonButton3_Click);
             // 
             // ribbonButton4
@@ -154,7 +147,6 @@
             this.ribbonButton4.Name = "ribbonButton4";
             this.ribbonButton4.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton4.SmallImage")));
             this.ribbonButton4.Text = "HTML";
-            this.ribbonButton4.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageAboveText;
             this.ribbonButton4.Click += new System.EventHandler(this.ribbonButton4_Click);
             // 
             // ribbonButton5
@@ -162,17 +154,16 @@
             this.ribbonButton5.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton5.LargeImage")));
             this.ribbonButton5.Name = "ribbonButton5";
             this.ribbonButton5.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton5.SmallImage")));
-            this.ribbonButton5.Text = "预览";
-            this.ribbonButton5.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageAboveText;
+            this.ribbonButton5.Text = "Preview";
             this.ribbonButton5.Click += new System.EventHandler(this.ribbonButton5_Click);
             // 
             // c1EditorToolStripMain1
             // 
-            this.c1EditorToolStripMain1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.c1EditorToolStripMain1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.c1EditorToolStripMain1.Dock = System.Windows.Forms.DockStyle.None;
             this.c1EditorToolStripMain1.Editor = this.c1Editor1;
-            this.c1EditorToolStripMain1.Location = new System.Drawing.Point(0, 196);
+            this.c1EditorToolStripMain1.Location = new System.Drawing.Point(0, 150);
             this.c1EditorToolStripMain1.Name = "c1EditorToolStripMain1";
             this.c1EditorToolStripMain1.Size = new System.Drawing.Size(381, 25);
             this.c1EditorToolStripMain1.TabIndex = 2;
@@ -181,20 +172,19 @@
             // 
             // saveFileDialog1
             // 
-            this.saveFileDialog1.DefaultExt = "RTF Files | *.rtf";
             this.saveFileDialog1.Filter = "RTF Files (*.rtf) |*.rtf";
+            this.saveFileDialog1.DefaultExt = "RTF Files | *.rtf";
             this.saveFileDialog1.InitialDirectory = "C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\Common7\\IDE";
             this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
             // RTFEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 578);
+            this.ClientSize = new System.Drawing.Size(624, 442);
             this.Controls.Add(this.c1Ribbon1);
             this.Controls.Add(this.c1Editor1);
             this.Controls.Add(this.c1EditorToolStripMain1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "RTFEditor";
             this.Text = "RTF Load/Save - C1Editor";
             ((System.ComponentModel.ISupportInitialize)(this.c1Editor1)).EndInit();

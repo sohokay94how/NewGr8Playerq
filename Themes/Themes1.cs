@@ -20,8 +20,6 @@ namespace ControlExplorer.Themes
         {
             // populate combobox with all available themes
             this.comboBox1.Items.AddRange(C1.Win.C1Themes.C1ThemeController.GetThemes());
-            // set initial theme
-            comboBox1.SelectedIndex = 0;
             // This line of code loads data into the 'c1DemoDataSet.Orders' table. You can move, or remove it, as needed.
             this.ordersTableAdapter.Fill(this.c1DemoDataSet.Orders);
             // This line of code loads data into the 'c1DemoDataSet.Employees' table. You can move, or remove it, as needed.

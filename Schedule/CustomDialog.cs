@@ -39,17 +39,16 @@ namespace ControlExplorer.Schedule
             _locations.Add(new Location(4, "Sauna"));
             _locations.Add(new Location(5, "Studio 3"));
 
-
             // fill array of instructors
             _instructors = new ArrayList();
-            _instructors.Add(new Instructor(0, "布兰达.李.阿诺德"));
-            _instructors.Add(new Instructor(1, "瑞安.康诺弗"));
-            _instructors.Add(new Instructor(2, "约翰.迪西科"));
-            _instructors.Add(new Instructor(3, "琳达.东科拉尔"));
-            _instructors.Add(new Instructor(4, "金佰利.冈瑟"));
-            _instructors.Add(new Instructor(5, "梅利莎.莎拉"));
-            _instructors.Add(new Instructor(6, "杰夫.昂特考夫勒"));
-            _instructors.Add(new Instructor(7, "卡伦.布莱克"));
+            _instructors.Add(new Instructor(0, "Brenda Lee Arnold"));
+            _instructors.Add(new Instructor(1, "Ryan Conover"));
+            _instructors.Add(new Instructor(2, "John DiCicco"));
+            _instructors.Add(new Instructor(3, "Linda Donkelaar"));
+            _instructors.Add(new Instructor(4, "Kimberly Guenther"));
+            _instructors.Add(new Instructor(5, "Melissa Sheller"));
+            _instructors.Add(new Instructor(6, "Jeff Unterkofler"));
+            _instructors.Add(new Instructor(7, "Karen Black"));
 
             // Set mappings for LabelStorage (map Level to C1.C1Schedule.Label object properties)
             this.c1Schedule1.DataStorage.LabelStorage.Mappings.TextMapping.MappingName = "LevelName";
@@ -76,12 +75,12 @@ namespace ControlExplorer.Schedule
             this.c1Schedule1.DataStorage.ContactStorage.DataSource = _instructors;
         }
 
-        private void c1Schedule1_BeforeAppointmentCreate(object sender, CancelEventArgs e)
+        private void c1Schedule1_BeforeAppointmentCreate(object sender, CancelAppointmentEventArgs e)
         {
             // Don't show built-in form
             e.Cancel = true;
             // Create new Appointment object with currently selected DateTime and default 
-            // excercise duration (45 minutes)
+            // exercise duration (45 minutes)
             Appointment app = c1Schedule1.DataStorage.AppointmentStorage.Appointments.Add(
                 c1Schedule1.CurrentDate, TimeSpan.FromMinutes(45));
             // Create ExcerciseForm for the new appointment
@@ -199,10 +198,10 @@ namespace ControlExplorer.Schedule
         public void LoadDefaults()
         {
             Clear();
-            Add(new ExcerciseCategory(0, "燃烧卡路里"));
-            Add(new ExcerciseCategory(1, "意志和身体"));
-            Add(new ExcerciseCategory(2, "调理身体"));
-            Add(new ExcerciseCategory(3, "组合锻炼"));
+            Add(new ExcerciseCategory(0, "Calorie burning"));
+            Add(new ExcerciseCategory(1, "Mind and Body"));
+            Add(new ExcerciseCategory(2, "Body conditioning"));
+            Add(new ExcerciseCategory(3, "Combination"));
         }
     }
     #endregion

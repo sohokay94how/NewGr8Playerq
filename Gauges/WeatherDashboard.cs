@@ -75,13 +75,13 @@ namespace ControlExplorer.Gauges
         {
             //print preview gauge
             C1PrintPreviewDialog dlg = new C1PrintPreviewDialog();
-            dlg.Text = "C1打印预览";
+            dlg.Text = "C1PrintPreview";
             C1PrintDocument doc = new C1PrintDocument();
             doc.StartDoc();
             doc.AllowNonReflowableDocs = true;
             doc.PageLayout.PageSettings.Landscape = true;
             string date = (weatherData1.Current as DataRowView)["year"].ToString();
-            doc.RenderBlockText("在" + date + "的天气统计");
+            doc.RenderBlockText("Weather Statistics on " + date);
             doc.RenderBlockImage(c1Gauge1.GetImage());
             doc.EndDoc();
             dlg.Document = doc;

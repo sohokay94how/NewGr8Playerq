@@ -73,21 +73,21 @@
             // 
             this.hdrQueryBuilder.Collapsible = true;
             this.hdrQueryBuilder.Name = "hdrQueryBuilder";
-            this.hdrQueryBuilder.Text = "查询生成器";
+            this.hdrQueryBuilder.Text = "Query Builder";
             // 
             // btnAddNew
             // 
             this.btnAddNew.Break = C1.Win.C1InputPanel.BreakType.None;
             this.btnAddNew.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNew.Image")));
             this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Text = "增加条件";
+            this.btnAddNew.Text = "Add Condition";
             this.btnAddNew.ToolTipText = "Add New Condition Row";
             this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
             // 
             // btnSubmit
             // 
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Text = "性能查询";
+            this.btnSubmit.Text = "Execute Query";
             this.btnSubmit.Width = 115;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
@@ -101,7 +101,7 @@
             this.lblAndOr.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAndOr.FontPadding = true;
             this.lblAndOr.Name = "lblAndOr";
-            this.lblAndOr.Text = "或/与";
+            this.lblAndOr.Text = "And/Or";
             this.lblAndOr.Width = 50;
             // 
             // lblPropertyName
@@ -109,7 +109,7 @@
             this.lblPropertyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPropertyName.FontPadding = true;
             this.lblPropertyName.Name = "lblPropertyName";
-            this.lblPropertyName.Text = "字段名";
+            this.lblPropertyName.Text = "Field Name";
             this.lblPropertyName.Width = 100;
             // 
             // lblOperator
@@ -117,7 +117,7 @@
             this.lblOperator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOperator.FontPadding = true;
             this.lblOperator.Name = "lblOperator";
-            this.lblOperator.Text = "操作符";
+            this.lblOperator.Text = "Operator";
             this.lblOperator.Width = 100;
             // 
             // lblValue
@@ -126,7 +126,7 @@
             this.lblValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValue.FontPadding = true;
             this.lblValue.Name = "lblValue";
-            this.lblValue.Text = "值";
+            this.lblValue.Text = "Value";
             this.lblValue.Width = 100;
             // 
             // lblPlaceHolder
@@ -138,7 +138,7 @@
             // 
             this.hdrSqlText.Collapsible = true;
             this.hdrSqlText.Name = "hdrSqlText";
-            this.hdrSqlText.Text = "SQL 文本";
+            this.hdrSqlText.Text = "SQL Text";
             // 
             // txtSqlText
             // 
@@ -182,7 +182,7 @@
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.c1InputPanel1);
             this.Name = "QueryBuilder";
-            this.Text = "查询生成器";
+            this.Text = "QueryBuilder";
             this.Load += new System.EventHandler(this.QueryBuilder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).EndInit();

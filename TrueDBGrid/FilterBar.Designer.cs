@@ -35,33 +35,29 @@
             // 
             // c1TrueDBGrid1
             // 
-            this.c1TrueDBGrid1.CaptionHeight = 17;
             this.c1TrueDBGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1TrueDBGrid1.FilterBar = true;
             this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
             this.c1TrueDBGrid1.Location = new System.Drawing.Point(0, 0);
-            this.c1TrueDBGrid1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
             this.c1TrueDBGrid1.PictureFilterBar = ((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.PictureFilterBar")));
-            this.c1TrueDBGrid1.PreviewInfo.Caption = "PrintPreview窗口";
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
             this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
+            this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             this.c1TrueDBGrid1.RecordSelectorWidth = 20;
             this.c1TrueDBGrid1.RowHeight = 20;
-            this.c1TrueDBGrid1.Size = new System.Drawing.Size(765, 583);
+            this.c1TrueDBGrid1.Size = new System.Drawing.Size(592, 446);
             this.c1TrueDBGrid1.TabIndex = 1;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // FilterBar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 583);
+            this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.c1TrueDBGrid1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "FilterBar";
             this.Text = "FilterBar";
             this.Load += new System.EventHandler(this.FilterBar_Load);

@@ -26,7 +26,7 @@ namespace ControlExplorer.Tiles
         void ShowDrives(bool keepOffset)
         {
             _activeDir = null;
-            pathLabel.Text = "(磁盘)";
+            pathLabel.Text = "(Drives)";
 
             itemTiles.BeginUpdate();
             itemTiles.Groups.Clear(true);
@@ -83,7 +83,7 @@ namespace ControlExplorer.Tiles
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "文件浏览器", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(ex.Message, "File Explorer", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             if (!keepOffset)
             {
@@ -141,22 +141,22 @@ namespace ControlExplorer.Tiles
             switch (driveType)
             {
                 case DriveType.CDRom:
-                    newGroup.Text = "CD/DVD驱动器";
+                    newGroup.Text = "CD/DVD";
                     break;
                 case DriveType.Fixed:
-                    newGroup.Text = "本地磁盘";
+                    newGroup.Text = "Fixed Disks";
                     break;
                 case DriveType.Network:
-                    newGroup.Text = "网络磁盘";
+                    newGroup.Text = "Network Drives";
                     break;
                 case DriveType.Ram:
                     newGroup.Text = "RAM Disks";
                     break;
                 case DriveType.Removable:
-                    newGroup.Text = "可删除设备";
+                    newGroup.Text = "Removable Devices";
                     break;
                 default:
-                    newGroup.Text = "其他";
+                    newGroup.Text = "Misc";
                     break;
             }
             itemTiles.Groups.Add(newGroup);
@@ -174,7 +174,7 @@ namespace ControlExplorer.Tiles
             Group fileGroup = new Group();
             try
             {
-                folderGroup.Text = "文件夹";
+                folderGroup.Text = "Folders";
                 foreach (DirectoryInfo subDir in dirInfo.GetDirectories())
                 {
                     Tile tile = new Tile();
@@ -188,7 +188,7 @@ namespace ControlExplorer.Tiles
                     tile.Tag = subDir;
                     tile.Click += Directory_Click;
                 }
-                fileGroup.Text = "文件";
+                fileGroup.Text = "Files";
                 foreach (FileInfo file in dirInfo.GetFiles())
                 {
                     Tile tile = new Tile();
@@ -206,7 +206,7 @@ namespace ControlExplorer.Tiles
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "文件浏览器", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(ex.Message, "File Explorer", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
@@ -236,7 +236,7 @@ namespace ControlExplorer.Tiles
             int n = _folderGroup.Tiles.Count;
             if (n > 0)
             {
-                sb.Append("文件夹  ");
+                sb.Append("Folders  ");
                 sb.Append(n);
             }
             n = _fileGroup.Tiles.Count;
@@ -246,7 +246,7 @@ namespace ControlExplorer.Tiles
                 {
                     sb.Append("    ");
                 }
-                sb.Append("文件  ");
+                sb.Append("Files  ");
                 sb.Append(n);
             }
             n = itemTiles.CheckedTiles.Length;
@@ -256,7 +256,7 @@ namespace ControlExplorer.Tiles
                 {
                     sb.Append("    ");
                 }
-                sb.Append("选中  ");
+                sb.Append("Checked  ");
                 sb.Append(n);
             }
             if (sb.Length > 0)
@@ -342,6 +342,12 @@ namespace ControlExplorer.Tiles
                 Graphics g = e.Graphics;
 
                 Rectangle rc = new Rectangle(50, 28, 170, 12);
+                float zf = c1Zoom1.ZoomFactor;
+                rc.X = (int)(rc.X * zf + 0.5f);
+                rc.Y = (int)(rc.Y * zf + 0.5f);
+                rc.Width = (int)(rc.Width * zf + 0.5f);
+                rc.Height = (int)(rc.Height * zf + 0.5f);
+
                 g.DrawRectangle(Pens.Silver, rc);
                 rc.X += 1;
                 rc.Y += 1;
@@ -379,7 +385,7 @@ namespace ControlExplorer.Tiles
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "文件浏览器", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, "File Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 RefreshTiles();
             }
@@ -411,10 +417,10 @@ namespace ControlExplorer.Tiles
                 }
                 string s;
                 if (hasFiles && hasFolders)
-                    s = "文件和文件夹";
+                    s = "files and folders";
                 else
-                    s = hasFiles ? "文件" : "文件夹";
-                if (MessageBox.Show(string.Format("你确定要删除 {0} {1}?", n, s), "确认删除",
+                    s = hasFiles ? "files" : "folders";
+                if (MessageBox.Show(string.Format("Are you sure you want to delete {0} {1}?", n, s), "Delete Confirmation",
                     MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.Yes)
                 {
                     foreach (Tile tile in checkedTiles)
@@ -434,7 +440,7 @@ namespace ControlExplorer.Tiles
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message, "文件浏览器", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(ex.Message, "File Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         RefreshTiles();
                     }
@@ -446,7 +452,7 @@ namespace ControlExplorer.Tiles
                 FileInfo fi = checkedTiles[0].Tag as FileInfo;
                 if (di != null)
                 {
-                    if (MessageBox.Show(string.Format("您确定要删除选中的文件 {0} 吗?", di.Name), "确认删除",
+                    if (MessageBox.Show(string.Format("Are you sure you want to delete the selected folder {0}?", di.Name), "Delete Confirmation",
                         MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.Yes)
                     {
                         try
@@ -455,14 +461,14 @@ namespace ControlExplorer.Tiles
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message, "文件浏览器", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(ex.Message, "File Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         RefreshTiles();
                     }
                 }
                 else if (fi != null)
                 {
-                    if (MessageBox.Show(string.Format("您确定要删除选中的文件 {0} 吗?", fi.Name), "确认删除",
+                    if (MessageBox.Show(string.Format("Are you sure you want to delete the selected file {0}?", fi.Name), "Delete Confirmation",
                         MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.Yes)
                     {
                         try
@@ -471,7 +477,7 @@ namespace ControlExplorer.Tiles
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message, "文件浏览器", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(ex.Message, "File Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         RefreshTiles();
                     }
@@ -490,7 +496,7 @@ namespace ControlExplorer.Tiles
             }
             if (n > 1)
             {
-                MessageBox.Show("无法同时为多个项目重命名。", "文件浏览器", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Can't rename more than one item at a time.", "File Explorer", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
             Tile tile = checkedTiles[0];
@@ -500,7 +506,7 @@ namespace ControlExplorer.Tiles
             string s = null;
             if (driveInfo != null)
             {
-                s = NameForm.RenameItem(driveInfo.VolumeLabel, "重命名驱动器", "驱动器名称：");
+                s = NameForm.RenameItem(driveInfo.VolumeLabel, "Rename Drive", "Drive Name:");
                 if (s != null && s != driveInfo.VolumeLabel)
                 {
                     try
@@ -509,13 +515,13 @@ namespace ControlExplorer.Tiles
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message, "文件浏览器", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(ex.Message, "File Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
             else if (dirInfo != null)
             {
-                s = NameForm.RenameItem(dirInfo.Name, "重命名文件夹", "文件夹名称：");
+                s = NameForm.RenameItem(dirInfo.Name, "Rename Folder", "Folder Name:");
                 if (s != null && s != dirInfo.Name)
                 {
                     try
@@ -524,13 +530,13 @@ namespace ControlExplorer.Tiles
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message, "文件浏览器", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(ex.Message, "File Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
             else if (fileInfo != null)
             {
-                s = NameForm.RenameItem(fileInfo.Name, "重命名文件", "文件名称：");
+                s = NameForm.RenameItem(fileInfo.Name, "Rename File", "File Name:");
                 if (s != null && s != fileInfo.Name)
                 {
                     try
@@ -539,7 +545,7 @@ namespace ControlExplorer.Tiles
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message, "文件浏览器", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(ex.Message, "File Explorer", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }

@@ -64,12 +64,12 @@ namespace ControlExplorer.SpellChecker
             int errorCount = c1SpellChecker1.CheckControl(editor);
             if (errorCount > -1)
             {
-                string msg = string.Format("拼写检查完成. {0} 错误(s) 被发现.", errorCount);
+                string msg = string.Format("Spell-checking complete. {0} error(s) found.", errorCount);
                 MessageBox.Show(msg);
             }
             else
             {
-                MessageBox.Show("拼写检查被取消.");
+                MessageBox.Show("Spell-checking cancelled.");
             }
         }
     }

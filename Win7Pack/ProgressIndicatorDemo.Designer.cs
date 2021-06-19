@@ -60,7 +60,7 @@
             this.groupBox2.Size = new System.Drawing.Size(370, 121);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "进度条指示器";
+            this.groupBox2.Text = "Progress Indicator";
             // 
             // progressBar1
             // 
@@ -90,7 +90,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "改变该值：";
+            this.label1.Text = "Update Value:";
             // 
             // progressCheckBox
             // 
@@ -101,7 +101,7 @@
             this.progressCheckBox.Name = "progressCheckBox";
             this.progressCheckBox.Size = new System.Drawing.Size(56, 17);
             this.progressCheckBox.TabIndex = 0;
-            this.progressCheckBox.Text = "可见";
+            this.progressCheckBox.Text = "Visible";
             this.progressCheckBox.UseVisualStyleBackColor = true;
             this.progressCheckBox.CheckedChanged += new System.EventHandler(this.progressCheckBox_CheckedChanged);
             // 
@@ -112,7 +112,7 @@
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(67, 17);
             this.radioButton8.TabIndex = 6;
-            this.radioButton8.Text = "跑马灯";
+            this.radioButton8.Text = "Marquee";
             this.radioButton8.UseVisualStyleBackColor = true;
             this.radioButton8.Click += new System.EventHandler(this.progressRadioButton_Click);
             // 
@@ -123,7 +123,7 @@
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(61, 17);
             this.radioButton7.TabIndex = 5;
-            this.radioButton7.Text = "暂停";
+            this.radioButton7.Text = "Paused";
             this.radioButton7.UseVisualStyleBackColor = true;
             this.radioButton7.Click += new System.EventHandler(this.progressRadioButton_Click);
             // 
@@ -134,7 +134,7 @@
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(47, 17);
             this.radioButton6.TabIndex = 4;
-            this.radioButton6.Text = "出错";
+            this.radioButton6.Text = "Error";
             this.radioButton6.UseVisualStyleBackColor = true;
             this.radioButton6.Click += new System.EventHandler(this.progressRadioButton_Click);
             // 
@@ -147,7 +147,7 @@
             this.radioButton5.Size = new System.Drawing.Size(58, 17);
             this.radioButton5.TabIndex = 3;
             this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "正常";
+            this.radioButton5.Text = "Normal";
             this.radioButton5.UseVisualStyleBackColor = true;
             this.radioButton5.Click += new System.EventHandler(this.progressRadioButton_Click);
             // 
@@ -157,8 +157,8 @@
             this.c1SuperLabel1.Name = "c1SuperLabel1";
             this.c1SuperLabel1.Size = new System.Drawing.Size(370, 39);
             this.c1SuperLabel1.TabIndex = 3;
-            this.c1SuperLabel1.Text = "你可以用 <b>C1任务栏按钮</b> 轻松地设置任务栏的值和状态" +
-                " 以及进度条指示器。";
+            this.c1SuperLabel1.Text = "With <b>C1TaskbarButton</b> you can easily set the value and state of the taskbar" +
+                " progress indicator from your application\'s code.";
             this.c1SuperLabel1.UseMnemonic = true;
             // 
             // c1TaskbarButton1

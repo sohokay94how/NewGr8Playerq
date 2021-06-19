@@ -112,32 +112,32 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="c1FlexGrid1.ColumnInfo" xml:space="preserve">
-    <value>9,1,0,0,0,95,Columns:0{Width:41;}	1{Width:39;Name:"ProductID";Caption:"ID";Style:"DataType:System.Int32;TextAlign:GeneralCenter;";}	2{Name:"ProductName";Caption:"产品名称";Style:"DataType:System.String;TextAlign:LeftCenter;";}	3{Name:"QuantityPerUnit";Caption:"单位数量";Style:"DataType:System.String;TextAlign:LeftCenter;";}	4{Name:"UnitPrice";Caption:"单位价格";Style:"DataType:System.Decimal;TextAlign:GeneralCenter;";}	5{Name:"UnitsInStock";Caption:"库存量";Style:"DataType:System.Int16;TextAlign:GeneralCenter;";}	6{Name:"UnitsOnOrder";Caption:"订购量";Style:"DataType:System.Int16;TextAlign:GeneralCenter;";}	7{Name:"Discontinued";Caption:"已停产";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	8{Name:"ProductsOrder Details";Caption:"ProductsOrder Details";Visible:False;AllowEditing:False;Style:"DataType:System.ComponentModel.IBindingList;TextAlign:GeneralCenter;";}	</value>
+    <value>9,1,0,0,0,95,Columns:0{Width:41;}	1{Width:39;Name:"ProductID";Caption:"ID";Style:"DataType:System.Int32;TextAlign:GeneralCenter;";}	2{Name:"ProductName";Caption:"ProductName";Style:"DataType:System.String;TextAlign:LeftCenter;";}	3{Name:"QuantityPerUnit";Caption:"QuantityPerUnit";Style:"DataType:System.String;TextAlign:LeftCenter;";}	4{Name:"UnitPrice";Caption:"UnitPrice";Style:"DataType:System.Decimal;TextAlign:GeneralCenter;";}	5{Name:"UnitsInStock";Caption:"UnitsInStock";Style:"DataType:System.Int16;TextAlign:GeneralCenter;";}	6{Name:"UnitsOnOrder";Caption:"UnitsOnOrder";Style:"DataType:System.Int16;TextAlign:GeneralCenter;";}	7{Name:"Discontinued";Caption:"Discontinued";Style:"DataType:System.Boolean;TextAlign:LeftCenter;ImageAlign:CenterCenter;";}	8{Name:"ProductsOrder Details";Caption:"ProductsOrder Details";Visible:False;AllowEditing:False;Style:"DataType:System.ComponentModel.IBindingList;TextAlign:GeneralCenter;";}	</value>
   </data>
-  <metadata name="productsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="productsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>13, 16</value>
   </metadata>
-  <metadata name="c1DemoDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="c1DemoDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>802, 17</value>
   </metadata>
   <data name="c1FlexGrid1.StyleInfo" xml:space="preserve">
     <value>Normal{Font:Tahoma, 9pt;}	Alternate{}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;BackgroundImageLayout:Hide;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Focus{}	Editor{}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	NewRow{ForeColor:GrayText;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	SelectedColumnHeader{}	SelectedRowHeader{}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	FilterEditor{}	FirstCustomStyle{}	</value>
   </data>
-  <metadata name="glass.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="glass.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>189, 17</value>
   </metadata>
   <data name="glass.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB8
-        QgAAAk1TRnQBSQFMAgEBBQEAATQBAAE0AQABEwEAAR4BAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFM
+        QgAAAk1TRnQBSQFMAgEBBQEAASwBAAEsAQABEwEAAR4BAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFM
         AwABPAMAAQEBAAEYBQABcAE1GAAB7gHrAfUB0QHAAfoBwgGrAfoBvwGmAfoBvgGkAfoBvgGkAfoBvgGk
         AfoBvgGkAfoBvgGkAfoBvgGkAfoBvgGkAfoBvgGkAfoBwQGpAfoB0QHAAfoB6AHkAfS0AAHuAeoB9QHT
         AcQB9wHbAcwB/gHVAcQB/gHRAb4B/gHQAbwB/gHRAb4B/gHRAb4B/gHQAbwB/gHQAbwB/gHRAb4B/gHR
@@ -423,15 +423,15 @@
         AQIWAAP/AQABwAEAAWAJAAGAAQABIP8AQgABgAEAASAJAAHAAQABYP8AcgAL
 </value>
   </data>
-  <metadata name="mac.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="mac.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>268, 17</value>
   </metadata>
   <data name="mac.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACs
-        DwAAAk1TRnQBSQFMAgEBAgEAATQBAAE0AQABEgEAARwBAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFI
+        DwAAAk1TRnQBSQFMAgEBAgEAASwBAAEsAQABEgEAARwBAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFI
         AwABHAMAAQEBAAEYBQABoAEXEgADyAPpA/IG+AP8A/sJ/wP9BvgD+wP4A+kD3gNlAc0BwgG9AekB4QHc
         AfEB6QHlAfcB7wHrAfcB7wHrAfoB8gHuAfkB8QHtAf0B9QHxAf0B9QHxAf0B9QHxAfsB8wHvAfcB7wHr
         AfcB7wHrAfkB8QHtAfcB7wHrAekB4QHcAeAB1wHSAX8BawFgbAADyAPpA/IG+AP8A/sJ/wP9BvgD+wP4
@@ -500,15 +500,15 @@
         AcgBwwHlAdwB2GwAAUIBTQE+BwABPgMAASgDAAFIAwABHAMAAQEBAAEBBQABUAEBFgAD//8AUgAL
 </value>
   </data>
-  <metadata name="vista.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="vista.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>342, 17</value>
   </metadata>
   <data name="vista.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAA+
-        EAAAAk1TRnQBSQFMAgEBAgEAATQBAAE0AQABDwEAARcBAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAE8
+        EAAAAk1TRnQBSQFMAgEBAgEAASwBAAEsAQABDwEAARcBAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAE8
         AwABFwMAAQEBAAEYBQABLAEQEgABIgEVAQABIgEVAQABIgEVAQABIgEVAQABIgEVAQABIgEVAQABIgEV
         AQABIgEVAQABIgEVAQABIgEVAQABIgEVAQABIgEVAQABIgEVAQABIgEVAQABzgG7AbMGAAHxAd0BzgHx
         AdEBuAHxAc0BsgHxAc0BsgHxAc0BsgHxAc0BsgHxAc0BsgHxAc0BsgHxAc0BsgHxAdEBuAHxAd0BzmAA
@@ -580,15 +580,15 @@
         AQABBJ0AAQEBAAEEBQABAQGAAQwEAAs=
 </value>
   </data>
-  <metadata name="steel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="steel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>418, 17</value>
   </metadata>
   <data name="steel.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAC2
-        BAAAAk1TRnQBSQFMAgEBAgEAATQBAAE0AQABDwEAAREBAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAE8
+        BAAAAk1TRnQBSQFMAgEBAgEAASwBAAEsAQABDwEAAREBAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAE8
         AwABEQMAAQEBAAEYBQAB9AELEgAtQio1A4paAAGuAa8CrgGvAa4CrAGrBq0BrgGvAa4GrQOvA60DrAOt
         A68BrQKuA6wDgQGKAYwBigGPAZEBjwGQAZIBkAmRDpIBkQOTA4kDs1oAAagBpwuoAaoBqAalAqgBpgOn
         A6gGqwOqAakCqgOsA4EDjQ+SA5MDkgKTAZICkweSA4kDs1oAA6UGqAmpAqgBpgKoAaYGqAOpA6cDqQOo
@@ -611,15 +611,15 @@
         BQABiBcAA/+JAAs=
 </value>
   </data>
-  <metadata name="energy.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="energy.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>495, 17</value>
   </metadata>
   <data name="energy.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAY
-        EAAAAk1TRnQBSQFMAgEBAgEAATQBAAE0AQABDwEAARYBAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAE8
+        EAAAAk1TRnQBSQFMAgEBAgEAASwBAAEsAQABDwEAARYBAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAE8
         AwABFgMAAQEBAAEYBQABeAEPEgABfgHWAboBfgHWAboBfgHWAboBfgHWAboBfgHWAboBfgHWAboBfgHW
         AboBfgHWAboBfgHWAboBfgHWAboBfgHWAboBfgHWAboBfgHWAboBfgHWAboBfgHWAboBygHzAeoBygHz
         AeoBygHzAeoBygHzAeoBygHzAeoBygHzAeoBygHzAeoBygHzAeoBygHzAeoBygHzAeoBygHzAeoBygHz
@@ -690,15 +690,15 @@
         AfFaAAFCAU0BPgcAAT4DAAEoAwABPAMAARYDAAEBAQABAQUAAbAXAAP/sQAL
 </value>
   </data>
-  <metadata name="notebook.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="notebook.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>584, 17</value>
   </metadata>
   <data name="notebook.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACQ
-        EwAAAk1TRnQBSQFMAwEBAAE0AQABNAEAASkBAAEVAQAE/wEZAQAI/wFCAU0BNgcAATYDAAEoAwABpAMA
+        EwAAAk1TRnQBSQFMAwEBAAEsAQABLAEAASkBAAEVAQAE/wEZAQAI/wFCAU0BNgcAATYDAAEoAwABpAMA
         ARUDAAEBAQABGAUAAVwBKBIAAmUBWQJiAVYCZwFbAWEBYwFXAWIBYwFZAWMBZwFcAWoBbQFkAfEB9gHt
         AfsB/wL5Af8B+QH4Af8B+gH4Af8B+gH2Af8B/AH2Af8B/AH2Af4B/QH2Af4B/QH5Af8B/QH5Af8B/QH6
         Af8B/gH6Af8B/gH6Af8B/QH6Af8B/QH6Af8B/gH5Af4B/QH0AfkB9wH0AfkB9wH0AfkB+AH0AfkB+AH1
@@ -784,15 +784,15 @@
         ASgDAAGkAwABFQMAAQEBAAEBBQAB+AEBFgAD//8A+gAL
 </value>
   </data>
-  <metadata name="checkBoxes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="checkBoxes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>688, 17</value>
   </metadata>
   <data name="checkBoxes.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABU
-        CgAAAk1TRnQBSQFMAgEBBAEAATQBAAE0AQABEAEAARABAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        CgAAAk1TRnQBSQFMAgEBBAEAASwBAAEsAQABEAEAARABAAT/ARkBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABIAMAAQEBAAEYBgABGP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AOEAAZABgAFwAZABgAFwAZABgAFw
         AZABgAFwAZABgAFwAZABgAFwAZABgAFwAZABgAFwAZABgAFwAZABgAFwAZABgAFwAZABgAFwAZABgAFw
         AZABgAFwBgABkAGAAXABkAGAAXABkAGAAXABkAGAAXABkAGAAXABkAGAAXABkAGAAXABkAGAAXABkAGA
@@ -839,7 +839,7 @@
         Bf8BfwH/AX8L
 </value>
   </data>
-  <metadata name="productsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="productsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>15, 51</value>
   </metadata>
 </root>

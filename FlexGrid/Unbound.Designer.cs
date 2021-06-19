@@ -44,13 +44,12 @@
             this.c1FlexGrid1.ColumnInfo = resources.GetString("c1FlexGrid1.ColumnInfo");
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.FocusRect = C1.Win.C1FlexGrid.FocusRectEnum.Heavy;
-            this.c1FlexGrid1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.c1FlexGrid1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1FlexGrid1.KeyActionTab = C1.Win.C1FlexGrid.KeyActionEnum.MoveAcrossOut;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
-            this.c1FlexGrid1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
-            this.c1FlexGrid1.Rows.DefaultSize = 22;
-            this.c1FlexGrid1.Size = new System.Drawing.Size(824, 583);
+            this.c1FlexGrid1.Rows.DefaultSize = 20;
+            this.c1FlexGrid1.Size = new System.Drawing.Size(706, 446);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 1;
             this.c1FlexGrid1.BeforeEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this.c1FlexGrid1_BeforeEdit);
@@ -65,13 +64,12 @@
             // 
             // Unbound
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 583);
+            this.ClientSize = new System.Drawing.Size(706, 446);
             this.Controls.Add(this.c1FlexGrid1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Unbound";
-            this.Text = "未绑定";
+            this.Text = "Unbound";
             this.Load += new System.EventHandler(this.Unbound_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).EndInit();
             this.ResumeLayout(false);

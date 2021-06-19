@@ -39,10 +39,10 @@
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.IntegralHeight = false;
             this.checkedListBox1.Items.AddRange(new object[] {
-            "全面",
-            "责任",
-            "意外",
-            "额外选项"});
+            "Comprehensive",
+            "Liability",
+            "Collision",
+            "Extra Options"});
             this.checkedListBox1.Location = new System.Drawing.Point(0, 0);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(102, 64);

@@ -101,7 +101,8 @@
             panelElement2.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
             slide1.Elements.Add(imageElement2);
             slide1.Elements.Add(panelElement2);
-            slide1.TransitionAcceleration = 0.25D;
+            slide1.TransitionAcceleration = 0.25;
+            slide1.TransitionDuration = 1000;
             slide2.Description = "fade 1";
             imageElement3.ImageLayout = C1.Win.C1Tile.ForeImageLayout.Stretch;
             imageElement3.ImageSelector = C1.Win.C1Tile.ImageSelector.Image3;
@@ -135,7 +136,8 @@
             slide3.Elements.Add(imageElement4);
             slide3.Elements.Add(panelElement4);
             slide3.Transition = C1.Win.C1Tile.SlideTransition.PushFromTop;
-            slide3.TransitionAcceleration = 3D;
+            slide3.TransitionAcceleration = 3;
+            slide3.TransitionDuration = 1000;
             slide4.Description = "fade 2";
             imageElement5.ImageLayout = C1.Win.C1Tile.ForeImageLayout.Stretch;
             imageElement5.ImageSelector = C1.Win.C1Tile.ImageSelector.Image5;
@@ -169,7 +171,8 @@
             slide5.Elements.Add(imageElement6);
             slide5.Elements.Add(panelElement6);
             slide5.Transition = C1.Win.C1Tile.SlideTransition.PushFromLeft;
-            slide5.TransitionAcceleration = 3D;
+            slide5.TransitionAcceleration = 3;
+            slide5.TransitionDuration = 1000;
             this.c1TileControl1.DefaultTemplate.Slides.Add(slide1);
             this.c1TileControl1.DefaultTemplate.Slides.Add(slide2);
             this.c1TileControl1.DefaultTemplate.Slides.Add(slide3);
@@ -190,7 +193,7 @@
             this.c1TileControl1.Location = new System.Drawing.Point(0, 0);
             this.c1TileControl1.Name = "c1TileControl1";
             this.c1TileControl1.Padding = new System.Windows.Forms.Padding(0);
-            this.c1TileControl1.Size = new System.Drawing.Size(802, 616);
+            this.c1TileControl1.Size = new System.Drawing.Size(802, 460);
             this.c1TileControl1.SurfacePadding = new System.Windows.Forms.Padding(15);
             this.c1TileControl1.TabIndex = 0;
             // 
@@ -220,138 +223,138 @@
             // 
             this.tile1.HorizontalSize = 3;
             this.tile1.Name = "tile1";
-            this.tile1.Text = "瓷片1";
+            this.tile1.Text = "Tile 1";
             this.tile1.VerticalSize = 3;
             // 
             // tile2
             // 
             this.tile2.HorizontalSize = 3;
             this.tile2.Name = "tile2";
-            this.tile2.Text = "瓷片 2";
+            this.tile2.Text = "Tile 2";
             this.tile2.VerticalSize = 3;
             // 
             // tile3
             // 
             this.tile3.HorizontalSize = 3;
             this.tile3.Name = "tile3";
-            this.tile3.Text = "瓷片3";
+            this.tile3.Text = "Tile 3";
             this.tile3.VerticalSize = 3;
             // 
             // tile4
             // 
             this.tile4.HorizontalSize = 3;
             this.tile4.Name = "tile4";
-            this.tile4.Text = "瓷片 4";
+            this.tile4.Text = "Tile 4";
             this.tile4.VerticalSize = 3;
             // 
             // tile5
             // 
             this.tile5.HorizontalSize = 3;
             this.tile5.Name = "tile5";
-            this.tile5.Text = "瓷片 5";
+            this.tile5.Text = "Tile 5";
             this.tile5.VerticalSize = 3;
             // 
             // tile6
             // 
             this.tile6.HorizontalSize = 3;
             this.tile6.Name = "tile6";
-            this.tile6.Text = "瓷片6";
+            this.tile6.Text = "Tile 6";
             this.tile6.VerticalSize = 3;
             // 
             // tile7
             // 
             this.tile7.HorizontalSize = 3;
             this.tile7.Name = "tile7";
-            this.tile7.Text = "瓷片7";
+            this.tile7.Text = "Tile 7";
             this.tile7.VerticalSize = 3;
             // 
             // tile8
             // 
             this.tile8.HorizontalSize = 3;
             this.tile8.Name = "tile8";
-            this.tile8.Text = "瓷片8";
+            this.tile8.Text = "Tile 8";
             this.tile8.VerticalSize = 3;
             // 
             // tile9
             // 
             this.tile9.HorizontalSize = 3;
             this.tile9.Name = "tile9";
-            this.tile9.Text = "瓷片9";
+            this.tile9.Text = "Tile 9";
             this.tile9.VerticalSize = 3;
             // 
             // tile10
             // 
             this.tile10.HorizontalSize = 3;
             this.tile10.Name = "tile10";
-            this.tile10.Text = "瓷片10";
+            this.tile10.Text = "Tile 10";
             this.tile10.VerticalSize = 3;
             // 
             // tile11
             // 
             this.tile11.HorizontalSize = 3;
             this.tile11.Name = "tile11";
-            this.tile11.Text = "瓷片11";
+            this.tile11.Text = "Tile 11";
             this.tile11.VerticalSize = 3;
             // 
             // tile12
             // 
             this.tile12.HorizontalSize = 3;
             this.tile12.Name = "tile12";
-            this.tile12.Text = "瓷片 12";
+            this.tile12.Text = "Tile 12";
             this.tile12.VerticalSize = 3;
             // 
             // tile13
             // 
             this.tile13.HorizontalSize = 3;
             this.tile13.Name = "tile13";
-            this.tile13.Text = "瓷片13";
+            this.tile13.Text = "Tile 13";
             this.tile13.VerticalSize = 3;
             // 
             // tile14
             // 
             this.tile14.HorizontalSize = 3;
             this.tile14.Name = "tile14";
-            this.tile14.Text = "瓷片14";
+            this.tile14.Text = "Tile 14";
             this.tile14.VerticalSize = 3;
             // 
             // tile15
             // 
             this.tile15.HorizontalSize = 3;
             this.tile15.Name = "tile15";
-            this.tile15.Text = "瓷片 15";
+            this.tile15.Text = "Tile 15";
             this.tile15.VerticalSize = 3;
             // 
             // tile16
             // 
             this.tile16.HorizontalSize = 3;
             this.tile16.Name = "tile16";
-            this.tile16.Text = "瓷片16";
+            this.tile16.Text = "Tile 16";
             this.tile16.VerticalSize = 3;
             // 
             // tile17
             // 
             this.tile17.HorizontalSize = 3;
             this.tile17.Name = "tile17";
-            this.tile17.Text = "瓷片17";
+            this.tile17.Text = "Tile 17";
             this.tile17.VerticalSize = 3;
             // 
             // tile18
             // 
             this.tile18.HorizontalSize = 3;
             this.tile18.Name = "tile18";
-            this.tile18.Text = "瓷片18";
+            this.tile18.Text = "Tile 18";
             this.tile18.VerticalSize = 3;
             // 
-            // MovingSlides
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGreen;
-            this.ClientSize = new System.Drawing.Size(802, 616);
+            this.ClientSize = new System.Drawing.Size(802, 460);
             this.Controls.Add(this.c1TileControl1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ForeColor = System.Drawing.Color.White;
-            this.Name = "MovingSlides";
+            this.Name = "Form1";
             this.Text = "Moving Slides";
             this.ResumeLayout(false);
 

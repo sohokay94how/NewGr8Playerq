@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlExplorer.Debug", "ControlExplorer.Debug.csproj", "{731FA042-9C4E-4327-A0FE-922976AA7FDE}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Safe|Any CPU = Debug Safe|Any CPU
+		Debug Safe|Mixed Platforms = Debug Safe|Mixed Platforms
+		Debug Safe|x64 = Debug Safe|x64
+		Debug Safe|x86 = Debug Safe|x86
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug_GRAPECITY|Mixed Platforms = Debug_GRAPECITY|Mixed Platforms
+		Debug_GRAPECITY|x64 = Debug_GRAPECITY|x64
+		Debug_GRAPECITY|x86 = Debug_GRAPECITY|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		DebugFull|Any CPU = DebugFull|Any CPU
+		DebugFull|Mixed Platforms = DebugFull|Mixed Platforms
+		DebugFull|x64 = DebugFull|x64
+		DebugFull|x86 = DebugFull|x86
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release_GRAPECITY|Mixed Platforms = Release_GRAPECITY|Mixed Platforms
+		Release_GRAPECITY|x64 = Release_GRAPECITY|x64
+		Release_GRAPECITY|x86 = Release_GRAPECITY|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		ReleaseFull|Any CPU = ReleaseFull|Any CPU
+		ReleaseFull|Mixed Platforms = ReleaseFull|Mixed Platforms
+		ReleaseFull|x64 = ReleaseFull|x64
+		ReleaseFull|x86 = ReleaseFull|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug Safe|Any CPU.ActiveCfg = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug Safe|Any CPU.Build.0 = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug Safe|Mixed Platforms.ActiveCfg = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug Safe|Mixed Platforms.Build.0 = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug Safe|x64.ActiveCfg = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug Safe|x64.Build.0 = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug Safe|x86.ActiveCfg = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug Safe|x86.Build.0 = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug_GRAPECITY|Any CPU.ActiveCfg = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug_GRAPECITY|Any CPU.Build.0 = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug_GRAPECITY|Mixed Platforms.ActiveCfg = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug_GRAPECITY|Mixed Platforms.Build.0 = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug_GRAPECITY|x64.ActiveCfg = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug_GRAPECITY|x64.Build.0 = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug_GRAPECITY|x86.ActiveCfg = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug_GRAPECITY|x86.Build.0 = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug|x64.ActiveCfg = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug|x86.ActiveCfg = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Debug|x86.Build.0 = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.DebugFull|Any CPU.ActiveCfg = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.DebugFull|Any CPU.Build.0 = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.DebugFull|Mixed Platforms.ActiveCfg = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.DebugFull|Mixed Platforms.Build.0 = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.DebugFull|x64.ActiveCfg = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.DebugFull|x64.Build.0 = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.DebugFull|x86.ActiveCfg = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.DebugFull|x86.Build.0 = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Release_GRAPECITY|Any CPU.Build.0 = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Release_GRAPECITY|Mixed Platforms.ActiveCfg = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Release_GRAPECITY|Mixed Platforms.Build.0 = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Release_GRAPECITY|x64.ActiveCfg = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Release_GRAPECITY|x64.Build.0 = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Release_GRAPECITY|x86.ActiveCfg = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Release_GRAPECITY|x86.Build.0 = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Release|Any CPU.ActiveCfg = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Release|Mixed Platforms.Build.0 = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Release|x64.ActiveCfg = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Release|x86.ActiveCfg = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.Release|x86.Build.0 = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.ReleaseFull|Any CPU.ActiveCfg = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.ReleaseFull|Any CPU.Build.0 = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.ReleaseFull|Mixed Platforms.ActiveCfg = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.ReleaseFull|Mixed Platforms.Build.0 = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.ReleaseFull|x64.ActiveCfg = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.ReleaseFull|x64.Build.0 = Debug|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.ReleaseFull|x86.ActiveCfg = Release|x86
+		{731FA042-9C4E-4327-A0FE-922976AA7FDE}.ReleaseFull|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal

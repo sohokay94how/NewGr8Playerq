@@ -25,26 +25,26 @@ namespace ControlExplorer.DynamicHelp
         {
             //fill default styles
             _styles = new ArrayList();
-            _styles.Add("经典");
-            _styles.Add("乡村");
-            _styles.Add("冰淇淋");
+            _styles.Add("Classic");
+            _styles.Add("Country");
+            _styles.Add("Gelato");
             
             //fill default flavors
             _flavors = new ArrayList();
-            _flavors.Add("巧克力");
-            _flavors.Add("香草");
-            _flavors.Add("草莓");
+            _flavors.Add("Chocolate");
+            _flavors.Add("Vanilla");
+            _flavors.Add("Strawberry");
 
             //fill default recipes
             _recipes = new ArrayList();
-            _recipes.Add(new Recipe("烤椰冰淇淋", "经典", "香草", "椰子，菠萝，焦糖", 2, new DateTime(2007, 9, 7)));
-            _recipes.Add(new Recipe("蜜饯皮纳塔", "冰淇淋", "香草", "蓝洒，巧克力片，饼干，草莓", 4, new DateTime(2007, 12, 24)));
-            _recipes.Add(new Recipe("泥浆", "经典", "巧克力", "焦糖酱，橡皮糖，开心果", 1, new DateTime(2008, 1, 14)));
-            _recipes.Add(new Recipe("巧克力和桂皮", "冰淇淋", "巧克力", "肉桂，奶油", 2, new DateTime(2008, 1, 23)));
-            _recipes.Add(new Recipe("果味小猫", "乡村", "草莓", "香蕉，樱桃，草莓，菠萝", 3, new DateTime(2008, 2, 14)));
-            _recipes.Add(new Recipe("圣代冰淇淋", "经典", "香草", "红洒，黑樱桃，草莓酱", 1, new DateTime(2008, 3, 1)));
-            _recipes.Add(new Recipe("松塔", "锥体", "松饼", "枫糖松饼锥", 2, new DateTime(2008, 4, 17)));
-            _recipes.Add(new Recipe("糖果", "乡村", "香草", "彩色沙", 3, new DateTime(2008, 9, 27)));
+            _recipes.Add(new Recipe("Toasted Coconut Ice Cream", "Classic", "Vanilla", "Coconut, Pineapple, Caramel", 2, new DateTime(2007, 9, 7)));
+            _recipes.Add(new Recipe("Candied Pinata", "Gelato", "Vanilla", "Blue Sprinkles, Chocolate Chips, Cookie bits, Strawberries", 4, new DateTime(2007, 12, 24)));
+            _recipes.Add(new Recipe("Mud Pit", "Classic", "Chocolate", "Caramel Sauce, Gummy Worms, Pistachios", 1, new DateTime(2008, 1, 14)));
+            _recipes.Add(new Recipe("Chocolate and Cinnamon", "Gelato", "Chocolate", "Cinnamon, Whipped Cream", 2, new DateTime(2008, 1, 23)));
+            _recipes.Add(new Recipe("Fruity Tooty", "Country", "Strawberry", "Bananas, Cherries, Strawberries, Pineapple", 3, new DateTime(2008, 2, 14)));
+            _recipes.Add(new Recipe("Eye-Screamin' Sundae", "Classic", "Vanilla", "Red Sprinkles, Strawberry Sauce, 1 Black Cherry", 1, new DateTime(2008, 3, 1)));
+            _recipes.Add(new Recipe("True Waffle House", "Cone", "Waffle", "Maple Syrup, Waffle Cone", 2, new DateTime(2008, 4, 17)));
+            _recipes.Add(new Recipe("Confetti", "Country", "Vanilla", "Multi-colored Sprinkles", 3, new DateTime(2008, 9, 27)));
 
             c1DynamicHelp1.HelpSource = AppDomain.CurrentDomain.BaseDirectory + "DynamicHelp\\HelpFiles\\IceCreamWordSource.chm";
             c1DynamicHelp1.Browser.CanGoBackChanged += new EventHandler(Browser_CanGoBackChanged);
@@ -181,13 +181,13 @@ namespace ControlExplorer.DynamicHelp
             {
                 if (rbNew_Style.Checked)
                 {
-                    label15.Text = "新风格";
-                    label12.Text = "风格名称";
+                    label15.Text = "New Style";
+                    label12.Text = "Style Name";
                 }
                 else if (rbNew_Flavor.Checked)
                 {
-                    label15.Text = "新口味";
-                    label12.Text = "口味名称:";
+                    label15.Text = "New Flavor";
+                    label12.Text = "Flavor Name:";
                 }
                 //Navigate to a specific topic in C1DynamicHelp
                 c1DynamicHelp1.ShowTopic("WordDocuments/addinganewstyleorflavor.htm");
@@ -254,7 +254,7 @@ namespace ControlExplorer.DynamicHelp
         private void btnRecipe_Add_Click(object sender, EventArgs e)
         {
             _recipes.Add(new Recipe(txtRecipe_Name.Text, txtRecipe_Style.Text, txtRecipe_Flavor.Text, txtRecipe_Toppings.Text, (int)txtRecipe_Scoops.Value, txtRecipe_DateAdded.Value));
-            MessageBox.Show("已添加配方!");
+            MessageBox.Show("Recipe Added!");
             ShowTab(tabDatabase);
         }
 
@@ -284,12 +284,12 @@ namespace ControlExplorer.DynamicHelp
             if (rbNew_Flavor.Checked)
             {
                 _flavors.Add(txtNewStyleFlavor.Text);
-                MessageBox.Show("已增加新口味!");
+                MessageBox.Show("New Flavor Added!");
             }
             else if (rbNew_Style.Checked)
             {
                 _styles.Add(txtNewStyleFlavor.Text);
-                MessageBox.Show("已增加新风格!");
+                MessageBox.Show("New Style Added!");
             }
             ShowTab(tabNew);
         }

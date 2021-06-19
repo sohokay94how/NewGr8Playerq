@@ -81,7 +81,7 @@
             this.radChartGroups.Name = "radChartGroups";
             this.radChartGroups.Size = new System.Drawing.Size(83, 17);
             this.radChartGroups.TabIndex = 3;
-            this.radChartGroups.Text = "组合";
+            this.radChartGroups.Text = "Combination";
             this.radChartGroups.UseVisualStyleBackColor = true;
             this.radChartGroups.CheckedChanged += new System.EventHandler(this.radHiLo_CheckedChanged);
             // 
@@ -92,7 +92,7 @@
             this.radCandle.Name = "radCandle";
             this.radCandle.Size = new System.Drawing.Size(58, 17);
             this.radCandle.TabIndex = 2;
-            this.radCandle.Text = "蜡烛";
+            this.radCandle.Text = "Candle";
             this.radCandle.UseVisualStyleBackColor = true;
             this.radCandle.CheckedChanged += new System.EventHandler(this.radHiLo_CheckedChanged);
             // 
@@ -103,7 +103,7 @@
             this.radHiLoOpenClose.Name = "radHiLoOpenClose";
             this.radHiLoOpenClose.Size = new System.Drawing.Size(105, 17);
             this.radHiLoOpenClose.TabIndex = 1;
-            this.radHiLoOpenClose.Text = "HiLo开闭";
+            this.radHiLoOpenClose.Text = "HiLo-Open-Close";
             this.radHiLoOpenClose.UseVisualStyleBackColor = true;
             this.radHiLoOpenClose.CheckedChanged += new System.EventHandler(this.radHiLo_CheckedChanged);
             // 

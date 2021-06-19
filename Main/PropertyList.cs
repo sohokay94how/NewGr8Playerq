@@ -12,16 +12,12 @@ namespace ControlExplorer
 {
     public class PropertyList: C1InputPanel
     {
-        private int unitHeight = 25;
-        private int leftPadding = 2;
+        private static int unitHeight = 26;
+        private static int labelWidth = 92;
         public PropertyList(ArrayList properties)
         {
+            this.ChildSpacing = new Size(4, 4);
             this.SuspendLayout();
-
-            //if (ControlExplorer.Properties.Settings.Default.VisualStyle == C1.Win.C1Ribbon.VisualStyle.Windows7)
-            //{
-            //    //this.VisualStyle = C1.Win.C1InputPanel.VisualStyle.System;
-            //}
 
             for (int i = 0; i < properties.Count; i++)
             {
@@ -51,7 +47,6 @@ namespace ControlExplorer
                 else if (a.Descriptor.PropertyType == Type.GetType("System.Boolean"))
                 {
                     InputCheckBox chk = new InputCheckBox();
-                    chk.Padding = new Padding(leftPadding, 2, 0, 0);
                     chk.Height = unitHeight;
                     chk.Checked = (bool)a.Value;
                     chk.Tag = a;
@@ -65,8 +60,9 @@ namespace ControlExplorer
                 else
                 {
                     InputLabel lab = new InputLabel();
-                    lab.Padding = new Padding(leftPadding, 7, 0, 0);
+                    lab.VerticalAlign = InputContentAlignment.Center;
                     lab.Height = unitHeight;
+                    lab.Width = labelWidth;
                     if (string.IsNullOrEmpty(a.LongName))
                         lab.Text = a.Descriptor.Name;
                     else
@@ -75,7 +71,6 @@ namespace ControlExplorer
                     if (a.Descriptor.PropertyType.IsEnum)
                     {
                         InputComboBox box = new InputComboBox();
-                        //box.Padding = new Padding(5, 0, 0, 0);
                         box.Height = unitHeight;
                         box.DropDownStyle = InputComboBoxStyle.DropDownList;
                         BindingFlags flags = BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly;
@@ -95,7 +90,6 @@ namespace ControlExplorer
                     else if (a.Descriptor.PropertyType == Type.GetType("System.DateTime"))
                     {
                         InputDatePicker dp = new InputDatePicker();
-                        //dp.Padding = new Padding(5, 2, 0, 0);
                         dp.Height = unitHeight;
                         dp.Value = (DateTime)a.Value;
                         dp.Tag = a;
@@ -105,7 +99,6 @@ namespace ControlExplorer
                     else if (a.Descriptor.PropertyType == Type.GetType("System.TimeSpan"))
                     {
                         InputTimePicker tp = new InputTimePicker();
-                        //tp.Padding = new Padding(5, 2, 0, 0);
                         tp.Height = unitHeight;
                         tp.Value = (TimeSpan)a.Value;
                         tp.Tag = a;
@@ -126,7 +119,7 @@ namespace ControlExplorer
                     else if (a.Descriptor.PropertyType == Type.GetType("System.Int32"))
                     {
                         InputNumericBox nb = new InputNumericBox();
-                        nb.Height = unitHeight - 5;
+                        nb.Height = unitHeight;
                         nb.Width = 50;
                         nb.Value = (int)a.Value;
                         nb.Tag = a;
@@ -137,7 +130,6 @@ namespace ControlExplorer
                     else if (a.Descriptor.PropertyType == Type.GetType("System.Int16"))
                     {
                         InputNumericBox nb = new InputNumericBox();
-                        nb.Padding = new Padding(5, 0, 0, 0);
                         nb.Height = unitHeight;
                         nb.Width = 50;
                         nb.Value = (short)a.Value;
@@ -149,11 +141,10 @@ namespace ControlExplorer
                     else if (a.Descriptor.PropertyType == Type.GetType("System.Int64"))
                     {
                         InputNumericBox nb = new InputNumericBox();
-                        nb.Padding = new Padding(5, 0, 0, 0);
                         nb.Value = (long)a.Value;
                         nb.Tag = a;
                         nb.Maximum = 100000;
-                        nb.Height = unitHeight - 5;
+                        nb.Height = unitHeight;
                         nb.Width = 50;
                         nb.ValueChanged += new EventHandler(nb_ValueChanged);
                         this.Items.Add(nb);
@@ -161,12 +152,11 @@ namespace ControlExplorer
                     else if (a.Descriptor.PropertyType == Type.GetType("System.Single") || a.Descriptor.PropertyType == Type.GetType("System.Double"))
                     {
                         InputNumericBox nb = new InputNumericBox();
-                        nb.Padding = new Padding(5, 0, 0, 0);
                         nb.Value = (decimal)Math.Floor((Single)a.Value);
                         nb.Tag = a;
                         nb.Maximum = 360;
                         nb.Minimum = 0;
-                        nb.Height = unitHeight - 5;
+                        nb.Height = unitHeight;
                         nb.Width = 50;
                         nb.ValueChanged += new EventHandler(nb_ValueChanged);
                         this.Items.Add(nb);
@@ -174,8 +164,8 @@ namespace ControlExplorer
                     else
                     {
                         InputTextBox txt = new InputTextBox();
-                        txt.Padding = new Padding(5, 2, 0, 0);
-                        txt.Height = unitHeight - 5;
+                        txt.VerticalAlign = InputContentAlignment.Center;
+                        txt.Height = unitHeight;
                         txt.Text = a.Value.ToString();
                         txt.Tag = a;
                         txt.LostFocus += new EventHandler(txt_LostFocus);
@@ -183,9 +173,7 @@ namespace ControlExplorer
                     }
                 }
             }
-            //this.BackgroundImageLayout = ImageLayout.None;
-            //this.VisualStyle = VisualStyle.Office2007Black;
-            //this.BackColor = Color.FromArgb(28, 74, 26);
+
             this.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ResumeLayout();
         }
@@ -196,7 +184,7 @@ namespace ControlExplorer
             set { this.BackgroundImage = value; }
         }
 
-        public int CalculateHeight(PropertyList pl)
+     /*   public int CalculateHeight(PropertyList pl)
         {
             int count = 0;
             int maxcount = 0;
@@ -218,7 +206,7 @@ namespace ControlExplorer
             if (count > maxcount) maxcount = count;
 
             return ((maxcount + solidcount) * (unitHeight + 2)) + (8 * (solidcount + 1));
-        }
+        }*/
 
         void chk_CheckedChanged(object sender, EventArgs e)
         {

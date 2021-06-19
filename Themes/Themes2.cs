@@ -16,8 +16,6 @@ namespace ControlExplorer.Themes
             InitializeComponent();
             // populate combobox with all available themes
             this.comboBox1.Items.AddRange(C1.Win.C1Themes.C1ThemeController.GetThemes());
-            // set initial theme
-            comboBox1.SelectedIndex = 0;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -36,11 +34,6 @@ namespace ControlExplorer.Themes
                 };
                 setTheme(this);
             }
-        }
-
-        private void Themes2_Load(object sender, EventArgs e)
-        {
-            comboBox1.SelectedIndex = 3;
         }
     }
 }

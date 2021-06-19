@@ -118,7 +118,7 @@
             this.labImageCaption.Name = "labImageCaption";
             this.labImageCaption.Size = new System.Drawing.Size(164, 30);
             this.labImageCaption.TabIndex = 11;
-            this.labImageCaption.Text = "图片说明";
+            this.labImageCaption.Text = "Image Caption";
             this.labImageCaption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // taskbarButton
@@ -126,16 +126,16 @@
             this.taskbarButton.ContainerForm = this;
             c1ThumbButton1.ImageIndex = 0;
             c1ThumbButton1.Name = "FirstImage";
-            c1ThumbButton1.Tooltip = "第一张";
+            c1ThumbButton1.Tooltip = "First Image";
             c1ThumbButton2.ImageIndex = 1;
             c1ThumbButton2.Name = "PrevImage";
-            c1ThumbButton2.Tooltip = "前一张";
+            c1ThumbButton2.Tooltip = "Previous Image";
             c1ThumbButton3.ImageIndex = 2;
             c1ThumbButton3.Name = "NextImage";
-            c1ThumbButton3.Tooltip = "下一张";
+            c1ThumbButton3.Tooltip = "Next Image";
             c1ThumbButton4.ImageIndex = 3;
             c1ThumbButton4.Name = "LastImage";
-            c1ThumbButton4.Tooltip = "最后一张";
+            c1ThumbButton4.Tooltip = "Last Image";
             this.taskbarButton.Thumbnail.Buttons.AddRange(new C1.Win.C1Win7Pack.C1ThumbButton[] {
             c1ThumbButton1,
             c1ThumbButton2,
@@ -160,8 +160,8 @@
             this.c1SuperLabel1.Name = "c1SuperLabel1";
             this.c1SuperLabel1.Size = new System.Drawing.Size(370, 34);
             this.c1SuperLabel1.TabIndex = 12;
-            this.c1SuperLabel1.Text = "你可以用 <b>C1任务栏按钮</b> 在任务栏缩略图上添加按钮 " +
-                "悬停在任务栏窗口的按钮上，您就能看到能够添加的按钮。";
+            this.c1SuperLabel1.Text = "With <b>C1TaskbarButton</b> you can add buttons to the taskbar thumbnail pop-up. " +
+                "Hover over this window\'s button in your taskbar to see the buttons.";
             this.c1SuperLabel1.UseMnemonic = true;
             // 
             // ThumbnailButtonDemo
@@ -178,7 +178,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ThumbnailButtonDemo";
-            this.Text = "缩略图按钮示例";
+            this.Text = "Thumbnail Buttons Demo";
             this.Load += new System.EventHandler(this.ThumbnailButtonDemo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

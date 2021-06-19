@@ -48,8 +48,8 @@
             this.chkAsDisplayed.Name = "chkAsDisplayed";
             this.chkAsDisplayed.Size = new System.Drawing.Size(87, 17);
             this.chkAsDisplayed.TabIndex = 0;
-            this.chkAsDisplayed.Text = "演示";
-            this.toolTip1.SetToolTip(this.chkAsDisplayed, "保存值作为演示 (包括格式和可用的映射)。 ");
+            this.chkAsDisplayed.Text = "As Displayed";
+            this.toolTip1.SetToolTip(this.chkAsDisplayed, "Save values as displayed (including formatting and mapping where available). ");
             this.chkAsDisplayed.UseVisualStyleBackColor = true;
             // 
             // chkIncludeFixedCells
@@ -59,8 +59,8 @@
             this.chkIncludeFixedCells.Name = "chkIncludeFixedCells";
             this.chkIncludeFixedCells.Size = new System.Drawing.Size(114, 17);
             this.chkIncludeFixedCells.TabIndex = 1;
-            this.chkIncludeFixedCells.Text = "包含固定单元格";
-            this.toolTip1.SetToolTip(this.chkIncludeFixedCells, "包括加载和保存表格时固定单元格 ");
+            this.chkIncludeFixedCells.Text = "Include Fixed Cells";
+            this.toolTip1.SetToolTip(this.chkIncludeFixedCells, "Include fixed cells when loading or saving the grid. ");
             this.chkIncludeFixedCells.UseVisualStyleBackColor = true;
             // 
             // chkNoFreezing
@@ -70,8 +70,8 @@
             this.chkNoFreezing.Name = "chkNoFreezing";
             this.chkNoFreezing.Size = new System.Drawing.Size(83, 17);
             this.chkNoFreezing.TabIndex = 3;
-            this.chkNoFreezing.Text = "非冻结";
-            this.toolTip1.SetToolTip(this.chkNoFreezing, "不能在导出或导入Excel时冻结行和列。");
+            this.chkNoFreezing.Text = "No Freezing";
+            this.toolTip1.SetToolTip(this.chkNoFreezing, "Do not freeze rows and columns when exporting to or importing from Excel.");
             this.chkNoFreezing.UseVisualStyleBackColor = true;
             // 
             // chkOpenXml
@@ -103,8 +103,8 @@
             this.chkSelectedRowsOnly.Name = "chkSelectedRowsOnly";
             this.chkSelectedRowsOnly.Size = new System.Drawing.Size(122, 17);
             this.chkSelectedRowsOnly.TabIndex = 6;
-            this.chkSelectedRowsOnly.Text = "只选择行";
-            this.toolTip1.SetToolTip(this.chkSelectedRowsOnly, "保存选择的行");
+            this.chkSelectedRowsOnly.Text = "Selected Rows Only";
+            this.toolTip1.SetToolTip(this.chkSelectedRowsOnly, "Save only selected rows.");
             this.chkSelectedRowsOnly.UseVisualStyleBackColor = true;
             // 
             // chkVisibleOnly
@@ -114,8 +114,8 @@
             this.chkVisibleOnly.Name = "chkVisibleOnly";
             this.chkVisibleOnly.Size = new System.Drawing.Size(80, 17);
             this.chkVisibleOnly.TabIndex = 7;
-            this.chkVisibleOnly.Text = "只可见";
-            this.toolTip1.SetToolTip(this.chkVisibleOnly, "仅保存可见的行和列");
+            this.chkVisibleOnly.Text = "Visible Only";
+            this.toolTip1.SetToolTip(this.chkVisibleOnly, "Save only visible rows and columns.");
             this.chkVisibleOnly.UseVisualStyleBackColor = true;
             // 
             // btnOK
@@ -136,7 +136,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 9;
-            this.button1.Text = "取消";
+            this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // ExportOptions
@@ -159,7 +159,7 @@
             this.Name = "ExportOptions";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "导出选项";
+            this.Text = "Export Options";
             this.ResumeLayout(false);
             this.PerformLayout();
 

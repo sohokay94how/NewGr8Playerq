@@ -109,8 +109,8 @@ namespace ControlExplorer.Schedule
         }
 
         Random rnd = new Random();
-        string[] subjects = new string[] { "设计会议", "和VP午餐", "电话会议", "商业方案", "在家中工作", "网络直播", "市场营销会议", "销售会议", "案例研究", "财政计划", "头脑风暴会议", "点对点回顾", "桑达斯基项目计划", "年度目标回顾" };
-        string[] locations = new string[] { "桑达斯基会议", "匹兹堡会议", "圣地亚哥会议", "会议房间", "办公室" };
+        string[] subjects = new string[] { "Design Meeting", "Lunch with VP", "Conference call", "Business Proposal", "Working from home", "SharePoint Webcast", "Marketing meeting", "Sales meeting", "Case study", "Financial Planning", "Brainstorming session", "Peer-2-Peer review", "Sandusky Event Planning", "Yearly goals review" };
+        string[] locations = new string[] { "Sandusky office", "Pittsburgh office", "San Diego office", "Conference room", "Office" };
         int[] durations = new int[] { 60, 60, 90, 120 };
 
         void CreateSampleData(int nAppts)
@@ -134,18 +134,18 @@ namespace ControlExplorer.Schedule
 
         void CreateContacts()
         {
-            c1Schedule1.DataStorage.ContactStorage.Contacts.Add(new Contact() { Text = "马修" });
-            c1Schedule1.DataStorage.ContactStorage.Contacts.Add(new Contact() { Text = "阿尔西亚" });
-            c1Schedule1.DataStorage.ContactStorage.Contacts.Add(new Contact() { Text = "夏琳" });
-            c1Schedule1.DataStorage.ContactStorage.Contacts.Add(new Contact() { Text = "杰西卡" });
-            c1Schedule1.DataStorage.ContactStorage.Contacts.Add(new Contact() { Text = "艾米" });
+            c1Schedule1.DataStorage.ContactStorage.Contacts.Add(new Contact() { Text = "Matthew Longworthy" });
+            c1Schedule1.DataStorage.ContactStorage.Contacts.Add(new Contact() { Text = "Althea Seamons"});
+            c1Schedule1.DataStorage.ContactStorage.Contacts.Add(new Contact() { Text = "Charlene Hart"});
+            c1Schedule1.DataStorage.ContactStorage.Contacts.Add(new Contact() { Text = "Jessie Wantz"});
+            c1Schedule1.DataStorage.ContactStorage.Contacts.Add(new Contact() { Text = "Amie McCardle" });
         }
 
         void CreateResources()
         {
-            c1Schedule1.DataStorage.ResourceStorage.Resources.Add(new Resource() { Text = "会议室 1" });
-            c1Schedule1.DataStorage.ResourceStorage.Resources.Add(new Resource() { Text = "会议室 2" });
-            c1Schedule1.DataStorage.ResourceStorage.Resources.Add(new Resource() { Text = "会议室 3" });
+            c1Schedule1.DataStorage.ResourceStorage.Resources.Add(new Resource() { Text = "Room 1" });
+            c1Schedule1.DataStorage.ResourceStorage.Resources.Add(new Resource() { Text = "Room 2"});
+            c1Schedule1.DataStorage.ResourceStorage.Resources.Add(new Resource() { Text = "Room 3" });
 
         }
 

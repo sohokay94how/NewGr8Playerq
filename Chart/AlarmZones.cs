@@ -19,7 +19,7 @@ namespace ControlExplorer.Chart
         double[] k;
 
         //define each of the zones
-        string[] ZoneText = new String[] { "有毒", "不良", "健康", "良好", "优秀" };
+        string[] ZoneText = new String[] { "Toxic", "Unhealthy", "Healthy", "More Healthy", "Healthiest" };
 
         //get the color codes for each zone
         Color[] ZoneColor = new Color[]

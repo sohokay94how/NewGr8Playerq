@@ -16,15 +16,15 @@ namespace ControlExplorer.FlexGrid
 
         public enum Theme
         {
-            默认,
-            系统,
+            Default,
+            System,
             Office2007Blue,
             Office2007Black,
             Office2007Silver,
             Office2010Blue,
             Office2010Black,
             Office2010Silver,
-            优雅的,
+            Elegant,
             Glass,
             Mac,
             Energy,
@@ -65,10 +65,10 @@ namespace ControlExplorer.FlexGrid
 
             switch ((Theme)this.comboBox1.SelectedItem)
             {
-                case Theme.默认:
+                case Theme.Default:
                     this.BackColor = Color.FromKnownColor(KnownColor.Control);
                     break;
-                case Theme.系统:
+                case Theme.System:
                     c1FlexGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.System;
                     this.BackColor = Color.FromKnownColor(KnownColor.Control);
                     break;
@@ -99,7 +99,7 @@ namespace ControlExplorer.FlexGrid
                     c1FlexGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2010Silver;
                     this.BackColor = Color.FromArgb(208, 212, 221);
                     break;
-                case Theme.优雅的:
+                case Theme.Elegant:
                     Elegant(c1FlexGrid1.Styles);
                     break;
                 case Theme.Vista:

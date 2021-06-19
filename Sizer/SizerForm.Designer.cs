@@ -32,39 +32,39 @@
             System.Drawing.Drawing2D.Blend blend2 = new System.Drawing.Drawing2D.Blend();
             System.Drawing.Drawing2D.Blend blend1 = new System.Drawing.Drawing2D.Blend();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SizerForm));
+            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
             this.c1Sizer9 = new C1.Win.C1Sizer.C1Sizer();
             this.c1Sizer4 = new C1.Win.C1Sizer.C1Sizer();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.button13 = new C1.Win.C1Input.C1Button();
+            this.button12 = new C1.Win.C1Input.C1Button();
+            this.button11 = new C1.Win.C1Input.C1Button();
+            this.button10 = new C1.Win.C1Input.C1Button();
+            this.button9 = new C1.Win.C1Input.C1Button();
+            this.button8 = new C1.Win.C1Input.C1Button();
             this.c1Sizer6 = new C1.Win.C1Sizer.C1Sizer();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button7 = new C1.Win.C1Input.C1Button();
+            this.button6 = new C1.Win.C1Input.C1Button();
+            this.button5 = new C1.Win.C1Input.C1Button();
+            this.button4 = new C1.Win.C1Input.C1Button();
             this.c1Sizer2 = new C1.Win.C1Sizer.C1Sizer();
             this.c1Sizer3 = new C1.Win.C1Sizer.C1Sizer();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button25 = new C1.Win.C1Input.C1Button();
+            this.button24 = new C1.Win.C1Input.C1Button();
+            this.button23 = new C1.Win.C1Input.C1Button();
+            this.button22 = new C1.Win.C1Input.C1Button();
+            this.button3 = new C1.Win.C1Input.C1Button();
+            this.button2 = new C1.Win.C1Input.C1Button();
             this.c1Sizer5 = new C1.Win.C1Sizer.C1Sizer();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button21 = new C1.Win.C1Input.C1Button();
+            this.button20 = new C1.Win.C1Input.C1Button();
+            this.button19 = new C1.Win.C1Input.C1Button();
+            this.button18 = new C1.Win.C1Input.C1Button();
+            this.button17 = new C1.Win.C1Input.C1Button();
+            this.button16 = new C1.Win.C1Input.C1Button();
+            this.button15 = new C1.Win.C1Input.C1Button();
+            this.button14 = new C1.Win.C1Input.C1Button();
             ((System.ComponentModel.ISupportInitialize)(this.c1Sizer1)).BeginInit();
             this.c1Sizer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1Sizer9)).BeginInit();
@@ -80,6 +80,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.c1Sizer5)).BeginInit();
             this.c1Sizer5.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // c1SuperTooltip1
+            // 
+            this.c1SuperTooltip1.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.Gold;
+            this.c1SuperTooltip1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c1SuperTooltip1.IsBalloon = true;
+            this.c1SuperTooltip1.RoundedCorners = true;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // c1Sizer1
             // 
@@ -101,7 +114,7 @@
             this.c1Sizer1.Padding = new System.Windows.Forms.Padding(0);
             this.c1Sizer1.Size = new System.Drawing.Size(592, 446);
             this.c1Sizer1.TabIndex = 1;
-            this.c1Sizer1.Text = "c1尺寸1";
+            this.c1Sizer1.Text = "c1Sizer1";
             this.c1Sizer1.SplitterMoved += new C1.Win.C1Sizer.C1SizerEventHandler(this.c1Sizer1_SplitterMoved);
             // 
             // c1Sizer9
@@ -115,7 +128,7 @@
             this.c1Sizer9.Padding = new System.Windows.Forms.Padding(0);
             this.c1Sizer9.Size = new System.Drawing.Size(592, 174);
             this.c1Sizer9.TabIndex = 6;
-            this.c1Sizer9.Text = "c1尺寸9";
+            this.c1Sizer9.Text = "c1Sizer9";
             this.c1Sizer9.SplitterMoved += new C1.Win.C1Sizer.C1SizerEventHandler(this.c1Sizer9_SplitterMoved);
             // 
             // c1Sizer4
@@ -130,14 +143,14 @@
             this.c1Sizer4.Controls.Add(this.button9);
             this.c1Sizer4.Controls.Add(this.button8);
             this.c1Sizer4.GridDefinition = "14.9425287356322:False:False;38.5057471264368:False:False;13.7931034482759:False:" +
-                "True;15.5172413793103:False:True;\t28.4960422163588:False:True;21.6358839050132:F" +
-                "alse:False;43.0079155672823:False:True;";
+    "True;15.5172413793103:False:True;\t28.4960422163588:False:True;21.6358839050132:F" +
+    "alse:False;43.0079155672823:False:True;";
             this.c1Sizer4.Location = new System.Drawing.Point(0, 0);
             this.c1Sizer4.Name = "c1Sizer4";
             this.c1Sizer4.Padding = new System.Windows.Forms.Padding(8);
             this.c1Sizer4.Size = new System.Drawing.Size(379, 174);
             this.c1Sizer4.TabIndex = 2;
-            this.c1Sizer4.Text = "c1尺寸4";
+            this.c1Sizer4.Text = "c1Sizer4";
             // 
             // button13
             // 
@@ -145,7 +158,7 @@
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(108, 26);
             this.button13.TabIndex = 5;
-            this.button13.Text = "固定宽";
+            this.button13.Text = "Fixed Width";
             this.button13.UseVisualStyleBackColor = true;
             // 
             // button12
@@ -154,7 +167,7 @@
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(361, 67);
             this.button12.TabIndex = 4;
-            this.button12.Text = "自由";
+            this.button12.Text = "Free";
             this.button12.UseVisualStyleBackColor = true;
             // 
             // button11
@@ -163,7 +176,7 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(194, 55);
             this.button11.TabIndex = 3;
-            this.button11.Text = "固定高";
+            this.button11.Text = "Fixed Height";
             this.button11.UseVisualStyleBackColor = true;
             // 
             // button10
@@ -172,7 +185,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(249, 26);
             this.button10.TabIndex = 2;
-            this.button10.Text = "自由";
+            this.button10.Text = "Free";
             this.button10.UseVisualStyleBackColor = true;
             // 
             // button9
@@ -181,7 +194,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(163, 24);
             this.button9.TabIndex = 1;
-            this.button9.Text = "固定高和宽";
+            this.button9.Text = "Fixed Width && Height";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // button8
@@ -190,7 +203,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(163, 27);
             this.button8.TabIndex = 0;
-            this.button8.Text = "固定高和宽";
+            this.button8.Text = "Fixed Width && Height";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // c1Sizer6
@@ -204,13 +217,13 @@
             this.c1Sizer6.Controls.Add(this.button4);
             this.c1Sizer6.Gradient.Center = new System.Drawing.Point(51, 55);
             this.c1Sizer6.GridDefinition = "12.0689655172414:False:True;51.1494252873563:False:False;21.8390804597701:False:T" +
-                "rue;\t49.7607655502392:False:True;39.7129186602871:False:False;";
+    "rue;\t49.7607655502392:False:True;39.7129186602871:False:False;";
             this.c1Sizer6.Location = new System.Drawing.Point(383, 0);
             this.c1Sizer6.Name = "c1Sizer6";
             this.c1Sizer6.Padding = new System.Windows.Forms.Padding(8);
             this.c1Sizer6.Size = new System.Drawing.Size(209, 174);
             this.c1Sizer6.TabIndex = 4;
-            this.c1Sizer6.Text = "c1尺寸6";
+            this.c1Sizer6.Text = "c1Sizer6";
             // 
             // button7
             // 
@@ -218,7 +231,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(191, 21);
             this.button7.TabIndex = 3;
-            this.button7.Text = "固定高";
+            this.button7.Text = "Fixed Height";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button6
@@ -227,7 +240,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(83, 89);
             this.button6.TabIndex = 2;
-            this.button6.Text = "自由";
+            this.button6.Text = "Free";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
@@ -236,7 +249,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(191, 38);
             this.button5.TabIndex = 1;
-            this.button5.Text = "固定高";
+            this.button5.Text = "Fixed Height";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -245,7 +258,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(104, 89);
             this.button4.TabIndex = 0;
-            this.button4.Text = "固定宽";
+            this.button4.Text = "Fixed Width";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // c1Sizer2
@@ -282,8 +295,8 @@
         1F};
             this.c1Sizer3.Gradient.Blend = blend1;
             this.c1Sizer3.GridDefinition = "39.5522388059701:False:True;7.46268656716418:False:False;8.2089552238806:False:Tr" +
-                "ue;13.4328358208955:False:True;18.6567164179104:False:False;\t40.3508771929825:Fa" +
-                "lse:False;46.7836257309942:False:True;";
+    "ue;13.4328358208955:False:True;18.6567164179104:False:False;\t40.3508771929825:Fa" +
+    "lse:False;46.7836257309942:False:True;";
             this.c1Sizer3.Location = new System.Drawing.Point(0, 0);
             this.c1Sizer3.Name = "c1Sizer3";
             this.c1Sizer3.Padding = new System.Windows.Forms.Padding(8);
@@ -297,7 +310,7 @@
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(69, 36);
             this.button25.TabIndex = 10;
-            this.button25.Text = "固定高";
+            this.button25.Text = "Fixed Height";
             this.button25.UseVisualStyleBackColor = true;
             // 
             // button24
@@ -306,7 +319,7 @@
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(80, 62);
             this.button24.TabIndex = 9;
-            this.button24.Text = "固定高和宽";
+            this.button24.Text = "Fixed Width && Height";
             this.button24.UseVisualStyleBackColor = true;
             // 
             // button23
@@ -315,7 +328,7 @@
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(153, 50);
             this.button23.TabIndex = 8;
-            this.button23.Text = "自由";
+            this.button23.Text = "Free";
             this.button23.UseVisualStyleBackColor = true;
             // 
             // button22
@@ -324,7 +337,7 @@
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(69, 46);
             this.button22.TabIndex = 7;
-            this.button22.Text = "自由";
+            this.button22.Text = "Free";
             this.button22.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -333,7 +346,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(80, 130);
             this.button3.TabIndex = 6;
-            this.button3.Text = "固定宽";
+            this.button3.Text = "Fixed Width";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -342,7 +355,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(69, 106);
             this.button2.TabIndex = 5;
-            this.button2.Text = "固定高";
+            this.button2.Text = "Fixed Height";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // c1Sizer5
@@ -365,7 +378,7 @@
             this.c1Sizer5.Padding = new System.Windows.Forms.Padding(8);
             this.c1Sizer5.Size = new System.Drawing.Size(417, 268);
             this.c1Sizer5.TabIndex = 3;
-            this.c1Sizer5.Text = "c1尺寸5";
+            this.c1Sizer5.Text = "c1Sizer5";
             // 
             // button21
             // 
@@ -373,7 +386,7 @@
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(73, 40);
             this.button21.TabIndex = 7;
-            this.button21.Text = "固定高和宽";
+            this.button21.Text = "Fixed Width && Height";
             this.button21.UseVisualStyleBackColor = true;
             // 
             // button20
@@ -382,7 +395,7 @@
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(85, 40);
             this.button20.TabIndex = 6;
-            this.button20.Text = "固定高和宽";
+            this.button20.Text = "Fixed Width && Height";
             this.button20.UseVisualStyleBackColor = true;
             // 
             // button19
@@ -391,7 +404,7 @@
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(151, 40);
             this.button19.TabIndex = 5;
-            this.button19.Text = "固定高";
+            this.button19.Text = "Fixed Height";
             this.button19.UseVisualStyleBackColor = true;
             // 
             // button18
@@ -400,7 +413,7 @@
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(317, 26);
             this.button18.TabIndex = 4;
-            this.button18.Text = "固定高";
+            this.button18.Text = "Fixed Height";
             this.button18.UseVisualStyleBackColor = true;
             // 
             // button17
@@ -409,7 +422,7 @@
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(317, 145);
             this.button17.TabIndex = 3;
-            this.button17.Text = "自由";
+            this.button17.Text = "Free";
             this.button17.UseVisualStyleBackColor = true;
             // 
             // button16
@@ -418,7 +431,7 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(78, 70);
             this.button16.TabIndex = 2;
-            this.button16.Text = "固定高和宽";
+            this.button16.Text = "Fixed Width && Height";
             this.button16.UseVisualStyleBackColor = true;
             // 
             // button15
@@ -427,7 +440,7 @@
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(78, 145);
             this.button15.TabIndex = 1;
-            this.button15.Text = "固定宽";
+            this.button15.Text = "Fixed Width";
             this.button15.UseVisualStyleBackColor = true;
             // 
             // button14
@@ -436,21 +449,8 @@
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(399, 27);
             this.button14.TabIndex = 0;
-            this.button14.Text = "固定高";
+            this.button14.Text = "Fixed Height";
             this.button14.UseVisualStyleBackColor = true;
-            // 
-            // c1SuperTooltip1
-            // 
-            this.c1SuperTooltip1.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.Gold;
-            this.c1SuperTooltip1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c1SuperTooltip1.IsBalloon = true;
-            this.c1SuperTooltip1.RoundedCorners = true;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 500;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // SizerForm
             // 
@@ -488,31 +488,31 @@
         private C1.Win.C1Sizer.C1Sizer c1Sizer3;
         private C1.Win.C1Sizer.C1Sizer c1Sizer2;
         private C1.Win.C1Sizer.C1Sizer c1Sizer9;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private C1.Win.C1Input.C1Button button3;
+        private C1.Win.C1Input.C1Button button2;
         private C1.Win.C1SuperTooltip.C1SuperTooltip c1SuperTooltip1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button24;
+        private C1.Win.C1Input.C1Button button5;
+        private C1.Win.C1Input.C1Button button4;
+        private C1.Win.C1Input.C1Button button8;
+        private C1.Win.C1Input.C1Button button7;
+        private C1.Win.C1Input.C1Button button6;
+        private C1.Win.C1Input.C1Button button13;
+        private C1.Win.C1Input.C1Button button12;
+        private C1.Win.C1Input.C1Button button11;
+        private C1.Win.C1Input.C1Button button10;
+        private C1.Win.C1Input.C1Button button9;
+        private C1.Win.C1Input.C1Button button14;
+        private C1.Win.C1Input.C1Button button21;
+        private C1.Win.C1Input.C1Button button20;
+        private C1.Win.C1Input.C1Button button19;
+        private C1.Win.C1Input.C1Button button18;
+        private C1.Win.C1Input.C1Button button17;
+        private C1.Win.C1Input.C1Button button16;
+        private C1.Win.C1Input.C1Button button15;
+        private C1.Win.C1Input.C1Button button23;
+        private C1.Win.C1Input.C1Button button22;
+        private C1.Win.C1Input.C1Button button25;
+        private C1.Win.C1Input.C1Button button24;
         private System.Windows.Forms.Timer timer1;
     }
 }

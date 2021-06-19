@@ -91,7 +91,7 @@
             this.radImageLabels.Size = new System.Drawing.Size(134, 17);
             this.radImageLabels.TabIndex = 1;
             this.radImageLabels.TabStop = true;
-            this.radImageLabels.Text = "图片标签（点击）";
+            this.radImageLabels.Text = "Image Labels (on-click)";
             this.radImageLabels.UseVisualStyleBackColor = true;
             // 
             // radDefault
@@ -103,7 +103,7 @@
             this.radDefault.Size = new System.Drawing.Size(80, 17);
             this.radDefault.TabIndex = 0;
             this.radDefault.TabStop = true;
-            this.radDefault.Text = "文本标签";
+            this.radDefault.Text = "Text Labels";
             this.radDefault.UseVisualStyleBackColor = true;
             this.radDefault.CheckedChanged += new System.EventHandler(this.radDefault_CheckedChanged);
             // 

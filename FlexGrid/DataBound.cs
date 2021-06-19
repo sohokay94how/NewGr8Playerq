@@ -21,7 +21,6 @@ namespace ControlExplorer.FlexGrid
             AddProperty("AllowMerging", c1FlexGrid1);
             AddProperty("AllowFreezing", c1FlexGrid1);
             AddProperty("AllowDragging", c1FlexGrid1);
-            AddPropertyColumnBreak();
             AddProperty("DelayedScroll", this);
             AddProperty("ShowScrollTips", this);
             AddProperty("ShowCellLabels", c1FlexGrid1);    

@@ -145,12 +145,11 @@
             // c1Button1
             // 
             this.c1Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1Button1.Location = new System.Drawing.Point(874, 16);
-            this.c1Button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1Button1.Location = new System.Drawing.Point(749, 12);
             this.c1Button1.Name = "c1Button1";
-            this.c1Button1.Size = new System.Drawing.Size(87, 30);
+            this.c1Button1.Size = new System.Drawing.Size(75, 23);
             this.c1Button1.TabIndex = 5;
-            this.c1Button1.Text = "打印";
+            this.c1Button1.Text = "Print";
             this.c1Button1.UseVisualStyleBackColor = true;
             this.c1Button1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2007Black;
             this.c1Button1.Click += new System.EventHandler(this.c1Button1_Click);
@@ -158,10 +157,9 @@
             // splitter1
             // 
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter1.Location = new System.Drawing.Point(0, 524);
-            this.splitter1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.splitter1.Location = new System.Drawing.Point(0, 400);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(975, 4);
+            this.splitter1.Size = new System.Drawing.Size(836, 3);
             this.splitter1.TabIndex = 4;
             this.splitter1.TabStop = false;
             // 
@@ -179,10 +177,9 @@
             this.eventsGauge,
             this.dewPtGauge});
             this.c1Gauge1.Location = new System.Drawing.Point(0, 0);
-            this.c1Gauge1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.c1Gauge1.MaximumSize = new System.Drawing.Size(975, 0);
+            this.c1Gauge1.MaximumSize = new System.Drawing.Size(836, 0);
             this.c1Gauge1.Name = "c1Gauge1";
-            this.c1Gauge1.Size = new System.Drawing.Size(975, 528);
+            this.c1Gauge1.Size = new System.Drawing.Size(836, 403);
             this.c1Gauge1.TabIndex = 2;
             this.c1Gauge1.Viewport.AspectRatio = 2.5D;
             this.c1Gauge1.Viewport.MarginY = 20;
@@ -286,13 +283,13 @@
             c1GaugeSingleLabel2.FontSize = 10D;
             c1GaugeSingleLabel2.Location = 80D;
             c1GaugeSingleLabel2.PointerIndex = 1;
-            c1GaugeSingleLabel2.Text = "高";
+            c1GaugeSingleLabel2.Text = "High";
             c1GaugeSingleLabel2.ViewTag = ((long)(642758267265740207));
             c1GaugeSingleLabel3.Color = System.Drawing.Color.Black;
             c1GaugeSingleLabel3.FontSize = 10D;
             c1GaugeSingleLabel3.Location = 80D;
             c1GaugeSingleLabel3.PointerIndex = 0;
-            c1GaugeSingleLabel3.Text = "低";
+            c1GaugeSingleLabel3.Text = "Low";
             c1GaugeSingleLabel3.ViewTag = ((long)(643039742279423100));
             this.tempGauge.Decorators.AddRange(new C1.Win.C1Gauge.C1GaugeDecorator[] {
             c1GaugeRange1,
@@ -465,7 +462,8 @@
             c1GaugeCaption1.CenterPointX = 0.75D;
             c1GaugeCaption1.DirectionVertical = true;
             c1GaugeCaption1.FontSize = 20D;
-            c1GaugeCaption1.Text = "云量";
+            c1GaugeCaption1.RotateAngle = 180D;
+            c1GaugeCaption1.Text = "Cloud Cover";
             this.cloudGauge.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
             c1GaugeRectangle2,
             c1GaugeRectangle3,
@@ -565,7 +563,7 @@
             c1GaugeCaption2.CenterPointY = 0.14D;
             c1GaugeCaption2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             c1GaugeCaption2.FontSize = 5D;
-            c1GaugeCaption2.Text = "风速";
+            c1GaugeCaption2.Text = "Windspeed";
             this.windGauge.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
             c1GaugeSector2,
             c1GaugeCaption2});
@@ -670,7 +668,7 @@
             c1GaugeCaption3.CenterPointY = 0.14D;
             c1GaugeCaption3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             c1GaugeCaption3.FontSize = 5D;
-            c1GaugeCaption3.Text = "可见度 (英里)";
+            c1GaugeCaption3.Text = "Vis (Miles)";
             this.visMilesGauge.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
             c1GaugeSector3,
             c1GaugeCaption3});
@@ -724,14 +722,15 @@
             c1GaugeCaption4.DirectionVertical = true;
             c1GaugeCaption4.FontSize = 10D;
             c1GaugeCaption4.LineAlignment = System.Drawing.StringAlignment.Far;
-            c1GaugeCaption4.Text = "沙漠";
+            c1GaugeCaption4.RotateAngle = 180D;
+            c1GaugeCaption4.Text = "DESERT";
             c1GaugeCaption5.CenterPointY = 0.06D;
             c1GaugeCaption5.FontSize = 10D;
-            c1GaugeCaption5.Text = "温带";
+            c1GaugeCaption5.Text = "MODERATE";
             c1GaugeCaption6.CenterPointX = 0.94D;
             c1GaugeCaption6.DirectionVertical = true;
             c1GaugeCaption6.FontSize = 10D;
-            c1GaugeCaption6.Text = "热带";
+            c1GaugeCaption6.Text = "TROPICAL";
             c1GaugeSegment2.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None;
             c1GaugeSegment2.Filling.BrushType = C1.Win.C1Gauge.C1GaugeBrushType.Gradient;
             c1GaugeSegment2.Filling.Color = System.Drawing.Color.White;
@@ -843,7 +842,7 @@
             c1GaugeCaption7.CenterPointY = 0.35D;
             c1GaugeCaption7.Color = System.Drawing.Color.Black;
             c1GaugeCaption7.FontSize = 10D;
-            c1GaugeCaption7.Text = "湿度";
+            c1GaugeCaption7.Text = "HUMIDITY";
             this.humidityGauge.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
             c1GaugeEllipse2,
             c1GaugeEllipse3,
@@ -1002,7 +1001,7 @@
             c1GaugeCaption9.Text = "psi";
             c1GaugeCaption10.CenterPointY = 0.85D;
             c1GaugeCaption10.FontSize = 12D;
-            c1GaugeCaption10.Text = "海水压力";
+            c1GaugeCaption10.Text = "Sea Pressure";
             this.pressureGauge.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
             c1GaugeEllipse5,
             c1GaugeEllipse6,
@@ -1219,7 +1218,7 @@
             c1GaugeSingleMark10});
             c1GaugeCaption11.CenterPointY = 0.7D;
             c1GaugeCaption11.FontSize = 16D;
-            c1GaugeCaption11.Text = "露点温度";
+            c1GaugeCaption11.Text = "Dew Pt.";
             this.dewPtGauge.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
             c1GaugeCaption11});
             this.dewPtGauge.Minimum = -40D;
@@ -1249,48 +1248,44 @@
             this.c1DbNavigator1.DataSource = this.weatherData1;
             this.c1DbNavigator1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1DbNavigator1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(199)))), ((int)(((byte)(216)))));
-            this.c1DbNavigator1.Location = new System.Drawing.Point(14, 16);
-            this.c1DbNavigator1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1DbNavigator1.Location = new System.Drawing.Point(12, 12);
             this.c1DbNavigator1.Name = "c1DbNavigator1";
-            this.c1DbNavigator1.Size = new System.Drawing.Size(296, 38);
+            this.c1DbNavigator1.Size = new System.Drawing.Size(254, 29);
             this.c1DbNavigator1.TabIndex = 1;
             this.c1DbNavigator1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2007Black;
             // 
             // c1TrueDBGrid1
             // 
-            this.c1TrueDBGrid1.Caption = "天气数据";
+            this.c1TrueDBGrid1.Caption = "Weather Data";
             this.c1TrueDBGrid1.CaptionHeight = 17;
             this.c1TrueDBGrid1.DataSource = this.weatherData1;
             this.c1TrueDBGrid1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.c1TrueDBGrid1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
-            this.c1TrueDBGrid1.Location = new System.Drawing.Point(0, 528);
-            this.c1TrueDBGrid1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.c1TrueDBGrid1.Location = new System.Drawing.Point(0, 403);
             this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.PreviewInfo.Caption = "PrintPreview窗口";
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
             this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
+            this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             this.c1TrueDBGrid1.RowHeight = 15;
-            this.c1TrueDBGrid1.Size = new System.Drawing.Size(975, 258);
+            this.c1TrueDBGrid1.Size = new System.Drawing.Size(836, 198);
             this.c1TrueDBGrid1.TabIndex = 3;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
             this.c1TrueDBGrid1.VisualStyle = C1.Win.C1TrueDBGrid.VisualStyle.Office2007Black;
-            this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // WeatherDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(72)))), ((int)(((byte)(105)))));
-            this.ClientSize = new System.Drawing.Size(975, 786);
+            this.ClientSize = new System.Drawing.Size(836, 601);
             this.Controls.Add(this.c1Button1);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.c1DbNavigator1);
             this.Controls.Add(this.c1Gauge1);
             this.Controls.Add(this.c1TrueDBGrid1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "WeatherDashboard";
             this.Text = "WeatherDashboard";
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge1)).EndInit();

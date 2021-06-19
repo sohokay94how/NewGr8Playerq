@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SyntaxHighlight));
             this.C1EditorToolStripMain1 = new C1.Win.C1Editor.ToolStrips.C1EditorToolStripMain();
             this.C1Editor1 = new C1.Win.C1Editor.C1Editor();
             ((System.ComponentModel.ISupportInitialize)(this.C1Editor1)).BeginInit();
@@ -39,7 +38,7 @@
             this.C1EditorToolStripMain1.Editor = null;
             this.C1EditorToolStripMain1.Location = new System.Drawing.Point(0, 0);
             this.C1EditorToolStripMain1.Name = "C1EditorToolStripMain1";
-            this.C1EditorToolStripMain1.Size = new System.Drawing.Size(691, 25);
+            this.C1EditorToolStripMain1.Size = new System.Drawing.Size(592, 25);
             this.C1EditorToolStripMain1.TabIndex = 1;
             this.C1EditorToolStripMain1.Text = "C1EditorToolStripMain1";
             // 
@@ -47,21 +46,17 @@
             // 
             this.C1Editor1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.C1Editor1.Location = new System.Drawing.Point(0, 25);
-            this.C1Editor1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.C1Editor1.MinimumSize = new System.Drawing.Size(233, 260);
             this.C1Editor1.Name = "C1Editor1";
-            this.C1Editor1.Size = new System.Drawing.Size(691, 558);
+            this.C1Editor1.Size = new System.Drawing.Size(592, 421);
             this.C1Editor1.TabIndex = 2;
-            this.C1Editor1.Xml = resources.GetString("C1Editor1.Xml");
             // 
             // SyntaxHighlight
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 583);
+            this.ClientSize = new System.Drawing.Size(592, 446);
             this.Controls.Add(this.C1Editor1);
             this.Controls.Add(this.C1EditorToolStripMain1);
-            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "SyntaxHighlight";
             this.Text = "SyntaxHighlight";
             this.Load += new System.EventHandler(this.SyntaxHighlight_Load);
